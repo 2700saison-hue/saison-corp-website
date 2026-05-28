@@ -9,6 +9,10 @@ import {
   Users,
   Play,
   BarChart3,
+  DollarSign,
+  BadgeCheck,
+  Zap,
+  X,
 } from "lucide-react";
 import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -236,9 +240,9 @@ const merits = [
   },
   {
     num: "③",
-    lead: "SNS運用代行会社の中では圧倒的に安く",
-    highlight: "相場の3割以下",
-    detail: "でご案内が可能",
+    lead: "月12本・ドラマ型動画を",
+    highlight: "業界相場の1/36",
+    detail: "月額10万円〜で実現（助成金活用後）",
   },
 ];
 
@@ -253,6 +257,10 @@ const goodPoints = [
 ];
 
 const faqs = [
+  {
+    q: "なぜそんなに安いのですか？",
+    a: "1日の撮影で複数本を同時収録する独自の仕組みと、自社一貫制作体制により、大幅なコスト削減を実現しています。制作品質は一切妥協せず、プロ舞台役者・専属クルーが担当します。また、助成金・補助金を活用することで、実質月額10万円前後での運用が可能です。",
+  },
   {
     q: "助成金を使うと実質いくらになりますか？",
     a: "助成金の活用により、月額10万円前後での運用が可能です。詳細は補助金・助成金支援サービスと組み合わせてご相談ください。",
@@ -294,10 +302,21 @@ export default function SnsServicePage() {
               御社特化<br />
               <span className="text-[#CC2222]">ドラマ型ショート動画</span>運用
             </h1>
-            <p className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10">
+            <p className="text-white/50 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
               プロ舞台役者が御社のストーリーを演じる。<br />
               100社以上の実績が証明する、圧倒的なROIを実現するSNS運用。
             </p>
+            {/* 価格インパクトバッジ */}
+            <div className="inline-flex flex-col sm:flex-row items-center gap-3 mb-10 px-6 py-3 rounded-full border border-[#CC2222]/40 bg-[#CC2222]/8 backdrop-blur-sm">
+              <span className="flex items-center gap-1.5 text-[#CC2222] font-black text-sm sm:text-base">
+                <DollarSign className="w-4 h-4" />
+                月額10万円〜
+              </span>
+              <span className="hidden sm:block w-px h-4 bg-white/20" />
+              <span className="text-white/80 font-bold text-sm">月12本投稿</span>
+              <span className="hidden sm:block w-px h-4 bg-white/20" />
+              <span className="text-white/80 font-bold text-sm">プロ舞台役者出演</span>
+            </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
@@ -554,6 +573,218 @@ export default function SnsServicePage() {
               </FadeInSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── なぜ月10万円で実現できるのか ── */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#080808]">
+        <div className="max-w-5xl mx-auto">
+          <FadeInSection>
+            <SectionHeader
+              eyebrow="WHY SO AFFORDABLE"
+              title="なぜ月10万円で実現できるのか"
+              subtitle="安いから手を抜く、ではない。仕組みが違う。"
+            />
+          </FadeInSection>
+          <FadeInSection delay={100}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
+              {/* 他社カード */}
+              <div className="relative bg-[#111111] border border-white/10 rounded-2xl p-8 overflow-hidden">
+                <div className="absolute top-4 right-4">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 border border-white/20">
+                    <X className="w-4 h-4 text-white/40" />
+                  </div>
+                </div>
+                <p className="text-white/30 text-xs font-bold tracking-[0.3em] uppercase mb-5">一般的な相場</p>
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <p className="text-white/40 text-xs mb-1">同品質の動画制作</p>
+                    <p className="text-white/70 text-lg font-bold">1本 30万円〜 × 月12本</p>
+                  </div>
+                  <div className="w-full h-px bg-white/8" />
+                  <div>
+                    <p className="text-white/40 text-xs mb-1">月額コスト</p>
+                    <p className="text-4xl sm:text-5xl font-black text-white/50 leading-none">
+                      360<span className="text-2xl ml-1">万円〜</span>
+                    </p>
+                  </div>
+                </div>
+                <p className="text-white/25 text-xs leading-relaxed">
+                  外注制作 + 個別撮影 + 管理コストが積み重なる
+                </p>
+              </div>
+
+              {/* セゾンカード */}
+              <div className="relative bg-[#1a0a0a] border-2 border-[#CC2222]/60 rounded-2xl p-8 overflow-hidden shadow-[0_0_60px_rgba(204,34,34,0.12)]">
+                {/* 相場の1/36バッジ */}
+                <div className="absolute top-4 right-4">
+                  <div className="px-3 py-1 rounded-full bg-[#CC2222] text-white text-[11px] font-black tracking-widest">
+                    相場の1/36
+                  </div>
+                </div>
+                <p className="text-[#CC2222] text-xs font-bold tracking-[0.3em] uppercase mb-5">セゾンの仕組み</p>
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <p className="text-white/40 text-xs mb-1">1日撮影で複数本同時収録 + 自社一貫制作</p>
+                    <p className="text-white/70 text-lg font-bold">コスト構造が根本的に違う</p>
+                  </div>
+                  <div className="w-full h-px bg-[#CC2222]/20" />
+                  <div>
+                    <p className="text-white/40 text-xs mb-1">月額コスト（助成金活用後）</p>
+                    <p className="text-4xl sm:text-5xl font-black text-[#CC2222] leading-none">
+                      10<span className="text-2xl ml-1">万円〜</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <BadgeCheck className="w-4 h-4 text-[#CC2222] flex-shrink-0" />
+                  <p className="text-white/60 text-xs leading-relaxed">
+                    制作品質は一切妥協なし。プロ舞台役者・専属クルーが担当
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 差額ハイライト */}
+            <div className="bg-[#0f0f0f] border border-white/5 rounded-2xl p-7 text-center">
+              <p className="text-white/40 text-sm mb-3">月あたりの差額</p>
+              <p className="text-4xl sm:text-5xl font-black text-white mb-2">
+                <span className="text-[#CC2222]">350万円以上</span>の差
+              </p>
+              <p className="text-white/30 text-sm mt-3">
+                「安いから手を抜く、ではない。仕組みが違う。」
+              </p>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* ── 料金プラン ── */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
+        <div className="max-w-6xl mx-auto">
+          <FadeInSection>
+            <SectionHeader
+              eyebrow="PRICING"
+              title="料金プラン"
+              subtitle="目的・規模に合わせて3つのプランからお選びいただけます。"
+            />
+          </FadeInSection>
+          <FadeInSection delay={100}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-6">
+              {/* スタータープラン */}
+              <div className="bg-[#0f0f0f] border border-white/8 rounded-2xl p-7 flex flex-col">
+                <p className="text-white/40 text-xs font-bold tracking-[0.3em] uppercase mb-4">STARTER</p>
+                <h3 className="text-white font-black text-xl mb-1" style={{ fontFamily: "Noto Serif JP, serif" }}>
+                  スタータープラン
+                </h3>
+                <div className="mt-3 mb-5">
+                  <span className="text-3xl font-black text-white">30</span>
+                  <span className="text-white/60 text-sm ml-1">万円〜 / 月</span>
+                </div>
+                <ul className="space-y-2.5 mb-7 flex-1">
+                  {[
+                    "月6本投稿（週1〜2本）",
+                    "企画・撮影・編集",
+                    "投稿・分析レポート",
+                    "プロ舞台役者出演",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-white/30 flex-shrink-0 mt-0.5" />
+                      <span className="text-white/50 text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/contact"
+                  className="w-full flex items-center justify-center gap-2 px-5 py-3 border border-white/15 text-white/60 text-sm font-bold rounded hover:border-white/30 hover:text-white transition-all duration-200"
+                >
+                  無料相談する <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+
+              {/* スタンダードプラン（中央・目立たせ） */}
+              <div className="relative bg-[#1a0a0a] border-2 border-[#CC2222] rounded-2xl p-7 flex flex-col shadow-[0_0_50px_rgba(204,34,34,0.15)] sm:-mt-3 sm:mb-0">
+                {/* 人気No.1バッジ */}
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
+                  <div className="px-4 py-1 rounded-full bg-[#CC2222] text-white text-[11px] font-black tracking-widest whitespace-nowrap">
+                    人気 No.1
+                  </div>
+                </div>
+                <p className="text-[#CC2222] text-xs font-bold tracking-[0.3em] uppercase mb-4">STANDARD</p>
+                <h3 className="text-white font-black text-xl mb-1" style={{ fontFamily: "Noto Serif JP, serif" }}>
+                  スタンダードプラン
+                </h3>
+                <div className="mt-3 mb-5">
+                  <span className="text-3xl font-black text-[#CC2222]">50</span>
+                  <span className="text-white/60 text-sm ml-1">万円〜 / 月</span>
+                </div>
+                <ul className="space-y-2.5 mb-7 flex-1">
+                  {[
+                    "月12本投稿（隔日投稿）",
+                    "企画・撮影・編集",
+                    "投稿・分析レポート",
+                    "プロ舞台役者出演",
+                    "全サービス含む",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-[#CC2222] flex-shrink-0 mt-0.5" />
+                      <span className="text-white/80 text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/contact"
+                  className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-[#CC2222] text-white text-sm font-black rounded hover:bg-[#E53333] transition-all duration-200 hover:shadow-lg hover:shadow-[#CC2222]/30"
+                >
+                  無料相談する <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+
+              {/* 助成金活用プラン */}
+              <div className="relative bg-[#0c0f0a] border border-[#4a7c3f]/50 rounded-2xl p-7 flex flex-col">
+                {/* 最もお得バッジ */}
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
+                  <div className="px-4 py-1 rounded-full bg-[#3a6b30] text-white text-[11px] font-black tracking-widest whitespace-nowrap">
+                    最もお得
+                  </div>
+                </div>
+                <p className="text-[#6aad55] text-xs font-bold tracking-[0.3em] uppercase mb-4">SUBSIDY</p>
+                <h3 className="text-white font-black text-xl mb-1" style={{ fontFamily: "Noto Serif JP, serif" }}>
+                  助成金活用プラン
+                </h3>
+                <div className="mt-3 mb-1">
+                  <span className="text-white/30 text-sm line-through">50万円〜 / 月</span>
+                </div>
+                <div className="mb-5">
+                  <span className="text-xs text-white/40">実質</span>
+                  <span className="text-3xl font-black text-[#6aad55] ml-1">10</span>
+                  <span className="text-white/60 text-sm ml-1">万円〜 / 月</span>
+                </div>
+                <ul className="space-y-2.5 mb-4 flex-1">
+                  {[
+                    "スタンダードと同内容",
+                    "月12本投稿（隔日投稿）",
+                    "助成金・補助金を最大活用",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-[#6aad55] flex-shrink-0 mt-0.5" />
+                      <span className="text-white/70 text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-white/25 text-xs mb-5">※ 対象条件あり。詳細はご相談ください。</p>
+                <Link
+                  href="/contact"
+                  className="w-full flex items-center justify-center gap-2 px-5 py-3 border border-[#4a7c3f]/60 text-[#6aad55] text-sm font-bold rounded hover:bg-[#4a7c3f]/20 transition-all duration-200"
+                >
+                  無料相談する <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+            <p className="text-center text-white/20 text-xs">
+              ※ 料金は目安です。詳細はお問い合わせください。
+            </p>
+          </FadeInSection>
         </div>
       </section>
 

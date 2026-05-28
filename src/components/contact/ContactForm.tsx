@@ -143,9 +143,12 @@ export default function ContactForm() {
                     <p className="text-white/30 text-xs font-bold tracking-wider mb-1">
                       電話番号
                     </p>
-                    <p className="text-white/80 text-sm">
-                      お問い合わせフォームよりご連絡ください
-                    </p>
+                    <a
+                      href="tel:090-1251-6837"
+                      className="text-white/80 text-sm hover:text-[#CC2222] transition-colors"
+                    >
+                      090-1251-6837
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -167,7 +170,7 @@ export default function ContactForm() {
                     <p className="text-white/30 text-xs font-bold tracking-wider mb-1">
                       所在地
                     </p>
-                    <p className="text-white/80 text-sm">東京都</p>
+                    <p className="text-white/80 text-sm">東京都足立区新田3-37-12-708</p>
                   </div>
                 </div>
               </div>
