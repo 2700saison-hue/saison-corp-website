@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Prisma・SQLiteのネイティブモジュールをバンドルから除外（Vercel 250MB制限対策）
+  serverExternalPackages: [
+    "@prisma/client",
+    "@prisma/adapter-better-sqlite3",
+    "better-sqlite3",
+  ],
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "s0.wordpress.com" },
