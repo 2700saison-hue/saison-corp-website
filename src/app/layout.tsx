@@ -92,6 +92,9 @@ export const metadata: Metadata = {
       "application/rss+xml": `${BASE_URL}/feed.xml`,
     },
   },
+  verification: {
+    google: "tOKF8gwuNFFgcuMVZc4bCJObNrH4UafEvHZUf7WgTi4",
+  },
 };
 
 // グローバルJSON-LD: Organization + WebSite
