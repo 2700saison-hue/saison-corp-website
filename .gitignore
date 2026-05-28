@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/src/generated/prisma
+
+# SEO automation: ログファイルは除外、JSONはコミット対象
+generated/*.txt
+generated/automation-log.txt

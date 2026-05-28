@@ -1,0 +1,49 @@
+export const teamMembers = [
+  {
+    name: "古田 太陽",
+    nameRoman: "Taiyo Furuta",
+    position: "代表取締役",
+    catchphrase: "行動が、最強の戦略だ。",
+    bio: "東京都足立区出身。小学3年から12年間野球一筋で培った勝負魂と、早稲田大学スポーツ科学部で鍛えた科学的思考力を武器に、大学3年次に起業。「日本中の企業を変革する」という信念のもと、AI・SNS・DXを軸に累計100社以上の企業変革を牽引している。",
+    domains: ["営業", "マーケティング", "経営戦略"],
+    image: "/images/team/ruruta.png",
+  },
+  {
+    name: "西占 小麦",
+    nameRoman: "Mugi Nishiuranai",
+    position: "執行役員",
+    catchphrase: "バズではなく、売上を設計する。",
+    bio: "100社以上のSNS運用を通じて「勝ちパターン」を確立した制作責任者。アトレ恵比寿・サイゼリヤ・丸亀製麺など大手企業の運用実績を持ち、再生数ではなく「売上に直結するコンテンツ」を追求し続けるSNS戦略の設計者。",
+    domains: ["SNS運用", "コンテンツ制作", "マーケティング戦略"],
+    image: "/images/team/nishiura.png",
+  },
+  {
+    name: "奥山 達平",
+    nameRoman: "Tappei Okuyama",
+    position: "取締役",
+    catchphrase: "企業の可能性を、最速で形にする。",
+    bio: "お客様の課題を深く理解し、最適な解決策を提案する営業のエキスパート。現場に足を運び、クライアントと共に結果を作り上げる「伴走型」の営業スタイルで、多くの企業の変革を実現してきた。",
+    domains: ["法人営業", "マーケティング", "クライアント開発"],
+    image: "/images/team/okuyama.png",
+  },
+];
+
+export const companyInfo = {
+  name: "株式会社セゾン",
+  nameEn: "SAISON Co., Ltd.",
+  established: "2023年9月1日",
+  representative: "古田 太陽",
+  address: "東京都足立区新田3-37-12-708",
+  phone: "090-1251-6837",
+  email: "info@seasonsezon.co.jp",
+  business: [
+    "SoloptiLink AI（AIシステム開発支援）",
+    "ドラマ型ショート動画SNS運用代行",
+    "ホームページ・LP制作",
+    "PR動画制作",
+    "公式LINE構築・運用",
+    "システム開発",
+    "補助金・助成金支援",
+    "SNS・AI研修",
+  ],
+};

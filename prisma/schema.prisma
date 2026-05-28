@@ -1,0 +1,62 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Case {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  clientName  String
+  industry    String
+  category    String
+  challenge   String
+  solution    String
+  beforeStats String
+  afterStats  String
+  roi         String?
+  testimonial String?
+  featured    Boolean  @default(false)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model News {
+  id          Int      @id @default(autoincrement())
+  title       String
+  slug        String   @unique
+  category    String
+  content     String
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ContactMessage {
+  id           Int      @id @default(autoincrement())
+  companyName  String
+  name         String
+  email        String
+  phone        String?
+  position     String?
+  service      String?
+  challenge    String?
+  budget       String?
+  contactPref  String?
+  message      String
+  isRead       Boolean  @default(false)
+  createdAt    DateTime @default(now())
+}
+
+model AdminUser {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}

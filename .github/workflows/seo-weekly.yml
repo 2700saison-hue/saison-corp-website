@@ -1,0 +1,47 @@
+name: Weekly SEO Content Generation
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # 毎週月曜日 9:00 JST (UTC 0:00)
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate SEO Content
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npx tsx scripts/seo-automation.ts
+
+      - name: Upload generated files as artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-generated-${{ github.run_number }}
+          path: generated/
+          retention-days: 30
+
+      - name: Commit and Push
+        run: |
+          git config --global user.email "seo-bot@seasonsezon.co.jp"
+          git config --global user.name "SEO Bot"
+          git add src/data/columns.ts
+          git add src/app/faq/page.tsx
+          git add src/app/llms.txt/route.ts
+          git add generated/*.json
+          git diff --staged --quiet || git commit -m "🤖 SEO自動更新: $(date +'%Y-%m-%d') コラム記事・FAQ追加"
+          git push
