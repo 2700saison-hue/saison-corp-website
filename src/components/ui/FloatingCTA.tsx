@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Phone } from "lucide-react";
+import { trackPhoneClick, trackCTAClick } from "@/components/seo/GoogleAnalytics";
 
 export default function FloatingCTA() {
   const [visible, setVisible] = useState(false);
@@ -36,12 +37,14 @@ export default function FloatingCTA() {
         <div className="hidden sm:flex items-center gap-6">
           <Link
             href="/contact"
+            onClick={() => trackCTAClick("floating_cta_pc")}
             className="inline-flex items-center gap-2 bg-white text-[#CC2222] font-black text-sm px-6 py-2 rounded-full hover:bg-[#F8F8F8] transition-all duration-200 hover:shadow-lg whitespace-nowrap"
           >
             今すぐ無料相談 →
           </Link>
           <a
             href="tel:090-1251-6837"
+            onClick={() => trackPhoneClick()}
             className="inline-flex items-center gap-2 text-white font-bold text-sm hover:text-white/80 transition-colors whitespace-nowrap"
           >
             <Phone className="w-4 h-4" />
@@ -53,6 +56,7 @@ export default function FloatingCTA() {
         <div className="flex sm:hidden w-full">
           <Link
             href="/contact"
+            onClick={() => trackCTAClick("floating_cta_mobile")}
             className="w-full text-center bg-white text-[#CC2222] font-black text-sm px-4 py-2 rounded-full hover:bg-[#F8F8F8] transition-all duration-200"
           >
             無料相談する

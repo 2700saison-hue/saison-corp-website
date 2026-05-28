@@ -19,6 +19,16 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "ホーム", item: "https://seasonsezon.co.jp" },
+    { "@type": "ListItem", position: 2, name: "会社概要", item: "https://seasonsezon.co.jp/about" },
+    { "@type": "ListItem", position: 3, name: "代表メッセージ", item: "https://seasonsezon.co.jp/about/ceo" },
+  ],
+};
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -39,6 +49,7 @@ const personSchema = {
 export default function CeoPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8]">
+      <JsonLd data={breadcrumbSchema} />
       <JsonLd data={personSchema} />
       {/* ヒーロー */}
       <section className="relative py-32 px-6 overflow-hidden">

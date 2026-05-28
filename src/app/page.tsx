@@ -76,12 +76,14 @@ const localBusinessSchema = {
   description:
     "SNS運用代行・SoloptiLink AI・ホームページ制作・LP制作・公式LINE構築など累計100社以上の導入実績を持つデジタルマーケティング会社",
   url: BASE_URL,
-  telephone: "",
+  telephone: "090-1251-6837",
   address: {
     "@type": "PostalAddress",
-    addressCountry: "JP",
-    addressRegion: "東京都",
+    streetAddress: "新田3-37-12-708",
     addressLocality: "足立区",
+    addressRegion: "東京都",
+    postalCode: "120-0014",
+    addressCountry: "JP",
   },
   geo: {
     "@type": "GeoCoordinates",

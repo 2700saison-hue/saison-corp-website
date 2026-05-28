@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin, CheckCircle, Send } from "lucide-react";
 import FadeInSection from "@/components/ui/FadeInSection";
+import { trackContactSubmit } from "@/components/seo/GoogleAnalytics";
 
 const SERVICES = [
   "SoloptiLink AI",
@@ -101,6 +102,7 @@ export default function ContactForm() {
 
       if (!res.ok) throw new Error("送信に失敗しました");
 
+      trackContactSubmit(form.services[0]);
       setSubmitted(true);
       setForm(INITIAL_FORM);
     } catch {

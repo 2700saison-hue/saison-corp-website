@@ -2,11 +2,29 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import FadeInSection from "@/components/ui/FadeInSection";
+import JsonLd from "@/components/seo/JsonLd";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "会社概要",
-  description: "株式会社セゾンの会社概要。経営理念・代表メッセージ・チーム紹介・会社情報をご覧いただけます。",
+  description: "株式会社セゾンの会社概要。経営理念・代表メッセージ・チーム紹介・会社情報をご覧いただけます。SNS×AI×DXで100社以上の企業変革を支援する東京都足立区のデジタルマーケティング会社。",
+  keywords: ["株式会社セゾン 会社概要", "セゾン 代表", "古田太陽", "足立区 マーケティング会社", "SNS運用代行 会社"],
+  alternates: { canonical: "https://seasonsezon.co.jp/about" },
+  openGraph: {
+    title: "会社概要 | 株式会社セゾン",
+    description: "SNS×AI×DXで100社以上の企業変革を支援する株式会社セゾンの会社概要ページ。",
+    url: "https://seasonsezon.co.jp/about",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "ホーム", item: "https://seasonsezon.co.jp" },
+    { "@type": "ListItem", position: 2, name: "会社概要", item: "https://seasonsezon.co.jp/about" },
+  ],
 };
 
 const cards = [
@@ -47,6 +65,7 @@ const cards = [
 export default function AboutPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8]">
+      <JsonLd data={breadcrumbSchema} />
       {/* ヒーローバナー */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div

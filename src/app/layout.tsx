@@ -86,11 +86,11 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  verification: {
-    google: "google-site-verification-placeholder",
-  },
   alternates: {
     canonical: BASE_URL,
+    types: {
+      "application/rss+xml": `${BASE_URL}/feed.xml`,
+    },
   },
 };
 
@@ -118,11 +118,15 @@ const organizationSchema = {
       jobTitle: "代表取締役",
     },
   ],
+  telephone: "090-1251-6837",
+  email: "info@seasonsezon.co.jp",
   address: {
     "@type": "PostalAddress",
-    addressCountry: "JP",
-    addressRegion: "東京都",
+    streetAddress: "新田3-37-12-708",
     addressLocality: "足立区",
+    addressRegion: "東京都",
+    postalCode: "120-0014",
+    addressCountry: "JP",
   },
   areaServed: "JP",
   serviceType: [
@@ -179,11 +183,11 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`h-full ${notoSerifJP.variable} ${notoSansJP.variable}`}>
       <head>
-        <GoogleAnalytics />
         <JsonLd data={organizationSchema} />
         <JsonLd data={websiteSchema} />
       </head>
       <body className="min-h-full flex flex-col bg-[#080808] text-[#F8F8F8]">
+        <GoogleAnalytics />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -18,6 +18,16 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "ホーム", item: "https://seasonsezon.co.jp" },
+    { "@type": "ListItem", position: 2, name: "サービス", item: "https://seasonsezon.co.jp/service" },
+    { "@type": "ListItem", position: 3, name: "SNS運用代行", item: "https://seasonsezon.co.jp/service/sns" },
+  ],
+};
+
 const snsServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -278,6 +288,7 @@ const faqs = [
 export default function SnsServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={breadcrumbSchema} />
       <JsonLd data={snsServiceSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">

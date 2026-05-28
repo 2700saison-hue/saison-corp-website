@@ -6,28 +6,49 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const NOTIFY_TO = "info@seasonsezon.co.jp";
 const FROM = "セゾン お問い合わせ通知 <onboarding@resend.dev>";
 
+function escapeHtml(str: string): string {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
+
+    // 必須フィールドチェック
+    if (!body.name || !body.email || !body.message) {
+      return NextResponse.json({ ok: false, error: "必須項目が不足しています" }, { status: 400 });
+    }
+    // メール形式チェック
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(body.email)) {
+      return NextResponse.json({ ok: false, error: "メールアドレスの形式が正しくありません" }, { status: 400 });
+    }
+    // 文字数制限
+    if (body.message.length > 5000) {
+      return NextResponse.json({ ok: false, error: "メッセージが長すぎます" }, { status: 400 });
+    }
 
     // DBに保存
     await prisma.contactMessage.create({ data: { ...body, isRead: false } });
 
     // メール通知（APIキーがある場合のみ送信）
     if (process.env.RESEND_API_KEY) {
-      const {
-        name = "",
-        companyName = "",
-        email = "",
-        phone = "",
-        message = "",
-        service = "",
-        consultationType = "",
-      } = body;
+      const name = escapeHtml(body.name ?? "");
+      const companyName = escapeHtml(body.companyName ?? "");
+      const email = escapeHtml(body.email ?? "");
+      const phone = escapeHtml(body.phone ?? "");
+      const message = escapeHtml(body.message ?? "");
+      const service = escapeHtml(body.service ?? "");
+      const consultationType = escapeHtml(body.consultationType ?? "");
 
       const subject = companyName
-        ? `【新規お問い合わせ】${companyName} / ${name} 様`
-        : `【新規お問い合わせ】${name} 様`;
+        ? `【新規お問い合わせ】${escapeHtml(body.companyName)} / ${escapeHtml(body.name)} 様`
+        : `【新規お問い合わせ】${escapeHtml(body.name)} 様`;
 
       const html = `
 <!DOCTYPE html>

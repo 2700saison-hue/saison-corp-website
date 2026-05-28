@@ -1,10 +1,21 @@
 import FadeInSection from "@/components/ui/FadeInSection";
+import JsonLd from "@/components/seo/JsonLd";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
   description:
     "株式会社セゾンのプライバシーポリシーです。個人情報の取り扱いについて定めています。",
+  alternates: { canonical: "https://seasonsezon.co.jp/privacy" },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "ホーム", item: "https://seasonsezon.co.jp" },
+    { "@type": "ListItem", position: 2, name: "プライバシーポリシー", item: "https://seasonsezon.co.jp/privacy" },
+  ],
 };
 
 const SECTIONS = [
@@ -88,6 +99,7 @@ const SECTIONS = [
 export default function PrivacyPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8] min-h-screen">
+      <JsonLd data={breadcrumbSchema} />
       {/* HERO */}
       <section className="relative py-24 overflow-hidden">
         <div

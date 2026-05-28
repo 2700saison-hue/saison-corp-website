@@ -117,6 +117,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // 会社情報
     {
+      url: `${BASE_URL}/about`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/about/company`,
       lastModified: now,
       changeFrequency: "yearly",

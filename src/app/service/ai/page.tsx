@@ -2,6 +2,16 @@ import type { Metadata } from "next";
 import AiServiceContent from "./AiServiceContent";
 import JsonLd from "@/components/seo/JsonLd";
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "ホーム", item: "https://seasonsezon.co.jp" },
+    { "@type": "ListItem", position: 2, name: "サービス", item: "https://seasonsezon.co.jp/service" },
+    { "@type": "ListItem", position: 3, name: "SoloptiLink AI", item: "https://seasonsezon.co.jp/service/ai" },
+  ],
+};
+
 const softwareAppSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -64,6 +74,7 @@ export const metadata: Metadata = {
 export default function AiServicePage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema} />
       <JsonLd data={softwareAppSchema} />
       <AiServiceContent />
     </>
