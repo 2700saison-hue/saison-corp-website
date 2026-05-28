@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { execSync } from "child_process";
 import * as fs from "fs";
 import * as path from "path";
 
-const GENERATED_DIR = path.join(process.cwd(), "generated");
+// turbopackIgnore: true コメントで不要なファイルトレースを防止
+const GENERATED_DIR = path.join(/*turbopackIgnore: true*/ process.cwd(), "generated");
 
 // GET: 自動化ステータスと最新ログを返す
 export async function GET() {
@@ -97,56 +97,28 @@ export async function GET() {
   }
 }
 
-// POST: 自動化を手動トリガー
+// POST: 自動化トリガー（Vercel環境ではGitHub Actions経由で実行）
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json().catch(() => ({})) as { step?: string };
-    const step = body.step || "all"; // "all" | "article" | "faq" | "sns"
+    const step = body.step || "all";
 
-    const scriptMap: Record<string, string> = {
-      all: "scripts/seo-automation.ts",
-      article: "scripts/generate-seo-content.ts",
-      faq: "scripts/generate-faq.ts",
-      sns: "scripts/generate-sns-post.ts",
-    };
-
-    const scriptPath = scriptMap[step];
-    if (!scriptPath) {
+    const validSteps = ["all", "article", "faq", "sns"];
+    if (!validSteps.includes(step)) {
       return NextResponse.json({ error: "無効なステップ" }, { status: 400 });
     }
 
-    if (!process.env.ANTHROPIC_API_KEY) {
-      return NextResponse.json(
-        { error: "ANTHROPIC_API_KEY が設定されていません" },
-        { status: 500 }
-      );
-    }
-
-    // バックグラウンドで実行（レスポンスを即座に返す）
-    const fullPath = path.join(process.cwd(), scriptPath);
-
-    // 非同期実行 (レスポンスを先に返してから実行)
-    setImmediate(() => {
-      try {
-        execSync(`npx tsx ${fullPath}`, {
-          encoding: "utf-8",
-          env: { ...process.env },
-          timeout: 300000, // 5分
-          cwd: process.cwd(),
-        });
-      } catch (err) {
-        console.error("SEO自動化エラー:", err);
-      }
-    });
-
+    // Vercel環境ではサーバーレス関数からスクリプト実行不可
+    // GitHub Actions の手動実行（workflow_dispatch）を使用してください
     return NextResponse.json({
-      message: `${step === "all" ? "全ステップ" : step}の実行を開始しました。完了まで数分かかります。`,
+      message: `SEO自動化はGitHub Actionsで実行されます。GitHubリポジトリの「Actions」タブから「Weekly SEO Content Generation」を手動実行してください。`,
       step,
-      startedAt: new Date().toISOString(),
+      githubActionsUrl: "https://github.com/2700saison-hue/saison-corp-website/actions",
+      note: "毎週月曜日9時に自動実行されます",
     });
   } catch (error) {
     return NextResponse.json(
-      { error: "実行開始に失敗しました: " + String(error) },
+      { error: "リクエスト処理に失敗しました: " + String(error) },
       { status: 500 }
     );
   }
