@@ -15,6 +15,58 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const videoObjectSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "株式会社セゾン PR動画制作実績",
+  description:
+    "採用動画・ブランディング動画・商品PR動画・会社紹介動画など、あらゆる企業映像のプロ制作実績。VFX・CG・ドローン撮影対応。",
+  thumbnailUrl: "https://img.youtube.com/vi/fI721GYnk6Y/maxresdefault.jpg",
+  embedUrl: "https://www.youtube.com/embed/fI721GYnk6Y",
+  uploadDate: "2024-01-01T00:00:00+09:00",
+  duration: "PT2M",
+  publisher: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://seasonsezon.co.jp/images/services/soloptilink-ai.jpg",
+    },
+  },
+  contentUrl: "https://www.youtube.com/watch?v=fI721GYnk6Y",
+  potentialAction: {
+    "@type": "WatchAction",
+    target: "https://www.youtube.com/watch?v=fI721GYnk6Y",
+  },
+};
+
+const prMovieServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://seasonsezon.co.jp/service/pr-movie",
+  name: "PR動画制作・ブランディング動画",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  description:
+    "採用動画・ブランディング動画・商品PR動画・会社紹介動画など企業の価値を映像で最大化。VFX・CG・ドローン撮影対応。三菱地所レジデンス・LSIメディエンスなど大手企業実績あり。",
+  serviceType: "動画制作・映像制作",
+  areaServed: "JP",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "PR動画制作メニュー",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "ブランディング動画" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "採用動画" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "商品・サービスPR動画" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "VFX・CG制作" } },
+    ],
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -116,6 +168,8 @@ const faqs = [
 export default function PrMovieServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={videoObjectSchema} />
+      <JsonLd data={prMovieServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">

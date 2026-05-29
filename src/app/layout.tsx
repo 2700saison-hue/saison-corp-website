@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Serif_JP, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -22,6 +22,12 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 const BASE_URL = "https://seasonsezon.co.jp";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#CC2222",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -95,6 +101,15 @@ export const metadata: Metadata = {
   verification: {
     google: "tOKF8gwuNFFgcuMVZc4bCJObNrH4UafEvHZUf7WgTi4",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/services/soloptilink-ai.jpg", type: "image/jpeg", sizes: "192x192" },
+    ],
+    apple: "/images/services/soloptilink-ai.jpg",
+    shortcut: "/favicon.ico",
+  },
+  manifest: "/manifest.webmanifest",
 };
 
 // グローバルJSON-LD: Organization + WebSite
@@ -186,6 +201,10 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`h-full ${notoSerifJP.variable} ${notoSansJP.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <JsonLd data={organizationSchema} />
         <JsonLd data={websiteSchema} />
       </head>

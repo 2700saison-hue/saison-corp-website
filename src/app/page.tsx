@@ -134,7 +134,7 @@ const faqSchema = {
       name: "SNS運用代行の費用はいくらですか？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SNS運用代行の費用はご要望・運用規模・投稿頻度によって異なります。まずは無料相談・無料見積もりにてお気軽にお問い合わせください。補助金・助成金の活用で実質負担を大幅に抑えられる場合があります。",
+        text: "SNS運用代行（ドラマ型・役者あり）の市場相場は月8本投稿・月額100万円程度です。株式会社セゾンは1日撮影で複数本を同時収録する独自の仕組みにより月額10万円〜で提供しています。まずは無料相談・無料見積もりにてお気軽にお問い合わせください。",
       },
     },
     {
@@ -170,6 +170,24 @@ const faqSchema = {
       },
     },
   ],
+};
+
+const speakableSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://seasonsezon.co.jp/#webpage",
+  url: "https://seasonsezon.co.jp",
+  name: "株式会社セゾン | SNS×AI×DXで企業変革を牽引するマーケティングパートナー",
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["h1", "h2", ".speakable"],
+  },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://seasonsezon.co.jp" },
+    ],
+  },
 };
 
 const tickerLogos = [
@@ -295,6 +313,7 @@ export default function HomePage() {
     <div className="bg-[#080808] text-[#F8F8F8]">
       <JsonLd data={localBusinessSchema} />
       <JsonLd data={faqSchema} />
+      <JsonLd data={speakableSchema} />
       <HeroSection />
 
       {/* ==============================

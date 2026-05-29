@@ -16,6 +16,59 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "ドラマ型SNS動画運用の導入ステップ",
+  description: "株式会社セゾンのSNS運用代行サービス導入から運用開始・改善までの5ステップ",
+  totalTime: "P1M",
+  supply: [
+    { "@type": "HowToSupply", name: "企業情報・採用/集客目的の整理" },
+    { "@type": "HowToSupply", name: "ターゲット設定資料" },
+  ],
+  tool: [
+    { "@type": "HowToTool", name: "Instagram / TikTok / YouTube ショート" },
+    { "@type": "HowToTool", name: "プロ舞台役者・専属撮影クルー" },
+  ],
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "ヒアリング",
+      text: "採用・集客・ブランディングなど目的と現状課題を丁寧にヒアリングします。",
+      url: "https://seasonsezon.co.jp/service/sns#flow",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "企画立案",
+      text: "御社専用のドラマシナリオを制作。競合他社との差別化を設計します。",
+      url: "https://seasonsezon.co.jp/service/sns#flow",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "撮影",
+      text: "プロ舞台役者・撮影クルーで本格的なドラマ映像を収録。1日撮影で複数本分を制作。",
+      url: "https://seasonsezon.co.jp/service/sns#flow",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "編集・投稿",
+      text: "各SNSに最適化した形で編集し、最効果的なタイミングで投稿します。",
+      url: "https://seasonsezon.co.jp/service/sns#flow",
+    },
+    {
+      "@type": "HowToStep",
+      position: 5,
+      name: "分析・改善",
+      text: "毎月データを分析してレポートをご提供。PDCAを回し続けて成果を最大化します。",
+      url: "https://seasonsezon.co.jp/service/sns#flow",
+    },
+  ],
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -282,6 +335,7 @@ const faqs = [
 export default function SnsServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={howToSchema} />
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={snsServiceSchema} />
       {/* Hero */}
