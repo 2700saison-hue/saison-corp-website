@@ -14,6 +14,42 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const trainingServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://seasonsezon.co.jp/service/training",
+  name: "SNS・AI研修・社内人材育成",
+  alternateName: "企業向けSNS研修・ChatGPT活用研修・ショート動画制作研修",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  description:
+    "社内にSNS・AIのプロを育てる企業研修。100社以上の現場知識を凝縮した実践型プログラム。座学＋実習形式。1回30名まで対応。1日〜複数回実施可能。",
+  serviceType: "企業研修・人材育成・SNS/AIトレーニング",
+  areaServed: "JP",
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "JPY",
+      description: "まずは無料相談。カスタマイズ対応可。",
+    },
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "研修メニュー",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SNS運用研修" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "ChatGPT・AI活用研修" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "ショート動画制作研修" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SNS内製化サポート研修" } },
+    ],
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -122,6 +158,7 @@ const faqs = [
 export default function TrainingServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={trainingServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">

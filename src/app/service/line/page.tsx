@@ -14,6 +14,42 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const lineServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://seasonsezon.co.jp/service/line",
+  name: "公式LINE構築・運用代行",
+  alternateName: "LINE公式アカウント構築・LINEマーケティング",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  description:
+    "公式LINEを集客・採用・リピーター獲得の最強エンジンに。構築から運用まで一気通貫サポート。ステップ配信・リッチメニュー設計・配信日売上300%UP実績。",
+  serviceType: "公式LINE構築・LINEマーケティング",
+  areaServed: "JP",
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "JPY",
+      description: "まずは無料相談。",
+    },
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "公式LINE構築メニュー",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "LINE公式アカウント構築" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "ステップ配信設計・運用" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "リッチメニュー制作" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "LINE広告運用" } },
+    ],
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -115,6 +151,7 @@ const faqs = [
 export default function LineServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={lineServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">

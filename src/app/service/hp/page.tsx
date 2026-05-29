@@ -16,6 +16,42 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const hpServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://seasonsezon.co.jp/service/hp",
+  name: "ホームページ制作",
+  alternateName: "企業サイト制作・コーポレートサイト制作",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  description:
+    "AI活用で最短1日納品・業界最安値水準のホームページ制作。SEO対策・デザイン・コンテンツ制作を一気通貫で対応。中小企業・スタートアップ向け。",
+  serviceType: "ホームページ制作・Web制作",
+  areaServed: "JP",
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "JPY",
+      description: "最短1日納品。業界最安値水準。まずは無料相談。",
+    },
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "ホームページ制作メニュー",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "コーポレートサイト制作" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "採用サイト制作" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO対策込みサイト制作" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "LP（ランディングページ）制作" } },
+    ],
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -133,6 +169,7 @@ const faqs = [
 export default function HpServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={hpServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">

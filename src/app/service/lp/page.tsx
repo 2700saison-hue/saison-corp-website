@@ -14,6 +14,42 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const lpServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://seasonsezon.co.jp/service/lp",
+  name: "LP制作（ランディングページ制作）",
+  alternateName: "高CVR LPデザイン・ランディングページ作成",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  description:
+    "高CVRを実現するLP（ランディングページ）をスピード＆低コストで制作。A/Bテスト・ヒートマップ分析・継続的な改善まで対応。最短1日納品。",
+  serviceType: "LP制作・ランディングページ制作",
+  areaServed: "JP",
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "JPY",
+      description: "業界最安値水準。まずは無料相談。",
+    },
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "LP制作メニュー",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "商品・サービスLP制作" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "採用LPデザイン" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "A/Bテスト・CVR改善" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "広告用LP制作" } },
+    ],
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -115,6 +151,7 @@ const faqs = [
 export default function LpServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={lpServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">

@@ -14,6 +14,42 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const subsidyServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://seasonsezon.co.jp/service/subsidy",
+  name: "補助金・助成金申請支援",
+  alternateName: "IT導入補助金申請支援・事業再構築補助金申請代行",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  description:
+    "IT導入補助金・事業再構築補助金・小規模事業者持続化補助金など最大1,000万円以上の補助金獲得をサポート。累計補助金獲得額1億円以上・採択率90%超の実績。",
+  serviceType: "補助金申請支援・助成金コンサルティング",
+  areaServed: "JP",
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "JPY",
+      description: "まずは無料相談。採択後成功報酬型も対応。",
+    },
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "補助金申請支援メニュー",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "IT導入補助金申請支援" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "事業再構築補助金申請支援" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "小規模事業者持続化補助金" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "申請書類作成・採択後フォロー" } },
+    ],
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -122,6 +158,7 @@ const faqs = [
 export default function SubsidyServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={subsidyServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">

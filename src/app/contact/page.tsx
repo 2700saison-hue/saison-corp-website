@@ -4,6 +4,37 @@ import DocumentRequestSection from "@/components/contact/DocumentRequestSection"
 import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://seasonsezon.co.jp/contact",
+  name: "お問い合わせ・資料請求 | 株式会社セゾン",
+  url: "https://seasonsezon.co.jp/contact",
+  description: "株式会社セゾンへの無料相談・お問い合わせ・資料請求。相談・見積もりはすべて無料。",
+  mainEntity: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        availableLanguage: "Japanese",
+        url: "https://seasonsezon.co.jp/contact",
+        areaServed: "JP",
+      },
+      {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        telephone: "090-1251-6837",
+        availableLanguage: "Japanese",
+        contactOption: "TollFree",
+        areaServed: "JP",
+      },
+    ],
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -40,6 +71,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8] min-h-screen">
+      <JsonLd data={contactPageSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* HERO */}
       <section className="relative py-24 overflow-hidden">

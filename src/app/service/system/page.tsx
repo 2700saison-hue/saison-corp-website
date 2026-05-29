@@ -14,6 +14,42 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const systemServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://seasonsezon.co.jp/service/system",
+  name: "システム開発・業務システム構築",
+  alternateName: "カスタムシステム開発・CRM開発・ECサイト開発",
+  provider: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  description:
+    "業務管理システム・CRM・ECサイト・自社ツール開発。SoloptiLink AIとの連携でスピード開発を実現。中小企業でも大手企業と同じITインフラを構築可能。",
+  serviceType: "システム開発・業務システム構築",
+  areaServed: "JP",
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      priceCurrency: "JPY",
+      description: "まずは無料相談・無料見積もり。",
+    },
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "システム開発メニュー",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "業務管理システム開発" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "CRM・顧客管理システム" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "ECサイト開発" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI連携システム開発" } },
+    ],
+  },
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -110,6 +146,7 @@ const faqs = [
 export default function SystemServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={systemServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
