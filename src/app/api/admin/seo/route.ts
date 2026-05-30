@@ -8,7 +8,7 @@ const GENERATED_DIR = path.join(/*turbopackIgnore: true*/ process.cwd(), "genera
 
 // GET: 自動化ステータスと最新ログを返す
 export async function GET(req: NextRequest) {
-  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
+  if (!await isAdminAuthenticated(req)) return unauthorizedResponse();
   try {
     const today = new Date().toISOString().split("T")[0];
 

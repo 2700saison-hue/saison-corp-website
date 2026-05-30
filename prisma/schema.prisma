@@ -60,3 +60,10 @@ model AdminUser {
   password  String
   createdAt DateTime @default(now())
 }
+
+model AdminSettings {
+  id        Int      @id @default(autoincrement())
+  key       String   @unique
+  value     String
+  updatedAt DateTime @updatedAt
+}

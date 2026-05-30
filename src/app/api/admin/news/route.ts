@@ -3,14 +3,14 @@ import { prisma } from "@/lib/prisma";
 import { isAdminAuthenticated, unauthorizedResponse } from "@/lib/adminAuth";
 
 export async function GET(req: NextRequest) {
-  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
+  if (!await isAdminAuthenticated(req)) return unauthorizedResponse();
 
   const news = await prisma.news.findMany({ orderBy: { publishedAt: "desc" } });
   return NextResponse.json(news);
 }
 
 export async function POST(req: NextRequest) {
-  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
+  if (!await isAdminAuthenticated(req)) return unauthorizedResponse();
 
   const body = await req.json();
   const created = await prisma.news.create({ data: body });
@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
 }
 
 export async function PATCH(req: NextRequest) {
-  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
+  if (!await isAdminAuthenticated(req)) return unauthorizedResponse();
 
   const body = await req.json();
   const { id, ...data } = body as { id: number; [key: string]: unknown };
@@ -32,7 +32,7 @@ export async function PATCH(req: NextRequest) {
 }
 
 export async function DELETE(req: NextRequest) {
-  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
+  if (!await isAdminAuthenticated(req)) return unauthorizedResponse();
 
   const { searchParams } = new URL(req.url);
   const id = Number(searchParams.get("id"));

@@ -735,6 +735,121 @@ function ContactsTab() {
   );
 }
 
+// ---- 設定タブ（パスワード変更） ----
+function SettingsTab() {
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setMessage(null);
+
+    if (newPassword !== confirmPassword) {
+      setMessage({ type: "error", text: "確認用パスワードが一致しません" });
+      return;
+    }
+    if (newPassword.length < 8) {
+      setMessage({ type: "error", text: "パスワードは8文字以上で設定してください" });
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const res = await fetch("/api/admin/change-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ newPassword, confirmPassword }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setMessage({ type: "success", text: "パスワードを変更しました" });
+        setNewPassword("");
+        setConfirmPassword("");
+      } else {
+        setMessage({ type: "error", text: data.error ?? "変更に失敗しました" });
+      }
+    } catch {
+      setMessage({ type: "error", text: "通信エラーが発生しました" });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const inputStyle = { background: "#080808", borderColor: "#CC2222", color: "#F8F8F8" };
+
+  return (
+    <div className="max-w-lg">
+      <h2 className="text-lg font-bold mb-6" style={{ color: "#F8F8F8" }}>⚙️ 管理者設定</h2>
+
+      <div
+        className="p-6 border"
+        style={{ background: "#141414", borderColor: "#CC2222" }}
+      >
+        <h3 className="text-base font-bold mb-4" style={{ color: "#CC2222" }}>
+          パスワード変更
+        </h3>
+        <p className="text-sm mb-6" style={{ color: "rgba(248,248,248,0.5)" }}>
+          新しいパスワードは8文字以上で設定してください。変更後は新しいパスワードでログインしてください。
+        </p>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label className="block text-sm mb-1" style={{ color: "#F8F8F8" }}>
+              新しいパスワード <span style={{ color: "#CC2222" }}>*</span>
+            </label>
+            <input
+              type="password"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+              className="w-full px-3 py-2 border outline-none text-sm"
+              style={inputStyle}
+              placeholder="8文字以上"
+              autoComplete="new-password"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm mb-1" style={{ color: "#F8F8F8" }}>
+              確認用パスワード <span style={{ color: "#CC2222" }}>*</span>
+            </label>
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              className="w-full px-3 py-2 border outline-none text-sm"
+              style={inputStyle}
+              placeholder="もう一度入力"
+              autoComplete="new-password"
+              required
+            />
+          </div>
+
+          {message && (
+            <p
+              className="text-sm"
+              style={{ color: message.type === "success" ? "#4ade80" : "#CC2222" }}
+            >
+              {message.type === "success" ? "✓ " : "✕ "}{message.text}
+            </p>
+          )}
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full py-3 font-bold transition-opacity hover:opacity-80 disabled:opacity-50"
+            style={{ background: "#CC2222", color: "#F8F8F8" }}
+          >
+            {loading ? "変更中..." : "パスワードを変更する"}
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
 // ---- SEO自動化タブ ----
 interface SeoStatus {
   lastRunDate: string | null;
@@ -1012,7 +1127,7 @@ function SeoTab() {
 
 // ---- メインダッシュボード ----
 function Dashboard({ onLogout }: { onLogout: () => void }) {
-  const [activeTab, setActiveTab] = useState<"cases" | "news" | "contacts" | "seo">(
+  const [activeTab, setActiveTab] = useState<"cases" | "news" | "contacts" | "seo" | "settings">(
     "seo"
   );
 
@@ -1021,6 +1136,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
     { key: "cases" as const, label: "事例管理" },
     { key: "news" as const, label: "ニュース管理" },
     { key: "contacts" as const, label: "お問い合わせ" },
+    { key: "settings" as const, label: "⚙️ 設定" },
   ];
 
   return (
@@ -1073,6 +1189,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
         {activeTab === "cases" && <CasesTab />}
         {activeTab === "news" && <NewsTab />}
         {activeTab === "contacts" && <ContactsTab />}
+        {activeTab === "settings" && <SettingsTab />}
       </div>
     </div>
   );

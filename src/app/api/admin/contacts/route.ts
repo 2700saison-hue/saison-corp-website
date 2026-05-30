@@ -3,7 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { isAdminAuthenticated, unauthorizedResponse } from "@/lib/adminAuth";
 
 export async function GET(req: NextRequest) {
-  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
+  if (!await isAdminAuthenticated(req)) return unauthorizedResponse();
 
   const contacts = await prisma.contactMessage.findMany({
     orderBy: { createdAt: "desc" },
@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
 }
 
 export async function PATCH(req: NextRequest) {
-  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
+  if (!await isAdminAuthenticated(req)) return unauthorizedResponse();
 
   const body = await req.json();
   const { id, isRead } = body as { id: number; isRead: boolean };

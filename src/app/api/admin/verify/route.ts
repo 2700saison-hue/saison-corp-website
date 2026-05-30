@@ -1,8 +1,7 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { isAdminAuthenticated, unauthorizedResponse } from "@/lib/adminAuth";
-import { NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
-  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
+  if (!await isAdminAuthenticated(req)) return unauthorizedResponse();
   return NextResponse.json({ ok: true });
 }
