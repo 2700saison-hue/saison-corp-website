@@ -34,13 +34,22 @@ function LoginScreen({ onLogin }: { onLogin: () => void }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === "saison2024!") {
-      localStorage.setItem("saison_admin_auth", "true");
-      onLogin();
-    } else {
-      setError("パスワードが正しくありません");
+    setError("");
+    try {
+      const res = await fetch("/api/admin/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+      });
+      if (res.ok) {
+        onLogin();
+      } else {
+        setError("パスワードが正しくありません");
+      }
+    } catch {
+      setError("ログインに失敗しました。再度お試しください。");
     }
   };
 
@@ -1074,14 +1083,16 @@ export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
 
   useEffect(() => {
-    const auth = localStorage.getItem("saison_admin_auth");
-    setIsAuthenticated(auth === "true");
+    // サーバー側でcookieを検証して認証状態を確認
+    fetch("/api/admin/verify")
+      .then((res) => setIsAuthenticated(res.ok))
+      .catch(() => setIsAuthenticated(false));
   }, []);
 
   const handleLogin = () => setIsAuthenticated(true);
 
-  const handleLogout = () => {
-    localStorage.removeItem("saison_admin_auth");
+  const handleLogout = async () => {
+    await fetch("/api/admin/logout", { method: "POST" });
     setIsAuthenticated(false);
   };
 

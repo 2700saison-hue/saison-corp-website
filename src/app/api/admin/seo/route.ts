@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import * as fs from "fs";
 import * as path from "path";
+import { isAdminAuthenticated, unauthorizedResponse } from "@/lib/adminAuth";
 
 // turbopackIgnore: true コメントで不要なファイルトレースを防止
 const GENERATED_DIR = path.join(/*turbopackIgnore: true*/ process.cwd(), "generated");
 
 // GET: 自動化ステータスと最新ログを返す
-export async function GET() {
+export async function GET(req: NextRequest) {
+  if (!isAdminAuthenticated(req)) return unauthorizedResponse();
   try {
     const today = new Date().toISOString().split("T")[0];
 
@@ -99,6 +101,7 @@ export async function GET() {
 
 // POST: 自動化トリガー（Vercel環境ではGitHub Actions経由で実行）
 export async function POST(request: NextRequest) {
+  if (!isAdminAuthenticated(request)) return unauthorizedResponse();
   try {
     const body = await request.json().catch(() => ({})) as { step?: string };
     const step = body.step || "all";

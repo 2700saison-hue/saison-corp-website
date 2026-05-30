@@ -31,8 +31,33 @@ const nextConfig: NextConfig = {
     ],
     formats: ["image/avif", "image/webp"],
   },
-  // HTTPSリダイレクトとセキュリティヘッダー（SEO強化）
+  // セキュリティヘッダー
   async headers() {
+    // Content-Security-Policy
+    const csp = [
+      "default-src 'self'",
+      // スクリプト: 自サイト・GA・GTM・JSON-LDインライン
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
+      // スタイル: 自サイト・Tailwindインライン・Googleフォント
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+      // フォント
+      "font-src 'self' https://fonts.gstatic.com",
+      // 画像: 自サイト・YouTube・WordPress・GA
+      "img-src 'self' data: blob: https://img.youtube.com https://s0.wordpress.com https://*.googletagmanager.com https://www.google-analytics.com",
+      // iframe: YouTubeのみ
+      "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
+      // 通信先: 自サイト・GA
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net",
+      // オブジェクト埋め込み禁止（Flash等）
+      "object-src 'none'",
+      // baseタグ制限
+      "base-uri 'self'",
+      // フォーム送信先制限
+      "form-action 'self'",
+      // HTTPSアップグレード
+      "upgrade-insecure-requests",
+    ].join("; ");
+
     return [
       {
         source: "/(.*)",
@@ -44,20 +69,30 @@ const nextConfig: NextConfig = {
           // リファラーポリシー
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           // 権限ポリシー
-          {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=()",
-          },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=()" },
+          // XSS対策CSP
+          { key: "Content-Security-Policy", value: csp },
+          // HTTPS強制（HSTS）: 1年間・サブドメイン含む
+          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
+          // IEのXSSフィルター（後方互換）
+          { key: "X-XSS-Protection", value: "1; mode=block" },
+          // Adobe等クロスドメインポリシー禁止
+          { key: "X-Permitted-Cross-Domain-Policies", value: "none" },
         ],
       },
       {
         // 静的アセットのキャッシュ設定（Core Web Vitals改善）
         source: "/images/(.*)",
         headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
+        // 管理画面はインデックス禁止
+        source: "/admin(.*)",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+          { key: "Cache-Control", value: "no-store" },
         ],
       },
     ];
