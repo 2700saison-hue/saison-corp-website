@@ -70,7 +70,7 @@ export default function TeamPage() {
             <SectionHeader
               eyebrow="MEMBERS"
               title="メンバー"
-              subtitle="株式会社セゾンを支える3名のプロフェッショナル"
+              subtitle="株式会社セゾンを支える4名のプロフェッショナル"
             />
           </FadeInSection>
 
