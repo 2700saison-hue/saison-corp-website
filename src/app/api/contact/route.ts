@@ -104,23 +104,28 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false, error: "電話番号の形式が正しくありません" }, { status: 400 });
     }
 
-    // ── DB保存（ホワイトリスト済みフィールドのみ） ───────────
-    // バリデーション済みのため name/email/message は必ず存在する
-    await prisma.contactMessage.create({
-      data: {
-        name: body.name as string,
-        email: body.email as string,
-        message: body.message as string,
-        companyName: body.companyName ?? "",   // スキーマ上 required のためデフォルト空文字
-        phone: body.phone,
-        service: body.service ?? body.consultationType, // consultationType はスキーマ外→service に格納
-        position: body.position,
-        challenge: body.challenge,
-        budget: body.budget,
-        contactPref: body.contactPref,
-        isRead: false,
-      },
-    });
+    // ── DB保存（失敗してもメール通知は継続） ──────────────────
+    // Vercelのサーバーレス環境ではSQLiteが読み取り専用のためtry-catchで保護
+    try {
+      await prisma.contactMessage.create({
+        data: {
+          name: body.name as string,
+          email: body.email as string,
+          message: body.message as string,
+          companyName: body.companyName ?? "",
+          phone: body.phone,
+          service: body.service ?? body.consultationType,
+          position: body.position,
+          challenge: body.challenge,
+          budget: body.budget,
+          contactPref: body.contactPref,
+          isRead: false,
+        },
+      });
+    } catch (dbErr) {
+      // DB保存失敗はログに残すがメール通知は継続する
+      console.error("[contact] DB save failed (non-fatal):", dbErr);
+    }
 
     // ── メール通知 ───────────────────────────────────────────
     if (process.env.RESEND_API_KEY) {
