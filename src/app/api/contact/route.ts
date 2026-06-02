@@ -3,8 +3,12 @@ import { prisma } from "@/lib/prisma";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const NOTIFY_TO = "info@seasonsezon.co.jp";
-const FROM = "セゾン お問い合わせ通知 <onboarding@resend.dev>";
+
+// ── メール設定 ────────────────────────────────────────────────
+// seasonsezon.co.jp ドメインは Resend で認証済み → 任意アドレスへ送信可能
+const FROM_NOTIFY  = "株式会社セゾン お問い合わせ通知 <noreply@seasonsezon.co.jp>";
+const FROM_REPLY   = "株式会社セゾン <noreply@seasonsezon.co.jp>";
+const NOTIFY_TO    = process.env.NOTIFY_EMAIL ?? "info@seasonsezon.co.jp";
 
 // ── レート制限（IPごとに1時間5回まで） ──────────────────────
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
@@ -105,7 +109,6 @@ export async function POST(req: NextRequest) {
     }
 
     // ── DB保存（失敗してもメール通知は継続） ──────────────────
-    // Vercelのサーバーレス環境ではSQLiteが読み取り専用のためtry-catchで保護
     try {
       await prisma.contactMessage.create({
         data: {
@@ -123,25 +126,24 @@ export async function POST(req: NextRequest) {
         },
       });
     } catch (dbErr) {
-      // DB保存失敗はログに残すがメール通知は継続する
       console.error("[contact] DB save failed (non-fatal):", dbErr);
     }
 
-    // ── メール通知 ───────────────────────────────────────────
+    // ── メール送信（RESEND_API_KEY が設定されている場合のみ） ─
     if (process.env.RESEND_API_KEY) {
-      const name = escapeHtml(body.name ?? "");
-      const companyName = escapeHtml(body.companyName ?? "");
-      const email = escapeHtml(body.email ?? "");
-      const phone = escapeHtml(body.phone ?? "");
-      const message = escapeHtml(body.message ?? "");
-      const service = escapeHtml(body.service ?? "");
-      const consultationType = escapeHtml(body.consultationType ?? "");
+      const name           = escapeHtml(body.name ?? "");
+      const companyName    = escapeHtml(body.companyName ?? "");
+      const email          = escapeHtml(body.email ?? "");
+      const phone          = escapeHtml(body.phone ?? "");
+      const message        = escapeHtml(body.message ?? "");
+      const service        = escapeHtml(body.service ?? body.consultationType ?? "");
 
-      const subject = companyName
+      const notifySubject = companyName
         ? `【新規お問い合わせ】${companyName} / ${name} 様`
         : `【新規お問い合わせ】${name} 様`;
 
-      const html = `
+      // ─── 1) セゾン側への通知メール ──────────────────────────
+      const notifyHtml = `
 <!DOCTYPE html>
 <html lang="ja">
 <head><meta charset="UTF-8" /></head>
@@ -157,20 +159,87 @@ export async function POST(req: NextRequest) {
         ${row("会社名", companyName || "—")}
         ${row("メールアドレス", `<a href="mailto:${email}" style="color: #CC2222;">${email}</a>`)}
         ${row("電話番号", phone || "—")}
-        ${row("ご相談種別", consultationType || service || "—")}
+        ${row("ご相談種別", service || "—")}
         ${row("メッセージ", message ? message.replace(/\n/g, "<br>") : "—")}
       </table>
     </div>
     <div style="background: #f9f9f9; padding: 16px 28px; border-top: 1px solid #eee;">
       <p style="font-size: 12px; color: #888; margin: 0;">
-        この通知は <strong>株式会社セゾン</strong> のウェブサイトから自動送信されています。
+        この通知は <strong>株式会社セゾン</strong> のウェブサイトから自動送信されています。<br>
+        <a href="mailto:${email}" style="color: #CC2222;">↩ ${email} へ返信する</a>
       </p>
     </div>
   </div>
 </body>
 </html>`;
 
-      await resend.emails.send({ from: FROM, to: NOTIFY_TO, subject, html });
+      const { error: notifyError } = await resend.emails.send({
+        from: FROM_NOTIFY,
+        to: NOTIFY_TO,
+        replyTo: body.email,
+        subject: notifySubject,
+        html: notifyHtml,
+      });
+      if (notifyError) {
+        console.error("[contact] 通知メール送信失敗:", notifyError);
+      }
+
+      // ─── 2) お客様への自動返信メール ────────────────────────
+      const replySubject = `【株式会社セゾン】お問い合わせを受け付けました`;
+      const replyHtml = `
+<!DOCTYPE html>
+<html lang="ja">
+<head><meta charset="UTF-8" /></head>
+<body style="font-family: sans-serif; background: #f5f5f5; padding: 24px;">
+  <div style="max-width: 600px; margin: 0 auto; background: #fff; border-radius: 8px; overflow: hidden; border: 1px solid #e0e0e0;">
+    <div style="background: #CC2222; padding: 20px 28px;">
+      <p style="color: #fff; font-size: 12px; letter-spacing: 0.2em; margin: 0 0 4px; opacity: 0.8;">SAISON CORP.</p>
+      <h1 style="color: #fff; font-size: 20px; margin: 0;">お問い合わせを受け付けました</h1>
+    </div>
+    <div style="padding: 28px;">
+      <p style="font-size: 15px; color: #333; line-height: 1.8; margin: 0 0 20px;">
+        ${name} 様<br><br>
+        この度は株式会社セゾンへお問い合わせいただき、誠にありがとうございます。<br>
+        以下の内容でお問い合わせを受け付けました。<br>
+        担当者より <strong>48時間以内</strong> にご連絡いたします。しばらくお待ちください。
+      </p>
+      <div style="background: #f9f9f9; border-radius: 6px; padding: 20px; margin-bottom: 20px;">
+        <p style="font-size: 12px; font-weight: bold; color: #888; margin: 0 0 12px; letter-spacing: 0.1em;">━ お問い合わせ内容</p>
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+          ${row("お名前", name)}
+          ${row("会社名", companyName || "—")}
+          ${row("メールアドレス", email)}
+          ${row("電話番号", phone || "—")}
+          ${row("ご相談種別", service || "—")}
+          ${row("メッセージ", message ? message.replace(/\n/g, "<br>") : "—")}
+        </table>
+      </div>
+      <p style="font-size: 13px; color: #666; line-height: 1.8; margin: 0;">
+        ※ このメールは自動送信されています。このメールへの返信はできません。<br>
+        ※ お急ぎの場合は <a href="tel:090-1251-6837" style="color: #CC2222;">090-1251-6837</a> までお電話ください。
+      </p>
+    </div>
+    <div style="background: #141414; padding: 20px 28px;">
+      <p style="color: #fff; font-size: 13px; font-weight: bold; margin: 0 0 6px;">株式会社セゾン</p>
+      <p style="color: rgba(255,255,255,0.6); font-size: 12px; margin: 0; line-height: 1.6;">
+        📧 info@seasonsezon.co.jp<br>
+        📞 090-1251-6837<br>
+        🌐 <a href="https://saison-corp-website.vercel.app" style="color: rgba(255,255,255,0.6);">saison-corp-website.vercel.app</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>`;
+
+      const { error: replyError } = await resend.emails.send({
+        from: FROM_REPLY,
+        to: body.email,
+        subject: replySubject,
+        html: replyHtml,
+      });
+      if (replyError) {
+        console.error("[contact] 自動返信メール送信失敗:", replyError);
+      }
     }
 
     return NextResponse.json({ ok: true });
