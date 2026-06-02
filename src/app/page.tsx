@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     images: [
       {
-        url: `${BASE_URL}/images/services/sns-drama2.jpg`,
+        url: `${BASE_URL}/images/logos/ogp.png`,
         width: 1200,
         height: 630,
         alt: "株式会社セゾン - SNS×AI×DXマーケティング",

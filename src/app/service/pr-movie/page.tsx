@@ -31,7 +31,7 @@ const videoObjectSchema = {
     url: "https://seasonsezon.co.jp",
     logo: {
       "@type": "ImageObject",
-      url: "https://seasonsezon.co.jp/images/services/soloptilink-ai.jpg",
+      url: "https://seasonsezon.co.jp/images/logos/logo-picaai.png",
     },
   },
   contentUrl: "https://www.youtube.com/watch?v=fI721GYnk6Y",
