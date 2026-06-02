@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "SNS運用・AI導入・DX支援で企業を変革する伴走者。累計100社以上の実績。無料相談受付中。",
     images: [
       {
-        url: `${BASE_URL}/images/services/sns-drama2.jpg`,
+        url: `${BASE_URL}/images/logos/ogp.png`,
         width: 1200,
         height: 630,
         alt: "株式会社セゾン",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "株式会社セゾン | SNS×AI×DXで企業変革を牽引するマーケティングパートナー",
     description:
       "SNS運用・AI導入・DX支援で企業を変革する伴走者。累計100社以上の実績。無料相談受付中。",
-    images: [`${BASE_URL}/images/services/sns-drama2.jpg`],
+    images: [`${BASE_URL}/images/logos/ogp.png`],
   },
   robots: {
     index: true,
@@ -104,9 +104,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/images/services/soloptilink-ai.jpg", type: "image/jpeg", sizes: "192x192" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
     ],
-    apple: "/images/services/soloptilink-ai.jpg",
+    apple: "/apple-touch-icon.png",
     shortcut: "/favicon.ico",
   },
   manifest: "/manifest.webmanifest",
@@ -122,9 +122,9 @@ const organizationSchema = {
   url: BASE_URL,
   logo: {
     "@type": "ImageObject",
-    url: `${BASE_URL}/images/services/soloptilink-ai.jpg`,
+    url: `${BASE_URL}/images/logos/logo-picaai.png`,
     width: 400,
-    height: 400,
+    height: 120,
   },
   description:
     "SNS運用代行・SoloptiLink AI・ホームページ制作・LP制作・公式LINE構築など幅広いデジタルマーケティングを提供する会社。累計100社以上の導入実績。",
