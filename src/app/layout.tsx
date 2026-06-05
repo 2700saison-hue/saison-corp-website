@@ -99,7 +99,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "tOKF8gwuNFFgcuMVZc4bCJObNrH4UafEvHZUf7WgTi4",
+    google: "k78ElWhdTHj9NVM4jRs3Ww0hd-izCWI6SIZwJTwK4rk",
   },
   icons: {
     icon: [
