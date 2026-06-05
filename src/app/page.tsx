@@ -32,6 +32,8 @@ export const metadata: Metadata = {
     "株式会社セゾンは、SNS運用代行・SoloptiLink AI・ホームページ制作・LP制作・公式LINE構築を提供するデジタルマーケティング会社。累計100社以上の導入実績。東京都足立区。無料相談・資料請求受付中。",
   keywords: [
     "株式会社セゾン",
+    "セゾン株式会社",
+    "SAISON Co., Ltd.",
     "SNS運用代行",
     "SoloptiLink AI",
     "SNSマーケティング",
@@ -44,7 +46,8 @@ export const metadata: Metadata = {
     "ドラマ型SNS動画",
     "マーケティング支援",
     "古田太陽",
-    "セゾン 東京",
+    "セゾン 東京 足立区",
+    "デジタルマーケティング 足立区",
   ],
   alternates: {
     canonical: BASE_URL,

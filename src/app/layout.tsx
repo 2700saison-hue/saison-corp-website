@@ -128,7 +128,7 @@ const organizationSchema = {
   },
   description:
     "SNS運用代行・SoloptiLink AI・ホームページ制作・LP制作・公式LINE構築など幅広いデジタルマーケティングを提供する会社。累計100社以上の導入実績。",
-  foundingDate: "2022",
+  foundingDate: "2023-09-01",
   founders: [
     {
       "@type": "Person",
@@ -136,11 +136,11 @@ const organizationSchema = {
       jobTitle: "代表取締役",
     },
   ],
-  telephone: "090-1251-6837",
+  telephone: "+81-90-1251-6837",
   email: "info@seasonsezon.co.jp",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "新田3-37-12-708",
+    streetAddress: "新田3丁目37-12-708",
     addressLocality: "足立区",
     addressRegion: "東京都",
     postalCode: "120-0014",
@@ -162,7 +162,9 @@ const organizationSchema = {
     "@type": "QuantitativeValue",
     value: 3,
   },
-  sameAs: [],
+  sameAs: [
+    "https://www.instagram.com/saison_taiyo/",
+  ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",

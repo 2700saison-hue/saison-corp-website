@@ -119,7 +119,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/saison_taiyo/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/30 hover:text-[#CC2222] transition-colors"

@@ -23,23 +23,26 @@ const companySchema = {
   alternateName: "SAISON Co., Ltd.",
   url: "https://seasonsezon.co.jp",
   description: "SNS運用代行・AI導入支援・ホームページ制作・DX支援を提供するデジタルマーケティング会社。累計100社以上の導入実績。",
-  foundingDate: "2023",
+  foundingDate: "2023-09-01",
   founder: {
     "@type": "Person",
     name: "古田太陽",
     jobTitle: "代表取締役",
   },
+  telephone: "+81-90-1251-6837",
+  email: "info@seasonsezon.co.jp",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "新田3-37-12-708",
+    streetAddress: "新田3丁目37-12-708",
     addressLocality: "足立区",
     addressRegion: "東京都",
     addressCountry: "JP",
-    postalCode: "120-0012",
+    postalCode: "120-0014",
   },
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
+    telephone: "+81-90-1251-6837",
     availableLanguage: "Japanese",
     url: "https://seasonsezon.co.jp/contact",
   },
@@ -47,6 +50,9 @@ const companySchema = {
     "@type": "Country",
     name: "Japan",
   },
+  sameAs: [
+    "https://www.instagram.com/saison_taiyo/",
+  ],
   knowsAbout: [
     "SNSマーケティング",
     "デジタルマーケティング",
@@ -58,16 +64,18 @@ const companySchema = {
 };
 
 export const metadata: Metadata = {
-  title: "会社情報",
+  title: "株式会社セゾン 会社情報",
   description:
-    "株式会社セゾン（SAISON Co., Ltd.）の会社情報。東京都足立区を拠点に、SNS運用代行・AI導入支援・ホームページ制作・DX支援を提供。代表取締役 古田太陽。設立・事業内容・アクセス情報をご確認いただけます。",
+    "株式会社セゾン（SAISON Co., Ltd.）の会社情報。代表取締役 古田太陽。東京都足立区新田3丁目を拠点に、SNS運用代行・AI導入支援・ホームページ制作・DX支援を提供するデジタルマーケティング会社。設立2023年9月。",
   keywords: [
+    "株式会社セゾン",
     "株式会社セゾン 会社情報",
     "SAISON Co., Ltd.",
     "セゾン 東京 足立区",
-    "古田太陽 会社",
+    "古田太陽",
+    "古田太陽 代表取締役",
     "デジタルマーケティング会社 東京",
-    "SNS運用代行会社",
+    "SNS運用代行会社 足立区",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/company",
@@ -103,14 +111,15 @@ export default function CompanyPage() {
           <FadeInSection>
             <p className="text-[#CC2222] text-xs font-bold tracking-[0.4em] uppercase mb-6">COMPANY INFO</p>
             <h1
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F8F8F8] mb-6"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F8F8F8] mb-3"
               style={{ fontFamily: "Noto Serif JP, serif" }}
             >
-              会社情報
+              株式会社セゾン
             </h1>
+            <p className="text-xl sm:text-2xl text-white/50 font-medium mb-6">会社情報</p>
             <div className="w-16 h-0.5 bg-[#CC2222] mx-auto mb-8" />
             <p className="text-white/50 text-base leading-relaxed max-w-xl mx-auto">
-              株式会社セゾンの基本情報・所在地・事業内容
+              株式会社セゾン（SAISON Co., Ltd.）の基本情報・所在地・事業内容
             </p>
           </FadeInSection>
         </div>
