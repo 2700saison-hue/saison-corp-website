@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, CSSProperties } from "react";
+import { useState, useEffect, CSSProperties } from "react";
 import Link from "next/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import PageIntro from "@/components/ui/PageIntro";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 const stats = [
@@ -16,6 +15,11 @@ const stats = [
 export default function HeroSection() {
   const [heroReady, setHeroReady] = useState(false);
 
+  useEffect(() => {
+    const t = setTimeout(() => setHeroReady(true), 80);
+    return () => clearTimeout(t);
+  }, []);
+
   // 各要素のフェードイン・スライドアップ用スタイル生成
   const rise = (delay: number): CSSProperties => ({
     opacity:    heroReady ? 1 : 0,
@@ -25,7 +29,6 @@ export default function HeroSection() {
 
   return (
     <>
-      <PageIntro onExitStart={() => setHeroReady(true)} />
 
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Grid pattern */}
