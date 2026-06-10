@@ -16,6 +16,31 @@ import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 import JsonLd from "@/components/seo/JsonLd";
 
+const videoObjectSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "ドラマ型SNS採用動画 制作・運用代行 | 株式会社セゾン",
+  description:
+    "プロ舞台役者出演のドラマ型ショート動画。介護・建設・飲食業界の採用難・集客課題を解決する株式会社セゾンのSNS動画制作実績。山﨑組フォロワー32倍、マザアス7ヶ月1万人達成など実績多数。",
+  thumbnailUrl: "https://seasonsezon.co.jp/images/services/sns-drama2.jpg",
+  uploadDate: "2025-01-15",
+  duration: "PT1M30S",
+  publisher: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://seasonsezon.co.jp/images/logos/saison-logo.png",
+      width: 200,
+      height: 60,
+    },
+  },
+  contentUrl: "https://seasonsezon.co.jp/service/sns",
+  regionsAllowed: "JP",
+  isFamilyFriendly: true,
+  keywords: "ドラマ型SNS動画,採用動画,SNS運用代行,ショートドラマ,介護採用,建設採用",
+};
+
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
@@ -347,6 +372,7 @@ const faqs = [
 export default function SnsServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
+      <JsonLd data={videoObjectSchema} />
       <JsonLd data={howToSchema} />
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={snsServiceSchema} />
@@ -912,6 +938,81 @@ export default function SnsServicePage() {
                 className="inline-flex items-center gap-2 border border-white/20 text-white/60 text-sm font-bold px-8 py-3 rounded-full hover:border-[#CC2222] hover:text-[#CC2222] transition-all duration-300"
               >
                 全ての導入事例を見る <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* 関連コラム（トピッククラスター内部リンク） */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#080808]">
+        <div className="max-w-5xl mx-auto">
+          <FadeInSection>
+            <p className="text-[#CC2222] text-xs font-bold tracking-[0.4em] uppercase mb-4">COLUMN</p>
+            <h2
+              className="text-2xl sm:text-3xl font-bold text-white mb-2"
+              style={{ fontFamily: "Noto Serif JP, serif" }}
+            >
+              SNS採用・運用に関するコラム
+            </h2>
+            <p className="text-white/40 text-sm mb-10">介護・建設・飲食のSNS活用から費用・補助金まで、詳しく解説しています</p>
+          </FadeInSection>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                slug: "kaigo-sns-saiyo-hoho",
+                title: "介護施設のSNS採用活用法｜人材不足を解決した5つの成功事例と始め方",
+                category: "介護 SNS採用",
+              },
+              {
+                slug: "kensetsu-sns-saiyo-jirei",
+                title: "建設会社のSNS採用成功事例｜フォロワー32倍で採用難を解決した戦略",
+                category: "建設 SNS採用",
+              },
+              {
+                slug: "drama-saiyo-doga-hiyo-kouka",
+                title: "ドラマ型採用動画の費用・効果・制作の流れを完全解説【2025年最新】",
+                category: "採用動画 費用",
+              },
+              {
+                slug: "sns-daikou-hiyo-2025",
+                title: "SNS運用代行の費用相場2025年版｜中小企業が失敗しない選び方と比較ポイント",
+                category: "SNS運用代行 費用",
+              },
+              {
+                slug: "tiktok-inshoku-shuukyaku-houhou",
+                title: "飲食店のTikTok集客術｜月1000人来店増を実現した投稿戦略と具体的な始め方",
+                category: "飲食 TikTok集客",
+              },
+              {
+                slug: "it-hojyokin-sns-2025",
+                title: "IT導入補助金でSNS運用代行費を半額以下にする方法【2025年最新・申請手順付き】",
+                category: "IT導入補助金",
+              },
+            ].map((col, i) => (
+              <FadeInSection key={col.slug} delay={i * 80}>
+                <Link
+                  href={`/column/${col.slug}`}
+                  className="group bg-[#0f0f0f] border border-white/[0.06] rounded-xl p-6 hover:border-[#CC2222]/40 transition-all duration-300 flex flex-col h-full"
+                >
+                  <span className="text-[#CC2222] text-xs font-bold mb-3">{col.category}</span>
+                  <p className="text-white/80 text-sm font-bold leading-relaxed group-hover:text-white transition-colors flex-1">
+                    {col.title}
+                  </p>
+                  <span className="flex items-center gap-1 text-white/30 text-xs mt-4 group-hover:text-[#CC2222] transition-colors">
+                    記事を読む <ArrowRight className="w-3 h-3" />
+                  </span>
+                </Link>
+              </FadeInSection>
+            ))}
+          </div>
+          <FadeInSection delay={500}>
+            <div className="text-center mt-8">
+              <Link
+                href="/column"
+                className="inline-flex items-center gap-2 border border-white/20 text-white/60 text-sm font-bold px-8 py-3 rounded-full hover:border-[#CC2222] hover:text-[#CC2222] transition-all duration-300"
+              >
+                SNS関連コラムをすべて見る <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </FadeInSection>

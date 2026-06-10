@@ -45,10 +45,10 @@ export default function HeroSection() {
 
           {/* Eyebrow */}
           <p
-            className="text-[#CC2222] text-xs font-bold tracking-[0.5em] uppercase mb-10"
+            className="text-[#CC2222] text-xs font-bold tracking-[0.35em] mb-10"
             style={rise(0)}
           >
-            SAISON — AI &amp; SNS TRANSFORMATION
+            SNSマーケティング × AIシステム開発
           </p>
 
           {/* H1 — 1行ずつ順に浮かび上がる */}
@@ -56,9 +56,9 @@ export default function HeroSection() {
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.15] mb-10"
             style={{ fontFamily: "Noto Serif JP, serif" }}
           >
-            <span className="block text-[#F8F8F8]" style={rise(150)}>時代に取り残された</span>
-            <span className="block text-[#F8F8F8]" style={rise(300)}>日本中の企業を</span>
-            <span className="block text-[#CC2222]"  style={rise(480)}>変革し、進化させる</span>
+            <span className="block text-[#F8F8F8]" style={rise(150)}>「採用が変わった」</span>
+            <span className="block text-[#F8F8F8]" style={rise(300)}>「コストが消えた」と</span>
+            <span className="block text-[#CC2222]"  style={rise(480)}>言われ続けて100社。</span>
           </h1>
 
           {/* Subtitle */}
@@ -66,9 +66,9 @@ export default function HeroSection() {
             className="text-white/50 text-lg sm:text-xl max-w-2xl mx-auto mb-16 leading-relaxed"
             style={rise(650)}
           >
-            AI・SNS・DXを軸に、累計100社以上の企業変革を牽引。
+            プロ舞台役者のドラマ型SNS動画で採用難を突破し、
             <br className="hidden sm:block" />
-            数値にこだわり、伴走型で確かな結果を届けます。
+            AIが業務システムを一から開発する——東京のチームです。
           </p>
 
           {/* CTA Buttons */}

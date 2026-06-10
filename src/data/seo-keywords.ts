@@ -192,6 +192,15 @@ export const EXISTING_SLUGS: string[] = [
   "sns-roi-measurement",
   "drama-sns-video-effect",
   "instagram-reel-business",
+  // 2025年6月追加（長尾キーワード8本）
+  "kaigo-sns-saiyo-hoho",
+  "kensetsu-sns-saiyo-jirei",
+  "drama-saiyo-doga-hiyo-kouka",
+  "sns-daikou-hiyo-2025",
+  "it-hojyokin-sns-2025",
+  "line-official-chusho-katsuyo",
+  "tiktok-inshoku-shuukyaku-houhou",
+  "chusho-kigyo-seo-structure",
 ];
 
 /**

@@ -699,17 +699,17 @@ export default function HomePage() {
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.35] mb-10"
               style={{ fontFamily: "Noto Serif JP, serif" }}
             >
-              激しく移り変わる世界から
+              建設会社がSNSで
               <br />
-              誰一人置いていかない
+              採用費120万を削った。
               <br />
-              社会を実現する
+              次は御社の番だ。
             </h2>
             <div className="w-20 h-0.5 bg-white/30 mx-auto mb-10" />
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto">
-              AIとSNSが当たり前になった時代。
-              変化についていけない企業を一社でも多く変革し、
-              全ての人が豊かになれる社会をつくります。
+              SNS採用動画を始めて7ヶ月——山﨑組のInstagramフォロワーは32倍に伸び、採用費120万円が浮いた。
+              介護施設、飲食店、IT企業と100社以上の「変わった瞬間」に立ち会ってきました。
+              AIとSNSを武器に、全ての中小企業が大手と対等に戦える社会をつくります。
             </p>
           </FadeInSection>
         </div>
