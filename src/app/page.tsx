@@ -699,17 +699,16 @@ export default function HomePage() {
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.35] mb-10"
               style={{ fontFamily: "Noto Serif JP, serif" }}
             >
-              建設会社がSNSで
+              SNSとAIを、
               <br />
-              採用費120万を削った。
+              すべての経営者の
               <br />
-              次は御社の番だ。
+              武器にする。
             </h2>
             <div className="w-20 h-0.5 bg-white/30 mx-auto mb-10" />
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto">
-              SNS採用動画を始めて7ヶ月——山﨑組のInstagramフォロワーは32倍に伸び、採用費120万円が浮いた。
-              介護施設、飲食店、IT企業と100社以上の「変わった瞬間」に立ち会ってきました。
-              AIとSNSを武器に、全ての中小企業が大手と対等に戦える社会をつくります。
+              「大きな会社だからできる」ではなく、「知っているからできる」の社会へ。
+              テクノロジーを使いこなす力を全ての経営者に届けることが、株式会社セゾンの使命です。
             </p>
           </FadeInSection>
         </div>
