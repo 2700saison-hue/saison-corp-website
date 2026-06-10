@@ -155,9 +155,9 @@ const ROW2 = [
 ].map(n => `/images/account/${n}.png`);
 
 export const metadata: Metadata = {
-  title: "ドラマ型SNS動画運用・SNS運用代行",
+  title: "採用・集客に強いドラマ型SNS動画運用代行｜介護・建設・飲食対応",
   description:
-    "累計100社以上のSNS運用実績。プロ舞台役者出演のドラマ型ショート動画で採用・集客・ブランディングを強化。平均ROI195%・年間10名以上の採用・約2億円の売上UP実現。Instagram・TikTok・YouTubeショート対応。",
+    "累計100社以上のSNS運用実績。プロ舞台役者出演のドラマ型ショート動画で採用・集客・ブランディングを強化。介護・建設・飲食など人手不足業界に特化した採用SNS動画制作。平均ROI195%・年間10名以上の採用実績。東京・全国対応。無料相談受付中。",
   keywords: [
     "SNS運用代行",
     "ドラマ型SNS動画",
@@ -169,14 +169,26 @@ export const metadata: Metadata = {
     "SNSマーケティング 東京",
     "株式会社セゾン SNS",
     "ROI 195% SNS",
+    // ミーティング分析による追加キーワード（ニッチ・長尾）
+    "採用 SNS運用代行",
+    "東京 SNS運用代行",
+    "ショートドラマ 採用動画",
+    "介護 SNS採用",
+    "建設 SNS採用",
+    "飲食 SNS集客",
+    "インスタ運用代行 採用",
+    "採用動画 制作 東京",
+    "ドラマ型 採用動画",
+    "SNS運用 B2B",
+    "足立区 SNS運用代行",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/service/sns",
   },
   openGraph: {
-    title: "ドラマ型SNS動画運用・SNS運用代行 | 株式会社セゾン",
+    title: "採用・集客に強いドラマ型SNS動画運用代行 | 株式会社セゾン",
     description:
-      "累計100社以上の実績。ドラマ型ショート動画で平均ROI195%。採用・集客・ブランディング強化。",
+      "累計100社以上の実績。プロ役者出演のドラマ型ショート動画で平均ROI195%。介護・建設・飲食の採用・集客強化。東京・全国対応。",
     url: "https://seasonsezon.co.jp/service/sns",
     type: "website",
   },

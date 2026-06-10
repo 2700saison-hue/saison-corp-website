@@ -31,6 +31,25 @@ const nextConfig: NextConfig = {
     ],
     formats: ["image/avif", "image/webp"],
   },
+  // 旧ドメイン → 新ドメイン 301リダイレクト（SEOパワー引き継ぎ）
+  async redirects() {
+    return [
+      // seasonsezon.com → seasonsezon.co.jp（www なし）
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "seasonsezon.com" }],
+        destination: "https://seasonsezon.co.jp/:path*",
+        permanent: true, // 301
+      },
+      // www.seasonsezon.com → seasonsezon.co.jp
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.seasonsezon.com" }],
+        destination: "https://seasonsezon.co.jp/:path*",
+        permanent: true, // 301
+      },
+    ];
+  },
   // セキュリティヘッダー
   async headers() {
     // Content-Security-Policy

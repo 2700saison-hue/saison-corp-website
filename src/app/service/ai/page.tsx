@@ -45,9 +45,9 @@ const softwareAppSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "SoloptiLink AI",
+  title: "AIシステム開発・業務自動化｜SoloptiLink AI｜中小企業向けDX支援",
   description:
-    "エンジニア不要・IT知識ゼロでDXを実現。日本語で指示するだけで業務システム・コンテンツ・フローを自動生成するAIツール「SoloptiLink AI」。月500万円以上の経費削減事例あり。中小企業でも大手と同じ戦略を。",
+    "エンジニア不要・IT知識ゼロでDXを実現。日本語で指示するだけで業務システム・コンテンツ・フローを自動生成するAIツール「SoloptiLink AI」。CRM・顧客管理・問い合わせ自動化など中小企業の業務効率化を一から構築。月500万円以上の経費削減事例あり。コンサル・マーケ・IT企業向けAI導入支援も対応。",
   keywords: [
     "SoloptiLink AI",
     "AI業務自動化",
@@ -58,14 +58,25 @@ export const metadata: Metadata = {
     "AI ツール 日本語",
     "DXツール 中小企業",
     "株式会社セゾン AI",
+    // ミーティング分析による追加キーワード（ニッチ・長尾）
+    "AIシステム開発 中小企業",
+    "業務フロー AI自動化",
+    "CRM AI構築",
+    "問い合わせ自動化 AI",
+    "コンサル AI導入",
+    "マーケティング AI効率化",
+    "東京 AI導入支援",
+    "AI 一から構築",
+    "業務システム AI開発",
+    "IT会社向け AI",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/service/ai",
   },
   openGraph: {
-    title: "SoloptiLink AI | 株式会社セゾン",
+    title: "AIシステム開発・業務自動化 SoloptiLink AI | 株式会社セゾン",
     description:
-      "日本語で指示するだけ。エンジニア不要・月500万円以上の経費削減を実現するAI業務自動化ツール。",
+      "日本語で指示するだけ。エンジニア不要・月500万円以上の経費削減を実現するAI業務自動化ツール。中小企業の業務を一から構築。",
     url: "https://seasonsezon.co.jp/service/ai",
     type: "website",
   },

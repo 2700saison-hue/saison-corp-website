@@ -48,6 +48,11 @@ export const metadata: Metadata = {
     "古田太陽",
     "セゾン 東京 足立区",
     "デジタルマーケティング 足立区",
+    "採用 SNS運用代行",
+    "東京 SNS運用代行",
+    "採用動画 制作",
+    "AIシステム開発",
+    "業務効率化 AI",
   ],
   alternates: {
     canonical: BASE_URL,
