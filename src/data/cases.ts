@@ -20,6 +20,7 @@ export interface CaseData {
   interviewQA?: { q: string; a: string }[];
   testimonialName?: string;
   testimonialRole?: string;
+  hidden?: boolean; // true の場合は一覧に表示しない（権利処理中など）
 }
 
 export const casesData: CaseData[] = [
@@ -418,6 +419,7 @@ export const casesData: CaseData[] = [
     clientName: "銀座deホワイトニング様",
     industry: "美容・エステ",
     category: "web",
+    hidden: true,
     challenge: "ブランドイメージに合った高級感のあるホームページで新規顧客を獲得したい",
     solution: "ターゲットに響くデザイン・コピーライティング・SEO対策を一気通貫で制作。集客に直結するLP構成を採用。",
     beforeStats: [
@@ -483,6 +485,7 @@ export const casesData: CaseData[] = [
   {
     slug: "remeo-web",
     clientName: "Re:Meo様",
+    hidden: true,
     industry: "EC・ファッション",
     category: "web",
     challenge: "ECサイトのデザインを一新し、コンバージョン率を改善したい",
@@ -503,6 +506,7 @@ export const casesData: CaseData[] = [
   {
     slug: "gotoku-web",
     clientName: "五徳帝王道場様",
+    hidden: true,
     industry: "飲食・格闘技",
     category: "web",
     challenge: "店舗の世界観・魅力を伝えるホームページで新規来店を増やしたい",
@@ -745,6 +749,7 @@ export const casesData: CaseData[] = [
   {
     slug: "airlock-pr",
     clientName: "AirLock様",
+    hidden: true,
     industry: "製造・テクノロジー",
     category: "video",
     challenge: "革新的な製品の機能・価値を映像でわかりやすく訴求したい",

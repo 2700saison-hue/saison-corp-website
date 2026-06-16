@@ -38,10 +38,12 @@ const LOGOS = [
 export default function CasesList() {
   const [activeCategory, setActiveCategory] = useState("all");
 
+  const visible = casesData.filter((c) => !c.hidden);
+
   const filtered =
     activeCategory === "all"
-      ? casesData
-      : casesData.filter((c) => c.category === activeCategory);
+      ? visible
+      : visible.filter((c) => c.category === activeCategory);
 
   return (
     <>
