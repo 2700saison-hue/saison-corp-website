@@ -361,9 +361,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="OUR CORE SERVICES"
               title="2つのコア事業"
-              subtitle="AI×SNS の最前線で、企業の変革を確実に実現する2つの主力ソリューション"
+              subtitle="月10万円〜のSNS運用から、数億円規模のAIシステム開発まで。業種・規模を問わず、確かな数字を積み上げてきました。"
             />
           </FadeInSection>
 
@@ -429,7 +428,7 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-black/20 to-transparent" />
                   <div className="absolute bottom-4 left-6">
-                    <p className="text-[#C9A84C] text-xs font-bold tracking-[0.4em] uppercase">Drama-type SNS Video</p>
+                    <p className="text-[#C9A84C] text-xs font-bold tracking-[0.2em]">ドラマ型SNS動画</p>
                   </div>
                 </div>
 
@@ -473,9 +472,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="HOW IT WORKS"
-              title="3ステップで変革へ"
-              subtitle="初回ヒアリングから成果が出るまで、一気通貫でサポートします"
+              title="最初のご相談から、成果が出るまで"
+              subtitle="ヒアリング・戦略設計・実行・改善を、私たちが一気通貫で担います"
             />
           </FadeInSection>
 
@@ -532,9 +530,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="RESULTS"
               title="お客様の実績"
-              subtitle="日本を代表する企業から中小・個人まで、確かな数字を出してきた実績"
+              subtitle="アトレ恵比寿でフォロワー5.5倍、山﨑組で採用費120万円削減。出た数字が、私たちの説明書です。"
             />
           </FadeInSection>
 
@@ -639,9 +636,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="WHY SAISON"
               title="セゾンが選ばれる理由"
-              subtitle="単なる制作会社ではなく、数値にこだわる経営パートナー"
+              subtitle="「作って終わり」ではなく、数字が出るまで一緒に走る。それが私たちの仕事のやり方です。"
             />
           </FadeInSection>
 
@@ -721,9 +717,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="OUR TEAM"
               title="私たちのチーム"
-              subtitle="それぞれの専門領域を持ち、一体となって企業変革を牽引するプロ集団"
+              subtitle="役者・エンジニア・マーケター・経営者。4人で始めた会社が、100社を超えました。"
             />
           </FadeInSection>
 
@@ -806,9 +801,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="ALL SERVICES"
               title="その他のサービス"
-              subtitle="企業変革に必要なすべてのソリューションを一気通貫で提供"
+              subtitle="SNS・AI以外にも、御社の成長に必要なソリューションをトータルで提供しています"
             />
           </FadeInSection>
 
@@ -862,7 +856,6 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <FadeInSection>
-            <p className="text-white/50 text-[10px] font-bold tracking-[0.6em] uppercase mb-8">GET STARTED TODAY</p>
             <h2
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 leading-[1.3]"
               style={{ fontFamily: "Noto Serif JP, serif" }}

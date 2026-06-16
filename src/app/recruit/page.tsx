@@ -185,21 +185,20 @@ export default function RecruitPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-[#CC2222] opacity-[0.05] blur-[140px] pointer-events-none" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center py-32">
           <FadeInSection>
-            <p className="text-[#CC2222] text-xs font-bold tracking-[0.4em] uppercase mb-8">
-              RECRUIT
-            </p>
             <h1
               className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.2] mb-8"
               style={{ fontFamily: "Noto Serif JP, serif" }}
             >
-              ワクワクを
+              プロの役者と撮り、
               <br />
-              仕事にしよう
+              AIで動かし、
+              <br />
+              会社を変える。
             </h1>
             <p className="text-white/60 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              セゾンは、日本中の企業を変革する伴走者です。
+              SNSで採用費を削り、AIで業務を自動化した実績を持つ、東京の小さな会社です。
               <br className="hidden sm:block" />
-              あなたもその一員として、共に未来を創りませんか？
+              その現場を一緒に作る人を探しています。
             </p>
           </FadeInSection>
         </div>
@@ -210,9 +209,8 @@ export default function RecruitPage() {
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="WHY SAISON"
               title="セゾンで働く魅力"
-              subtitle="ここでしか味わえない、リアルな仕事の醍醐味があります"
+              subtitle="制作会社でもコンサルでもありません。結果が出るまで伴走する会社が、どういう職場か正直に書きました。"
             />
           </FadeInSection>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -244,9 +242,8 @@ export default function RecruitPage() {
         <div className="max-w-5xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="PERSONA"
               title="求める人物像"
-              subtitle="スキルより、マインドセットを大切にしています"
+              subtitle="資格も経歴も問いません。この3つだけ、本気で大切にできる人と働きたい。"
             />
           </FadeInSection>
           <div className="space-y-4 max-w-2xl mx-auto">
@@ -269,9 +266,8 @@ export default function RecruitPage() {
         <div className="max-w-7xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="POSITIONS"
               title="募集職種"
-              subtitle="あなたの強みを活かせるポジションで一緒に働きましょう"
+              subtitle="現在、2つのポジションで一緒に働く仲間を募集しています"
             />
           </FadeInSection>
           <div className="grid md:grid-cols-2 gap-8">
@@ -374,9 +370,8 @@ export default function RecruitPage() {
         <div className="max-w-5xl mx-auto">
           <FadeInSection>
             <SectionHeader
-              eyebrow="BENEFITS"
               title="待遇・福利厚生"
-              subtitle="働きやすい環境で、パフォーマンスを最大化できます"
+              subtitle="成果を出した人が正当に評価される仕組みを、ちゃんと整えています"
             />
           </FadeInSection>
           <FadeInSection delay={200}>
@@ -407,7 +402,6 @@ export default function RecruitPage() {
         />
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <FadeInSection>
-            <p className="text-white/60 text-xs font-bold tracking-[0.4em] uppercase mb-6">HOW TO APPLY</p>
             <h2
               className="text-3xl sm:text-4xl font-bold text-white mb-6"
               style={{ fontFamily: "Noto Serif JP, serif" }}
