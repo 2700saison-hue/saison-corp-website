@@ -282,25 +282,25 @@ const whySaison = [
     icon: Award,
     title: "大手企業との実績",
     desc: "丸亀製麺・アトレ恵比寿・サイゼリヤなど業界をリードするブランドとの豊富な実績。再現性ある「勝ちパターン」を確立しています。",
-    image: "/images/why/why1.jpg",
+    image: "/images/why/why1-real.jpg",
   },
   {
     icon: BarChart3,
     title: "ROI重視の経営",
     desc: "感覚ではなく数値で判断。投資対効果を常にトレースし、ROI平均195%を実現する戦略的アプローチで成長を加速します。",
-    image: "/images/why/why2.jpg",
+    image: "/images/why/why2-real.jpg",
   },
   {
     icon: Cpu,
     title: "AI×SNS最前線",
     desc: "最新AI技術とSNSマーケティングを組み合わせた独自の運用モデル。時代の変化に先んじた施策を常に提供します。",
-    image: "/images/why/why3.jpg",
+    image: "/images/why/why3-real.jpg",
   },
   {
     icon: Users,
     title: "伴走型サポート",
     desc: "担当者が変わっても品質が下がらない仕組みを構築。数字が出るまで一緒に走り続ける柔軟性と対応力を持つ伴走者です。",
-    image: "/images/why/why4.jpg",
+    image: "/images/why/why4-real.jpg",
   },
 ];
 
