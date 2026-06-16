@@ -11,7 +11,6 @@ import { casesData } from "@/data/cases";
 const CATEGORY_LABELS: Record<string, string> = {
   all: "全て",
   sns: "SNS運用",
-  video: "動画制作",
   web: "WEB制作",
 };
 
@@ -38,7 +37,7 @@ const LOGOS = [
 export default function CasesList() {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const visible = casesData.filter((c) => !c.hidden);
+  const visible = casesData.filter((c) => !c.hidden && c.category !== "video");
 
   const filtered =
     activeCategory === "all"
