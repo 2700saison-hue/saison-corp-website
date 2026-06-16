@@ -846,13 +846,15 @@ export default function HomePage() {
       {/* ==============================
           FINAL CTA
       ============================== */}
-      <section className="py-40 px-6 bg-[#CC2222] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.05]" style={{
-          backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-        }} />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-white opacity-[0.04] blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-[#080808] opacity-[0.08] blur-[80px] pointer-events-none" />
+      <section className="py-40 px-6 relative overflow-hidden" style={{background: "linear-gradient(135deg, #0a0a0a 0%, #1a0505 40%, #2a0808 60%, #0a0a0a 100%)"}}>
+        {/* 放射状グロー */}
+        <div className="absolute inset-0 pointer-events-none" style={{background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(204,34,34,0.18) 0%, transparent 70%)"}} />
+        {/* 左上アクセント */}
+        <div className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full pointer-events-none" style={{background: "radial-gradient(circle, rgba(204,34,34,0.22) 0%, transparent 65%)"}} />
+        {/* 右下アクセント */}
+        <div className="absolute -bottom-20 -right-20 w-[400px] h-[400px] rounded-full pointer-events-none" style={{background: "radial-gradient(circle, rgba(180,20,20,0.15) 0%, transparent 65%)"}} />
+        {/* ノイズテクスチャ風の細かいドット */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "24px 24px"}} />
 
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <FadeInSection>
