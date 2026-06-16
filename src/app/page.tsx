@@ -373,7 +373,7 @@ export default function HomePage() {
                 {/* Visual header */}
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src="/images/services/soloptilink-ai.jpg"
+                    src="/images/services/soloptilink-ai-v2.jpg"
                     alt="SoloptiLink AI"
                     fill
                     className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -420,7 +420,7 @@ export default function HomePage() {
                 {/* Visual header - video */}
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src="/images/services/sns-drama2.jpg"
+                    src="/images/services/sns-drama2-v2.jpg"
                     alt="ドラマ型SNS動画"
                     fill
                     className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -680,13 +680,11 @@ export default function HomePage() {
       {/* ==============================
           MISSION
       ============================== */}
-      <section className="py-40 px-6 bg-[#CC2222] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.06]" style={{
-          backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
-          backgroundSize: "50px 50px",
-        }} />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-white opacity-[0.03] blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#080808] opacity-[0.1] blur-[80px] pointer-events-none" />
+      <section className="py-40 px-6 relative overflow-hidden" style={{background: "linear-gradient(135deg, #0a0a0a 0%, #1c0404 35%, #2e0606 55%, #0a0a0a 100%)"}}>
+        <div className="absolute inset-0 pointer-events-none" style={{background: "radial-gradient(ellipse 90% 70% at 50% 50%, rgba(204,34,34,0.22) 0%, transparent 70%)"}} />
+        <div className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full pointer-events-none" style={{background: "radial-gradient(circle, rgba(204,34,34,0.18) 0%, transparent 65%)"}} />
+        <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] rounded-full pointer-events-none" style={{background: "radial-gradient(circle, rgba(180,20,20,0.12) 0%, transparent 65%)"}} />
+        <div className="absolute inset-0 opacity-[0.025] pointer-events-none" style={{backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "28px 28px"}} />
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <FadeInSection>
