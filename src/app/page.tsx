@@ -107,9 +107,10 @@ const localBusinessSchema = {
   priceRange: "¥¥",
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "87",
-    bestRating: "5",
+    ratingValue: 4.9,
+    reviewCount: 87,
+    bestRating: 5,
+    worstRating: 1,
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

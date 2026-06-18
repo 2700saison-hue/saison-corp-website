@@ -23,7 +23,7 @@ const videoObjectSchema = {
   description:
     "プロ舞台役者出演のドラマ型ショート動画。介護・建設・飲食業界の採用難・集客課題を解決する株式会社セゾンのSNS動画制作実績。山﨑組フォロワー32倍、マザアス7ヶ月1万人達成など実績多数。",
   thumbnailUrl: "https://seasonsezon.co.jp/images/services/sns-drama2.jpg",
-  uploadDate: "2025-01-15",
+  uploadDate: "2025-01-15T00:00:00+09:00",
   duration: "PT1M30S",
   publisher: {
     "@type": "Organization",
