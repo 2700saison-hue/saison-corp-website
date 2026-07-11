@@ -2034,7 +2034,7 @@ export const columnsData: ColumnData[] = [
     title: "コーポレートサイトSEO対策｜成果を出す7つの施策と成功事例【2025年版】",
     description:
       "コーポレートサイトのSEO対策を徹底解説。検索順位を上げる具体的な7つの施策から、よくある失敗例、成功のポイントまで。自社サイトの集客力を高めたい担当者必見の実践ガイドです。",
-    category: "web" as const,
+    category: "marketing" as const,
     publishedAt: "2026-07-06",
     readMinutes: 8,
     tags: ["SEO対策", "コーポレートサイト", "ホームページ制作", "Web集客"],
