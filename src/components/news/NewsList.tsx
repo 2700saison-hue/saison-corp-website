@@ -12,6 +12,46 @@ interface NewsItem {
 
 const NEWS_ITEMS: NewsItem[] = [
   {
+    date: "2026/07/11",
+    title: "公式サイトをリニューアル。SEO・AI検索対応を全面強化しました",
+    category: "notice",
+  },
+  {
+    date: "2026/07/01",
+    title: "ドラマ型SNS採用動画の提供実績が累計50社を突破しました",
+    category: "press",
+  },
+  {
+    date: "2026/06/15",
+    title: "IT導入補助金2025の採択支援にて採択率90%超を達成しました",
+    category: "notice",
+  },
+  {
+    date: "2026/05/20",
+    title: "建設業界向け「採用SNS動画パッケージ」を提供開始しました",
+    category: "press",
+  },
+  {
+    date: "2026/04/01",
+    title: "SoloptiLink AI 中小企業向け新プランを提供開始しました",
+    category: "press",
+  },
+  {
+    date: "2025/12/01",
+    title: "介護・福祉業界向けSNS運用代行パッケージを提供開始しました",
+    category: "press",
+  },
+  {
+    date: "2025/10/15",
+    title: "山﨑組様のInstagramフォロワーが349人→1万1287人（32倍）を達成",
+    category: "media",
+  },
+  {
+    date: "2025/08/01",
+    title: "マザアス様のInstagramが7ヶ月で1万フォロワーを達成しました",
+    category: "media",
+  },
+  {
     date: "2024/11/01",
     title: "株式会社セゾンとして新たに出発いたします",
     category: "press",

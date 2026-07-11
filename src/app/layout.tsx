@@ -163,6 +163,7 @@ const organizationSchema = {
     value: 3,
   },
   sameAs: [
+    "https://seasonsezon.com",
     "https://www.instagram.com/saison_taiyo/",
   ],
   contactPoint: {
