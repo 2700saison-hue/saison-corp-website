@@ -111,15 +111,30 @@ export default async function CaseDetailPage({ params }: Props) {
     "@id": `${BASE_URL}/cases/${caseItem.slug}`,
     headline: `${caseItem.clientName} 導入事例 | 株式会社セゾン`,
     description: `${caseItem.roi}を実現。${caseItem.solution}`,
+    inLanguage: "ja",
+    image: caseItem.image
+      ? { "@type": "ImageObject", url: `${BASE_URL}${caseItem.image}` }
+      : { "@type": "ImageObject", url: `${BASE_URL}/images/logos/ogp.png`, width: 1200, height: 630 },
     author: {
       "@type": "Organization",
       name: "株式会社セゾン",
       url: BASE_URL,
+      logo: { "@type": "ImageObject", url: `${BASE_URL}/images/logos/logo-picaai.png` },
     },
     publisher: {
       "@type": "Organization",
       name: "株式会社セゾン",
       url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/images/logos/logo-picaai.png`,
+        width: 400,
+        height: 120,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/cases/${caseItem.slug}`,
     },
     ...(caseItem.testimonial
       ? {
@@ -133,8 +148,9 @@ export default async function CaseDetailPage({ params }: Props) {
             },
             reviewRating: {
               "@type": "Rating",
-              ratingValue: "5",
-              bestRating: "5",
+              ratingValue: 5,
+              bestRating: 5,
+              worstRating: 1,
             },
           },
         }

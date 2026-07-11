@@ -77,17 +77,18 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   "@id": `${BASE_URL}/#localbusiness`,
   name: "株式会社セゾン",
-  alternateName: "SAISON Co., Ltd.",
+  alternateName: ["SAISON Co., Ltd.", "セゾン株式会社"],
   description:
-    "SNS運用代行・SoloptiLink AI・ホームページ制作・LP制作・公式LINE構築など累計100社以上の導入実績を持つデジタルマーケティング会社",
+    "SNS運用代行・SoloptiLink AI・ホームページ制作・LP制作・公式LINE構築など累計100社以上の導入実績を持つデジタルマーケティング会社。東京都足立区。全国対応。",
   url: BASE_URL,
   telephone: "090-1251-6837",
+  email: "info@seasonsezon.co.jp",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "新田3-37-12-708",
+    streetAddress: "新田3丁目37-12-708",
     addressLocality: "足立区",
     addressRegion: "東京都",
     postalCode: "120-0014",
@@ -98,13 +99,28 @@ const localBusinessSchema = {
     latitude: 35.7772,
     longitude: 139.8031,
   },
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    opens: "09:00",
-    closes: "18:00",
-  },
+  hasMap: "https://maps.google.com/?q=35.7772,139.8031",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
   priceRange: "¥¥",
+  currenciesAccepted: "JPY",
+  paymentAccepted: "銀行振込, クレジットカード",
+  areaServed: [
+    { "@type": "Country", name: "日本" },
+    { "@type": "AdministrativeArea", name: "東京都" },
+    { "@type": "AdministrativeArea", name: "足立区" },
+  ],
+  serviceArea: {
+    "@type": "GeoCircle",
+    geoMidpoint: { "@type": "GeoCoordinates", latitude: 35.7772, longitude: 139.8031 },
+    geoRadius: "50000",
+  },
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: 4.9,
@@ -112,16 +128,36 @@ const localBusinessSchema = {
     bestRating: 5,
     worstRating: 1,
   },
+  founder: {
+    "@type": "Person",
+    name: "古田太陽",
+    jobTitle: "代表取締役",
+    url: `${BASE_URL}/about/ceo`,
+  },
+  foundingDate: "2023-09-01",
+  numberOfEmployees: { "@type": "QuantitativeValue", value: 3 },
+  sameAs: [
+    "https://www.instagram.com/saison_taiyo/",
+  ],
+  logo: {
+    "@type": "ImageObject",
+    url: `${BASE_URL}/images/logos/logo-picaai.png`,
+    width: 400,
+    height: 120,
+  },
+  image: `${BASE_URL}/images/logos/ogp.png`,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "サービス一覧",
     itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SNS運用代行" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SoloptiLink AI" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "ホームページ制作" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "LP制作" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "公式LINE構築・運用" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "PR動画制作" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SNS運用代行（ドラマ型）", url: `${BASE_URL}/service/sns` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SoloptiLink AI（業務自動化）", url: `${BASE_URL}/service/ai` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "ホームページ制作", url: `${BASE_URL}/service/hp` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "LP制作", url: `${BASE_URL}/service/lp` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "公式LINE構築・運用", url: `${BASE_URL}/service/line` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "PR動画制作", url: `${BASE_URL}/service/pr-movie` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "補助金・助成金支援", url: `${BASE_URL}/service/subsidy` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SNS・AI研修", url: `${BASE_URL}/service/training` } },
     ],
   },
 };
@@ -176,6 +212,38 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "はい、全国対応しています。オンラインでの相談・運用管理が可能なため、全国の企業様にご利用いただいています。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "ドラマ型SNS動画とは何ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ドラマ型SNS動画とは、プロの舞台役者が出演するショートドラマ形式の動画コンテンツです。従来の会社紹介動画と異なり、ストーリー性のあるドラマ仕立てにすることで視聴継続率が高まり、採用や集客に高い効果を発揮します。株式会社セゾンでは1日撮影で複数本を収録する仕組みにより、コストを大幅に抑えた月額10万円〜での提供が可能です。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "ホームページ制作の費用・納期は？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "株式会社セゾンのホームページ制作は、AI活用により最短1日納品・業界最安値水準で提供しています。SEO対策・デザイン・コンテンツ制作を一気通貫で対応。詳細は無料相談にてお見積もりをお伝えします。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "補助金を使ってSNS運用・システム導入はできますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、IT導入補助金や事業再構築補助金などを活用してSNS運用代行・AIシステム導入・ホームページ制作等を導入できる場合があります。株式会社セゾンでは補助金申請支援も行っており、活用可能な補助金のご提案から申請書類作成まで一貫して対応します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "SNS運用代行の契約期間は？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "最低契約期間は3ヶ月〜となっています。SNS運用は成果が出るまでに一定期間が必要なため、3ヶ月間のトライアルを推奨しています。継続率は高く、多くのお客様が半年〜1年以上ご継続いただいています。詳細はお問い合わせください。",
       },
     },
   ],
