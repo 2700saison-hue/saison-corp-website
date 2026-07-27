@@ -18,13 +18,13 @@ export const teamMembers = [
     image: "/images/team/nishiura.png",
   },
   {
-    name: "奥山 達平",
-    nameRoman: "Tappei Okuyama",
+    name: "光村 紀勝",
+    nameRoman: "Norikatsu Mitsumura",
     position: "取締役",
     catchphrase: "企業の可能性を、最速で形にする。",
     bio: "お客様の課題を深く理解し、最適な解決策を提案する営業のエキスパート。現場に足を運び、クライアントと共に結果を作り上げる「伴走型」の営業スタイルで、多くの企業の変革を実現してきた。",
     domains: ["法人営業", "マーケティング", "クライアント開発"],
-    image: "/images/team/okuyama.png",
+    image: "/images/team/mitsumura.jpg",
   },
   {
     name: "池田 直美",
