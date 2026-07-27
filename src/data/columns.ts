@@ -2498,7 +2498,7 @@ export const columnsData: ColumnData[] = [
     title: "【2025年最新】採用コスト削減方法7選｜平均30%減を実現する具体策",
     description:
       "採用コスト削減の具体的な方法を7つ厳選して解説。求人広告費・人材紹介料を抑えながら優秀な人材を確保する実践的なノウハウを紹介します。",
-    category: "business" as const,
+    category: "case" as const,
     publishedAt: "2026-07-20",
     readMinutes: 8,
     tags: ["採用コスト", "コスト削減", "人材採用", "採用効率化"],
