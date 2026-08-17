@@ -1,0 +1,20 @@
+{
+  "executedAt": "2026-08-17T00:48:42.224Z",
+  "results": [
+    {
+      "step": "generate-seo-content",
+      "success": true
+    },
+    {
+      "step": "generate-faq",
+      "success": true
+    },
+    {
+      "step": "generate-sns-post",
+      "success": true
+    }
+  ],
+  "totalSteps": 3,
+  "successSteps": 3,
+  "failedSteps": 0
+}
