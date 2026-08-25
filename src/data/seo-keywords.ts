@@ -282,6 +282,10 @@ export const EXISTING_SLUGS: string[] = [
   "drama-saiyo-video-cost-2025",
   "inshoku-instagram-shukyaku-2025",
   "line-official-chusho-shukyaku-2025",
+  // 2025年9月追加（Round2）
+  "sns-unyo-naisei-gaichu-hikaku-2025",
+  "lp-seisaku-hiyou-souba-2025",
+  "chusho-kigyo-marketing-kadai-2025",
 ];
 
 /**
