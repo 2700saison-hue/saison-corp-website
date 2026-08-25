@@ -269,6 +269,29 @@ const faqSchema = {
   ],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://seasonsezon.co.jp/#website",
+  url: "https://seasonsezon.co.jp",
+  name: "株式会社セゾン",
+  description: "SNS×AI×DXで企業変革を牽引するデジタルマーケティングパートナー",
+  inLanguage: "ja",
+  publisher: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://seasonsezon.co.jp/column?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
 const speakableSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -411,6 +434,7 @@ export default function HomePage() {
       <JsonLd data={localBusinessSchema} />
       <JsonLd data={faqSchema} />
       <JsonLd data={speakableSchema} />
+      <JsonLd data={websiteSchema} />
       <HeroSection />
 
       {/* ==============================

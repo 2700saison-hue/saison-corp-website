@@ -134,10 +134,22 @@ export default async function ColumnDetailPage({ params }: Props) {
     ],
   };
 
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${BASE_URL}/column/${col.slug}`,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2", ".article-description"],
+    },
+    url: `${BASE_URL}/column/${col.slug}`,
+  };
+
   return (
     <div className="bg-[#080808] text-[#F8F8F8] min-h-screen">
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={speakableSchema} />
 
       {/* パンくずリスト */}
       <div className="px-6 pt-24 pb-4">
@@ -190,7 +202,7 @@ export default async function ColumnDetailPage({ params }: Props) {
             </h1>
 
             {/* リード文 */}
-            <p className="text-white/60 text-base leading-[2] mb-12 border-l-2 pl-4" style={{ borderColor: catColor }}>
+            <p className="article-description text-white/60 text-base leading-[2] mb-12 border-l-2 pl-4" style={{ borderColor: catColor }}>
               {col.description}
             </p>
           </FadeInSection>
