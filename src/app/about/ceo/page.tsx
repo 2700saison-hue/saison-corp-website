@@ -41,9 +41,31 @@ const personSchema = {
     url: "https://seasonsezon.co.jp",
   },
   description:
-    "株式会社セゾン代表取締役。東京都足立区出身。SNS×AIを活用したデジタルマーケティングで累計100社以上の企業変革を牽引。",
+    "株式会社セゾン代表取締役。東京都足立区出身。SNS×AIを活用したデジタルマーケティングで累計100社以上の企業変革を牽引。ブランドスローガン「行動が、最強の戦略だ。」のもと日本の中小企業のデジタル変革を推進。",
   url: "https://seasonsezon.co.jp/about/ceo",
   image: "https://seasonsezon.co.jp/images/team/CEO2.jpeg",
+  sameAs: [
+    "https://www.instagram.com/saison_taiyo/",
+    "https://seasonsezon.co.jp",
+  ],
+  knowsAbout: [
+    "SNSマーケティング",
+    "デジタルマーケティング",
+    "AI業務自動化",
+    "SoloptiLink AI",
+    "ドラマ型SNS動画",
+    "採用マーケティング",
+    "中小企業DX",
+    "補助金活用",
+    "Instagram運用代行",
+    "ビジネス戦略",
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "足立区",
+    addressRegion: "東京都",
+    addressCountry: "JP",
+  },
 };
 
 export default function CeoPage() {

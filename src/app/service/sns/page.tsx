@@ -41,6 +41,69 @@ const videoObjectSchema = {
   keywords: "ドラマ型SNS動画,採用動画,SNS運用代行,ショートドラマ,介護採用,建設採用",
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "SNS運用代行の費用はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "株式会社セゾンのSNS運用代行は月額10万円〜からご提供しています。市場相場の月額100万円相当の品質を、AIとプロ制作チームの効率化によりリーズナブルな価格で実現しています。まずは無料相談でお見積もりをご提示します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "SNS運用代行でどのくらいの期間で効果が出ますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "早い場合は1〜2ヶ月でフォロワー増加・リーチ拡大が実感できます。採用・集客面の具体的な成果（応募・問い合わせ増）は3〜6ヶ月が目安です。山﨑組様では3ヶ月でフォロワー32倍、マザアス様では7ヶ月で1万フォロワーを達成しています。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "どのSNSプラットフォームに対応していますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Instagram・TikTok・YouTubeショートの3大ショート動画プラットフォームに対応しています。企業の目的（採用・集客・ブランディング）と業種に合わせて最適なプラットフォームを選定し、戦略的に運用します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "介護・建設・飲食以外の業種でも対応できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、業種を問わず対応しています。介護・建設・飲食に加え、不動産・医療・小売・製造・教育・IT業界など幅広い業種での実績があります。業界特性に合わせたドラマシナリオ・演出で最大の採用・集客効果を実現します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "プロ舞台役者を使うのはなぜですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "視聴者がSNSでスクロールを止める「最初の3秒」を確保するために、演技力の高いプロ舞台役者を起用しています。社員が出演する企業動画と比較して平均3〜5倍のエンゲージメントが得られ、視聴完了率・保存率・シェア率が大幅に向上します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "東京以外の企業でもSNS運用代行を依頼できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、全国対応しています。撮影はご指定の場所（本社・店舗・現場）に出張し、運用管理はオンラインで対応します。北海道から沖縄まで対応可能です。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "補助金でSNS運用代行の費用を賄えますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、IT導入補助金や事業再構築補助金の活用でSNS運用代行費用の一部を補助できる場合があります。弊社では補助金申請支援も行っており、実質負担を大幅に抑えたプランもご提案できます。まずは無料相談でご確認ください。",
+      },
+    },
+  ],
+};
+
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
@@ -206,6 +269,19 @@ export const metadata: Metadata = {
     "ドラマ型 採用動画",
     "SNS運用 B2B",
     "足立区 SNS運用代行",
+    "採用動画 役者あり",
+    "ショート動画 採用 効果",
+    "SNS運用代行 料金 比較",
+    "Instagram 採用 企業",
+    "TikTok 採用動画 会社",
+    "ショートドラマ 企業PR",
+    "採用コスト削減 SNS",
+    "人手不足 SNS採用",
+    "フォロワー増加 企業 代行",
+    "SNS 採用ブランディング",
+    "SNS運用代行 実績",
+    "山﨑組 SNS事例",
+    "マザアス SNS採用",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/service/sns",
@@ -376,6 +452,7 @@ export default function SnsServicePage() {
       <JsonLd data={howToSchema} />
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={snsServiceSchema} />
+      <JsonLd data={faqSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
         <div

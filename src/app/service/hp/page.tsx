@@ -76,6 +76,16 @@ export const metadata: Metadata = {
     "中小企業 ホームページ",
     "補助金 ホームページ制作",
     "株式会社セゾン ホームページ",
+    "コーポレートサイト制作 東京",
+    "ホームページ制作 足立区",
+    "採用サイト制作 東京",
+    "ホームページ 最短納品",
+    "Web制作会社 東京 格安",
+    "補助金 Web制作",
+    "SEO対策込み ホームページ",
+    "企業サイト 制作代行",
+    "ランディングページ 制作",
+    "ホームページ制作 個人事業主",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/service/hp",
@@ -166,11 +176,59 @@ const faqs = [
   },
 ];
 
+const hpFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "ホームページ制作の費用はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "株式会社セゾンのホームページ制作は業界最安値水準でご提供しています。AI活用による効率化で、一般的な制作会社の半額以下での対応が可能です。まずは無料相談・お見積もりをご依頼ください。IT導入補助金・小規模事業者持続化補助金を活用すれば実質負担をさらに抑えられます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "最短1日でホームページができるのは本当ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、AIを活用したテンプレートベースの制作により最短1日での納品が可能です。ただし、完全オリジナルデザイン・複数ページ構成の場合は通常1〜2週間程度いただきます。お急ぎの場合はお気軽にご相談ください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "SEO対策は込みで対応してもらえますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、SEO対策も込みでご対応しています。キーワード調査・メタデータ最適化・構造化データ設置・ページ速度改善・Googleサーチコンソール設定など、検索上位を狙う施策を標準装備でご提供しています。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "制作後の更新・管理はどうなりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "制作後の更新・管理にも対応しています。定期更新プランや、CMSを使ったお客様自身での更新対応など、ご要望に合わせて柔軟にご提案します。困ったときのサポートも迅速に対応いたします。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "東京以外でもホームページ制作を依頼できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、全国対応しています。打ち合わせはZoomなどのオンラインで対応しており、遠方のお客様にも多数ご利用いただいています。",
+      },
+    },
+  ],
+};
+
 export default function HpServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
       <JsonLd data={hpServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={hpFaqSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
         <div
