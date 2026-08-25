@@ -74,6 +74,13 @@ export const metadata: Metadata = {
     "AI システム開発",
     "中小企業 システム開発",
     "株式会社セゾン システム",
+    "業務効率化 システム 東京",
+    "オーダーメイド システム開発",
+    "勤怠管理 システム 開発",
+    "顧客管理 システム 中小企業",
+    "基幹システム 刷新 AI",
+    "kintone 代替 開発",
+    "IT導入補助金 システム開発",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/service/system",
@@ -143,11 +150,59 @@ const faqs = [
   },
 ];
 
+const systemFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "システム開発の費用はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "システムの規模・機能・開発期間によって異なります。シンプルな業務管理ツールから基幹システムまで対応しています。SoloptiLink AIとの連携によりスピード開発が可能なため、従来の開発会社よりも低コスト・短納期での納品実績があります。まずは無料相談・無料見積もりをご利用ください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "どのようなシステムを開発できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "業務管理システム・CRM（顧客管理）・ECサイト・予約管理システム・在庫管理・勤怠管理・自社ツールなど幅広く対応しています。SoloptiLink AIとの連携機能も実装可能です。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "開発期間はどのくらいかかりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "SoloptiLink AIとの連携によりスピード開発を実現しています。シンプルな業務ツールなら1〜2ヶ月、本格的な基幹システムでも3〜6ヶ月が目安です。開発要件ヒアリング後に正確な工期をお伝えします。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "IT導入補助金は使えますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、IT導入補助金（最大450万円）や事業再構築補助金を活用してシステム開発費用の一部を補助金でまかなえる可能性があります。補助金申請のサポートも行っていますのでお気軽にご相談ください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "開発後の保守・サポートはありますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、納品後も継続的な保守・機能追加・バグ対応を行うサポートプランをご用意しています。社内でシステム管理者がいない場合でも安心してご利用いただけます。",
+      },
+    },
+  ],
+};
+
 export default function SystemServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
       <JsonLd data={systemServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={systemFaqSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
         <div

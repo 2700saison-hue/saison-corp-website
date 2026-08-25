@@ -76,6 +76,13 @@ export const metadata: Metadata = {
     "古田太陽 代表取締役",
     "デジタルマーケティング会社 東京",
     "SNS運用代行会社 足立区",
+    "株式会社セゾン 所在地",
+    "株式会社セゾン 代表",
+    "セゾン マーケティング 足立区",
+    "SNS マーケティング会社 東京北部",
+    "AI DX 支援 東京",
+    "デジタルマーケティング会社 足立区",
+    "SoloptiLink AI 会社",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/company",

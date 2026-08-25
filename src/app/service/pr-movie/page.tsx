@@ -91,6 +91,14 @@ export const metadata: Metadata = {
     "VFX 動画制作",
     "動画マーケティング",
     "株式会社セゾン 動画",
+    "採用動画 制作会社 東京",
+    "企業PR動画 費用",
+    "動画制作 中小企業",
+    "ブランディング動画 制作 相場",
+    "企業紹介動画 制作",
+    "SNS動画 縦型 制作",
+    "採用動画 役者 出演",
+    "TikTok YouTube 企業動画",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/service/pr-movie",
@@ -165,12 +173,60 @@ const faqs = [
   },
 ];
 
+const prMovieFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "PR動画制作の費用はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "動画の尺・内容・撮影規模によって異なります。30秒のSNS用ショート動画から3分超のブランディング動画まで対応。まずは無料相談にてヒアリングの上、最適なプランをご提案します。IT導入補助金・事業再構築補助金を活用することで実質負担を大幅に抑えられる場合があります。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "制作期間はどのくらいかかりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "1〜3分程度のPR動画で1〜2ヶ月が目安です。VFX・CGを含む場合はさらに期間が必要になります。急ぎの場合もご相談ください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "採用動画とブランディング動画はどう違いますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "採用動画は求職者向けに職場環境・社員の声・仕事のやりがいを伝えることに特化した動画です。ブランディング動画は企業の理念・ビジョン・文化を広く伝えるもので、採用・営業・IR・周年記念など多目的に活用できます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "SNS広告用の縦型動画（TikTok・Instagram Reels）も制作できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、TikTok・Instagram Reels・YouTube Shorts用の縦型フォーマットにも対応しています。1回の撮影で横型・縦型・スクエアなど複数フォーマットを同時制作することも可能です。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "大手企業の動画制作実績はありますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "三菱地所レジデンス・LSIメディエンス・ファミリーマートなどの大手企業の実績があります。中小企業から大手企業まで幅広く対応しています。",
+      },
+    },
+  ],
+};
+
 export default function PrMovieServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
       <JsonLd data={videoObjectSchema} />
       <JsonLd data={prMovieServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={prMovieFaqSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
         <div

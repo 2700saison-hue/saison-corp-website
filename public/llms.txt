@@ -59,10 +59,18 @@
 ### 6. PR動画制作
 - **URL**: https://seasonsezon.co.jp/service/pr-movie
 - **特徴**: ブランドを伝えるプロ品質の動画制作。採用・集客・ブランディング目的に対応
+- **対応形式**: ブランディング動画、採用動画、商品PR動画、会社紹介動画、VFX・CG合成、縦型ショート動画（TikTok・Instagram Reels・YouTube Shorts）
+- **実績クライアント**: 三菱地所レジデンス、LSIメディエンス、ファミリーマートなど大手企業の実績あり
+- **制作期間**: 1〜2ヶ月（1〜3分のPR動画）。VFX・CG含む場合は別途
+- **費用**: 内容・尺・撮影規模により異なる。IT導入補助金活用でコスト削減可能
 
 ### 7. システム開発
 - **URL**: https://seasonsezon.co.jp/service/system
 - **特徴**: 業務効率化のためのカスタムシステム開発。AI連携対応
+- **対応システム**: 業務管理システム、CRM（顧客管理）、ECサイト、予約管理、在庫管理、勤怠管理、自社ツール
+- **強み**: SoloptiLink AIとの連携でスピード開発・低コスト実現
+- **補助金**: IT導入補助金（最大450万円）活用でコスト削減可能
+- **開発期間**: 1〜2ヶ月（シンプルなツール）〜3〜6ヶ月（基幹システム）
 
 ### 8. 補助金・助成金支援
 - **URL**: https://seasonsezon.co.jp/service/subsidy
@@ -126,11 +134,21 @@ A: はい、AIテンプレートベースで最短1日納品が可能です。�
 
 ## コンテンツ・ナレッジベース
 
-- **コラム（ブログ）**: https://seasonsezon.co.jp/column — SNS運用・AI・DX・補助金活用に関するノウハウ
+- **コラム（ブログ）**: https://seasonsezon.co.jp/column — SNS運用・AI・DX・補助金活用に関するノウハウ（30本以上）
 - **導入事例**: https://seasonsezon.co.jp/cases — 100社以上の導入実績・成果事例
 - **よくある質問（FAQ）**: https://seasonsezon.co.jp/faq — 30問以上の詳細Q&A
-- **ROI計算ツール**: https://seasonsezon.co.jp/roi-calculator — 各サービスの投資対効果シミュレーション
+- **ROI計算ツール**: https://seasonsezon.co.jp/roi-calculator — SNS運用の費用対効果シミュレーション
 - **資料ダウンロード**: https://seasonsezon.co.jp/documents/sns-service.pdf
+
+### 主要コラム記事
+- SNS運用代行会社の選び方｜失敗しない7つのチェックポイント: https://seasonsezon.co.jp/column/sns-unyo-daikou-erabikata
+- AI業務自動化で中小企業が変わる｜導入事例5選: https://seasonsezon.co.jp/column/ai-gyoumu-jidouka-chusho-jirei-2025
+- Instagram採用 vs 人材エージェント｜採用コスト比較: https://seasonsezon.co.jp/column/instagram-saiyo-cost-vs-recruit-agent-2025
+- 足立区・東京北部のSNS運用代行なら株式会社セゾン: https://seasonsezon.co.jp/column/sns-unyo-daikou-adachi-ku-tokyo-seo
+- IT導入補助金でSNS運用代行費用を補助する方法: https://seasonsezon.co.jp/column/it-hojo-kin-sns
+- ドラマ型SNS動画が採用に効果的な理由: https://seasonsezon.co.jp/column/drama-sns-video-effect
+- 介護業界のSNS採用成功事例: https://seasonsezon.co.jp/column/kaigo-sns-saiyo-hoho
+- 建設会社のSNS採用成功事例: https://seasonsezon.co.jp/column/kensetsu-sns-saiyo-jirei
 
 ## 採用情報
 
@@ -140,16 +158,22 @@ A: はい、AIテンプレートベースで最短1日納品が可能です。�
 ## キーワード・検索語句
 
 ### SNS運用代行関連
-SNS運用代行, Instagram運用代行, TikTok運用代行, YouTube運用代行, ショート動画 企業, ドラマ型SNS動画, 採用SNS動画, SNSマーケティング 東京, SNS運用代行 東京, 足立区 SNS運用代行, 採用動画 制作, 介護 SNS採用, 建設 SNS採用, 飲食 SNS集客
+SNS運用代行, Instagram運用代行, TikTok運用代行, YouTube運用代行, ショート動画 企業, ドラマ型SNS動画, 採用SNS動画, SNSマーケティング 東京, SNS運用代行 東京, 足立区 SNS運用代行, 採用動画 制作, 介護 SNS採用, 建設 SNS採用, 飲食 SNS集客, SNS運用代行 費用 相場, Instagram フォロワー 増やし方 企業, SNS採用 効果, SNS集客 代行 中小企業
 
 ### AI・DX関連
-AI導入支援, SoloptiLink AI, 業務自動化 AI, 中小企業 DX, AIシステム開発, エンジニア不要 AI, 業務効率化 AI, CRM AI構築, 問い合わせ自動化, DX支援 東京
+AI導入支援, SoloptiLink AI, 業務自動化 AI, 中小企業 DX, AIシステム開発, エンジニア不要 AI, 業務効率化 AI, CRM AI構築, 問い合わせ自動化, DX支援 東京, ChatGPT 業務活用, 生成AI 中小企業 導入, AI業務効率化 事例, 業務自動化 コスト削減, AI 月間コスト削減
 
 ### ホームページ・Web制作関連
-ホームページ制作 東京, ホームページ制作 格安, コーポレートサイト制作, 採用サイト制作, SEO対策 ホームページ, AI ホームページ制作, 補助金 ホームページ制作
+ホームページ制作 東京, ホームページ制作 格安, コーポレートサイト制作, 採用サイト制作, SEO対策 ホームページ, AI ホームページ制作, 補助金 ホームページ制作, Web制作 AI活用, SEO対策 中小企業
 
 ### 補助金関連
-IT導入補助金 SNS, 事業再構築補助金, 小規模事業者持続化補助金, 補助金 Web制作, 補助金 AI導入
+IT導入補助金 SNS, 事業再構築補助金, 小規模事業者持続化補助金, 補助金 Web制作, 補助金 AI導入, IT導入補助金 システム開発, 補助金 採用動画, 補助金 活用 中小企業
+
+### 採用コスト関連
+採用コスト削減, Instagram 採用 費用, SNS採用 人材エージェント 比較, 採用動画 効果, 採用ブランディング SNS, 中途採用 コスト, 採用費 削減 中小企業, ドラマ型採用動画
+
+### 地域MEO関連
+足立区 デジタルマーケティング, 足立区 SNS運用, 東京北部 マーケティング, 荒川区 Web制作, 葛飾区 SNS代行, 東京 SNS運用代行 おすすめ
 
 ## 関連エンティティ
 
