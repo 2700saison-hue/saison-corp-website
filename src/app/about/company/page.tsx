@@ -17,17 +17,18 @@ const breadcrumbSchema = {
 
 const companySchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
   "@id": "https://seasonsezon.co.jp/#organization",
   name: "株式会社セゾン",
   alternateName: "SAISON Co., Ltd.",
   url: "https://seasonsezon.co.jp",
-  description: "SNS運用代行・AI導入支援・ホームページ制作・DX支援を提供するデジタルマーケティング会社。累計100社以上の導入実績。",
+  description: "SNS運用代行・AI導入支援・ホームページ制作・DX支援を提供するデジタルマーケティング会社。累計100社以上の導入実績。東京都足立区を拠点に全国対応。",
   foundingDate: "2023-09-01",
   founder: {
     "@type": "Person",
     name: "古田太陽",
     jobTitle: "代表取締役",
+    url: "https://seasonsezon.co.jp/about/ceo",
   },
   telephone: "+81-90-1251-6837",
   email: "info@seasonsezon.co.jp",
@@ -39,6 +40,19 @@ const companySchema = {
     addressCountry: "JP",
     postalCode: "120-0014",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 35.778,
+    longitude: 139.797,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
@@ -46,9 +60,17 @@ const companySchema = {
     availableLanguage: "Japanese",
     url: "https://seasonsezon.co.jp/contact",
   },
-  areaServed: {
-    "@type": "Country",
-    name: "Japan",
+  areaServed: [
+    { "@type": "Country", name: "Japan" },
+    { "@type": "City", name: "東京都足立区" },
+    { "@type": "City", name: "東京都" },
+  ],
+  priceRange: "¥¥",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: 4.9,
+    reviewCount: 47,
+    bestRating: 5,
   },
   sameAs: [
     "https://www.instagram.com/saison_taiyo/",
@@ -62,7 +84,11 @@ const companySchema = {
     "DX支援",
     "ホームページ制作",
     "動画制作",
+    "採用マーケティング",
+    "補助金申請支援",
   ],
+  slogan: "行動が、最強の戦略だ。",
+  image: "https://seasonsezon.co.jp/images/logos/ogp.png",
 };
 
 export const metadata: Metadata = {
