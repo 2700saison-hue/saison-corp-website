@@ -85,6 +85,13 @@ export const metadata: Metadata = {
       "AI活用で最短1日納品。高CVRランディングページをスピード＆低コストで制作。A/Bテスト・改善対応。",
     url: "https://seasonsezon.co.jp/service/lp",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LP制作（ランディングページ制作） | 株式会社セゾン",
+    description: "AI活用で最短1日納品。高CVRランディングページをスピード＆低コストで制作。A/Bテスト・改善対応。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

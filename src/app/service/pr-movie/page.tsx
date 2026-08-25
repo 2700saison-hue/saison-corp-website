@@ -109,6 +109,13 @@ export const metadata: Metadata = {
       "採用動画・ブランディング動画・商品PRなどプロの映像制作。大手企業の実績多数。",
     url: "https://seasonsezon.co.jp/service/pr-movie",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PR動画制作・ブランディング動画 | 株式会社セゾン",
+    description: "採用動画・ブランディング動画・商品PRなどプロの映像制作。大手企業の実績多数。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

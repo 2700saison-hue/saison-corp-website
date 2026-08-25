@@ -292,6 +292,13 @@ export const metadata: Metadata = {
       "累計100社以上の実績。プロ役者出演のドラマ型ショート動画で平均ROI195%。介護・建設・飲食の採用・集客強化。東京・全国対応。",
     url: "https://seasonsezon.co.jp/service/sns",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "採用・集客に強いドラマ型SNS動画運用代行 | 株式会社セゾン",
+    description: "累計100社以上の実績。プロ役者出演のドラマ型ショート動画で平均ROI195%。介護・建設・飲食の採用・集客強化。東京・全国対応。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

@@ -84,6 +84,13 @@ export const metadata: Metadata = {
       "IT導入補助金・事業再構築補助金など最大1,000万円以上の補助金獲得をサポート。",
     url: "https://seasonsezon.co.jp/service/subsidy",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "補助金・助成金申請支援 | 株式会社セゾン",
+    description: "IT導入補助金・事業再構築補助金など最大1,000万円以上の補助金獲得をサポート。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

@@ -96,6 +96,13 @@ export const metadata: Metadata = {
       "AI活用で最短1日納品。SEO・デザイン・コンテンツを一気通貫。補助金活用で実質負担を大幅削減。",
     url: "https://seasonsezon.co.jp/service/hp",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ホームページ制作 | 株式会社セゾン",
+    description: "AI活用で最短1日納品。SEO・デザイン・コンテンツを一気通貫。補助金活用で実質負担を大幅削減。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

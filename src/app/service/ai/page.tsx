@@ -147,6 +147,13 @@ export const metadata: Metadata = {
       "日本語で指示するだけ。エンジニア不要・月500万円以上の経費削減を実現するAI業務自動化ツール。中小企業の業務を一から構築。",
     url: "https://seasonsezon.co.jp/service/ai",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AIシステム開発・業務自動化 SoloptiLink AI | 株式会社セゾン",
+    description: "日本語で指示するだけ。エンジニア不要・月500万円以上の経費削減を実現するAI業務自動化ツール。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

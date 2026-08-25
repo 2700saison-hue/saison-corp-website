@@ -91,6 +91,13 @@ export const metadata: Metadata = {
       "業務管理・CRM・ECなどビジネス最適化システムをSoloptiLink AIでスピード開発。",
     url: "https://seasonsezon.co.jp/service/system",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "システム開発・業務システム構築 | 株式会社セゾン",
+    description: "業務管理・CRM・ECなどビジネス最適化システムをSoloptiLink AIでスピード開発。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

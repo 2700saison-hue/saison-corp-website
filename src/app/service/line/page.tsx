@@ -84,6 +84,13 @@ export const metadata: Metadata = {
       "LINEを集客・採用エンジンに変える。配信日売上300%UP・1か月で友達1,000人増加の実績。",
     url: "https://seasonsezon.co.jp/service/line",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "公式LINE構築・運用代行 | 株式会社セゾン",
+    description: "LINEを集客・採用エンジンに変える。配信日売上300%UP・1か月で友達1,000人増加の実績。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 
