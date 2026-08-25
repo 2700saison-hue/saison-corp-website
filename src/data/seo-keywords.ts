@@ -289,6 +289,10 @@ export const EXISTING_SLUGS: string[] = [
   // 2025年10月追加
   "it-donyu-hojokin-sns-2025",
   "ai-chatbot-chusho-kigyo-2025",
+  "jigyou-saikouchiku-hojokin-dx-2025",
+  "instagram-dm-eigyo-chusho-2025",
+  "google-meo-taisaku-chusho-2025",
+  "youtube-shorts-business-marketing-2025",
 ];
 
 /**
