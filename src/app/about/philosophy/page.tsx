@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     "古田太陽 理念",
     "SNS×AI 経営",
     "デジタルマーケティング 理念",
+    "株式会社セゾン ビジョン",
+    "セゾン バリュー",
+    "行動が最強の戦略だ",
+    "デジタルマーケティング 会社理念",
+    "SNS AI DX 企業ミッション",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/philosophy",
