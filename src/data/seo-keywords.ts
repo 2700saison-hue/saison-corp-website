@@ -286,6 +286,9 @@ export const EXISTING_SLUGS: string[] = [
   "sns-unyo-naisei-gaichu-hikaku-2025",
   "lp-seisaku-hiyou-souba-2025",
   "chusho-kigyo-marketing-kadai-2025",
+  // 2025年10月追加
+  "it-donyu-hojokin-sns-2025",
+  "ai-chatbot-chusho-kigyo-2025",
 ];
 
 /**
