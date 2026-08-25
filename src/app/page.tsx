@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "株式会社セゾン | SNS運用代行・AI導入・DXで企業変革を牽引するパートナー",
   },
   description:
-    "株式会社セゾンは、SNS運用代行・SoloptiLink AI・ホームページ制作・LP制作・公式LINE構築を提供するデジタルマーケティング会社。累計100社以上の導入実績。東京都足立区。無料相談・資料請求受付中。",
+    "株式会社セゾンは、SNS運用代行・SoloptiLink AI・ホームページ制作を提供するデジタルマーケティング会社。フォロワー32倍・採用費120万円削減・平均ROI195%の実績。累計100社以上。東京都足立区。無料相談受付中。",
   keywords: [
     "株式会社セゾン",
     "セゾン株式会社",
@@ -175,6 +175,7 @@ const localBusinessSchema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "LP制作", url: `${BASE_URL}/service/lp` } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "公式LINE構築・運用", url: `${BASE_URL}/service/line` } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "PR動画制作", url: `${BASE_URL}/service/pr-movie` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "システム開発・業務システム構築", url: `${BASE_URL}/service/system` } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "補助金・助成金支援", url: `${BASE_URL}/service/subsidy` } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "SNS・AI研修", url: `${BASE_URL}/service/training` } },
     ],
