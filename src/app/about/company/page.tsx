@@ -52,6 +52,8 @@ const companySchema = {
   },
   sameAs: [
     "https://www.instagram.com/saison_taiyo/",
+    "https://seasonsezon.co.jp",
+    "https://soloptilink.com",
   ],
   knowsAbout: [
     "SNSマーケティング",

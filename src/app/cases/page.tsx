@@ -36,6 +36,13 @@ export const metadata: Metadata = {
       "100社以上の実績。フォロワー32倍・ROI195%・売上2億円UPなど具体的な成果事例。",
     url: "https://seasonsezon.co.jp/cases",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "導入事例・実績一覧 | 株式会社セゾン",
+    description: "100社以上の実績。フォロワー32倍・ROI195%・売上2億円UPなど具体的な成果事例。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

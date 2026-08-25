@@ -59,6 +59,13 @@ export const metadata: Metadata = {
       "SNS×AI×DXのあらゆる施策を一社完結で対応。累計100社以上の実績。無料相談受付中。",
     url: "https://seasonsezon.co.jp/service",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "サービス一覧 | 株式会社セゾン",
+    description: "SNS×AI×DXのあらゆる施策を一社完結で対応。累計100社以上の実績。無料相談受付中。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

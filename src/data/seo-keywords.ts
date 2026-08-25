@@ -274,6 +274,14 @@ export const EXISTING_SLUGS: string[] = [
   "instagram-saiyo-cost-vs-recruit-agent-2025",
   "sns-unyo-daikou-hiyou-souba-2025",
   "chatgpt-gyoumu-katsuyou-chusho-kigyo-2025",
+  // 2025年8月追加（Round10）
+  "tiktok-kigyou-shuukyaku-2025",
+  "shokibo-jizokukahojokin-hp-2025",
+  "instagram-tiktok-saiyo-katsuyo-2025",
+  // 2025年9月追加（今回）
+  "drama-saiyo-video-cost-2025",
+  "inshoku-instagram-shukyaku-2025",
+  "line-official-chusho-shukyaku-2025",
 ];
 
 /**

@@ -38,6 +38,13 @@ export const metadata: Metadata = {
       "SNS運用・AI・DX・補助金活用のノウハウを100社以上の実績から解説するコラム。",
     url: "https://seasonsezon.co.jp/column",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "コラム・ブログ | 株式会社セゾン",
+    description: "SNS運用・AI・DX・補助金活用のノウハウを100社以上の実績から解説するコラム。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 
