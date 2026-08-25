@@ -32,6 +32,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: col.publishedAt,
       authors: ["株式会社セゾン"],
+      images: [
+        {
+          url: `${BASE_URL}/images/logos/ogp.png`,
+          width: 1200,
+          height: 630,
+          alt: col.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${col.title} | 株式会社セゾン`,
+      description: col.description,
+      images: [`${BASE_URL}/images/logos/ogp.png`],
     },
   };
 }

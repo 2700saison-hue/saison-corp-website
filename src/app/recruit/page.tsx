@@ -115,6 +115,12 @@ export const metadata: Metadata = {
     "マーケティング会社 採用 東京",
     "SNS運用ディレクター 求人",
     "法人営業 求人 東京",
+    "デジタルマーケティング 求人 東京",
+    "AI マーケティング 転職",
+    "SNS 動画 クリエイター 求人",
+    "スタートアップ 転職 東京",
+    "マーケティング会社 転職 足立区",
+    "成長企業 求人 東京",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/recruit",

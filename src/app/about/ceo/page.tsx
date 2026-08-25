@@ -13,6 +13,12 @@ export const metadata: Metadata = {
     "セゾン 代表メッセージ",
     "古田太陽 SNS AI",
     "デジタルマーケティング 代表",
+    "古田太陽 足立区",
+    "古田太陽 Instagram",
+    "Taiyo Furuta",
+    "セゾン 代表 ビジョン",
+    "SNS AI 経営者 東京",
+    "DX 中小企業 代表 メッセージ",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/ceo",

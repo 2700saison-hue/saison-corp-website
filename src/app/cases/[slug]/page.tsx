@@ -47,18 +47,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: `${caseItem.roi}を実現。${caseItem.solution}`,
       url: `${BASE_URL}/cases/${slug}`,
       type: "article",
-      ...(caseItem.image
-        ? {
-            images: [
-              {
-                url: `${BASE_URL}${caseItem.image}`,
-                width: 800,
-                height: 600,
-                alt: `${caseItem.clientName} 導入事例`,
-              },
-            ],
-          }
-        : {}),
+      images: [
+        {
+          url: caseItem.image ? `${BASE_URL}${caseItem.image}` : `${BASE_URL}/images/logos/ogp.png`,
+          width: caseItem.image ? 800 : 1200,
+          height: caseItem.image ? 600 : 630,
+          alt: `${caseItem.clientName} 導入事例`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${caseItem.clientName} 導入事例 | 株式会社セゾン`,
+      description: `${caseItem.roi}を実現。${caseItem.solution}`,
+      images: [caseItem.image ? `${BASE_URL}${caseItem.image}` : `${BASE_URL}/images/logos/ogp.png`],
     },
   };
 }

@@ -108,6 +108,10 @@ export const metadata: Metadata = {
     "SNSマーケティング ニュース",
     "AIマーケティング 最新情報",
     "デジタルマーケティング お知らせ",
+    "株式会社セゾン メディア",
+    "SoloptiLink AI ニュース",
+    "SNS運用代行 実績 発表",
+    "セゾン サービス アップデート",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/news",
