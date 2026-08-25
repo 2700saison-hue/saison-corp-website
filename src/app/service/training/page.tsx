@@ -155,11 +155,51 @@ const faqs = [
   },
 ];
 
+const trainingFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "SNS・AI研修はどのような内容ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "株式会社セゾンのSNS・AI研修は、実際に100社以上を支援してきたノウハウに基づいたハンズオン研修です。Instagram・TikTok運用の実践スキル、ChatGPTなどの生成AIツールの業務活用法、SNSコンテンツ制作の基礎から応用まで、企業の目的に合わせてカスタマイズして提供します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "研修は何名から依頼できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "1名の個人研修から、数十名規模の企業全体研修まで対応しています。チームや部署単位での研修も可能です。オンライン・対面どちらも選択できます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "研修後に社内でSNS運用を内製化できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、内製化を目標とした研修プランをご用意しています。研修後のフォローアップ・コンサルティングも対応しており、自走できる体制を一緒に構築します。まず外注でスタートし、徐々に内製化するハイブリッド型もおすすめです。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "研修の費用はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "研修の内容・時間・人数によって異なります。半日研修・1日研修・連続研修など形式も選べます。まずは無料相談でご要望をお聞かせください。人材開発支援助成金を活用できる場合もあります。",
+      },
+    },
+  ],
+};
+
 export default function TrainingServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
       <JsonLd data={trainingServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={trainingFaqSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
         <div

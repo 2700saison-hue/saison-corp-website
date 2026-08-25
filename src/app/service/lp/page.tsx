@@ -148,11 +148,59 @@ const faqs = [
   },
 ];
 
+const lpFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "LP制作の費用はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "株式会社セゾンのLP制作は業界最安値水準でご提供しています。IT導入補助金・小規模事業者持続化補助金を活用すれば実質負担をさらに抑えることができます。まずは無料相談・お見積もりをご依頼ください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "LP制作でコンバージョン率（CVR）はどのくらい改善しますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "LP制作後のA/Bテストとヒートマップ分析・継続的改善により、多くのお客様でCVRが2〜5倍に向上しています。ファーストビュー・CTA・社会的証明の最適化など、コンバージョンに特化した設計で制作します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "LPの納期はどのくらいですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AI活用で最短1日納品が可能です。フルオリジナルデザインのLPは通常3〜7日程度いただきます。お急ぎの場合はご相談ください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "制作後の修正・改善対応はしてもらえますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、制作後もA/Bテスト・ヒートマップ分析による継続的な改善に対応しています。「作って終わり」ではなく、成果が出るまでPDCAを回すサポートをご提供しています。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "広告運用と組み合わせてLP制作を依頼できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、Meta広告（Instagram・Facebook）・Google広告・LINE広告と連動したLP制作に対応しています。広告の訴求内容とLPのメッセージを一致させることでCVRを最大化します。",
+      },
+    },
+  ],
+};
+
 export default function LpServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
       <JsonLd data={lpServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={lpFaqSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
         <div

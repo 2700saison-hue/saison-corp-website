@@ -148,11 +148,51 @@ const faqs = [
   },
 ];
 
+const lineFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "公式LINE構築の費用はいくらですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "株式会社セゾンの公式LINE構築は、ビジネス規模や必要な機能に応じてお見積もりします。リッチメニュー・自動応答・シナリオ配信の設定から、既存の顧客管理システムとの連携まで対応しています。まずは無料相談でご要望をお聞かせください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "公式LINEで自動的に顧客対応できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、キーワード自動応答・シナリオ配信・チャットボット設定により、24時間自動で顧客対応が可能です。よくある質問への自動回答・予約受付・資料送付なども自動化できます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "既存の顧客リストをLINEに取り込めますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、既存の顧客リストを活用したLINE友だち獲得施策も提案しています。QRコード・URLリンク・Instagramなど各SNSからの誘導設計も一緒に構築します。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "LINEメッセージの開封率はメールと比べてどのくらい高いですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "LINEのメッセージ開封率はメールの平均20〜30%に対し、LINE公式アカウントは60〜80%と言われています。顧客との接触頻度・エンゲージメントを大幅に高められます。",
+      },
+    },
+  ],
+};
+
 export default function LineServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
       <JsonLd data={lineServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={lineFaqSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
         <div

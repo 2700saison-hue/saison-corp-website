@@ -155,11 +155,59 @@ const faqs = [
   },
 ];
 
+const subsidyFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "SNS運用代行やAI導入に使える補助金はありますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、IT導入補助金（最大450万円）・事業再構築補助金・小規模事業者持続化補助金（最大200万円）などがSNS運用代行・AI導入・ホームページ制作に活用できます。株式会社セゾンでは補助金申請支援も行っており、実質負担ゼロでサービス導入できるケースもあります。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "IT導入補助金でSNS運用代行は対象になりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "IT導入補助金はITツールの導入費用が対象で、SNS管理ツール・AIシステム・業務効率化ツールなどが対象になります。SNS運用代行の業務委託費は直接の対象外ですが、関連する管理ツール導入費用として申請できるケースがあります。詳しくは無料相談でご確認ください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "補助金申請の採択率はどのくらいですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "補助金の種類・公募回・事業計画の質によって異なりますが、株式会社セゾンが支援した申請では高い採択率を実現しています。事業計画書の作成から申請手続きまで一貫サポートするため、単独申請より採択確率が上がります。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "補助金申請のサポートに費用はかかりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "初回相談は無料です。申請サポートの費用は補助金の種類・申請規模により異なります。成功報酬型のご相談も可能です。まずは無料相談でご状況をお聞かせください。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "補助金の申請から受け取りまでどのくらいかかりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "補助金の種類によって異なりますが、申請から採択通知まで1〜3ヶ月、採択後に事業実施・実績報告・交付申請を経て補助金受取まで6〜12ヶ月程度が目安です。スケジュールを把握したうえで計画的に進めることが重要です。",
+      },
+    },
+  ],
+};
+
 export default function SubsidyServicePage() {
   return (
     <div className="min-h-screen bg-[#080808]">
       <JsonLd data={subsidyServiceSchema} />
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={subsidyFaqSchema} />
       {/* Hero */}
       <section className="relative pt-36 pb-28 overflow-hidden">
         <div

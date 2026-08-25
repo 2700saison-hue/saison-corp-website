@@ -6,9 +6,9 @@ import { columnsData, COLUMN_CATEGORY_LABELS } from "@/data/columns";
 import { ArrowRight, Clock, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "コラム・ブログ",
+  title: "SNS運用・AI・DX・補助金活用コラム｜デジタルマーケティングのノウハウ",
   description:
-    "株式会社セゾンのSNS運用・AI・DX・補助金活用に関するコラム・ブログ。100社以上の支援実績から得たノウハウを分かりやすく解説。SNS運用代行の選び方・Instagramフォロワー増加法・DX成功事例・IT導入補助金活用法など。",
+    "株式会社セゾンのSNS運用・AI・DX・補助金活用に関するコラム・ブログ。100社以上の支援実績から得たノウハウを分かりやすく解説。SNS運用代行の選び方・Instagramフォロワー増加法・ChatGPT業務活用・IT導入補助金活用法・採用コスト削減事例など。",
   keywords: [
     "SNS運用 コラム",
     "デジタルマーケティング ブログ",
@@ -18,6 +18,16 @@ export const metadata: Metadata = {
     "IT導入補助金 使い方",
     "ドラマ型動画 効果",
     "株式会社セゾン ブログ",
+    "ChatGPT 業務活用 方法",
+    "生成AI 中小企業 導入",
+    "SNS 採用 効果",
+    "TikTok 企業 活用法",
+    "インスタグラム フォロワー 増やし方 企業",
+    "採用コスト 削減 方法",
+    "補助金 IT導入 2024",
+    "ホームページ SEO対策 方法",
+    "SNS運用代行 費用 相場",
+    "AI 業務効率化 事例",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/column",

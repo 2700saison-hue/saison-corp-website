@@ -39,10 +39,66 @@ export const metadata: Metadata = {
   },
 };
 
+const reviewsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "株式会社セゾン 導入事例・お客様の声",
+  description: "株式会社セゾンのSNS運用代行・AI導入・ホームページ制作の導入事例一覧",
+  numberOfItems: 100,
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Review",
+        itemReviewed: {
+          "@type": "Service",
+          name: "SNS運用代行（ドラマ型）",
+          provider: { "@type": "Organization", name: "株式会社セゾン" },
+        },
+        author: { "@type": "Organization", name: "山﨑組", description: "建設・施工会社" },
+        reviewBody: "フォロワーが349人から11,287人に増加（32倍）し、採用費を年間120万円削減できました。ドラマ型の動画が若い求職者に刺さり、毎月コンスタントに採用応募が来るようになりました。",
+        reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Review",
+        itemReviewed: {
+          "@type": "Service",
+          name: "SNS運用代行（ドラマ型）",
+          provider: { "@type": "Organization", name: "株式会社セゾン" },
+        },
+        author: { "@type": "Organization", name: "株式会社マザアス", description: "介護・サービス会社" },
+        reviewBody: "7ヶ月でInstagramフォロワーが1万人を突破し、毎月3〜5件の採用応募を獲得できるようになりました。介護業界の採用難を克服できています。",
+        reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Review",
+        itemReviewed: {
+          "@type": "Service",
+          name: "SNS運用代行（ドラマ型）",
+          provider: { "@type": "Organization", name: "株式会社セゾン" },
+        },
+        author: { "@type": "Organization", name: "アトレ恵比寿", description: "商業施設" },
+        reviewBody: "Instagramフォロワーが2,200人から12,000人（5.5倍）に増加し、月間リーチが7万回以上増加しました。集客力が格段に上がりました。",
+        reviewRating: { "@type": "Rating", ratingValue: 5, bestRating: 5 },
+      },
+    },
+  ],
+};
+
 export default function CasesPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8] min-h-screen">
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={reviewsSchema} />
       {/* HERO */}
       <section className="relative py-32 flex items-center justify-center overflow-hidden">
         <div
