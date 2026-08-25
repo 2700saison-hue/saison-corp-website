@@ -134,6 +134,19 @@ export default async function ColumnDetailPage({ params }: Props) {
     ],
   };
 
+  const faqSchema = col.faqs && col.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: col.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  } : null;
+
   const speakableSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -150,6 +163,7 @@ export default async function ColumnDetailPage({ params }: Props) {
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={speakableSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
 
       {/* パンくずリスト */}
       <div className="px-6 pt-24 pb-4">
