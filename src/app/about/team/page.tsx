@@ -14,6 +14,41 @@ const breadcrumbSchema = {
   ],
 };
 
+const teamSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "株式会社セゾン チームメンバー",
+  url: "https://seasonsezon.co.jp/about/team",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Person",
+        name: "古田太陽",
+        alternateName: "Taiyo Furuta",
+        jobTitle: "代表取締役",
+        worksFor: { "@type": "Organization", name: "株式会社セゾン", url: "https://seasonsezon.co.jp" },
+        url: "https://seasonsezon.co.jp/about/ceo",
+        image: "https://seasonsezon.co.jp/images/team/CEO2.jpeg",
+        sameAs: ["https://www.instagram.com/saison_taiyo/"],
+        knowsAbout: ["SNSマーケティング", "AI業務自動化", "デジタルマーケティング", "DX支援"],
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Person",
+        name: "光村紀勝",
+        jobTitle: "取締役",
+        worksFor: { "@type": "Organization", name: "株式会社セゾン", url: "https://seasonsezon.co.jp" },
+        knowsAbout: ["SNS動画制作", "マーケティング戦略", "コンテンツ制作"],
+      },
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "チーム紹介",
   description:
@@ -52,6 +87,7 @@ export default function TeamPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8]">
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={teamSchema} />
       {/* ヒーロー */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div

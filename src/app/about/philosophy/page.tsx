@@ -12,6 +12,26 @@ const breadcrumbSchema = {
   ],
 };
 
+const philosophySchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://seasonsezon.co.jp/about/philosophy",
+  url: "https://seasonsezon.co.jp/about/philosophy",
+  name: "経営理念・ミッション・バリュー | 株式会社セゾン",
+  description: "SNS×AIを事業成長のエンジンに変えるというミッションのもと、誠実さ・スピード・再現性・伴走精神というバリューで企業変革を支援します。",
+  about: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+    slogan: "行動が、最強の戦略だ。",
+    description: "株式会社セゾンのミッション: SNS×AIを事業成長のエンジンに変え、日本の中小企業のデジタル変革を推進する。",
+  },
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["h1", "h2", ".speakable"],
+  },
+};
+
 export const metadata: Metadata = {
   title: "経営理念・ミッション・バリュー",
   description:
@@ -73,6 +93,7 @@ export default function PhilosophyPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8]">
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={philosophySchema} />
       {/* ヒーロー */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div
