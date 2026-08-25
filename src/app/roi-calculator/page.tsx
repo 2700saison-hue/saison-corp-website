@@ -153,11 +153,43 @@ const roiExamples = [
   },
 ];
 
+const roiFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "SNS運用代行のROIとは何ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ROI（Return on Investment）とは投資対効果のことで、SNS運用代行では「（SNS経由の売上増加額＋採用費削減額）÷ SNS運用代行費用×100」で算出します。株式会社セゾンの導入実績では平均ROI195%を達成しています。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "SNS運用代行でどのくらいの費用対効果が期待できますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "業種・目的により異なりますが、採用目的の場合は採用費削減、集客目的の場合は売上増加がROIの主要因です。山﨑組様の場合、月10万円の投資で採用費を年間120万円削減（年間ROI1,100%相当）を実現しています。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "IT導入補助金を使うとROIはどう変わりますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "IT導入補助金（補助率最大2/3・最大450万円）を活用すると、実質の自己負担が大幅に下がるため、ROIが大きく改善します。例えば、月15万円のSNS運用費のうち10万円が補助されれば、実質月5万円での運用となりROIが3倍に向上します。",
+      },
+    },
+  ],
+};
+
 export default function RoiCalculatorPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8] min-h-screen">
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={howToSchema} />
+      <JsonLd data={roiFaqSchema} />
 
       {/* HERO */}
       <section className="relative py-24 overflow-hidden">

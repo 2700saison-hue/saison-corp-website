@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     "古田太陽 チーム",
     "SNS運用 専門家",
     "デジタルマーケティング チーム",
+    "光村紀勝",
+    "株式会社セゾン 役員",
+    "セゾン 取締役",
+    "SNS AI マーケティング 専門家",
+    "デジタルマーケティング 会社 スタッフ",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/team",
