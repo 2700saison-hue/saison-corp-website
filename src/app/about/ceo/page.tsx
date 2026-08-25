@@ -23,6 +23,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/ceo",
   },
+  openGraph: {
+    title: "代表メッセージ｜古田太陽 | 株式会社セゾン",
+    description: "株式会社セゾン代表取締役 古田太陽からのメッセージ。「行動が、最強の戦略だ。」SNS×AIで100社以上の企業変革を牽引。",
+    url: "https://seasonsezon.co.jp/about/ceo",
+    type: "profile",
+    images: [{ url: "https://seasonsezon.co.jp/images/team/CEO2.jpeg", width: 800, height: 800, alt: "古田太陽 代表取締役 株式会社セゾン" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "代表メッセージ｜古田太陽 | 株式会社セゾン",
+    description: "「行動が、最強の戦略だ。」SNS×AI×DXで100社以上の企業変革を牽引した代表のビジョン。",
+    images: ["https://seasonsezon.co.jp/images/team/CEO2.jpeg"],
+  },
 };
 
 const breadcrumbSchema = {

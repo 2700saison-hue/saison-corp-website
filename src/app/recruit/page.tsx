@@ -131,6 +131,13 @@ export const metadata: Metadata = {
       "SNS運用ディレクター・法人営業の求人募集中。日本中の企業変革に携わるやりがいある仕事。",
     url: "https://seasonsezon.co.jp/recruit",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "採用情報 | 株式会社セゾン",
+    description: "SNS運用ディレクター・法人営業の求人募集中。成長中のデジタルマーケティング会社。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

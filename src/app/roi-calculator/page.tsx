@@ -25,6 +25,13 @@ export const metadata: Metadata = {
       "SNS運用代行のROI計算方法を解説。月額費用・売上増加・採用費削減から投資対効果を算出する具体的な手順と計算例を紹介。",
     url: "https://seasonsezon.co.jp/roi-calculator",
     type: "article",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SNS運用 ROI計算方法 | 株式会社セゾン",
+    description: "SNS運用代行のROI計算方法を解説。費用対効果の実例とシミュレーション。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 
