@@ -33,6 +33,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/team",
   },
+  openGraph: {
+    title: "チーム紹介 | 株式会社セゾン",
+    description: "古田太陽・光村紀勝を中心にSNS運用・AI・動画制作の専門家が集まる株式会社セゾンのチーム紹介。",
+    url: "https://seasonsezon.co.jp/about/team",
+    type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "チーム紹介 | 株式会社セゾン",
+    description: "SNS×AI×DXのプロフェッショナルチーム。代表 古田太陽。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
+  },
 };
 
 export default function TeamPage() {

@@ -87,6 +87,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/company",
   },
+  openGraph: {
+    title: "株式会社セゾン 会社情報 | SAISON Co., Ltd.",
+    description:
+      "株式会社セゾン（代表取締役 古田太陽）の会社情報。東京都足立区。SNS運用代行・AI導入・ホームページ制作のデジタルマーケティング会社。累計100社以上の実績。",
+    url: "https://seasonsezon.co.jp/about/company",
+    type: "website",
+    images: [
+      {
+        url: "https://seasonsezon.co.jp/images/logos/ogp.png",
+        width: 1200,
+        height: 630,
+        alt: "株式会社セゾン 会社情報",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "株式会社セゾン 会社情報",
+    description: "代表取締役 古田太陽。東京都足立区。SNS×AI×DXで100社以上の変革を支援。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
+  },
 };
 
 const tableRows = [

@@ -31,6 +31,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/philosophy",
   },
+  openGraph: {
+    title: "経営理念・ミッション・バリュー | 株式会社セゾン",
+    description: "「行動が、最強の戦略だ。」株式会社セゾンの経営理念・ミッション・バリュー。SNS×AIで日本の中小企業変革を牽引。",
+    url: "https://seasonsezon.co.jp/about/philosophy",
+    type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "経営理念 | 株式会社セゾン",
+    description: "「行動が、最強の戦略だ。」SNS×AI×DXで企業変革を牽引するセゾンの経営理念。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
+  },
 };
 
 const values = [
