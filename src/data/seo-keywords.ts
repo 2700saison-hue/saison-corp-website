@@ -177,22 +177,26 @@ export const SEO_CATEGORY_LABELS: Record<SeoKeyword["category"], string> = {
  * 既存記事に使用済みのスラッグ一覧（columns.tsから取得したもの）
  */
 export const EXISTING_SLUGS: string[] = [
+  // 初期記事群
   "sns-unyo-daikou-erabikata",
   "instagram-followers-increase",
-  "dx-ai-introduction-sme",
-  "lp-landing-page-cost",
-  "it-subsidy-2025",
-  "tiktok-business-strategy",
-  "sns-recruitment-strategy",
-  "line-official-business",
-  "youtube-short-business",
-  "web-seo-basics",
-  "ai-chatgpt-business-use",
-  "subsidy-saikochiku",
-  "sns-roi-measurement",
+  "sme-dx-success-cases",
+  "it-hojo-kin-sns",
   "drama-sns-video-effect",
-  "instagram-reel-business",
-  // 2025年6月追加（長尾キーワード8本）
+  "tiktok-kigyou-account",
+  "saiyo-sns-instagram",
+  "line-official-sales-up",
+  "youtube-shorts-kigyou",
+  "sns-koukoku-vs-unyo",
+  "hp-seisaku-shippai",
+  "chatgpt-gyoumu-katsuyou",
+  "branding-sns-jidai",
+  "pr-douga-saiyo",
+  "sns-roi-keisan",
+  "lp-production-cost-guide-2025",
+  "small-business-subsidy-homepage-guide-2025",
+  "sns-recruitment-effects-examples-2025",
+  // 2025年6月追加
   "kaigo-sns-saiyo-hoho",
   "kensetsu-sns-saiyo-jirei",
   "drama-saiyo-doga-hiyo-kouka",
@@ -201,6 +205,23 @@ export const EXISTING_SLUGS: string[] = [
   "line-official-chusho-katsuyo",
   "tiktok-inshoku-shuukyaku-houhou",
   "chusho-kigyo-seo-structure",
+  // 2025年7月追加
+  "dx-subsidy-guide-sme-2025",
+  "business-automation-ai-cost-reduction-guide-2025",
+  "corporate-site-seo-strategy-2025",
+  "drama-sns-video-recruiting-cost-reduction",
+  "sns-unyo-daikou-adachi-tokyo-guide",
+  "kensetsu-sns-saiyo-daikou-guide",
+  "instagram-follower-increase-guide-2026",
+  "jigyou-saikouchiku-hojokin-saitaku-points-2025",
+  "saiyo-cost-sakugen-method-2025",
+  "wantedly-sns-recruitment-comparison-2025",
+  // 2025年8月追加（今回）
+  "ai-gyoumu-jidouka-chusho-jirei-2025",
+  "sns-unyo-daikou-adachi-ku-tokyo-seo",
+  "instagram-saiyo-cost-vs-recruit-agent-2025",
+  "sns-unyo-daikou-hiyou-souba-2025",
+  "chatgpt-gyoumu-katsuyou-chusho-kigyo-2025",
 ];
 
 /**
