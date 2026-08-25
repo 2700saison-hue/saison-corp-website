@@ -55,6 +55,15 @@ export const metadata: Metadata = {
     "ホームページ制作 見積もり",
     "マーケティング支援 無料相談",
     "株式会社セゾン 資料",
+    "SNS運用代行 見積もり",
+    "デジタルマーケティング 相談 東京",
+    "SNS運用 依頼 方法",
+    "AI導入 相談 無料",
+    "補助金 相談 無料",
+    "SNS代行 問い合わせ",
+    "LP制作 見積もり 無料",
+    "採用動画 制作 相談",
+    "LINE公式 構築 相談",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/contact",
@@ -65,6 +74,13 @@ export const metadata: Metadata = {
       "相談・見積もり・資料請求はすべて無料。SNS運用・AI・DX支援のご相談お待ちしています。",
     url: "https://seasonsezon.co.jp/contact",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "お問い合わせ・資料請求 | 株式会社セゾン",
+    description: "相談・見積もり・資料請求はすべて無料。SNS運用・AI・DXのご相談はこちら。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

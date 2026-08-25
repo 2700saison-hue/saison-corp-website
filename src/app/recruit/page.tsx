@@ -39,7 +39,7 @@ const jobPostingSchema = {
         },
         employmentType: "FULL_TIME",
         datePosted: "2025-01-01",
-        validThrough: "2025-12-31",
+        validThrough: "2026-12-31",
         baseSalary: {
           "@type": "MonetaryAmount",
           currency: "JPY",
@@ -79,7 +79,7 @@ const jobPostingSchema = {
         },
         employmentType: "CONTRACTOR",
         datePosted: "2025-01-01",
-        validThrough: "2025-12-31",
+        validThrough: "2026-12-31",
         baseSalary: {
           "@type": "MonetaryAmount",
           currency: "JPY",

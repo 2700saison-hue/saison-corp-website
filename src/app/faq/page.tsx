@@ -35,6 +35,13 @@ export const metadata: Metadata = {
       "SNS運用代行・AI・ホームページ制作など30問以上のよくある質問にお答えします。",
     url: "https://seasonsezon.co.jp/faq",
     type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "よくある質問（FAQ） | 株式会社セゾン",
+    description: "SNS運用代行の費用・効果・期間など30問以上のFAQ。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
   },
 };
 

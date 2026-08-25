@@ -116,6 +116,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://seasonsezon.co.jp/news",
   },
+  openGraph: {
+    title: "ニュース・お知らせ | 株式会社セゾン",
+    description: "株式会社セゾンの最新ニュース・プレスリリース・実績発表・サービスアップデート情報。",
+    url: "https://seasonsezon.co.jp/news",
+    type: "website",
+    images: [{ url: "https://seasonsezon.co.jp/images/logos/ogp.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ニュース | 株式会社セゾン",
+    description: "SNS運用・AI・DX分野の最新実績・お知らせ。",
+    images: ["https://seasonsezon.co.jp/images/logos/ogp.png"],
+  },
 };
 
 export default function NewsPage() {

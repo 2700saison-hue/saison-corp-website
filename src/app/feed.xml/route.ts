@@ -4,8 +4,11 @@ import { columnsData } from "@/data/columns";
 const BASE_URL = "https://seasonsezon.co.jp";
 
 export async function GET() {
-  const items = columnsData
-    .slice(0, 20)
+  const sortedColumns = [...columnsData].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+  const items = sortedColumns
+    .slice(0, 50)
     .map((col) => {
       const pubDate = new Date(col.publishedAt).toUTCString();
       return `
