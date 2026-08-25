@@ -74,11 +74,35 @@ const personSchema = {
   },
 };
 
+const ceoPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://seasonsezon.co.jp/about/ceo",
+  url: "https://seasonsezon.co.jp/about/ceo",
+  name: "古田太陽 代表取締役 | 株式会社セゾン",
+  description: "株式会社セゾン代表取締役 古田太陽のプロフィールページ。SNS×AI×DXで100社以上の企業変革を牽引。",
+  mainEntity: {
+    "@type": "Person",
+    name: "古田太陽",
+    url: "https://seasonsezon.co.jp/about/ceo",
+  },
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["h1", "h2", ".speakable"],
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+};
+
 export default function CeoPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8]">
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={personSchema} />
+      <JsonLd data={ceoPageSchema} />
       {/* ヒーロー */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div
