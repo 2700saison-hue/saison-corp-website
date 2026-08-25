@@ -160,6 +160,58 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     category: "recruitment",
     priority: "low",
   },
+
+  // ===== 2025年9月追加ターゲット =====
+  {
+    keyword: "ドラマ型動画 企業 採用 費用",
+    category: "recruitment",
+    priority: "high",
+  },
+  {
+    keyword: "Instagram 集客 飲食店 方法",
+    category: "sns",
+    priority: "high",
+  },
+  {
+    keyword: "LINE公式アカウント 集客 活用 中小企業",
+    category: "sns",
+    priority: "high",
+  },
+  {
+    keyword: "IT導入補助金 2025 対象 システム",
+    category: "subsidy",
+    priority: "high",
+  },
+  {
+    keyword: "SNS運用 内製 外注 比較",
+    category: "sns",
+    priority: "medium",
+  },
+  {
+    keyword: "ホームページ SEO 上位表示 方法",
+    category: "web",
+    priority: "medium",
+  },
+  {
+    keyword: "採用動画 費用 相場",
+    category: "recruitment",
+    priority: "high",
+  },
+  {
+    keyword: "中小企業 マーケティング 課題",
+    category: "sns",
+    priority: "medium",
+  },
+  {
+    keyword: "SNS 売上 UP 事例",
+    category: "sns",
+    priority: "high",
+  },
+  {
+    keyword: "AI ChatGPT SNS投稿文 自動生成",
+    category: "ai",
+    priority: "medium",
+  },
 ];
 
 /**

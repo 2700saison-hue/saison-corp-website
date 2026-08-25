@@ -43,10 +43,41 @@ const imageEntries = [
     ],
   },
   {
+    loc: `${BASE_URL}/service/line`,
+    images: [
+      { loc: `${BASE_URL}/images/services/line.jpg`, title: "公式LINE構築・運用代行 | 株式会社セゾン" },
+    ],
+  },
+  {
+    loc: `${BASE_URL}/service/lp`,
+    images: [
+      { loc: `${BASE_URL}/images/services/sns-drama.jpg`, title: "LP制作・ランディングページ制作 | 株式会社セゾン" },
+    ],
+  },
+  {
+    loc: `${BASE_URL}/service/system`,
+    images: [
+      { loc: `${BASE_URL}/images/services/system.jpg`, title: "システム開発・業務システム構築 | 株式会社セゾン" },
+    ],
+  },
+  {
+    loc: `${BASE_URL}/service/subsidy`,
+    images: [
+      { loc: `${BASE_URL}/images/services/subsidy.jpg`, title: "補助金・助成金申請支援 | 株式会社セゾン" },
+    ],
+  },
+  {
+    loc: `${BASE_URL}/service/training`,
+    images: [
+      { loc: `${BASE_URL}/images/services/training.jpg`, title: "SNS・AI研修・企業研修 | 株式会社セゾン" },
+    ],
+  },
+  {
     loc: `${BASE_URL}/about`,
     images: [
       { loc: `${BASE_URL}/images/about/company.png`, title: "株式会社セゾン 会社概要" },
       { loc: `${BASE_URL}/images/about/philosophy.png`, title: "株式会社セゾン 企業理念" },
+      { loc: `${BASE_URL}/images/about/team.png`, title: "株式会社セゾン チーム紹介" },
     ],
   },
   {
