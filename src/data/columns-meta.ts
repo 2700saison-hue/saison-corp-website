@@ -115,6 +115,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "ai-writing-assistant-business-2026", title: "AI文章作成ツール活用術｜ChatGPT・Claude・Geminiをビジネスに使い分ける方法", category: "ai" },
   { slug: "web-marketing-funnel-guide-2026", title: "Webマーケティングファネルの設計方法｜認知から成約までの導線を最適化する", category: "marketing" },
   { slug: "seo-internal-linking-strategy-2026", title: "SEO内部リンク戦略｜サイト全体の評価を底上げするリンク設計の完全ガイド", category: "marketing" },
+  { slug: "email-newsletter-marketing-guide-2026", title: "メールマーケティング完全ガイド｜開封率・クリック率を上げるメルマガ設計術", category: "marketing" },
+  { slug: "sme-branding-strategy-2026", title: "中小企業のブランディング戦略｜SNS時代に選ばれる会社になるための7ステップ", category: "sns" },
+  { slug: "store-sns-local-marketing-2026", title: "実店舗のSNS集客術｜地域密着型ビジネスがInstagram・Googleで顧客を増やす方法", category: "sns" },
+  { slug: "corporate-video-production-guide-2026", title: "企業動画制作の費用と種類｜会社紹介・採用・PR動画の相場と選び方", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
