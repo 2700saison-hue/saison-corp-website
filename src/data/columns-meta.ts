@@ -335,6 +335,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-women-recruitment-2027", title: "建設・介護業界の女性SNS採用戦略2027｜女性が選ぶ職場になるためのSNS活用法", category: "sns" },
   { slug: "chiba-kisarazu-kimitu-south-kensetsu-kaigo-sns-2027", title: "木更津市・君津市南部の建設・介護SNS採用2027｜アクアライン活用エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-welfare-benefit-pr-2027", title: "建設・介護業界の福利厚生SNSアピール戦略2027｜待遇を正しく伝えて採用力を高める", category: "marketing" },
+  { slug: "saitama-soka-yashio-misato-kensetsu-kaigo-sns-2027", title: "草加市・八潮市・三郷市の建設・介護SNS採用2027｜埼玉東南部エリア戦略", category: "sns" },
+  { slug: "kanagawa-hadano-tanzawa-kensetsu-kaigo-sns-2027", title: "秦野市・丹沢エリアの建設・介護SNS採用2027｜丹沢山麓の採用戦略詳解", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-400page-milestone-2027", title: "建設・介護業界SNS採用完全攻略2027｜400記事で学んだ採用成功の法則まとめ", category: "marketing" },
+  { slug: "chiba-choshi-deep-kensetsu-kaigo-sns-2027", title: "銚子市の建設・介護SNS採用2027｜千葉最東端の漁師の街で採用する戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-ai-content-creation-2027", title: "建設・介護業界SNS採用にAIを活用したコンテンツ制作法2027｜ChatGPT・Claude活用術", category: "ai" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
