@@ -154,6 +154,9 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "sns-unyo-daikou-kawasaki-2026", title: "川崎市のSNS運用代行｜建設・介護・製造業向けSNS採用・集客の費用と事例", category: "sns" },
   { slug: "sns-unyo-daikou-saitama-city-2026", title: "さいたま市のSNS運用代行｜大宮・浦和・川口の介護・建設業SNS採用ガイド", category: "sns" },
   { slug: "sns-unyo-daikou-chiba-city-2026", title: "千葉市のSNS運用代行｜幕張・稲毛・緑区の介護・建設業SNS採用ガイド", category: "sns" },
+  { slug: "kaigo-sns-cost-reduction-saitama-chiba-kanagawa-2026", title: "介護施設のSNS採用コスト削減術｜埼玉・千葉・神奈川で人材紹介費ゼロを目指す", category: "sns" },
+  { slug: "kensetsu-instagram-branding-kanto-2026", title: "建設会社のInstagramブランディング｜関東の中小建設業が若者に選ばれるSNS戦略", category: "sns" },
+  { slug: "sns-unyo-daikou-sagamihara-funabashi-koshigaya-2026", title: "相模原・船橋・越谷のSNS運用代行｜郊外都市の介護・建設SNS採用戦略", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {

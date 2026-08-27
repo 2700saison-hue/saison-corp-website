@@ -380,6 +380,9 @@ export const EXISTING_SLUGS: string[] = [
   "sns-unyo-daikou-kawasaki-2026",
   "sns-unyo-daikou-saitama-city-2026",
   "sns-unyo-daikou-chiba-city-2026",
+  "kaigo-sns-cost-reduction-saitama-chiba-kanagawa-2026",
+  "kensetsu-instagram-branding-kanto-2026",
+  "sns-unyo-daikou-sagamihara-funabashi-koshigaya-2026",
 ];
 
 /**
