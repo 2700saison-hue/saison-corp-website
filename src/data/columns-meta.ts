@@ -285,6 +285,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kanagawa-machida-yamato-kensetsu-kaigo-sns-2027", title: "町田市・大和市の建設・介護SNS採用戦略｜多摩・神奈川境界エリア攻略", category: "sns" },
   { slug: "chiba-inzai-shiroi-kamagaya-kensetsu-kaigo-sns-2027", title: "印西市・白井市・鎌ケ谷市の建設・介護SNS採用戦略｜千葉ニュータウンエリア", category: "sns" },
   { slug: "kensetsu-kaigo-sns-2027-summary-strategy", title: "建設・介護業界SNS採用2027年総まとめ｜関東全域を制する採用戦略完全版", category: "sns" },
+  { slug: "kensetsu-kaigo-hp-seo-lp-2027", title: "建設・介護業界の採用ホームページSEO改善法｜SNSと連携して問い合わせを3倍にする", category: "marketing" },
+  { slug: "saitama-hanno-iruma-sayama-kensetsu-kaigo-sns-2027", title: "飯能市・入間市・狭山市の建設・介護SNS採用深掘り｜西武狭山丘陵エリア", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-video-editing-guide-2027", title: "建設・介護業界の採用動画編集完全ガイド｜無料アプリで作るプロ品質の動画術", category: "sns" },
+  { slug: "kanagawa-zama-aiko-kensetsu-kaigo-sns-2027", title: "座間市・愛川町の建設・介護SNS採用戦略｜相模川沿線エリア完全攻略", category: "sns" },
+  { slug: "chiba-choshi-asahi-kaigo-kensetsu-sns-2027", title: "銚子市・旭市の建設・介護SNS採用深掘り｜太平洋最東端エリアの採用革命", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
