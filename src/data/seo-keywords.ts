@@ -301,6 +301,10 @@ export const EXISTING_SLUGS: string[] = [
   "sns-account-start-guide-2025",
   "line-official-account-setup-guide-2025",
   "web-seo-local-search-guide-2025",
+  "sns-marketing-kpi-settei-guide-2025",
+  "instagram-story-marketing-guide-2025",
+  "ec-sns-marketing-strategy-2025",
+  "video-marketing-kigyou-guide-2025",
 ];
 
 /**
