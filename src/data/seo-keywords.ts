@@ -391,6 +391,9 @@ export const EXISTING_SLUGS: string[] = [
   "chiba-northwest-kaigo-kensetsu-sns-2026",
   "kanagawa-inland-kaigo-kensetsu-sns-2026",
   "kaigo-kensetsu-sns-saiyo-cost-comparison-2026",
+  "saitama-hokubu-kaigo-kensetsu-sns-2026",
+  "chiba-boso-kaigo-kensetsu-sns-2026",
+  "sns-unyo-daikou-kanto-industry-guide-2026",
 ];
 
 /**
