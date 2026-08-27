@@ -197,6 +197,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "chiba-kensetsu-hashtag-strategy-2026", title: "千葉の建設会社のInstagram・X ハッシュタグ戦略完全版｜地域×業種の最適組み合わせ", category: "sns" },
   { slug: "saitama-kensetsu-kaigo-sns-炎上対策-2026", title: "埼玉の建設・介護会社がSNSを安全に運用するための炎上対策とリスク管理", category: "sns" },
   { slug: "kanagawa-sagamihara-kensetsu-kaigo-sns-2026", title: "相模原市の建設・介護会社がSNSで採用・集客を強化する方法｜神奈川内陸部の市場攻略", category: "sns" },
+  { slug: "kaigo-kuchikomi-sns-renkei-2026", title: "介護施設のGoogleクチコミとSNSを連動させて信頼度を高める方法｜入居相談増加の実践戦略", category: "sns" },
+  { slug: "kensetsu-mitsumori-inquiry-sns-2026", title: "建設会社のSNSで見積もり依頼を月10件以上増やす方法｜問い合わせ動線の設計術", category: "sns" },
+  { slug: "saitama-kita-kaigo-kensetsu-sns-2026", title: "埼玉北部（熊谷・行田・深谷・羽生）の建設・介護業がSNSで採用を強化する方法", category: "sns" },
+  { slug: "chiba-boso-kaigo-kensetsu-sns-2026", title: "千葉南部・房総エリアの建設・介護会社がSNSで人材確保する方法｜過疎化対策の採用戦略", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
