@@ -454,6 +454,21 @@ export const columnsMeta: ColumnMeta[] = [
     "slug": "subsidy-jizokukahojokin-2025",
     "title": "小規模事業者持続化補助金2025年の申請方法｜採択率を上げる事業計画書の書き方",
     "category": "subsidy"
+  },
+  {
+    "slug": "email-marketing-vs-line-2025",
+    "title": "メールマーケティングvsLINE公式アカウント｜中小企業はどちらを使うべきか",
+    "category": "marketing"
+  },
+  {
+    "slug": "saison-case-study-sns-dx-2025",
+    "title": "株式会社セゾンの支援事例｜SNS×AI×DXで中小企業が実現した変革の記録",
+    "category": "case"
+  },
+  {
+    "slug": "ecommerce-sns-strategy-2026",
+    "title": "2026年のEC×SNS戦略｜TikTok Shop・Instagram Shopping・ライブコマースの最前線",
+    "category": "sns"
   }
 ];
 

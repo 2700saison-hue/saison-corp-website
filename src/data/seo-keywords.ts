@@ -318,6 +318,11 @@ export const EXISTING_SLUGS: string[] = [
   "instagram-hashtag-strategy-2025",
   "ai-content-marketing-2025",
   "web-accessibility-seo-2025",
+  "sns-crisis-management-2025",
+  "dx-investment-roi-guide-2025",
+  "sns-advertising-guide-2025",
+  "influencer-marketing-guide-2025",
+  "subsidy-jizokukahojokin-2025",
 ];
 
 /**
