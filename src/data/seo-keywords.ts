@@ -471,6 +471,11 @@ export const EXISTING_SLUGS: string[] = [
   "saitama-toda-warabi-kawaguchi-kensetsu-kaigo-sns-2026",
   "kensetsu-kaigo-sns-content-calendar-2027",
   "chiba-narita-sakura-yachimata-kensetsu-kaigo-sns-2026",
+  "kensetsu-kaigo-sns-employee-interview-2026",
+  "kanagawa-yokosuka-miura-kensetsu-kaigo-sns-2026",
+  "kensetsu-kaigo-sns-hashtagstrategy-2026",
+  "saitama-higashimatsuyama-ranzan-kensetsu-kaigo-sns-2026",
+  "kensetsu-kaigo-sns-seo-content-integration-2026",
 ];
 
 /**
