@@ -439,6 +439,10 @@ export const EXISTING_SLUGS: string[] = [
   "chiba-higashi-kaigo-kensetsu-sns-2026",
   "kanagawa-nishi-ashigara-kensetsu-kaigo-sns-2026",
   "kensetsu-kaigo-ai-chatgpt-content-2026",
+  "yokohama-ku-kensetsu-kaigo-sns-2026",
+  "kawasaki-ku-kaigo-kensetsu-sns-2026",
+  "saitama-omiya-urawa-kensetsu-kaigo-sns-2026",
+  "kaigo-kensetsu-worker-engagement-sns-2026",
 ];
 
 /**
