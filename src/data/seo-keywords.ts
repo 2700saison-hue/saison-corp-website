@@ -374,6 +374,9 @@ export const EXISTING_SLUGS: string[] = [
   "kanagawa-kaigo-kensetsu-sns-guide-2026",
   "saitama-chiba-kanagawa-sns-saiyo-comparison-2026",
   "kaigo-sns-local-saitama-chiba-kanagawa-2026",
+  "kensetsu-tiktok-recruit-saitama-chiba-kanagawa-2026",
+  "line-official-kaigo-kensetsu-saitama-chiba-kanagawa-2026",
+  "sns-unyo-daikou-yokohama-2026",
 ];
 
 /**

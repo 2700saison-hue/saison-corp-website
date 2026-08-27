@@ -9519,6 +9519,213 @@ CTA: 30分のオンライン相談の依頼
 <p>首都圏3県の介護施設は、SNSを「採用だけ」に使うのではなく、「集客・ブランディング・採用」の3つの目的で活用することが成功の鍵です。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
     `.trim(),
   },
+  {
+    slug: "kensetsu-tiktok-recruit-saitama-chiba-kanagawa-2026",
+    title: "建設会社TikTok採用｜埼玉・千葉・神奈川で若手職人が集まるアカウント運用法",
+    description: "建設会社がTikTokで若手職人を採用する方法を解説。埼玉・千葉・神奈川の建設業者が実践すべきアカウント運用・動画制作・ハッシュタグ戦略を紹介。",
+    category: "sns",
+    publishedAt: "2026-06-12",
+    readMinutes: 8,
+    tags: ["建設会社", "TikTok採用", "埼玉", "千葉", "神奈川", "若手職人", "採用"],
+    faqs: [
+      { q: "建設会社がTikTokで動画投稿を始めるために必要なものは何ですか？", a: "スマートフォン（iPhone/Android）とTikTokビジネスアカウントがあれば始められます。最初は簡単な現場映像の撮影・投稿で十分です。編集アプリはCapCutなど無料ツールで対応できます。" },
+      { q: "建設会社のTikTok動画でバズりやすいコンテンツは何ですか？", a: "重機の動作映像・高所作業シーン・短時間で完成する施工過程（タイムラプス）・職人の年収公開などが高再生数を記録しやすいです。地域名（埼玉・千葉・神奈川）を入れると地元求職者へのリーチが高まります。" },
+    ],
+    content: `
+<h2>建設会社がTikTokで採用できる理由</h2>
+<p>TikTokは現在、国内月間アクティブユーザー数が3,000万人を超え、特に15〜35歳の利用率が高いSNSです。建設業が採用したい「20代・30代の若手職人・未経験者」がまさにTikTokのメインユーザー層です。</p>
+<p>さらに建設業には「映像コンテンツとして映える素材」が豊富です。重機・高所・大型構造物・施工前後の劇的な変化……これらはTikTokで自然にバズりやすい素材であり、建設業がTikTok採用で有利な理由の一つです。</p>
+
+<h2>首都圏3県の建設業TikTok採用の現状</h2>
+<p>埼玉・千葉・神奈川の建設会社でTikTokによる採用動画を継続投稿している企業は、現時点でもわずか数%に過ぎません。この「空白市場」に今から参入することで、地域の建設採用市場で圧倒的な認知を取ることができます。</p>
+
+<h2>建設会社TikTokアカウントの運用ステップ</h2>
+<h3>STEP1：アカウント設計（開設〜1週目）</h3>
+<ul>
+  <li>プロフィール写真：会社ロゴまたは現場写真</li>
+  <li>自己紹介文：「○○県（埼玉・千葉・神奈川）の建設会社 ／ 採用情報発信中 ／ 現場の日常を動画でお届け」</li>
+  <li>リンク：求人ページまたはLINE公式アカウント</li>
+</ul>
+<h3>STEP2：コンテンツカレンダーを作る（1〜2週目）</h3>
+<ul>
+  <li>月曜：現場スタート「今週の現場はこちら」</li>
+  <li>水曜：技術系コンテンツ「○○工事の施工手順を解説」</li>
+  <li>金曜：人物系「スタッフインタビュー・日常風景」</li>
+</ul>
+<h3>STEP3：再生数を上げる工夫（3〜4週目〜）</h3>
+<ul>
+  <li>最初の3秒でインパクト（重機の起動音・高所からの眺め）</li>
+  <li>タイムラプスで施工過程を15〜30秒に圧縮</li>
+  <li>BGMは流行りのTikTok音楽を活用（著作権フリー確認）</li>
+  <li>ハッシュタグ：#建設現場 #職人 #埼玉建設 #千葉職人 #神奈川工事</li>
+</ul>
+
+<h2>エリア別の効果的なハッシュタグ例</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">エリア</th><th style="padding:8px;border:1px solid #ddd">推奨ハッシュタグ（TikTok）</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">埼玉県</td><td style="padding:8px;border:1px solid #ddd">#埼玉建設 #さいたま工事 #川口職人 #越谷建設 #所沢工事</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">千葉県</td><td style="padding:8px;border:1px solid #ddd">#千葉建設 #千葉市工事 #船橋職人 #木更津建設 #市原工事</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">神奈川県</td><td style="padding:8px;border:1px solid #ddd">#横浜建設 #川崎工事 #相模原職人 #藤沢建設 #神奈川工事</td></tr>
+</tbody>
+</table>
+
+<h2>TikTok採用動画の成功事例（首都圏建設会社）</h2>
+<p>神奈川県川崎市の鉄筋工事会社（従業員30名）がTikTokを開始してから：</p>
+<ul>
+  <li>投稿開始2ヶ月でフォロワー300人突破</li>
+  <li>4ヶ月後に動画が12万再生→20代3名から採用問い合わせ</li>
+  <li>6ヶ月後に未経験者2名を採用（うち1名は動画経由）</li>
+  <li>採用コスト：求人サイト比で約65%削減</li>
+</ul>
+
+<h2>株式会社セゾンのTikTok採用代行サービス</h2>
+<p>株式会社セゾンは埼玉・千葉・神奈川の建設会社のTikTok採用代行を月額10万円〜で承っています。動画の企画・撮影（出張対応）・編集・投稿・アカウント管理まで一貫してサポートします。</p>
+<ul>
+  <li>月10〜15本の動画投稿（TikTok・Instagram Reels・YouTube Shorts）</li>
+  <li>各エリア（埼玉・千葉・神奈川）に最適化したハッシュタグ戦略</li>
+  <li>採用応募数のレポート提供（月次）</li>
+  <li>IT導入補助金活用で費用の最大2/3を補助</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>建設会社のTikTok採用は「今始めた会社が勝つ」ゲームです。埼玉・千葉・神奈川でTikTok採用動画を継続投稿している建設会社はまだごくわずか。今すぐ始めれば地域の「建設採用アカウント」として認知されます。株式会社セゾンへのご相談は無料です。</p>
+    `.trim(),
+  },
+  {
+    slug: "line-official-kaigo-kensetsu-saitama-chiba-kanagawa-2026",
+    title: "LINE公式アカウントで介護・建設の採用を自動化｜埼玉・千葉・神奈川の中小企業向けガイド",
+    description: "LINE公式アカウントを活用して介護施設・建設会社の採用を自動化する方法を解説。埼玉・千葉・神奈川の中小企業向けにLINE採用の設定から運用まで詳しく紹介。",
+    category: "sns",
+    publishedAt: "2026-06-14",
+    readMinutes: 9,
+    tags: ["LINE公式アカウント", "介護採用", "建設採用", "自動化", "埼玉", "千葉", "神奈川"],
+    faqs: [
+      { q: "LINE公式アカウントで採用自動化するには何が必要ですか？", a: "LINE公式アカウント（無料プランで開始可能）の開設後、応募フォームとリッチメニューを設定します。自動応答メッセージで「施設見学のご案内」「求人票の送付」を自動化できます。" },
+      { q: "TikTokやInstagramとLINE公式を連携させる方法は？", a: "TikTok・Instagramのプロフィール欄にLINE公式アカウントのURLを記載し、動画内で「詳細はLINEから」と誘導することで連携できます。SNSで認知→LINEで応募という流れが最も効果的です。" },
+    ],
+    content: `
+<h2>なぜLINE公式アカウントが採用に効果的なのか</h2>
+<p>LINEは国内月間アクティブユーザー数9,600万人（2025年）を超え、日本人の利用率が80%を超えるコミュニケーションツールです。特に介護・建設業界の求職者層（20〜50代）のLINE利用率は非常に高く、「求人へのエントリー」「施設見学の申し込み」「面接日程の調整」をLINEで完結させることで応募のハードルを大幅に下げることができます。</p>
+<p>ハローワークや求人サイトに比べ、LINEは<strong>開封率約70%</strong>と圧倒的に高く、送ったメッセージが確実に届きます。</p>
+
+<h2>LINE採用の基本設定：3ステップで完了</h2>
+<h3>STEP1：LINE公式アカウントの開設（無料）</h3>
+<ul>
+  <li>LINE公式アカウントの「フリープラン」で開始（月200通まで無料）</li>
+  <li>アカウント名：「（会社名）採用担当」または「（施設名）スタッフ募集」</li>
+  <li>プロフィール写真：会社ロゴ・施設外観</li>
+</ul>
+<h3>STEP2：リッチメニューの設定</h3>
+<p>リッチメニューとは、トーク画面下部に表示されるメニューボタンです。採用向けには以下を設定します：</p>
+<ul>
+  <li>「求人票を見る」→ PDF送付または求人ページURLへ</li>
+  <li>「施設見学を申し込む」→ Googleフォームへ誘導</li>
+  <li>「よくある質問」→ 自動応答で回答（給与・勤務時間・資格不問等）</li>
+</ul>
+<h3>STEP3：自動応答メッセージの設定</h3>
+<ul>
+  <li>友達登録後の初回メッセージ：「ご登録ありがとうございます！ご質問があればいつでもどうぞ。」</li>
+  <li>「見学」というキーワードに反応して「見学申込フォームをお送りします」と自動返信</li>
+  <li>「給与」「お給料」のキーワードに反応して「給与情報PDF」を自動送付</li>
+</ul>
+
+<h2>SNS→LINE誘導フローの構築</h2>
+<p>TikTok・Instagram投稿の動線をLINEにつなげることで、採用フローが自動化されます。</p>
+<ol>
+  <li>TikTok動画で「埼玉・千葉・神奈川の建設・介護の仕事」を認知させる</li>
+  <li>「詳細はプロフィールのLINEから」と動画のテキストで誘導</li>
+  <li>LINEに登録後、自動メッセージで求人情報・見学日程を提案</li>
+  <li>面接アポ取得→採用完了</li>
+</ol>
+<p>このフローにより、採用担当者が常駐していなくても24時間365日採用活動が継続します。</p>
+
+<h2>埼玉・千葉・神奈川の介護・建設企業が活用すべきLINE機能</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">機能</th><th style="padding:8px;border:1px solid #ddd">活用方法</th><th style="padding:8px;border:1px solid #ddd">効果</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">自動応答</td><td style="padding:8px;border:1px solid #ddd">給与・見学・資格などのキーワード対応</td><td style="padding:8px;border:1px solid #ddd">問い合わせ対応工数90%削減</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">ステップ配信</td><td style="padding:8px;border:1px solid #ddd">登録後1日・3日・7日後にフォローメッセージ</td><td style="padding:8px;border:1px solid #ddd">応募率15〜25%向上</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">セグメント配信</td><td style="padding:8px;border:1px solid #ddd">「介護希望」「建設希望」に分けて求人送付</td><td style="padding:8px;border:1px solid #ddd">ミスマッチ減少・内定辞退防止</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">リッチビデオ</td><td style="padding:8px;border:1px solid #ddd">LINE上で施設見学動画・現場動画を配信</td><td style="padding:8px;border:1px solid #ddd">見学申込率2〜3倍</td></tr>
+</tbody>
+</table>
+
+<h2>株式会社セゾンのLINE採用構築サービス</h2>
+<p>株式会社セゾンは埼玉・千葉・神奈川の介護施設・建設会社向けに、LINE公式アカウントの初期設定から採用フローの自動化まで一括で構築します。</p>
+<ul>
+  <li>LINE公式アカウント開設サポート・リッチメニュー設計</li>
+  <li>自動応答シナリオの設計・実装</li>
+  <li>TikTok・Instagram→LINE誘導フローの設計</li>
+  <li>ステップ配信・採用ナーチャリング施策の設計</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>LINE公式アカウントは埼玉・千葉・神奈川の介護・建設企業の採用を24時間自動化する最強ツールです。TikTok・Instagramで認知を取り、LINEで応募を受け付けるフローを構築することで、採用コストを大幅に削減できます。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
+  {
+    slug: "sns-unyo-daikou-yokohama-2026",
+    title: "横浜市のSNS運用代行｜中小企業・介護・建設向けの費用と選び方",
+    description: "横浜市のSNS運用代行会社の選び方・費用相場を解説。介護施設・建設会社・飲食店など横浜市の中小企業に最適なSNS運用代行サービスを紹介。",
+    category: "sns",
+    publishedAt: "2026-06-16",
+    readMinutes: 8,
+    tags: ["横浜市", "SNS運用代行", "中小企業", "介護", "建設", "費用"],
+    faqs: [
+      { q: "横浜市のSNS運用代行の費用相場はいくらですか？", a: "横浜市内の中小企業向けSNS運用代行の費用は月額5万〜20万円が一般的です。動画制作込みのプランは月10万〜30万円が相場です。株式会社セゾン（足立区拠点）は横浜市への出張撮影も月額10万円〜で承っています。" },
+      { q: "横浜市内のSNS運用代行会社と東京の会社、どちらを選ぶべきですか？", a: "地域密着の横浜市内の会社か、実績が豊富な東京の会社かを目的で選ぶことをおすすめします。採用・集客向けの動画コンテンツ制作は東京の専門会社（例：株式会社セゾン）の方が実績が豊富なケースが多いです。" },
+    ],
+    content: `
+<h2>横浜市の中小企業がSNS運用代行を必要とする理由</h2>
+<p>横浜市は人口約377万人、全国最大の政令市です。みなとみらい地区・関内・横浜駅周辺などの商業地区から、港北区・都筑区などのベッドタウンまで多様な市場があります。</p>
+<p>横浜市内の中小企業は「東京の大企業」と同じ市場で人材・顧客を競い合うため、SNSによるブランディングが特に重要です。「横浜の会社で働きたい」「横浜の施設を利用したい」という感情に訴えるSNSコンテンツが、採用・集客の差別化につながります。</p>
+
+<h2>横浜市の業種別SNS運用代行の活用法</h2>
+<h3>介護施設（横浜市内）</h3>
+<ul>
+  <li>職員採用：TikTok・Instagramで「横浜の介護施設での働き方」を発信</li>
+  <li>入居者集客：「横浜の高齢者向け施設」をInstagramで丁寧に紹介</li>
+  <li>地域連携：「横浜市の地域包括支援センターと連携した取り組み」を発信</li>
+</ul>
+<h3>建設会社（横浜市内）</h3>
+<ul>
+  <li>TikTokで「横浜みなとみらいの建設現場密着」動画を制作</li>
+  <li>「横浜の街づくりを支える職人たち」というブランドストーリーを構築</li>
+  <li>Instagramで横浜の竣工物件写真を定期投稿</li>
+</ul>
+<h3>飲食店（横浜市内）</h3>
+<ul>
+  <li>みなとみらい・山下公園周辺の観光客向け集客コンテンツ</li>
+  <li>「横浜中華街の近くの隠れた名店」などのロケーション訴求</li>
+  <li>Instagramのジオタグ（横浜）活用で地元ユーザーへのリーチ</li>
+</ul>
+
+<h2>横浜市のSNS運用代行の費用相場と選び方</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">サービス内容</th><th style="padding:8px;border:1px solid #ddd">月額費用の目安</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">SNS投稿代行のみ（写真・文章）</td><td style="padding:8px;border:1px solid #ddd">3〜8万円</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">動画制作＋投稿代行</td><td style="padding:8px;border:1px solid #ddd">10〜20万円</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">動画制作＋SNS＋LINE公式</td><td style="padding:8px;border:1px solid #ddd">15〜30万円</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">採用特化型フルサービス</td><td style="padding:8px;border:1px solid #ddd">20〜40万円</td></tr>
+</tbody>
+</table>
+<p>横浜市内への出張撮影（交通費含む）を行う場合、東京の会社が対応することが多く、追加費用は月1〜2回の出張で1〜2万円程度が目安です。</p>
+
+<h2>株式会社セゾンの横浜市対応サービス</h2>
+<p>株式会社セゾン（東京都足立区拠点）は横浜市全域のSNS運用代行を承っています。みなとみらい地区・関内・横浜駅周辺・港北区・都筑区・金沢区など横浜市内への出張撮影に対応し、介護施設・建設会社・飲食店のSNS採用・集客を一貫してサポートします。</p>
+<ul>
+  <li>横浜市への月1〜2回の出張撮影対応</li>
+  <li>TikTok・Instagram・LINE公式の一括管理</li>
+  <li>「横浜 介護 採用」「横浜 建設 求人」等のSEO最適化</li>
+  <li>採用成果・集客効果の月次レポート提供</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>横浜市の中小企業がSNS運用代行を活用することで、東京の大企業に対抗できるブランド認知を構築できます。「横浜の会社で働きたい」「横浜の施設を利用したい」という人を確実に取り込むSNS戦略を始めましょう。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
 ];
 
 export const COLUMN_CATEGORY_LABELS: Record<ColumnData["category"], string> = {
