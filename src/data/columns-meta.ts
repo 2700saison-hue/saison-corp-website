@@ -310,6 +310,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-analytics-kpi-management-2027", title: "建設・介護業界SNS採用のアナリティクス・KPI管理完全ガイド2027｜データで採用を改善する", category: "marketing" },
   { slug: "chiba-funabashi-matsudo-narashino-kaigo-kensetsu-sns-2027", title: "船橋市・松戸市・習志野市の建設・介護SNS採用2027｜千葉都市部エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-interview-content-strategy-2027", title: "建設・介護業界の社員インタビューSNSコンテンツ戦略2027｜リアルな声で応募者を集める", category: "sns" },
+  { slug: "saitama-higashimatsuyama-ranzan-ogawa-kensetsu-kaigo-sns-2027", title: "東松山市・嵐山町・小川町の建設・介護SNS採用2027｜埼玉比企エリア人材戦略", category: "sns" },
+  { slug: "kanagawa-miura-zushi-hayama-kensetsu-kaigo-sns-2027", title: "三浦市・逗子市・葉山町の建設・介護SNS採用2027｜三浦半島エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-paid-ad-strategy-2027", title: "建設・介護業界SNS採用広告の完全ガイド2027｜月3万円から始める有料広告戦略", category: "marketing" },
+  { slug: "chiba-ichikawa-urayasu-ichihara-kaigo-kensetsu-sns-2027", title: "市川市・浦安市・市原市の建設・介護SNS採用2027｜千葉湾岸エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-content-calendar-planning-2027", title: "建設・介護業界SNS採用コンテンツカレンダー作成ガイド2027｜年間投稿計画の立て方", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
