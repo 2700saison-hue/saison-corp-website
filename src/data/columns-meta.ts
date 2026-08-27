@@ -429,6 +429,21 @@ export const columnsMeta: ColumnMeta[] = [
     "slug": "web-accessibility-seo-2025",
     "title": "アクセシビリティ対応がSEOを強化する理由｜中小企業が取り組むべき具体的な施策",
     "category": "marketing"
+  },
+  {
+    "slug": "sns-crisis-management-2025",
+    "title": "SNS炎上対策・クライシスマネジメント｜企業が炎上を防ぎ・起きたときに対処する方法",
+    "category": "sns"
+  },
+  {
+    "slug": "dx-investment-roi-guide-2025",
+    "title": "DX投資のROIを最大化する方法｜中小企業が効果を出せないDX失敗パターンと解決策",
+    "category": "ai"
+  },
+  {
+    "slug": "sns-advertising-guide-2025",
+    "title": "SNS広告の基礎知識と始め方｜Instagram・TikTok・X広告を比較して選ぶ方法",
+    "category": "marketing"
   }
 ];
 
