@@ -333,6 +333,10 @@ export const EXISTING_SLUGS: string[] = [
   "social-media-policy-company-2025",
   "sns-outsource-checklist-2025",
   "dx-small-office-guide-2025",
+  "instagram-reels-business-guide-2026",
+  "google-my-business-optimization-2026",
+  "line-official-account-rich-menu-guide-2026",
+  "sns-content-calendar-template-2026",
 ];
 
 /**

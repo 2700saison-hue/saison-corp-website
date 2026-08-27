@@ -107,6 +107,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "social-media-policy-company-2025", title: "企業のソーシャルメディアポリシー作成ガイド｜社員SNSの適切な管理と炎上防止", category: "sns" },
   { slug: "sns-outsource-checklist-2025", title: "SNS運用を外注するときの失敗しない依頼方法｜チェックリスト付き", category: "sns" },
   { slug: "dx-small-office-guide-2025", title: "小規模オフィス・個人事業主のDX入門｜低コストで始めるデジタル化5ステップ", category: "ai" },
+  { slug: "instagram-reels-business-guide-2026", title: "Instagram リール活用術｜企業アカウントのフォロワーを増やす投稿設計", category: "sns" },
+  { slug: "google-my-business-optimization-2026", title: "Googleビジネスプロフィール完全攻略｜MEO対策で地域集客を最大化する方法", category: "marketing" },
+  { slug: "line-official-account-rich-menu-guide-2026", title: "LINE公式アカウント リッチメニュー活用術｜設計から導線設計まで徹底解説", category: "sns" },
+  { slug: "sns-content-calendar-template-2026", title: "SNS投稿カレンダーの作り方｜1ヶ月分を効率的に管理するテンプレート活用法", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
