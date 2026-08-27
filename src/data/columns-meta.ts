@@ -340,6 +340,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-400page-milestone-2027", title: "建設・介護業界SNS採用完全攻略2027｜400記事で学んだ採用成功の法則まとめ", category: "marketing" },
   { slug: "chiba-choshi-deep-kensetsu-kaigo-sns-2027", title: "銚子市の建設・介護SNS採用2027｜千葉最東端の漁師の街で採用する戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-ai-content-creation-2027", title: "建設・介護業界SNS採用にAIを活用したコンテンツ制作法2027｜ChatGPT・Claude活用術", category: "ai" },
+  { slug: "saitama-iruma-sayama-hanno-deep-kensetsu-kaigo-sns-2027", title: "入間市・狭山市の建設・介護SNS採用2027｜埼玉西部茶どころエリア採用戦略詳解", category: "sns" },
+  { slug: "kanagawa-kawasaki-asao-miyamae-kensetsu-kaigo-sns-2027", title: "川崎市麻生区・宮前区の建設・介護SNS採用2027｜川崎北部エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-400page-celebration-2027", title: "【400ページ達成】建設・介護業界SNS採用サイト400ページ突破記念｜次の目標と戦略", category: "case" },
+  { slug: "chiba-abiko-ryugasaki-toride-kensetsu-kaigo-sns-2027", title: "我孫子市・龍ケ崎市・取手市の建設・介護SNS採用2027｜千葉北部・茨城境界エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-2027-next-strategy", title: "建設・介護業界SNS採用2027年後半戦略｜進化するSNSと採用トレンドへの対応", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
