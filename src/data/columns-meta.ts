@@ -275,6 +275,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-onboarding-content-2027", title: "建設・介護業界の採用後SNS活用法｜入社後フォローとオンボーディングコンテンツ", category: "sns" },
   { slug: "chiba-togane-sanmu-oami-kensetsu-kaigo-sns-2027", title: "東金市・山武市・大網白里市の建設・介護SNS採用戦略｜千葉九十九里北部", category: "sns" },
   { slug: "kensetsu-kaigo-sns-web3-metaverse-2027", title: "建設・介護業界の次世代SNS採用戦略｜メタバース・VR技術を活かした未来の採用", category: "ai" },
+  { slug: "saitama-okegawa-kitamoto-ageo-deep-kensetsu-kaigo-2027", title: "桶川・北本・上尾エリアの建設・介護業界深掘り｜埼玉中部採用の最前線", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-engagement-tips-2027", title: "建設・介護業界採用SNSのエンゲージメントを高める25のコツ｜いいね・シェア急増術", category: "sns" },
+  { slug: "kanagawa-hiratsuka-oiso-kensetsu-kaigo-sns-2027", title: "平塚市・大磯町の建設・介護SNS採用戦略｜湘南平塚エリア攻略", category: "sns" },
+  { slug: "chiba-abiko-nagareyama-kensetsu-kaigo-sns-2027", title: "我孫子市・流山市の建設・介護SNS採用戦略｜千葉北西部つくばエクスプレス沿線", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-success-kpi-2027", title: "建設・介護業界SNS採用のKPI設計完全版｜測るべき指標と成功基準の設定方法", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
