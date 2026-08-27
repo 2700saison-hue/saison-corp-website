@@ -328,6 +328,11 @@ export const EXISTING_SLUGS: string[] = [
   "ecommerce-sns-strategy-2026",
   "chatgpt-prompt-business-2025",
   "sns-personal-branding-ceo-2025",
+  "medical-clinic-sns-guide-2025",
+  "ai-sales-automation-2025",
+  "social-media-policy-company-2025",
+  "sns-outsource-checklist-2025",
+  "dx-small-office-guide-2025",
 ];
 
 /**
