@@ -419,6 +419,10 @@ export const EXISTING_SLUGS: string[] = [
   "saitama-kensetsu-kaigo-saiyo-page-design-2026",
   "chiba-kaigo-kensetsu-pr-movie-2026",
   "kanagawa-kensetsu-kaigo-instagram-reel-2026",
+  "kensetsu-kaigo-sns-photo-tips-2026",
+  "chiba-kensetsu-hashtag-strategy-2026",
+  "saitama-kensetsu-kaigo-sns-炎上対策-2026",
+  "kanagawa-sagamihara-kensetsu-kaigo-sns-2026",
 ];
 
 /**
