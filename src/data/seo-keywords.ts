@@ -337,6 +337,10 @@ export const EXISTING_SLUGS: string[] = [
   "google-my-business-optimization-2026",
   "line-official-account-rich-menu-guide-2026",
   "sns-content-calendar-template-2026",
+  "tiktok-b2b-marketing-guide-2026",
+  "ai-writing-assistant-business-2026",
+  "web-marketing-funnel-guide-2026",
+  "seo-internal-linking-strategy-2026",
 ];
 
 /**
