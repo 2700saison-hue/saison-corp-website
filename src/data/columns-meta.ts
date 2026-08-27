@@ -221,6 +221,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "chiba-kashiwa-matsudo-kaigo-sns-2026", title: "千葉県柏市・松戸市の介護事業所がSNSで利用者・採用を増やす実践ガイド", category: "sns" },
   { slug: "kanagawa-yokohama-minami-naka-nishi-kaigo-kensetsu-sns-2026", title: "横浜市南部・中区・西区の建設・介護会社がSNSで存在感を高める方法", category: "sns" },
   { slug: "kensetsu-kaigo-sns-open-company-2026", title: "建設・介護会社がSNSで「オープンカンパニー」を実現して採用を革新する方法", category: "sns" },
+  { slug: "saitama-kawagoe-konosu-kensetsu-kaigo-sns-2026", title: "川越市・鴻巣市・行田市の建設・介護会社がSNSで採用・集客を強化する方法", category: "sns" },
+  { slug: "kanagawa-tsurumi-kawasaki-kensetsu-sns-2026", title: "川崎市麻生区・多摩区・鶴見区の建設会社がSNSで差別化する採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-success-case-2026", title: "建設・介護会社のSNS成功事例10選｜何が違うのか・失敗例との比較で徹底解説", category: "sns" },
+  { slug: "chiba-funabashi-ichikawa-kensetsu-kaigo-sns-2026", title: "千葉県船橋市・市川市の建設・介護会社がSNSで人材と顧客を同時に獲得する方法", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-300page-milestone-2026", title: "建設・介護会社のSNS運用で300記事を超えたセゾンのSEO戦略全公開｜どのキーワードで勝つか", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
