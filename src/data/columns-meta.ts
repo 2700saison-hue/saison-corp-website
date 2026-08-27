@@ -290,6 +290,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-video-editing-guide-2027", title: "建設・介護業界の採用動画編集完全ガイド｜無料アプリで作るプロ品質の動画術", category: "sns" },
   { slug: "kanagawa-zama-aiko-kensetsu-kaigo-sns-2027", title: "座間市・愛川町の建設・介護SNS採用戦略｜相模川沿線エリア完全攻略", category: "sns" },
   { slug: "chiba-choshi-asahi-kaigo-kensetsu-sns-2027", title: "銚子市・旭市の建設・介護SNS採用深掘り｜太平洋最東端エリアの採用革命", category: "sns" },
+  { slug: "kanagawa-odawara-minamiashigara-kensetsu-kaigo-sns-2027", title: "小田原市・南足柄市の建設・介護業界SNS採用戦略2027｜相模湾沿岸エリアの人材獲得法", category: "sns" },
+  { slug: "saitama-kuki-shiraoka-kazo-kensetsu-kaigo-sns-2027", title: "久喜市・白岡市・加須市の建設・介護SNS採用2027｜埼玉東部エリア人材戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-employer-branding-2027", title: "建設・介護業界のSNSエンプロイヤーブランディング完全ガイド2027｜採用力を根本から変える", category: "marketing" },
+  { slug: "chiba-togane-sanmu-oamishirasato-kaigo-kensetsu-sns-2027", title: "東金市・山武市・大網白里市の建設・介護SNS採用2027｜千葉中部エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-ai-chatbot-recruit-2027", title: "建設・介護業界SNS採用×AIチャットボット活用法2027｜24時間365日応募受付体制の作り方", category: "ai" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
