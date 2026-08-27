@@ -295,6 +295,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-employer-branding-2027", title: "建設・介護業界のSNSエンプロイヤーブランディング完全ガイド2027｜採用力を根本から変える", category: "marketing" },
   { slug: "chiba-togane-sanmu-oamishirasato-kaigo-kensetsu-sns-2027", title: "東金市・山武市・大網白里市の建設・介護SNS採用2027｜千葉中部エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-ai-chatbot-recruit-2027", title: "建設・介護業界SNS採用×AIチャットボット活用法2027｜24時間365日応募受付体制の作り方", category: "ai" },
+  { slug: "saitama-gyoda-hanyu-kumagaya-kensetsu-kaigo-sns-2027", title: "行田市・羽生市・熊谷市の建設・介護SNS採用2027｜埼玉北部エリア人材戦略", category: "sns" },
+  { slug: "kanagawa-atsugi-ebina-sagamihara-kensetsu-kaigo-sns-2027", title: "厚木市・海老名市・相模原市の建設・介護SNS採用2027｜神奈川内陸エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-instagram-reels-tiktok-strategy-2027", title: "建設・介護業界のInstagram Reels×TikTok採用戦略2027｜動画で応募者を10倍にする方法", category: "sns" },
+  { slug: "chiba-nagareyama-abiko-kashiwa-kaigo-kensetsu-sns-2027", title: "流山市・我孫子市・柏市の建設・介護SNS採用2027｜千葉北西部エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-google-business-profile-seo-2027", title: "建設・介護業界のGoogleビジネスプロフィール×SNS採用SEO戦略2027｜ローカル検索で採用を獲得", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
