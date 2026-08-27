@@ -469,6 +469,16 @@ export const columnsMeta: ColumnMeta[] = [
     "slug": "ecommerce-sns-strategy-2026",
     "title": "2026年のEC×SNS戦略｜TikTok Shop・Instagram Shopping・ライブコマースの最前線",
     "category": "sns"
+  },
+  {
+    "slug": "chatgpt-prompt-business-2025",
+    "title": "ChatGPTプロンプト集｜ビジネスで使える100のプロンプトテンプレート",
+    "category": "ai"
+  },
+  {
+    "slug": "sns-personal-branding-ceo-2025",
+    "title": "経営者のSNS個人ブランディング｜代表がSNSを発信することで会社が成長する理由",
+    "category": "sns"
   }
 ];
 

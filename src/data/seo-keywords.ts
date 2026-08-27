@@ -323,6 +323,9 @@ export const EXISTING_SLUGS: string[] = [
   "sns-advertising-guide-2025",
   "influencer-marketing-guide-2025",
   "subsidy-jizokukahojokin-2025",
+  "email-marketing-vs-line-2025",
+  "saison-case-study-sns-dx-2025",
+  "ecommerce-sns-strategy-2026",
 ];
 
 /**
