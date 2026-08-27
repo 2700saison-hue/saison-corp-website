@@ -300,6 +300,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-instagram-reels-tiktok-strategy-2027", title: "建設・介護業界のInstagram Reels×TikTok採用戦略2027｜動画で応募者を10倍にする方法", category: "sns" },
   { slug: "chiba-nagareyama-abiko-kashiwa-kaigo-kensetsu-sns-2027", title: "流山市・我孫子市・柏市の建設・介護SNS採用2027｜千葉北西部エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-google-business-profile-seo-2027", title: "建設・介護業界のGoogleビジネスプロフィール×SNS採用SEO戦略2027｜ローカル検索で採用を獲得", category: "marketing" },
+  { slug: "saitama-konosu-okegawa-kitamoto-kensetsu-kaigo-sns-2027", title: "鴻巣市・桶川市・北本市の建設・介護SNS採用2027｜埼玉中央エリア人材戦略", category: "sns" },
+  { slug: "kanagawa-isehara-hadano-matsuda-kensetsu-kaigo-sns-2027", title: "伊勢原市・秦野市・松田町の建設・介護SNS採用2027｜神奈川西部丹沢エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-line-official-account-strategy-2027", title: "建設・介護業界のLINE公式アカウント採用活用完全ガイド2027｜友達追加から内定まで", category: "sns" },
+  { slug: "chiba-mobara-chosei-isumi-kaigo-kensetsu-sns-2027", title: "茂原市・長生郡・いすみ市の建設・介護SNS採用2027｜千葉外房エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-facebook-x-linkedin-strategy-2027", title: "建設・介護業界のFacebook・X・LinkedIn採用活用法2027｜中高年・管理職採用の秘策", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
