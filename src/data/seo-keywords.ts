@@ -305,6 +305,10 @@ export const EXISTING_SLUGS: string[] = [
   "instagram-story-marketing-guide-2025",
   "ec-sns-marketing-strategy-2025",
   "video-marketing-kigyou-guide-2025",
+  "kaigogyo-dx-sns-guide-2025",
+  "it-hojyokin-dx-kakusin-2026",
+  "ai-chatbot-eigyo-jidouka-2025",
+  "sns-unyo-kpi-report-template-2025",
 ];
 
 /**
