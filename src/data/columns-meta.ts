@@ -330,6 +330,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-seo-blog-content-strategy-2027", title: "建設・介護業界のSEOブログ×SNS採用連携戦略2027｜検索とSNSで採用を最大化", category: "marketing" },
   { slug: "chiba-narashino-chiba-mihama-kensetsu-kaigo-sns-2027", title: "習志野市・千葉市美浜区の建設・介護SNS採用2027｜千葉湾岸都市部エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-career-change-strategy-2027", title: "建設・介護業界への他業種キャリアチェンジSNS採用戦略2027｜異業種転職者を採用する方法", category: "sns" },
+  { slug: "saitama-chichibu-ogano-nagatoro-kensetsu-kaigo-sns-2027", title: "秩父市・小鹿野町・長瀞町の建設・介護SNS採用2027｜埼玉西部山岳エリア戦略", category: "sns" },
+  { slug: "kanagawa-ayase-samukawa-chigasaki-north-kensetsu-kaigo-sns-2027", title: "綾瀬市・寒川町の建設・介護SNS採用2027｜神奈川中部エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-women-recruitment-2027", title: "建設・介護業界の女性SNS採用戦略2027｜女性が選ぶ職場になるためのSNS活用法", category: "sns" },
+  { slug: "chiba-kisarazu-kimitu-south-kensetsu-kaigo-sns-2027", title: "木更津市・君津市南部の建設・介護SNS採用2027｜アクアライン活用エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-welfare-benefit-pr-2027", title: "建設・介護業界の福利厚生SNSアピール戦略2027｜待遇を正しく伝えて採用力を高める", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
