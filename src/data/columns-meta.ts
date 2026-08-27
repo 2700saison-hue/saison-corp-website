@@ -325,6 +325,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-referral-recruitment-2027", title: "建設・介護業界のSNSリファラル採用戦略2027｜社員の紹介で採用コストを90%削減する方法", category: "sns" },
   { slug: "chiba-sakura-yachiyo-yotsukaido-kaigo-kensetsu-sns-2027", title: "佐倉市・八千代市・四街道市の建設・介護SNS採用2027｜千葉中央エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-onboarding-retention-2027", title: "建設・介護業界のSNS活用オンボーディング・定着率向上戦略2027｜採用後も離職を防ぐ", category: "sns" },
+  { slug: "saitama-kumagaya-fukaya-honjo-kensetsu-kaigo-sns-2027", title: "熊谷市・深谷市・本庄市の建設・介護SNS採用2027｜埼玉北部内陸エリア戦略", category: "sns" },
+  { slug: "kanagawa-ninomiya-oiso-hiratsuka-north-kensetsu-kaigo-sns-2027", title: "二宮町・大磯町の建設・介護SNS採用2027｜神奈川湘南西部エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-seo-blog-content-strategy-2027", title: "建設・介護業界のSEOブログ×SNS採用連携戦略2027｜検索とSNSで採用を最大化", category: "marketing" },
+  { slug: "chiba-narashino-chiba-mihama-kensetsu-kaigo-sns-2027", title: "習志野市・千葉市美浜区の建設・介護SNS採用2027｜千葉湾岸都市部エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-career-change-strategy-2027", title: "建設・介護業界への他業種キャリアチェンジSNS採用戦略2027｜異業種転職者を採用する方法", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
