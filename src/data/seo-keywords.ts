@@ -293,6 +293,14 @@ export const EXISTING_SLUGS: string[] = [
   "instagram-dm-eigyo-chusho-2025",
   "google-meo-taisaku-chusho-2025",
   "youtube-shorts-business-marketing-2025",
+  "sns-unyo-in-house-training-guide-2025",
+  "b2b-sns-marketing-guide-2025",
+  "instagram-reels-algorithm-2025",
+  "sns-unyo-cost-reduction-2025",
+  "ai-gyoumu-kaikaku-chusho-2025",
+  "sns-account-start-guide-2025",
+  "line-official-account-setup-guide-2025",
+  "web-seo-local-search-guide-2025",
 ];
 
 /**
