@@ -260,6 +260,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "chiba-mobara-chosei-kensetsu-kaigo-sns-2027", title: "茂原市・長生郡の建設・介護SNS採用戦略｜千葉中部農村エリア", category: "sns" },
   { slug: "kensetsu-kaigo-sns-employer-branding-2027", title: "建設・介護業界の採用SNSブランディング完全ガイド｜選ばれる会社になるための戦略", category: "sns" },
   { slug: "saitama-misato-yoshikawa-kasukabe-kensetsu-kaigo-sns-2027", title: "三郷市・吉川市・春日部市の建設・介護SNS採用戦略｜江戸川沿線エリア", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-referral-recruiting-2027", title: "建設・介護業界のSNS×リファラル採用完全ガイド｜社員の紹介で採用コストを70%削減", category: "sns" },
+  { slug: "kanagawa-zushi-hayama-minamiashigara-kensetsu-kaigo-sns-2027", title: "逗子市・葉山町・南足柄市の建設・介護SNS採用戦略｜神奈川リゾートエリア", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-linkedin-2027", title: "建設・介護業界のLinkedIn採用活用法｜BtoBと採用に強いSNSの使い方", category: "sns" },
+  { slug: "saitama-koshigaya-soka-yashio-kensetsu-kaigo-sns-2027", title: "越谷市・草加市・八潮市の建設・介護SNS採用戦略｜東武スカイツリーライン沿線", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-crisis-management-2027", title: "建設・介護業界の採用SNS炎上対策・危機管理ガイド｜リスクを最小化する運用術", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
