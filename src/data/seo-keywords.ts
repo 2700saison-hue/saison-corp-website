@@ -356,6 +356,10 @@ export const EXISTING_SLUGS: string[] = [
   "care-facility-sns-recruitment-2026",
   "construction-company-sns-guide-2026",
   "cx-improvement-digital-marketing-2026",
+  "beauty-salon-sns-strategy-2026",
+  "web-analytics-beginner-guide-2026",
+  "restaurant-line-delivery-sns-2026",
+  "personal-branding-sns-executive-2026",
 ];
 
 /**

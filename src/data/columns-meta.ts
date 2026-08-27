@@ -130,6 +130,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "care-facility-sns-recruitment-2026", title: "介護施設のSNS採用戦略｜TikTok・Instagramで介護職員を集める実践ガイド", category: "sns" },
   { slug: "construction-company-sns-guide-2026", title: "建設会社のSNS活用ガイド｜採用・集客・ブランディングをTikTok・Instagramで実現", category: "sns" },
   { slug: "cx-improvement-digital-marketing-2026", title: "CX（顧客体験）向上とデジタルマーケティング｜リピーターを生む顧客接点設計", category: "marketing" },
+  { slug: "beauty-salon-sns-strategy-2026", title: "美容サロン・ヘアサロンのSNS集客術｜Instagram・TikTokで新規客を増やす方法", category: "sns" },
+  { slug: "web-analytics-beginner-guide-2026", title: "Webアナリティクス入門｜GA4・サーチコンソールの読み方と改善施策の見つけ方", category: "marketing" },
+  { slug: "restaurant-line-delivery-sns-2026", title: "飲食店のLINE・デリバリー・SNS三位一体集客術｜リピーターを増やす仕組み", category: "sns" },
+  { slug: "personal-branding-sns-executive-2026", title: "経営者・起業家のSNS個人ブランディング｜フォロワーを顧客・採用に変える発信戦略", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
