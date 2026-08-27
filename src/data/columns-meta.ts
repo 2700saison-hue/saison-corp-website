@@ -280,6 +280,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kanagawa-hiratsuka-oiso-kensetsu-kaigo-sns-2027", title: "平塚市・大磯町の建設・介護SNS採用戦略｜湘南平塚エリア攻略", category: "sns" },
   { slug: "chiba-abiko-nagareyama-kensetsu-kaigo-sns-2027", title: "我孫子市・流山市の建設・介護SNS採用戦略｜千葉北西部つくばエクスプレス沿線", category: "sns" },
   { slug: "kensetsu-kaigo-sns-success-kpi-2027", title: "建設・介護業界SNS採用のKPI設計完全版｜測るべき指標と成功基準の設定方法", category: "marketing" },
+  { slug: "kensetsu-kaigo-sns-case-study-2027", title: "建設・介護業界SNS採用成功事例集｜関東3県で成果を出した10社の戦略", category: "case" },
+  { slug: "saitama-fujimi-shiki-miyoshi-kensetsu-kaigo-sns-2027", title: "富士見市・志木市・三芳町の建設・介護SNS採用戦略｜武蔵野台地エリア", category: "sns" },
+  { slug: "kanagawa-machida-yamato-kensetsu-kaigo-sns-2027", title: "町田市・大和市の建設・介護SNS採用戦略｜多摩・神奈川境界エリア攻略", category: "sns" },
+  { slug: "chiba-inzai-shiroi-kamagaya-kensetsu-kaigo-sns-2027", title: "印西市・白井市・鎌ケ谷市の建設・介護SNS採用戦略｜千葉ニュータウンエリア", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-2027-summary-strategy", title: "建設・介護業界SNS採用2027年総まとめ｜関東全域を制する採用戦略完全版", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
