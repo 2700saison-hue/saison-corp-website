@@ -177,6 +177,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kaigo-taisyoku-boshi-sns-2026", title: "介護職員の離職を防ぐSNS活用法｜スタッフのエンゲージメントをSNSで高める方法", category: "sns" },
   { slug: "sns-unyo-daikou-chiba-funabashi-matsudo-kashiwa-2026", title: "千葉県北部（船橋・松戸・柏・市川）のSNS運用代行ガイド｜介護・建設業の採用戦略", category: "sns" },
   { slug: "kensetsu-seko-kanri-instagram-saiyo-2026", title: "建設会社のInstagram施工管理者採用｜プロフィール設計から応募獲得までの完全ガイド", category: "sns" },
+  { slug: "kanagawa-kensetsu-line-saiyo-2026", title: "神奈川の建設会社がLINE公式アカウントで採用を強化する方法｜求職者との接点を増やす実践ガイド", category: "sns" },
+  { slug: "saitama-kaigo-jigyo-sns-brand-2026", title: "埼玉の介護事業者がSNSでブランディングする方法｜地域密着型の信頼を築く発信戦略", category: "sns" },
+  { slug: "chiba-kensetsu-google-biz-profile-2026", title: "千葉の建設会社がGoogleビジネスプロフィールとSNSを連携させてMEO対策を強化する方法", category: "sns" },
+  { slug: "saitama-kensetsu-saiyo-cost-down-sns-2026", title: "埼玉の建設会社が採用コストを半減させたSNS活用法｜求人媒体に頼らない人材確保の仕組み", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {

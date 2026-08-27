@@ -403,6 +403,10 @@ export const EXISTING_SLUGS: string[] = [
   "kaigo-taisyoku-boshi-sns-2026",
   "sns-unyo-daikou-chiba-funabashi-matsudo-kashiwa-2026",
   "kensetsu-seko-kanri-instagram-saiyo-2026",
+  "kanagawa-kensetsu-line-saiyo-2026",
+  "saitama-kaigo-jigyo-sns-brand-2026",
+  "chiba-kensetsu-google-biz-profile-2026",
+  "saitama-kensetsu-saiyo-cost-down-sns-2026",
 ];
 
 /**
