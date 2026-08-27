@@ -315,6 +315,9 @@ export const EXISTING_SLUGS: string[] = [
   "lp-cta-design-guide-2025",
   "tiktok-eigyo-recruit-2025",
   "sme-digital-marketing-roadmap-2025",
+  "instagram-hashtag-strategy-2025",
+  "ai-content-marketing-2025",
+  "web-accessibility-seo-2025",
 ];
 
 /**

@@ -414,6 +414,21 @@ export const columnsMeta: ColumnMeta[] = [
     "slug": "sme-digital-marketing-roadmap-2025",
     "title": "中小企業のデジタルマーケティングロードマップ｜段階別に取り組む施策の優先順位",
     "category": "marketing"
+  },
+  {
+    "slug": "instagram-hashtag-strategy-2025",
+    "title": "Instagram ハッシュタグ戦略2025年版｜企業アカウントが使うべきタグの選び方",
+    "category": "sns"
+  },
+  {
+    "slug": "ai-content-marketing-2025",
+    "title": "AIを使ったコンテンツマーケティング｜記事・SNS投稿・動画台本の自動生成活用法",
+    "category": "ai"
+  },
+  {
+    "slug": "web-accessibility-seo-2025",
+    "title": "アクセシビリティ対応がSEOを強化する理由｜中小企業が取り組むべき具体的な施策",
+    "category": "marketing"
   }
 ];
 
