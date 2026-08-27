@@ -255,6 +255,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "chiba-kimitsu-futtsu-kensetsu-kaigo-sns-2027", title: "君津市・富津市の建設・介護SNS採用戦略｜南房総エリア人材確保", category: "sns" },
   { slug: "kensetsu-kaigo-sns-paid-ad-2027", title: "建設・介護業界SNS広告完全ガイド｜月3万円から始める採用広告の作り方", category: "marketing" },
   { slug: "saitama-tokorozawa-sayama-hannno-kensetsu-kaigo-sns-2027", title: "所沢市・狭山市・飯能市の建設・介護SNS採用戦略｜西武沿線エリア", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-analytics-improvement-2027", title: "建設・介護業界SNSアナリティクス活用法｜データ分析で採用成果を最大化する方法", category: "marketing" },
+  { slug: "kanagawa-odawara-ninomiya-kensetsu-kaigo-sns-2027", title: "小田原市・二宮町の建設・介護SNS採用戦略｜神奈川西部エリア攻略", category: "sns" },
+  { slug: "chiba-mobara-chosei-kensetsu-kaigo-sns-2027", title: "茂原市・長生郡の建設・介護SNS採用戦略｜千葉中部農村エリア", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-employer-branding-2027", title: "建設・介護業界の採用SNSブランディング完全ガイド｜選ばれる会社になるための戦略", category: "sns" },
+  { slug: "saitama-misato-yoshikawa-kasukabe-kensetsu-kaigo-sns-2027", title: "三郷市・吉川市・春日部市の建設・介護SNS採用戦略｜江戸川沿線エリア", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
