@@ -9304,6 +9304,221 @@ CTA: 30分のオンライン相談の依頼
 <p>千葉県の建設会社でSNS採用に取り組む企業はまだ少数派です。今から始めることで「千葉の建設採用といえばこの会社」というポジションを確立できます。株式会社セゾンへのご相談は無料です。お問い合わせフォームからお気軽にどうぞ。</p>
     `.trim(),
   },
+  {
+    slug: "kanagawa-kaigo-kensetsu-sns-guide-2026",
+    title: "神奈川県の介護・建設業SNS運用ガイド｜横浜・川崎・相模原で採用・集客を伸ばす",
+    description: "神奈川県の介護施設・建設会社向けSNS運用ガイド。横浜市・川崎市・相模原市・藤沢市での採用・集客に効果的なTikTok・Instagram活用法と費用感を解説。",
+    category: "sns",
+    publishedAt: "2026-06-06",
+    readMinutes: 10,
+    tags: ["神奈川県", "介護施設", "建設会社", "SNS運用", "横浜", "川崎", "採用"],
+    faqs: [
+      { q: "神奈川県の介護施設と建設会社、どちらがSNS採用の効果が出やすいですか？", a: "どちらも効果が出やすいですが、建設会社は「現場映像のインパクト」でTikTokのバズが起きやすく、介護施設は「職場の温かさ・人間関係」を伝えることでInstagramのエンゲージメントが高まりやすい傾向があります。" },
+      { q: "神奈川県のSNS採用代行の相場はいくらですか？", a: "月額10万〜20万円が相場です。横浜・川崎エリアでは競合が多いため、差別化コンテンツの企画力が重要です。株式会社セゾンは月10万円〜でご対応しています。" },
+    ],
+    content: `
+<h2>神奈川県の介護・建設業界の人材不足の現状</h2>
+<p>神奈川県は人口約924万人（全国2位）を誇り、横浜市・川崎市という2大政令市を擁します。経済活動が活発な一方、介護職員と建設技能者の不足は深刻で、両業界ともに有効求人倍率が2〜4倍という水準が続いています。</p>
+<p>特に横浜市・川崎市では都心部への人材流出が顕著で、「神奈川の企業で働く」という選択肢を若者に認知させることが最初の課題です。SNS運用はこの認知獲得コストを大幅に下げる有効な手段です。</p>
+
+<h2>神奈川県の介護施設向けSNS運用戦略</h2>
+<h3>TikTok：「介護の仕事を楽しそうに見せる」コンテンツ</h3>
+<ul>
+  <li>「横浜の介護施設スタッフの1日に密着」シリーズ</li>
+  <li>「川崎市で介護職員として働く理由」インタビュー</li>
+  <li>「介護技術を教えます」資格取得サポートコンテンツ</li>
+  <li>「利用者様との触れ合い」（プライバシーに配慮しつつ温かさを伝える）</li>
+</ul>
+<h3>Instagram：採用ブランドの構築</h3>
+<ul>
+  <li>フィード：施設の清潔感・明るさを伝える写真</li>
+  <li>リール：スタッフの「本音トーク」動画</li>
+  <li>ハイライト：「求人情報」「スタッフ紹介」「施設紹介」を固定</li>
+</ul>
+
+<h2>神奈川県の建設会社向けSNS運用戦略</h2>
+<h3>TikTok：「建設の迫力」を映像で届ける</h3>
+<ul>
+  <li>「横浜みなとみらいの建設現場」密着動画</li>
+  <li>「川崎の大型工場建設プロジェクト」紹介</li>
+  <li>「相模原の橋梁工事」の土木映像</li>
+  <li>「藤沢・茅ヶ崎の湘南エリア建設現場」ロケーション動画</li>
+</ul>
+<h3>Instagram：実績と技術力のビジュアル訴求</h3>
+<ul>
+  <li>Before/After施工写真の定期投稿</li>
+  <li>「神奈川の街を作る仕事」のストーリーライン</li>
+  <li>若手社員の成長ストーリーを連載形式で発信</li>
+</ul>
+
+<h2>神奈川県主要エリア別 採用・集客の重点ポイント</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">エリア</th><th style="padding:8px;border:1px solid #ddd">介護業のSNSポイント</th><th style="padding:8px;border:1px solid #ddd">建設業のSNSポイント</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">横浜市</td><td style="padding:8px;border:1px solid #ddd">「横浜の施設」認知度で競合優位</td><td style="padding:8px;border:1px solid #ddd">みなとみらい工事の映像インパクト</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">川崎市</td><td style="padding:8px;border:1px solid #ddd">「川崎で地元密着」の安心感訴求</td><td style="padding:8px;border:1px solid #ddd">工業地帯の大規模案件で技術力アピール</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">相模原市</td><td style="padding:8px;border:1px solid #ddd">「アットホームな地域の施設」</td><td style="padding:8px;border:1px solid #ddd">内陸部の住宅・インフラ工事を地道に発信</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">藤沢・茅ヶ崎</td><td style="padding:8px;border:1px solid #ddd">「湘南の施設で働く」ライフスタイル訴求</td><td style="padding:8px;border:1px solid #ddd">「海が見える現場」のロケーション優位性</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">横須賀・三浦</td><td style="padding:8px;border:1px solid #ddd">「地元に貢献」の地域密着型採用</td><td style="padding:8px;border:1px solid #ddd">港湾・防衛関連工事の規模感訴求</td></tr>
+</tbody>
+</table>
+
+<h2>株式会社セゾンの神奈川県対応サービス</h2>
+<p>株式会社セゾン（足立区拠点）は神奈川県全域の介護施設・建設会社のSNS運用代行を承っています。横浜市・川崎市・相模原市・藤沢市・横須賀市への出張撮影（月1〜2回）に対応します。</p>
+<ul>
+  <li>介護・建設業に特化した採用動画の企画・制作</li>
+  <li>TikTok・Instagram・LINE公式アカウントの一括管理</li>
+  <li>「神奈川 介護 採用」「横浜 建設 求人」のSEOキーワード活用</li>
+  <li>月次レポートによる採用効果の見える化</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>神奈川県の介護・建設業界のSNS採用はまだ黎明期です。首都圏の大企業がSNS採用に本格参入する前に、地域密着型のコンテンツで先行者優位を確立しましょう。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
+  {
+    slug: "saitama-chiba-kanagawa-sns-saiyo-comparison-2026",
+    title: "埼玉・千葉・神奈川の介護・建設SNS採用比較｜首都圏3県で採用を成功させる方法",
+    description: "埼玉県・千葉県・神奈川県の介護施設・建設会社がSNS採用を成功させるためのエリア別比較ガイド。費用・効果・戦略の違いを詳しく解説。",
+    category: "sns",
+    publishedAt: "2026-06-08",
+    readMinutes: 11,
+    tags: ["埼玉県", "千葉県", "神奈川県", "介護施設", "建設会社", "SNS採用", "首都圏"],
+    faqs: [
+      { q: "埼玉・千葉・神奈川で最もSNS採用の競争が少ないのはどのエリアですか？", a: "3県とも首都圏であり競争は激しいですが、千葉県の外房・北西部エリア（銚子・香取・印旛）や埼玉県の北部エリア（熊谷・深谷・本庄）は競合が少なく、今から始めると先行者優位を取りやすいエリアです。" },
+      { q: "SNS採用代行を3県同時に依頼できますか？", a: "はい、可能です。株式会社セゾンは埼玉・千葉・神奈川全域に対応しており、複数拠点を持つ法人様へは一括でのSNS採用代行プランもご提案できます。" },
+    ],
+    content: `
+<h2>首都圏3県でのSNS採用の重要性</h2>
+<p>埼玉県・千葉県・神奈川県は合計人口約2,500万人（全国人口の約20%）を擁し、日本最大の経済圏「首都圏」の中核を担っています。この3県では介護・建設業界の人材不足が特に深刻であり、SNS採用への移行が急務となっています。</p>
+<p>本記事では3県のSNS採用の特徴・競合状況・推奨戦略を比較し、自社に合ったアプローチを選択するためのガイドを提供します。</p>
+
+<h2>3県のSNS採用環境比較</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">項目</th><th style="padding:8px;border:1px solid #ddd">埼玉県</th><th style="padding:8px;border:1px solid #ddd">千葉県</th><th style="padding:8px;border:1px solid #ddd">神奈川県</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">人口</td><td style="padding:8px;border:1px solid #ddd">約740万人</td><td style="padding:8px;border:1px solid #ddd">約630万人</td><td style="padding:8px;border:1px solid #ddd">約924万人</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">SNS採用の普及度</td><td style="padding:8px;border:1px solid #ddd">★★☆（やや少ない）</td><td style="padding:8px;border:1px solid #ddd">★☆☆（少ない）</td><td style="padding:8px;border:1px solid #ddd">★★★（多い）</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">競合の強さ</td><td style="padding:8px;border:1px solid #ddd">中程度</td><td style="padding:8px;border:1px solid #ddd">低〜中程度</td><td style="padding:8px;border:1px solid #ddd">高い</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">先行者優位</td><td style="padding:8px;border:1px solid #ddd">大きい</td><td style="padding:8px;border:1px solid #ddd">非常に大きい</td><td style="padding:8px;border:1px solid #ddd">中程度</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">おすすめ開始時期</td><td style="padding:8px;border:1px solid #ddd">今すぐ</td><td style="padding:8px;border:1px solid #ddd">今すぐ（緊急）</td><td style="padding:8px;border:1px solid #ddd">今すぐ（早めに）</td></tr>
+</tbody>
+</table>
+
+<h2>業種別のおすすめSNS戦略（3県共通）</h2>
+
+<h3>介護業界向け：「人間関係の温かさ」を最前面に</h3>
+<p>介護業界のSNS採用で最も効果的なコンテンツは「スタッフの素顔」です。給与や待遇ではなく、「この人たちと一緒に働きたい」と思わせることが応募につながります。</p>
+<ul>
+  <li><strong>TikTok</strong>：スタッフインタビュー・日常業務・ユニークな施設行事の動画</li>
+  <li><strong>Instagram</strong>：スタッフ紹介フィード・施設の清潔感・食事の写真</li>
+  <li><strong>LINE公式</strong>：応募者向けの「施設見学申し込み」ボタンを設置</li>
+</ul>
+
+<h3>建設業界向け：「現場の迫力」でかっこよさを伝える</h3>
+<p>建設業のSNS採用は「建設の仕事=かっこいい・男のロマン」という価値観の転換が鍵です。重機・高所・大型建造物の映像は若者の心をつかみやすいコンテンツです。</p>
+<ul>
+  <li><strong>TikTok</strong>：現場密着動画・重機操作映像・完成した建物の紹介</li>
+  <li><strong>Instagram</strong>：竣工写真・Before/After施工比較・スタッフの誇りを伝える投稿</li>
+  <li><strong>YouTube Shorts</strong>：技術解説・現場の1日シリーズ</li>
+</ul>
+
+<h2>3県の地域ごとの推奨エリア（優先ターゲット）</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">県</th><th style="padding:8px;border:1px solid #ddd">優先エリア（競合少・効果大）</th><th style="padding:8px;border:1px solid #ddd">理由</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">埼玉県</td><td style="padding:8px;border:1px solid #ddd">熊谷市・深谷市・本庄市・秩父市</td><td style="padding:8px;border:1px solid #ddd">SNS採用企業が少なく先行優位が高い</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">千葉県</td><td style="padding:8px;border:1px solid #ddd">銚子市・香取市・印旛郡・長柄町周辺</td><td style="padding:8px;border:1px solid #ddd">ローカル圏でSNS採用がほぼゼロ</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">神奈川県</td><td style="padding:8px;border:1px solid #ddd">相模原市南区・座間市・海老名市</td><td style="padding:8px;border:1px solid #ddd">横浜・川崎より競合が少ない内陸エリア</td></tr>
+</tbody>
+</table>
+
+<h2>SNS採用の開始から結果が出るまでのタイムライン</h2>
+<ul>
+  <li><strong>1〜2ヶ月目</strong>：アカウント開設・コンテンツ設計・初期投稿（フォロワー0〜100人）</li>
+  <li><strong>3〜4ヶ月目</strong>：フォロワー増加・エンゲージメント向上・問い合わせ開始（100〜500人）</li>
+  <li><strong>5〜6ヶ月目</strong>：月3〜8件の採用応募・SNS経由の採用成立事例（500〜2,000人）</li>
+  <li><strong>7ヶ月〜</strong>：採用コスト大幅削減・採用ブランドの確立・口コミ拡散</li>
+</ul>
+
+<h2>株式会社セゾンの首都圏3県対応サービス</h2>
+<p>株式会社セゾン（東京都足立区拠点）は埼玉県・千葉県・神奈川県全域の介護施設・建設会社のSNS採用代行を承っています。複数拠点・複数業種への一括対応も可能です。</p>
+<ul>
+  <li>3県全域への出張撮影対応（月1〜2回）</li>
+  <li>TikTok・Instagram・LINE公式アカウントの一括管理</li>
+  <li>業種別・エリア別の最適コンテンツ設計</li>
+  <li>採用成果レポートの月次提供</li>
+  <li>IT導入補助金・持続化補助金の申請サポート</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>埼玉・千葉・神奈川の3県では、SNS採用の普及がこれから加速します。特に千葉県・埼玉県の地方エリアは「今すぐ始めれば圧倒的な先行者優位」を取れる段階です。株式会社セゾンへの無料相談はお問い合わせフォームからお気軽にどうぞ。</p>
+    `.trim(),
+  },
+  {
+    slug: "kaigo-sns-local-saitama-chiba-kanagawa-2026",
+    title: "埼玉・千葉・神奈川の介護施設SNS集客ガイド｜地域密着型SNSマーケティングで入居者を増やす",
+    description: "埼玉県・千葉県・神奈川県の介護施設向けSNS集客ガイド。地域密着型コンテンツで入居者・利用者を増やすInstagram・LINE活用法を解説。",
+    category: "sns",
+    publishedAt: "2026-06-10",
+    readMinutes: 9,
+    tags: ["介護施設", "SNS集客", "埼玉", "千葉", "神奈川", "Instagram", "LINE公式"],
+    faqs: [
+      { q: "介護施設のSNS集客では採用と集客を同時に狙えますか？", a: "はい、同時に狙えます。TikTokとInstagramは採用コンテンツ（スタッフの日常）と集客コンテンツ（施設の安心感・食事・イベント）を組み合わせることで、求職者と入居検討者の両方にリーチできます。" },
+      { q: "介護施設のSNS集客はLINE公式アカウントが効果的ですか？", a: "非常に効果的です。LINE公式は開封率が70%を超え、施設見学の申し込み・資料請求・相談受付を自動化できます。ご家族からの問い合わせ対応にも向いています。" },
+    ],
+    content: `
+<h2>首都圏3県の介護施設SNS集客の現状と機会</h2>
+<p>埼玉県・千葉県・神奈川県は首都圏の高齢化が最も急速に進む地域の一つです。内閣府のデータによると、2025年には3県合計の75歳以上人口が350万人を超える見込みです。介護施設の需要は急増する一方、入居者・利用者の「施設選び」はSNS・インターネットで情報収集する時代になっています。</p>
+<p>多くの介護施設が「SNSは採用のため」と認識していますが、実は<strong>入居者・利用者の集客にも大きな効果</strong>があります。ご家族が施設を選ぶ際、InstagramやYouTubeで「施設の雰囲気を確認する」ケースが増えています。</p>
+
+<h2>採用と集客を同時に実現するSNS戦略</h2>
+
+<h3>コンテンツの分類と配分</h3>
+<ul>
+  <li><strong>採用向けコンテンツ（40%）</strong>：スタッフの日常・職場の雰囲気・インタビュー動画</li>
+  <li><strong>集客向けコンテンツ（40%）</strong>：施設の食事・イベント・利用者の笑顔（プライバシー配慮）</li>
+  <li><strong>情報提供コンテンツ（20%）</strong>：「介護保険の使い方」「施設選びのポイント」など有益な情報</li>
+</ul>
+
+<h3>プラットフォーム別の役割分担</h3>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">SNS</th><th style="padding:8px;border:1px solid #ddd">主な役割</th><th style="padding:8px;border:1px solid #ddd">ターゲット</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">TikTok</td><td style="padding:8px;border:1px solid #ddd">認知拡大・採用コンテンツ</td><td style="padding:8px;border:1px solid #ddd">20〜40代の求職者</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">Instagram</td><td style="padding:8px;border:1px solid #ddd">施設の魅力発信・採用ブランディング</td><td style="padding:8px;border:1px solid #ddd">30〜60代のご家族</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">LINE公式</td><td style="padding:8px;border:1px solid #ddd">見学申込・相談受付・フォロー</td><td style="padding:8px;border:1px solid #ddd">入居検討中のご家族</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">YouTube</td><td style="padding:8px;border:1px solid #ddd">施設見学動画・施設長インタビュー</td><td style="padding:8px;border:1px solid #ddd">50〜70代のご本人・家族</td></tr>
+</tbody>
+</table>
+
+<h2>首都圏3県の地域特性を活かした介護SNS集客</h2>
+<h3>埼玉県の介護施設向けSNS集客のポイント</h3>
+<ul>
+  <li>「さいたま市の施設に入居したい」「川口市で老人ホームを探している」という地域ワードを動画・投稿に盛り込む</li>
+  <li>埼玉県内の桜の名所・公園・ショッピングモールなど地域と連動したイベント発信</li>
+  <li>「埼玉に住む高齢の親の施設を探している家族」へのリーチを意識したInstagram投稿</li>
+</ul>
+<h3>千葉県の介護施設向けSNS集客のポイント</h3>
+<ul>
+  <li>「千葉市」「船橋」「松戸」「柏」などの地名を中心に使い、地域SEOを意識</li>
+  <li>海・自然の豊かさをコンテンツに活用（「窓から外房の景色が見える施設」等）</li>
+  <li>成田空港からのアクセスを活かした「帰国後のご家族が安心して任せられる施設」の訴求</li>
+</ul>
+<h3>神奈川県の介護施設向けSNS集客のポイント</h3>
+<ul>
+  <li>横浜・川崎の都市部から近い施設は「都市部から通いやすい」を強調</li>
+  <li>「湘南・鎌倉エリアの老人ホーム」など観光地との親和性を活用</li>
+  <li>横浜市内の施設は「港の見える丘」「みなとみらいが近い」などの立地優位を発信</li>
+</ul>
+
+<h2>株式会社セゾンの介護施設SNS集客支援</h2>
+<p>株式会社セゾンは埼玉県・千葉県・神奈川県全域の介護施設のSNS集客・採用代行を一貫して支援します。施設への出張撮影（月1〜2回）・コンテンツ企画・投稿管理・LINE公式の構築まで対応。入居者数の増加と採用応募の増加を同時に実現するトータルSNSマーケティングを提供します。</p>
+
+<h2>まとめ</h2>
+<p>首都圏3県の介護施設は、SNSを「採用だけ」に使うのではなく、「集客・ブランディング・採用」の3つの目的で活用することが成功の鍵です。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
 ];
 
 export const COLUMN_CATEGORY_LABELS: Record<ColumnData["category"], string> = {
