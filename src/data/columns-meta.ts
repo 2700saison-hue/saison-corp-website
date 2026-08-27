@@ -305,6 +305,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-line-official-account-strategy-2027", title: "建設・介護業界のLINE公式アカウント採用活用完全ガイド2027｜友達追加から内定まで", category: "sns" },
   { slug: "chiba-mobara-chosei-isumi-kaigo-kensetsu-sns-2027", title: "茂原市・長生郡・いすみ市の建設・介護SNS採用2027｜千葉外房エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-facebook-x-linkedin-strategy-2027", title: "建設・介護業界のFacebook・X・LinkedIn採用活用法2027｜中高年・管理職採用の秘策", category: "sns" },
+  { slug: "saitama-ageo-ina-tsurugashima-kensetsu-kaigo-sns-2027", title: "上尾市・伊奈町・鶴ヶ島市の建設・介護SNS採用2027｜埼玉中南部エリア戦略", category: "sns" },
+  { slug: "kanagawa-fujisawa-chigasaki-hiratsuka-kaigo-kensetsu-sns-2027", title: "藤沢市・茅ヶ崎市・平塚市の建設・介護SNS採用2027｜湘南エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-analytics-kpi-management-2027", title: "建設・介護業界SNS採用のアナリティクス・KPI管理完全ガイド2027｜データで採用を改善する", category: "marketing" },
+  { slug: "chiba-funabashi-matsudo-narashino-kaigo-kensetsu-sns-2027", title: "船橋市・松戸市・習志野市の建設・介護SNS採用2027｜千葉都市部エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-interview-content-strategy-2027", title: "建設・介護業界の社員インタビューSNSコンテンツ戦略2027｜リアルな声で応募者を集める", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
