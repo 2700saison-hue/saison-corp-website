@@ -320,6 +320,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-foreign-worker-recruitment-2027", title: "建設・介護業界の外国人材SNS採用戦略2027｜多言語対応と特定技能ビザ採用の実践ガイド", category: "sns" },
   { slug: "chiba-sodegaura-kimitsu-futtsu-kaigo-kensetsu-sns-2027", title: "袖ケ浦市・君津市・富津市の建設・介護SNS採用2027｜千葉南部エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-hashitag-strategy-2027", title: "建設・介護業界SNS採用ハッシュタグ戦略2027｜フォロワー外にリーチする完全ガイド", category: "sns" },
+  { slug: "saitama-hanno-musashino-hidaka-kensetsu-kaigo-sns-2027", title: "日高市・毛呂山町・越生町の建設・介護SNS採用2027｜埼玉西南部エリア戦略", category: "sns" },
+  { slug: "kanagawa-yokosuka-kamakura-zushi-kensetsu-kaigo-sns-2027", title: "横須賀市・鎌倉市の建設・介護SNS採用2027｜湘南・三浦半島北部エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-referral-recruitment-2027", title: "建設・介護業界のSNSリファラル採用戦略2027｜社員の紹介で採用コストを90%削減する方法", category: "sns" },
+  { slug: "chiba-sakura-yachiyo-yotsukaido-kaigo-kensetsu-sns-2027", title: "佐倉市・八千代市・四街道市の建設・介護SNS採用2027｜千葉中央エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-onboarding-retention-2027", title: "建設・介護業界のSNS活用オンボーディング・定着率向上戦略2027｜採用後も離職を防ぐ", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
