@@ -127,6 +127,9 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "saas-marketing-strategy-2026", title: "SaaSビジネスのマーケティング戦略｜無料トライアル・LTV・チャーン率改善の方法", category: "marketing" },
   { slug: "sns-account-growth-hack-2026", title: "SNSアカウントを最速で成長させる方法｜フォロワー0から1,000人までの最短戦略", category: "sns" },
   { slug: "ai-customer-support-automation-2026", title: "AI顧客対応の自動化｜チャットボット・問い合わせ対応を効率化する導入ガイド", category: "ai" },
+  { slug: "care-facility-sns-recruitment-2026", title: "介護施設のSNS採用戦略｜TikTok・Instagramで介護職員を集める実践ガイド", category: "sns" },
+  { slug: "construction-company-sns-guide-2026", title: "建設会社のSNS活用ガイド｜採用・集客・ブランディングをTikTok・Instagramで実現", category: "sns" },
+  { slug: "cx-improvement-digital-marketing-2026", title: "CX（顧客体験）向上とデジタルマーケティング｜リピーターを生む顧客接点設計", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
