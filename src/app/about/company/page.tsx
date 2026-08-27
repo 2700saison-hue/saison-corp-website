@@ -38,7 +38,7 @@ const companySchema = {
     addressLocality: "足立区",
     addressRegion: "東京都",
     addressCountry: "JP",
-    postalCode: "120-0014",
+    postalCode: "123-0865",
   },
   geo: {
     "@type": "GeoCoordinates",

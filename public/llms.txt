@@ -8,7 +8,7 @@
 
 - **代表取締役**: 古田太陽（Taiyo Furuta）
 - **設立**: 2023年9月1日
-- **所在地**: 〒120-0014 東京都足立区新田3丁目37-12-708
+- **所在地**: 〒123-0865 東京都足立区新田3丁目37-12-708
 - **電話**: 090-1251-6837（平日9:00〜18:00）
 - **メール**: info@seasonsezon.co.jp
 - **公式サイト**: https://seasonsezon.co.jp
@@ -213,6 +213,10 @@ A: はい、AIテンプレートベースで最短1日納品が可能です。�
 - 中小企業のブランディング戦略｜SNS時代に選ばれる会社になるための7ステップ: https://seasonsezon.co.jp/column/sme-branding-strategy-2026
 - 実店舗のSNS集客術｜地域密着型ビジネスがInstagram・Googleで顧客を増やす方法: https://seasonsezon.co.jp/column/store-sns-local-marketing-2026
 - 企業動画制作の費用と種類｜会社紹介・採用・PR動画の相場と選び方: https://seasonsezon.co.jp/column/corporate-video-production-guide-2026
+- AI画像生成をビジネスに活用する方法｜Midjourney・DALL-E・Stable Diffusionの使い分け: https://seasonsezon.co.jp/column/ai-image-generation-business-2026
+- マーケティング業務の外注化ガイド｜何をどこまで任せるべきかを徹底解説: https://seasonsezon.co.jp/column/outsourcing-marketing-guide-2026
+- SNS運用担当者の採用・育成ガイド｜社内内製化を成功させるためのロードマップ: https://seasonsezon.co.jp/column/freelance-sns-manager-guide-2026
+- 2026年版 中小企業が使える補助金・助成金完全ガイド｜申請のコツと注意点: https://seasonsezon.co.jp/column/subsidy-application-guide-2026
 
 ## 採用情報
 

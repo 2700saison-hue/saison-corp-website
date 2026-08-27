@@ -91,7 +91,7 @@ const localBusinessSchema = {
     streetAddress: "新田3丁目37-12-708",
     addressLocality: "足立区",
     addressRegion: "東京都",
-    postalCode: "120-0014",
+    postalCode: "123-0865",
     addressCountry: "JP",
   },
   geo: {

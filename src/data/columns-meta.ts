@@ -119,6 +119,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "sme-branding-strategy-2026", title: "中小企業のブランディング戦略｜SNS時代に選ばれる会社になるための7ステップ", category: "sns" },
   { slug: "store-sns-local-marketing-2026", title: "実店舗のSNS集客術｜地域密着型ビジネスがInstagram・Googleで顧客を増やす方法", category: "sns" },
   { slug: "corporate-video-production-guide-2026", title: "企業動画制作の費用と種類｜会社紹介・採用・PR動画の相場と選び方", category: "sns" },
+  { slug: "ai-image-generation-business-2026", title: "AI画像生成をビジネスに活用する方法｜Midjourney・DALL-E・Stable Diffusionの使い分け", category: "ai" },
+  { slug: "outsourcing-marketing-guide-2026", title: "マーケティング業務の外注化ガイド｜何をどこまで任せるべきかを徹底解説", category: "marketing" },
+  { slug: "freelance-sns-manager-guide-2026", title: "SNS運用担当者の採用・育成ガイド｜社内内製化を成功させるためのロードマップ", category: "sns" },
+  { slug: "subsidy-application-guide-2026", title: "2026年版 中小企業が使える補助金・助成金完全ガイド｜申請のコツと注意点", category: "subsidy" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {

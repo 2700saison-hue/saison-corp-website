@@ -84,7 +84,7 @@ export default function Footer() {
                 お問い合わせ
               </a>
               <p className="text-white/25 text-xs leading-relaxed pt-1">
-                〒120-0014<br />
+                〒123-0865<br />
                 東京都足立区新田3-37-12-708
               </p>
             </div>
