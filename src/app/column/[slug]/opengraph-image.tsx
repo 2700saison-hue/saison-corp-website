@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { columnsData } from "@/data/columns";
+import { getColumnMeta } from "@/data/columns-meta";
 
 export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
@@ -11,7 +11,7 @@ interface Props {
 
 export default async function Image({ params }: Props) {
   const { slug } = await params;
-  const col = columnsData.find((c) => c.slug === slug);
+  const col = getColumnMeta(slug);
   const title = col?.title ?? "コラム";
   const category = col?.category ?? "sns";
 
