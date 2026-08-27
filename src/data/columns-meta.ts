@@ -189,6 +189,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "chiba-kensetsu-facebook-eigyo-2026", title: "千葉の建設会社がFacebookで法人営業を強化する方法｜BtoB向けSNS活用ガイド", category: "sns" },
   { slug: "saitama-chiba-kanagawa-kensetsu-kaigo-sns-matome-2026", title: "埼玉・千葉・神奈川の建設業・介護業がSNSで成果を出すための地域別戦略まとめ", category: "sns" },
   { slug: "kanagawa-kensetsu-kaigo-twitter-x-2026", title: "神奈川の建設・介護会社がX（旧Twitter）で採用・集客を加速する方法", category: "sns" },
+  { slug: "kensetsu-kaigo-content-calendar-sns-2026", title: "建設・介護会社のSNS運用を継続させるコンテンツカレンダーの作り方｜年間計画テンプレート", category: "sns" },
+  { slug: "saitama-kensetsu-kaigo-saiyo-page-design-2026", title: "埼玉の建設・介護会社の採用ページ設計とSNS連動で応募数を3倍にする方法", category: "marketing" },
+  { slug: "chiba-kaigo-kensetsu-pr-movie-2026", title: "千葉の介護・建設会社がPR動画を作ってSNSに活用する方法｜費用・効果・制作ポイント", category: "sns" },
+  { slug: "kanagawa-kensetsu-kaigo-instagram-reel-2026", title: "神奈川の建設・介護会社がInstagram Reelsで採用・集客を加速させる完全ガイド", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
