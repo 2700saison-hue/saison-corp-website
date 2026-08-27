@@ -10445,6 +10445,195 @@ CTA: 30分のオンライン相談の依頼
 <p>埼玉東部（越谷・春日部・草加・八潮）は東京に近く人口密度も高いにもかかわらず、SNS採用の競合が少ない「穴場エリア」です。今すぐ始めることで地域での採用先行優位を確立できます。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
     `.trim(),
   },
+  {
+    slug: "chiba-northwest-kaigo-kensetsu-sns-2026",
+    title: "千葉北西部（松戸・柏・流山・野田）の介護・建設SNS採用ガイド",
+    description: "千葉県北西部（松戸市・柏市・流山市・野田市）の介護施設・建設会社向けSNS採用ガイド。つくばエクスプレス沿線エリアの特性を活かした採用戦略を解説。",
+    category: "sns",
+    publishedAt: "2026-07-10",
+    readMinutes: 8,
+    tags: ["松戸市", "柏市", "流山市", "野田市", "千葉北西部", "SNS採用", "介護", "建設"],
+    faqs: [
+      { q: "千葉北西部（松戸・柏・流山・野田）でSNS採用を始めるメリットは何ですか？", a: "つくばエクスプレス・常磐線・東武アーバンパークライン沿線の千葉北西部は東京都・埼玉県との境界に位置し、広い採用圏を持ちます。SNS採用の競合がまだ少ないため、先行者優位を取りやすいエリアです。" },
+      { q: "流山市・野田市の建設会社がSNS採用で訴求すべきポイントは何ですか？", a: "流山市は「母になるなら、流山市。」のキャッチコピーで知られる全国的にも注目の子育て都市です。「流山市で子育てしながら働ける職場」という訴求が若い世代の採用に効果的です。" },
+    ],
+    content: `
+<h2>千葉北西部エリアの特性</h2>
+<p>千葉県北西部（松戸市・柏市・流山市・野田市・我孫子市・鎌ケ谷市）は、東京・埼玉との境界に位置する「千葉の玄関口」エリアです。常磐線・つくばエクスプレス・東武アーバンパークラインが走り、都心へのアクセスが良好です。</p>
+<p>流山市は「母になるなら、流山市。」というマーケティングで全国的に注目を集め、子育て世代の移住が急増しています。この地域の介護業・建設業は「東京から移住してきた若い家族層」を採用ターゲットとして狙うことが効果的です。</p>
+
+<h2>松戸市のSNS採用戦略</h2>
+<h3>介護業（松戸市）</h3>
+<ul>
+  <li>「松戸市・矢切・馬橋エリアの介護施設スタッフ募集」地名特化コンテンツ</li>
+  <li>「常磐線・新京成線沿線で通える介護職場」沿線採用PR</li>
+  <li>「松戸市の地域包括ケアを支えるスタッフたち」地域貢献型コンテンツ</li>
+</ul>
+<h3>建設業（松戸市）</h3>
+<ul>
+  <li>「松戸の住宅・リフォーム現場密着」動画（TikTok）</li>
+  <li>「松戸・市川・鎌ケ谷の工事対応」広域エリアのPR</li>
+</ul>
+
+<h2>柏市のSNS採用戦略</h2>
+<h3>介護業（柏市）</h3>
+<ul>
+  <li>「柏市の介護施設・柏の葉キャンパス周辺の新施設」最新エリア訴求</li>
+  <li>「柏市のスマートシティ構想・最先端の介護施設で働く」先進性訴求</li>
+</ul>
+<h3>建設業（柏市）</h3>
+<ul>
+  <li>「柏の葉・柏たなか周辺の開発プロジェクト」大型開発への参加訴求</li>
+  <li>「柏市・我孫子・取手の建設工事対応」茨城県境のエリアカバー</li>
+</ul>
+
+<h2>流山市・野田市のSNS採用戦略</h2>
+<ul>
+  <li>「流山市で子育てしながら介護・建設の仕事をしています」ライフスタイル訴求</li>
+  <li>「流山おおたかの森・南流山エリアの職場」TX沿線の利便性</li>
+  <li>「野田市の醤油の街で働く介護・建設の職人」地域文化との融合</li>
+  <li>「野田・関宿・坂東の広大なエリアをカバーする建設会社」埼玉・茨城連携</li>
+</ul>
+
+<h2>千葉北西部のSNS採用ハッシュタグ</h2>
+<ul>
+  <li><strong>介護系</strong>：#松戸介護 #柏市介護施設 #流山老人ホーム #野田市介護求人</li>
+  <li><strong>建設系</strong>：#松戸建設 #柏市工事 #流山建設 #千葉北西部職人</li>
+  <li><strong>地域系</strong>：#松戸市 #柏市 #流山市 #TX沿線 #常磐線</li>
+</ul>
+
+<h2>株式会社セゾンの千葉北西部対応</h2>
+<p>株式会社セゾン（東京都足立区拠点）は松戸市・柏市・流山市・野田市・我孫子市・鎌ケ谷市など千葉北西部全域への出張撮影に対応します。月額10万円〜のSNS採用代行プランで介護施設・建設会社の採用を支援します。</p>
+
+<h2>まとめ</h2>
+<p>千葉北西部（松戸・柏・流山・野田）はSNS採用の競合がまだ少なく、今から始めることで地域のSNS採用先進企業として認知されます。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
+  {
+    slug: "kanagawa-inland-kaigo-kensetsu-sns-2026",
+    title: "神奈川内陸（相模原・海老名・厚木・大和）の介護・建設SNS採用ガイド",
+    description: "神奈川県内陸部（相模原市・海老名市・厚木市・大和市・座間市）の介護施設・建設会社向けSNS採用ガイド。内陸エリアならではの地域特化戦略を解説。",
+    category: "sns",
+    publishedAt: "2026-07-12",
+    readMinutes: 8,
+    tags: ["相模原市", "海老名市", "厚木市", "大和市", "神奈川内陸", "SNS採用", "介護", "建設"],
+    faqs: [
+      { q: "神奈川内陸（相模原・海老名・厚木）でSNS採用は横浜・川崎に比べて効果が出やすいですか？", a: "内陸エリアは横浜・川崎に比べてSNS採用の競合が少ないため、継続投稿で先行者優位を取りやすいです。また「横浜まで電車で15〜30分」という立地を活かした訴求も効果的です。" },
+      { q: "相模原市でリニア新幹線関連の建設工事が増えていますが、採用にどう活かせますか？", a: "「リニア中央新幹線工事に関わる建設会社で働く」という訴求は若手技術者・職人にとって大きな魅力です。TikTok・Instagramで「リニアの現場映像」を発信することで応募が集まりやすくなります。" },
+    ],
+    content: `
+<h2>神奈川内陸エリアの特性と採用機会</h2>
+<p>神奈川県の内陸部（相模原市・海老名市・厚木市・大和市・座間市・綾瀬市・愛川町）は、横浜・川崎の都市部と山岳部（丹沢・箱根方面）の中間に位置する産業・居住地帯です。小田急線・相模線・相鉄線が走り、横浜・新宿への直通アクセスが可能です。</p>
+<p>この地域の介護業・建設業は「横浜・川崎ほど競合が多くなく、東京・神奈川都市部への採用圏を持つ」という好条件があります。SNS採用は今がまさに始め時のエリアです。</p>
+
+<h2>相模原市のSNS採用戦略</h2>
+<h3>介護業（相模原市）</h3>
+<ul>
+  <li>「相模原市南区・中央区・緑区の介護施設スタッフ募集」3区を明示</li>
+  <li>「橋本・相模大野・古淵エリアから通える介護施設」駅名訴求</li>
+  <li>「リニア開業で変わる相模原の街を支える介護職員」未来訴求</li>
+</ul>
+<h3>建設業（相模原市）</h3>
+<ul>
+  <li>「リニア中央新幹線関連工事に参加する建設会社」大型プロジェクト訴求</li>
+  <li>「相模原市のまちづくりを担う職人」地域貢献型コンテンツ</li>
+  <li>「相模原から山梨・神奈川広域対応の建設会社」エリア広域訴求</li>
+</ul>
+
+<h2>海老名市・大和市のSNS採用戦略</h2>
+<ul>
+  <li>「海老名駅前の発展で需要急増する介護・建設」成長エリアの活況訴求</li>
+  <li>「海老名ビナウォーク・イオン海老名周辺の職場」ランドマーク活用</li>
+  <li>「大和市・座間市の住宅密集地の建設需要」安定した仕事量をアピール</li>
+  <li>「相鉄線・小田急線・東急線で通える職場」複数路線の利便性</li>
+</ul>
+
+<h2>厚木市のSNS採用戦略</h2>
+<ul>
+  <li>「厚木市の製造・工業地帯の建設工事」産業都市としての特性活用</li>
+  <li>「厚木・愛川の自然豊かな環境で働く介護職員」ライフスタイル訴求</li>
+  <li>「本厚木駅から◯分の介護施設・建設会社」アクセス訴求</li>
+</ul>
+
+<h2>神奈川内陸エリアのSNS採用効果予測</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">エリア</th><th style="padding:8px;border:1px solid #ddd">SNS採用の競合状況</th><th style="padding:8px;border:1px solid #ddd">先行者優位の高さ</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">相模原市</td><td style="padding:8px;border:1px solid #ddd">少ない</td><td style="padding:8px;border:1px solid #ddd">★★★★（高い）</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">海老名市</td><td style="padding:8px;border:1px solid #ddd">やや少ない</td><td style="padding:8px;border:1px solid #ddd">★★★★（高い）</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">厚木市</td><td style="padding:8px;border:1px solid #ddd">少ない</td><td style="padding:8px;border:1px solid #ddd">★★★★★（非常に高い）</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">大和市・座間市</td><td style="padding:8px;border:1px solid #ddd">ほぼなし</td><td style="padding:8px;border:1px solid #ddd">★★★★★（非常に高い）</td></tr>
+</tbody>
+</table>
+
+<h2>株式会社セゾンの神奈川内陸対応</h2>
+<p>株式会社セゾン（東京都足立区拠点）は相模原市・海老名市・厚木市・大和市・座間市・綾瀬市への出張撮影に対応します。月額10万円〜のSNS採用代行プランで介護施設・建設会社を一貫支援します。</p>
+
+<h2>まとめ</h2>
+<p>神奈川内陸（相模原・海老名・厚木・大和）はSNS採用のブルーオーシャンエリアです。横浜・川崎の企業がSNS採用を強化する前に、今すぐ内陸エリアで先行者ポジションを確立しましょう。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
+  {
+    slug: "kaigo-kensetsu-sns-saiyo-cost-comparison-2026",
+    title: "介護・建設業の採用コスト徹底比較｜SNS採用vs人材紹介vs求人サイト【2026年版】",
+    description: "介護施設・建設会社の採用コストをSNS採用・人材紹介・求人サイト・ハローワークで徹底比較。埼玉・千葉・神奈川の中小企業が最もコスパの高い採用手段を選ぶためのガイド。",
+    category: "sns",
+    publishedAt: "2026-07-14",
+    readMinutes: 10,
+    tags: ["採用コスト", "人材紹介", "求人サイト", "SNS採用", "コスト比較", "介護", "建設"],
+    faqs: [
+      { q: "介護施設の採用コストの平均はいくらですか？", a: "人材紹介会社経由の採用コストは1人あたり50〜100万円が相場です。介護職員（年収300〜400万円）を紹介会社経由で採用すると、成功報酬は45〜120万円になります。SNS採用代行（月10〜20万円）と比較すると、年間10名採用の場合で300〜600万円の削減効果があります。" },
+      { q: "建設会社の採用で最もコスパが高い手段はどれですか？", a: "長期的に見るとSNS採用が最もコスパが高いです。初期の3〜6ヶ月は投資期間ですが、SNSのフォロワーが増えるにつれて採用単価が下がり続けます。人材紹介は採用のたびに高額の成功報酬が発生するため、採用規模が大きいほどSNS採用の優位性が増します。" },
+    ],
+    content: `
+<h2>2026年の採用市場環境（介護・建設業）</h2>
+<p>2026年現在、埼玉・千葉・神奈川の介護業・建設業における採用市場は「売り手市場が続く」状況です。少子高齢化による介護需要の増加と建設需要の高まりが続く一方、若い働き手の絶対数が減少しており、採用競争は年々激化しています。</p>
+<p>この環境下で「採用コストをコントロールしながら必要な人材を確保する」ことが、経営上の重要課題となっています。本記事では主要な採用手段のコストと効果を徹底比較します。</p>
+
+<h2>採用手段別コスト比較（介護施設・建設会社共通）</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">採用手段</th><th style="padding:8px;border:1px solid #ddd">初期費用</th><th style="padding:8px;border:1px solid #ddd">月次費用</th><th style="padding:8px;border:1px solid #ddd">採用1人あたり</th><th style="padding:8px;border:1px solid #ddd">特徴</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">ハローワーク</td><td style="padding:8px;border:1px solid #ddd">0円</td><td style="padding:8px;border:1px solid #ddd">0円</td><td style="padding:8px;border:1px solid #ddd">5〜20万円（時間コスト）</td><td style="padding:8px;border:1px solid #ddd">応募数少・ミスマッチ多</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">Indeed（無料掲載）</td><td style="padding:8px;border:1px solid #ddd">0円</td><td style="padding:8px;border:1px solid #ddd">0〜5万円</td><td style="padding:8px;border:1px solid #ddd">10〜30万円</td><td style="padding:8px;border:1px solid #ddd">応募数は多いがミスマッチも多い</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">専門求人サイト（介護/建設）</td><td style="padding:8px;border:1px solid #ddd">0〜5万円</td><td style="padding:8px;border:1px solid #ddd">5〜20万円</td><td style="padding:8px;border:1px solid #ddd">20〜60万円</td><td style="padding:8px;border:1px solid #ddd">業種特化で質は高め・費用継続</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">人材紹介会社</td><td style="padding:8px;border:1px solid #ddd">0円</td><td style="padding:8px;border:1px solid #ddd">0円（採用時のみ）</td><td style="padding:8px;border:1px solid #ddd">50〜120万円</td><td style="padding:8px;border:1px solid #ddd">質は高め・採用のたびに高額発生</td></tr>
+<tr style="background:#fff8e1"><td style="padding:8px;border:1px solid #ddd"><strong>SNS採用代行</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>0〜5万円</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>10〜20万円（固定）</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>15〜40万円（継続で低減）</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>ブランド蓄積・採用単価が下がる</strong></td></tr>
+</tbody>
+</table>
+
+<h2>採用規模別のコスト比較（年間採用人数別）</h2>
+<h3>年間3名採用の場合</h3>
+<ul>
+  <li>人材紹介：50〜360万円</li>
+  <li>専門求人サイト：60〜180万円（月15万円×12ヶ月）</li>
+  <li>SNS採用代行：120〜240万円（月10〜20万円×12ヶ月）</li>
+  <li>→ 採用3名程度ではコスト差が小さく、求人サイト・人材紹介も選択肢</li>
+</ul>
+<h3>年間6〜10名採用の場合</h3>
+<ul>
+  <li>人材紹介：300〜1,200万円</li>
+  <li>専門求人サイト：60〜240万円</li>
+  <li>SNS採用代行：120〜240万円（固定費・採用数に関わらず）</li>
+  <li>→ SNS採用代行の費用対効果が最大化するゾーン</li>
+</ul>
+
+<h2>SNS採用が「長期投資」として優れている理由</h2>
+<p>SNS採用の最大の特徴は「アカウントが資産になること」です。TikTok・InstagramのフォロワーやLINE公式の友達数は、継続することで増え続け、採用単価が年々下がっていきます。</p>
+<ul>
+  <li><strong>1年目</strong>：フォロワー0〜1,000人・月1〜3件の採用応募</li>
+  <li><strong>2年目</strong>：フォロワー1,000〜5,000人・月5〜10件の採用応募</li>
+  <li><strong>3年目〜</strong>：フォロワー5,000〜10,000人・月10〜20件の採用応募（採用単価が激減）</li>
+</ul>
+<p>人材紹介・求人サイトは「お金を払い続けないと応募が来ない」のに対し、SNS採用は「フォロワーという無形資産」を蓄積し続けます。</p>
+
+<h2>株式会社セゾンの採用コスト削減シミュレーション（無料）</h2>
+<p>株式会社セゾンでは、埼玉・千葉・神奈川の介護施設・建設会社向けに「現在の採用コストとSNS採用代行を比較したコスト削減シミュレーション」を無料で提供しています。現在の採用コストをお知らせいただくだけで、SNS採用に切り替えた場合のコスト削減効果をお見積りします。</p>
+
+<h2>まとめ</h2>
+<p>採用規模が年間6名以上の介護施設・建設会社にとって、SNS採用代行は最もコスパの高い採用手段です。「今すぐ採用が必要」という場合は求人サイト・人材紹介と並行しながら、中長期的な採用コスト削減を目指してSNS採用を始めましょう。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
 ];
 
 export const COLUMN_CATEGORY_LABELS: Record<ColumnData["category"], string> = {

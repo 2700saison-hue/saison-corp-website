@@ -162,6 +162,9 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-shokunin-tiktok-profile-2026", title: "建設職人がTikTokで採用される｜プロフィール設定から動画投稿まで完全ガイド", category: "sns" },
   { slug: "kaigo-drama-video-saiyo-kanto-2026", title: "介護施設のドラマ型動画採用｜関東（埼玉・千葉・神奈川）で応募を3倍にした手法", category: "sns" },
   { slug: "kaigo-kensetsu-sns-toubu-saitama-2026", title: "埼玉東部（越谷・春日部・草加・八潮）の介護・建設SNS採用ガイド", category: "sns" },
+  { slug: "chiba-northwest-kaigo-kensetsu-sns-2026", title: "千葉北西部（松戸・柏・流山・野田）の介護・建設SNS採用ガイド", category: "sns" },
+  { slug: "kanagawa-inland-kaigo-kensetsu-sns-2026", title: "神奈川内陸（相模原・海老名・厚木・大和）の介護・建設SNS採用ガイド", category: "sns" },
+  { slug: "kaigo-kensetsu-sns-saiyo-cost-comparison-2026", title: "介護・建設業の採用コスト徹底比較｜SNS採用vs人材紹介vs求人サイト【2026年版】", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {

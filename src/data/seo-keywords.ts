@@ -388,6 +388,9 @@ export const EXISTING_SLUGS: string[] = [
   "kensetsu-shokunin-tiktok-profile-2026",
   "kaigo-drama-video-saiyo-kanto-2026",
   "kaigo-kensetsu-sns-toubu-saitama-2026",
+  "chiba-northwest-kaigo-kensetsu-sns-2026",
+  "kanagawa-inland-kaigo-kensetsu-sns-2026",
+  "kaigo-kensetsu-sns-saiyo-cost-comparison-2026",
 ];
 
 /**
