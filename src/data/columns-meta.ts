@@ -141,6 +141,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "saitama-kensetsu-sns-saiyo-2026", title: "埼玉県の建設会社がSNS採用で成功する方法｜TikTok・Instagramで若手職人を集める", category: "sns" },
   { slug: "kanagawa-kaigo-sns-saiyo-2026", title: "神奈川県の介護施設SNS採用ガイド｜TikTok・Instagramで介護職員の応募を増やす", category: "sns" },
   { slug: "chiba-kaigo-kensetsu-sns-2026", title: "千葉県の介護・建設会社SNS運用ガイド｜採用・集客をInstagram・TikTokで解決する方法", category: "sns" },
+  { slug: "saitama-kaigo-sns-saiyo-2026", title: "埼玉県の介護施設SNS採用ガイド｜TikTok・Instagramで介護職員の応募を増やす方法", category: "sns" },
+  { slug: "kanagawa-kensetsu-sns-saiyo-2026", title: "神奈川県の建設会社SNS採用ガイド｜TikTok・Instagramで若手職人を採用する方法", category: "sns" },
+  { slug: "saitama-kensetsu-kaigo-dx-sns-2026", title: "埼玉県の建設・介護業界DX＆SNS戦略｜SNS運用代行で採用・集客を自動化する", category: "sns" },
+  { slug: "chiba-kensetsu-sns-saiyo-2026", title: "千葉県の建設会社SNS採用戦略｜TikTok・Instagramで若手職人の応募を増やす方法", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {

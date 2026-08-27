@@ -9007,6 +9007,303 @@ CTA: 30分のオンライン相談の依頼
 <p>千葉県の介護・建設業界のSNS活用はまだブルーオーシャンの状態です。今から継続的に発信を始めることで、3〜6ヶ月で採用・集客への効果が現れ始めます。株式会社セゾンにお気軽にご相談ください。</p>
     `.trim(),
   },
+  {
+    slug: "saitama-kaigo-sns-saiyo-2026",
+    title: "埼玉県の介護施設SNS採用ガイド｜TikTok・Instagramで介護職員の応募を増やす方法",
+    description: "埼玉県の介護施設がSNS採用を成功させるための具体的な方法を解説。TikTok・Instagramで介護職員の応募を増やした事例と費用感をご紹介。",
+    category: "sns",
+    publishedAt: "2026-05-29",
+    readMinutes: 9,
+    tags: ["埼玉県", "介護施設", "SNS採用", "TikTok", "Instagram", "介護職員"],
+    faqs: [
+      { q: "埼玉県の介護施設がSNS採用を始めるには何が必要ですか？", a: "スマートフォンと撮影担当者（既存スタッフ兼任可）があれば始められます。TikTokとInstagramのビジネスアカウントを開設し、職場の雰囲気・スタッフインタビュー・日常業務の動画を週2〜3本投稿することが第一歩です。" },
+      { q: "SNS採用でどれくらいの期間で効果が出ますか？", a: "埼玉県内の介護施設の事例では、継続投稿3〜4ヶ月でTikTokのフォロワーが500人を超え始め、5〜6ヶ月で月3〜5件の応募につながるケースが多いです。" },
+    ],
+    content: `
+<h2>埼玉県の介護人材不足とSNS採用の可能性</h2>
+<p>埼玉県は人口約740万人を擁する大都市圏でありながら、介護職員の有効求人倍率は3倍を超え、慢性的な人材不足が続いています。さいたま市・川口市・川越市・越谷市・所沢市など各都市で施設整備が進む一方、求職者の絶対数が不足している状況です。</p>
+<p>この状況を打開する手段として注目されているのが<strong>SNS採用</strong>です。ハローワークや求人サイトに頼り続けるだけでなく、TikTok・Instagram・YouTubeで職場のリアルな姿を発信することで、「この施設で働きたい」と思う人材を直接引き付けることができます。</p>
+
+<h2>埼玉県の介護業界でSNS採用が効果的な理由</h2>
+<ul>
+  <li><strong>首都圏との競争</strong>：東京都と隣接しているため、求職者は首都圏全体から施設を比較します。給与だけで差別化が難しいため、「職場の雰囲気・人間関係」で選んでもらう必要があります</li>
+  <li><strong>若年層の就職活動がSNSシフト</strong>：20〜30代の介護職希望者の70%以上がSNSで施設情報を収集しています</li>
+  <li><strong>地域密着のブランド構築</strong>：「さいたま市の介護施設」「川口市の老人ホーム」などの地域ワードで上位に立てる</li>
+</ul>
+
+<h2>埼玉県の介護施設が取り組むべきSNS採用戦略</h2>
+
+<h3>TikTok：職場の日常を短動画で伝える</h3>
+<p>TikTokは30秒〜1分の縦型動画が最も効果的です。埼玉県内の介護施設での活用例：</p>
+<ul>
+  <li>「さいたま市の介護施設スタッフの1日」シリーズ</li>
+  <li>「介護の仕事、実際どうですか？」スタッフインタビュー</li>
+  <li>「未経験で入社して3ヶ月」の成長ストーリー</li>
+  <li>「休憩時間の過ごし方」「スタッフ同士の関係」日常シーン</li>
+</ul>
+
+<h3>Instagram：ビジュアルとストーリーズで信頼を醸成</h3>
+<p>Instagramではフィード投稿・ストーリーズ・リールを組み合わせます：</p>
+<ul>
+  <li>フィード：施設の外観・内装・食事・イベントの写真</li>
+  <li>リール：TikTok同様の短動画コンテンツ</li>
+  <li>ストーリーズ：日常の業務風景・スタッフの一言メッセージ</li>
+  <li>ハイライト：「入社のしかた」「よくある質問」「スタッフ紹介」をまとめて保存</li>
+</ul>
+
+<h2>埼玉県主要エリア別の採用ポイント</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">エリア</th><th style="padding:8px;border:1px solid #ddd">特徴</th><th style="padding:8px;border:1px solid #ddd">SNS採用のポイント</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">さいたま市</td><td style="padding:8px;border:1px solid #ddd">県庁所在地・大規模施設多数</td><td style="padding:8px;border:1px solid #ddd">「大宮勤務」「浦和エリア」のタグ活用</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">川口市・蕨市</td><td style="padding:8px;border:1px solid #ddd">東京隣接・人口密度高い</td><td style="padding:8px;border:1px solid #ddd">「東京から通える」を訴求</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">越谷市・草加市</td><td style="padding:8px;border:1px solid #ddd">ベッドタウン・ファミリー層多</td><td style="padding:8px;border:1px solid #ddd">「子育て中も働きやすい」環境発信</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">所沢市・入間市</td><td style="padding:8px;border:1px solid #ddd">西部地域・競合少なめ</td><td style="padding:8px;border:1px solid #ddd">「地元密着」施設の安心感を打ち出す</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">川越市</td><td style="padding:8px;border:1px solid #ddd">観光都市・若者流入</td><td style="padding:8px;border:1px solid #ddd">「川越で介護職」の地域ブランド訴求</td></tr>
+</tbody>
+</table>
+
+<h2>SNS採用と求人サイトの費用比較</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">採用手段</th><th style="padding:8px;border:1px solid #ddd">初期費用</th><th style="padding:8px;border:1px solid #ddd">月額費用</th><th style="padding:8px;border:1px solid #ddd">採用1人あたり</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">ハローワーク</td><td style="padding:8px;border:1px solid #ddd">無料</td><td style="padding:8px;border:1px solid #ddd">無料</td><td style="padding:8px;border:1px solid #ddd">20〜50万円（時間コスト）</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">求人サイト（介護専門）</td><td style="padding:8px;border:1px solid #ddd">0〜5万円</td><td style="padding:8px;border:1px solid #ddd">3〜15万円</td><td style="padding:8px;border:1px solid #ddd">30〜80万円</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">人材紹介</td><td style="padding:8px;border:1px solid #ddd">無料</td><td style="padding:8px;border:1px solid #ddd">無料</td><td style="padding:8px;border:1px solid #ddd">50〜100万円（成功報酬）</td></tr>
+<tr style="background:#fff8e1"><td style="padding:8px;border:1px solid #ddd"><strong>SNS採用代行</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>0〜5万円</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>10〜20万円</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>15〜30万円（継続で低減）</strong></td></tr>
+</tbody>
+</table>
+
+<h2>埼玉県の介護施設SNS採用で株式会社セゾンにできること</h2>
+<p>株式会社セゾン（足立区拠点）は埼玉県全域のSNS採用代行を承っています。さいたま市・川口市・越谷市・所沢市・川越市など埼玉県内の介護施設に特化した採用動画の企画・撮影・編集・投稿管理を一括でサポートします。</p>
+<ul>
+  <li>月1〜2回の施設訪問撮影（埼玉県内対応）</li>
+  <li>TikTok・Instagram・YouTube Shortsへの定期投稿</li>
+  <li>「埼玉県 介護 求人」「さいたま 介護スタッフ」などのSEO対策</li>
+  <li>採用応募フォームの設計・DM対応サポート</li>
+</ul>
+
+<h2>まとめ：埼玉県の介護施設こそ今すぐSNS採用を始めるべき</h2>
+<p>首都圏の競合施設がSNS採用に本格参入する前に、「SNS採用の先行者」として埼玉県内での認知を確立することが重要です。株式会社セゾンへのご相談はお問い合わせフォームから無料でお申し込みいただけます。</p>
+    `.trim(),
+  },
+  {
+    slug: "kanagawa-kensetsu-sns-saiyo-2026",
+    title: "神奈川県の建設会社SNS採用ガイド｜TikTok・Instagramで若手職人を採用する方法",
+    description: "神奈川県の建設会社がSNS採用を活用して若手職人を採用する具体的な方法を解説。横浜・川崎・相模原エリアの建設業SNS活用事例と費用感を紹介。",
+    category: "sns",
+    publishedAt: "2026-05-31",
+    readMinutes: 9,
+    tags: ["神奈川県", "建設会社", "SNS採用", "TikTok", "Instagram", "職人採用"],
+    faqs: [
+      { q: "神奈川県の建設会社がSNS採用で成功するコツは何ですか？", a: "現場のリアルな映像（重機・高層ビル・完成した建物）を主役にした動画コンテンツが特に効果的です。「職人の仕事がかっこいい」と思わせる映像制作が、若手採用の鍵となります。" },
+      { q: "建設業のSNS採用は費用対効果が高いですか？", a: "人材紹介会社への成功報酬（1人50〜100万円）と比較すると、SNS採用代行の月額10〜20万円は非常に効果的です。継続することでフォロワーが増え、自社への応募が増加します。" },
+    ],
+    content: `
+<h2>神奈川県の建設業界が直面する採用課題</h2>
+<p>神奈川県は横浜市・川崎市・相模原市・横須賀市・藤沢市など多くの都市を抱え、建設需要が旺盛な一方で、建設職人・施工管理者の不足が深刻化しています。国土交通省のデータでは、建設技能者の約3割が55歳以上であり、10年以内に大量退職が予想されています。</p>
+<p>神奈川県内では再開発プロジェクト（横浜みなとみらい地区・川崎臨海部など）が続々と進む中、職人・施工管理者の採用競争は年々激化しています。この状況を打開するためにSNS採用が注目されています。</p>
+
+<h2>建設業のSNS採用がなぜ効果的なのか</h2>
+<p>建設業のSNS採用が特に効果的な理由は、「現場の映像」が圧倒的なコンテンツ力を持つからです。</p>
+<ul>
+  <li><strong>重機・高所作業・完成建物の映像</strong>は視覚的インパクトが強く、バズりやすい</li>
+  <li>「建設の仕事ってかっこいい」という認識の転換が若者の応募意欲を高める</li>
+  <li>地元の有名な建物・橋・道路を手がけた実績を動画で見せることができる</li>
+  <li>ハローワークや求人サイトでは伝えられない「現場の空気感」が伝わる</li>
+</ul>
+
+<h2>神奈川県の建設会社向けSNS採用コンテンツ戦略</h2>
+
+<h3>TikTok：若手職人へのダイレクトリーチ</h3>
+<ul>
+  <li>「神奈川の建設現場 一日密着」シリーズ（横浜・川崎・相模原の現場）</li>
+  <li>「重機の操作を間近で見せる」映像（クレーン・ショベルカー等）</li>
+  <li>「入社1年目が語るリアル」インタビュー動画</li>
+  <li>「こんな建物を作りました」完成現場紹介</li>
+  <li>「神奈川の建設職人の給料・年収公開」情報系コンテンツ</li>
+</ul>
+
+<h3>Instagram：採用ブランディングの土台を作る</h3>
+<ul>
+  <li>フィード：竣工写真・現場写真・スタッフ集合写真（プロっぽさを演出）</li>
+  <li>リール：TikTokと連携した動画コンテンツ</li>
+  <li>ストーリーズ：現場進捗・日常業務・スタッフの一言</li>
+  <li>ハイライト：「採用情報」「現場紹介」「スタッフ紹介」をまとめる</li>
+</ul>
+
+<h2>神奈川県主要エリア別の建設採用ポイント</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">エリア</th><th style="padding:8px;border:1px solid #ddd">建設市場の特徴</th><th style="padding:8px;border:1px solid #ddd">SNS採用の訴求ポイント</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">横浜市</td><td style="padding:8px;border:1px solid #ddd">みなとみらい再開発・高層マンション多数</td><td style="padding:8px;border:1px solid #ddd">「横浜の街を作る仕事」のブランド感</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">川崎市</td><td style="padding:8px;border:1px solid #ddd">工場・物流施設が多い・東京隣接</td><td style="padding:8px;border:1px solid #ddd">「東京から近い・安定した仕事」訴求</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">相模原市</td><td style="padding:8px;border:1px solid #ddd">内陸都市・住宅建設が多い</td><td style="padding:8px;border:1px solid #ddd">「地元密着」「地域貢献」の安心感</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">藤沢市・茅ヶ崎市</td><td style="padding:8px;border:1px solid #ddd">湘南エリア・リゾート開発</td><td style="padding:8px;border:1px solid #ddd">「湘南の海が見える現場」ロケーション訴求</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">横須賀・三浦</td><td style="padding:8px;border:1px solid #ddd">港湾・防衛施設・インフラ工事</td><td style="padding:8px;border:1px solid #ddd">「規模の大きな国家プロジェクト」で技術力訴求</td></tr>
+</tbody>
+</table>
+
+<h2>神奈川県の建設会社SNS採用の成功事例</h2>
+<p>神奈川県内のある中堅建設会社（従業員50名）では、TikTok・Instagramでの採用コンテンツを半年間継続したところ：</p>
+<ul>
+  <li>TikTokフォロワー数：0→800人（6ヶ月）</li>
+  <li>月間採用応募数：0〜1件→5〜8件</li>
+  <li>採用コスト：人材紹介費用ゼロ→SNS運用代行費用のみ（約80%削減）</li>
+  <li>採用者の年齢層：平均38歳→28歳へ若返り</li>
+</ul>
+
+<h2>株式会社セゾンの神奈川県対応サービス</h2>
+<p>株式会社セゾンは横浜市・川崎市・相模原市・藤沢市・横須賀市など神奈川県全域の建設会社SNS採用代行を承っています。現場への出張撮影（月1〜2回）から投稿管理まで一貫サポートします。</p>
+<ul>
+  <li>現場の迫力ある映像の企画・撮影・編集</li>
+  <li>「神奈川 建設 求人」「横浜 職人 採用」向けSEO最適化</li>
+  <li>採用応募の問い合わせ対応テンプレート提供</li>
+  <li>競合他社の分析と差別化コンテンツの立案</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>神奈川県の建設業界でのSNS採用は、今まさに黎明期です。先行して継続投稿を始めた企業が「神奈川の建設採用といえばあの会社」というポジションを獲得できます。株式会社セゾンへのご相談はお問い合わせフォームから無料で承ります。</p>
+    `.trim(),
+  },
+  {
+    slug: "saitama-kensetsu-kaigo-dx-sns-2026",
+    title: "埼玉県の建設・介護業界DX＆SNS戦略｜SNS運用代行で採用・集客を自動化する",
+    description: "埼玉県の建設・介護企業向けにDX推進とSNS運用代行を組み合わせた採用・集客戦略を解説。補助金活用・費用感・成功事例を詳しく紹介。",
+    category: "sns",
+    publishedAt: "2026-06-02",
+    readMinutes: 10,
+    tags: ["埼玉県", "建設業", "介護業", "DX", "SNS運用代行", "補助金"],
+    faqs: [
+      { q: "埼玉県でSNS採用代行を依頼すると費用はどれくらいかかりますか？", a: "月額10万〜20万円が相場です。IT導入補助金を活用することで初期費用の最大2/3が補助される場合があります。株式会社セゾンでは埼玉県の企業向けに補助金申請サポートも提供しています。" },
+      { q: "建設業と介護業で効果的なSNSプラットフォームは違いますか？", a: "基本的にはどちらもTikTok・Instagramが最も効果的です。建設業は「現場映像のかっこよさ」、介護業は「スタッフの人柄・職場の温かさ」を中心に発信内容を変えることがポイントです。" },
+    ],
+    content: `
+<h2>埼玉県の建設・介護業界が直面する共通課題</h2>
+<p>埼玉県の建設業界と介護業界には、異業種でありながら共通する大きな課題があります。それは<strong>「若手人材の慢性的な不足」</strong>です。</p>
+<ul>
+  <li><strong>建設業</strong>：技能者の高齢化（55歳以上が30%超）・若手のなりて不足・週休2日制への対応</li>
+  <li><strong>介護業</strong>：有効求人倍率3倍超・離職率の高さ・処遇改善加算があっても応募が来ない</li>
+</ul>
+<p>両業界とも「給与・待遇を改善しても応募が来ない」という状況に陥りがちです。この根本的な原因は<strong>「認知不足」</strong>です。良い職場であることが伝わっていないのです。</p>
+
+<h2>SNS運用とDXを組み合わせた解決策</h2>
+<p>この課題を解決するのが<strong>SNS採用 × DX化</strong>のセット戦略です。</p>
+
+<h3>ステップ1：SNSで認知を取る（TikTok・Instagram）</h3>
+<p>まず「この会社・施設で働きたい」という認知を獲得します。</p>
+<ul>
+  <li>週2〜3本の動画投稿（スタッフの日常・現場の様子・上司との関係性）</li>
+  <li>「埼玉 建設 求人」「さいたま市 介護 スタッフ」などの地域SEOキーワードを動画テキストに活用</li>
+  <li>リアクションへの返信でエンゲージメント（つながり度）を高める</li>
+</ul>
+
+<h3>ステップ2：応募フローをDX化する</h3>
+<p>SNSで興味を持った人が簡単に応募できる仕組みを作ります。</p>
+<ul>
+  <li>LINE公式アカウントでの応募受付（24時間対応）</li>
+  <li>AIチャットボットによる「よくある質問への自動返答」</li>
+  <li>Google Formsと連携した応募フォームの自動管理</li>
+  <li>面接日程調整ツールの導入（カレンダー自動連携）</li>
+</ul>
+
+<h3>ステップ3：IT導入補助金を活用してコストを抑える</h3>
+<p>SNS採用・DX化ツールの費用はIT導入補助金（補助率最大2/3）や小規模事業者持続化補助金の対象になる場合があります。埼玉県の中小企業は積極的に活用しましょう。</p>
+
+<h2>埼玉県の建設・介護業界向けSNS採用の投資対効果</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">施策</th><th style="padding:8px;border:1px solid #ddd">月額コスト</th><th style="padding:8px;border:1px solid #ddd">期待効果（6ヶ月後）</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">TikTok・Instagram運用代行</td><td style="padding:8px;border:1px solid #ddd">10〜20万円</td><td style="padding:8px;border:1px solid #ddd">月3〜8件の採用応募</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">LINE公式アカウント運用</td><td style="padding:8px;border:1px solid #ddd">3〜5万円</td><td style="padding:8px;border:1px solid #ddd">問い合わせ対応工数50%削減</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">採用動画制作（月2本）</td><td style="padding:8px;border:1px solid #ddd">5〜15万円</td><td style="padding:8px;border:1px solid #ddd">フォロワー増加・認知拡大</td></tr>
+<tr style="background:#fff8e1"><td style="padding:8px;border:1px solid #ddd"><strong>合計（補助金活用後）</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>6〜13万円</strong></td><td style="padding:8px;border:1px solid #ddd"><strong>採用コスト50〜80%削減</strong></td></tr>
+</tbody>
+</table>
+
+<h2>埼玉県の建設・介護企業が株式会社セゾンを選ぶ理由</h2>
+<p>株式会社セゾンは埼玉県全域（さいたま市・川口市・越谷市・所沢市・川越市・熊谷市・春日部市）の建設会社・介護施設のSNS運用代行を一貫して承っています。</p>
+<ul>
+  <li>建設・介護業界の採用動画制作実績多数</li>
+  <li>IT導入補助金・小規模事業者持続化補助金の申請サポート</li>
+  <li>LINE公式アカウント構築からSNS採用フロー設計まで対応</li>
+  <li>埼玉県内への出張撮影（月1〜2回）対応</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>埼玉県の建設・介護業界のSNS採用とDX化は、今すぐ始めることが競合他社への先行優位につながります。補助金を活用してコストを抑えながら、自社のSNS採用チャンネルを育てていきましょう。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
+  {
+    slug: "chiba-kensetsu-sns-saiyo-2026",
+    title: "千葉県の建設会社SNS採用戦略｜TikTok・Instagramで若手職人の応募を増やす方法",
+    description: "千葉県の建設会社がSNS採用で若手職人を集める具体的な方法を解説。千葉市・船橋・市原・木更津エリアの建設業SNS活用事例と費用感を紹介。",
+    category: "sns",
+    publishedAt: "2026-06-04",
+    readMinutes: 9,
+    tags: ["千葉県", "建設会社", "SNS採用", "TikTok", "Instagram", "若手採用"],
+    faqs: [
+      { q: "千葉県の建設会社がSNS採用を始める際の最初のステップは？", a: "まずTikTokのビジネスアカウントを開設し、現場の日常映像を週2〜3本投稿することから始めましょう。撮影はスマホで十分です。「千葉の建設現場」「千葉 職人」などのハッシュタグをつけることで地元の求職者に届きやすくなります。" },
+      { q: "千葉県内の建設会社でSNS採用が成功した事例はありますか？", a: "千葉市の塗装会社がTikTokで施工現場の動画を投稿し、3ヶ月で20代の応募者が月5件来るようになった事例があります。動画の再生数が1万回を超えると採用効果が出始めます。" },
+    ],
+    content: `
+<h2>千葉県の建設業界の採用事情</h2>
+<p>千葉県は成田空港・幕張新都心・千葉港などを有する産業拠点であり、建設需要は高水準を維持しています。一方、建設技能者・施工管理者の確保は年々難しくなっており、特に20〜30代の若手採用で多くの会社が苦労しています。</p>
+<p>千葉県内の主要建設エリアは千葉市・船橋市・市川市・松戸市・柏市・市原市・木更津市・成田市などで、それぞれ建設市場の特性が異なります。SNS採用はこれらすべてのエリアで活用できる最も費用対効果の高い採用手段です。</p>
+
+<h2>千葉県の建設会社に最適なSNSコンテンツ</h2>
+
+<h3>現場の迫力を伝えるTikTok動画</h3>
+<ul>
+  <li>「千葉港近くの大型プラント建設現場」密着動画</li>
+  <li>「成田空港周辺の施工現場」での重機作業映像</li>
+  <li>「幕張の高層ビル建設」の高所作業シーン</li>
+  <li>「木更津・市原の工場建設」プロジェクト紹介</li>
+  <li>若手職人の「月収・日収公開」系コンテンツ（注目度高い）</li>
+</ul>
+
+<h3>ブランディングを固めるInstagram活用法</h3>
+<ul>
+  <li>竣工写真・完成写真を定期的にフィードに投稿</li>
+  <li>「千葉の街づくりに貢献」するプロジェクト紹介</li>
+  <li>スタッフの年収・キャリアアップパスをグラフィックで伝える</li>
+  <li>「#千葉建設」「#千葉職人」「#建設現場千葉」のハッシュタグ戦略</li>
+</ul>
+
+<h2>千葉県の建設業界の地域別採用戦略</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">エリア</th><th style="padding:8px;border:1px solid #ddd">建設需要</th><th style="padding:8px;border:1px solid #ddd">SNS採用の訴求ポイント</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">千葉市（幕張）</td><td style="padding:8px;border:1px solid #ddd">商業施設・オフィスビル</td><td style="padding:8px;border:1px solid #ddd">「幕張の大型プロジェクト」参画の誇り</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">船橋市・市川市</td><td style="padding:8px;border:1px solid #ddd">東京隣接・住宅・物流施設</td><td style="padding:8px;border:1px solid #ddd">「首都圏の仕事・千葉に住んで通える」</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">市原市・木更津市</td><td style="padding:8px;border:1px solid #ddd">工場・プラント・港湾施設</td><td style="padding:8px;border:1px solid #ddd">「大規模設備」「専門技術が身につく」</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">成田市</td><td style="padding:8px;border:1px solid #ddd">空港関連・物流施設</td><td style="padding:8px;border:1px solid #ddd">「国際空港の建設に関わる仕事」</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">柏市・松戸市</td><td style="padding:8px;border:1px solid #ddd">住宅・リノベーション</td><td style="padding:8px;border:1px solid #ddd">「地元に貢献」「アフター対応も充実」</td></tr>
+</tbody>
+</table>
+
+<h2>SNS採用を成功させる投稿スケジュール例</h2>
+<p>千葉県の建設会社が実践すべき週間投稿スケジュール：</p>
+<ul>
+  <li><strong>月曜</strong>：現場スタート動画（「今週の現場はこちら」）</li>
+  <li><strong>水曜</strong>：技術系コンテンツ（「○○工事の施工手順」）</li>
+  <li><strong>金曜</strong>：スタッフ紹介・週の振り返り</li>
+  <li><strong>土曜</strong>（任意）：採用情報・求人告知</li>
+</ul>
+
+<h2>株式会社セゾンの千葉県建設会社向けサービス</h2>
+<p>株式会社セゾンは千葉市・船橋市・松戸市・柏市・市原市・木更津市・成田市など千葉県全域の建設会社のSNS採用代行を承っています。月1〜2回の千葉県内出張撮影にも対応し、現場の迫力ある映像を制作します。</p>
+<ul>
+  <li>TikTok・Instagram・YouTube Shorts への投稿代行</li>
+  <li>「千葉 建設 採用」「千葉市 職人 求人」などのSEOキーワード活用</li>
+  <li>採用応募数のレポート提供（月次）</li>
+  <li>IT導入補助金・持続化補助金の申請サポート</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>千葉県の建設会社でSNS採用に取り組む企業はまだ少数派です。今から始めることで「千葉の建設採用といえばこの会社」というポジションを確立できます。株式会社セゾンへのご相談は無料です。お問い合わせフォームからお気軽にどうぞ。</p>
+    `.trim(),
+  },
 ];
 
 export const COLUMN_CATEGORY_LABELS: Record<ColumnData["category"], string> = {
