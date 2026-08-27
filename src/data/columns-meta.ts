@@ -265,6 +265,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-linkedin-2027", title: "建設・介護業界のLinkedIn採用活用法｜BtoBと採用に強いSNSの使い方", category: "sns" },
   { slug: "saitama-koshigaya-soka-yashio-kensetsu-kaigo-sns-2027", title: "越谷市・草加市・八潮市の建設・介護SNS採用戦略｜東武スカイツリーライン沿線", category: "sns" },
   { slug: "kensetsu-kaigo-sns-crisis-management-2027", title: "建設・介護業界の採用SNS炎上対策・危機管理ガイド｜リスクを最小化する運用術", category: "sns" },
+  { slug: "chiba-asahi-chosei-kamogawa-kensetsu-kaigo-sns-2027", title: "旭市・銚子市・鴨川市の建設・介護SNS採用戦略｜千葉沿岸エリア人材確保", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-ai-tools-2027", title: "建設・介護業界のSNS運用AIツール活用法｜ChatGPTで投稿文を10倍速で作る方法", category: "ai" },
+  { slug: "kanagawa-aikawa-tsukui-kensetsu-kaigo-sns-2027", title: "愛川町・津久井地区の建設・介護SNS採用戦略｜神奈川山間エリア", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-foreign-worker-2027", title: "建設・介護業界の外国人材採用SNS戦略｜多言語発信と特定技能活用法", category: "sns" },
+  { slug: "saitama-gyoda-hanyu-kazooshi-kensetsu-kaigo-sns-2027", title: "行田市・羽生市・加須市の建設・介護SNS採用戦略｜埼玉北部利根川沿線", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
