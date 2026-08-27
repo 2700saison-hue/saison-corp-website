@@ -201,6 +201,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-mitsumori-inquiry-sns-2026", title: "建設会社のSNSで見積もり依頼を月10件以上増やす方法｜問い合わせ動線の設計術", category: "sns" },
   { slug: "saitama-kita-kaigo-kensetsu-sns-2026", title: "埼玉北部（熊谷・行田・深谷・羽生）の建設・介護業がSNSで採用を強化する方法", category: "sns" },
   { slug: "chiba-boso-kaigo-kensetsu-sns-2026", title: "千葉南部・房総エリアの建設・介護会社がSNSで人材確保する方法｜過疎化対策の採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-unyo-daikou-hiyo-kouka-2026", title: "建設・介護会社のSNS運用代行費用と自社運用の徹底比較｜どちらが得か判断する方法", category: "sns" },
+  { slug: "saitama-kensetsu-kaigo-google-ads-sns-2026", title: "埼玉の建設・介護会社がGoogle広告とSNSを組み合わせて採用・集客を最大化する方法", category: "marketing" },
+  { slug: "chiba-kensetsu-taisei-kaiko-sns-saiyo-2026", title: "千葉の建設会社が体制強化でSNS採用を加速する方法｜採用チームとSNS担当の連携術", category: "sns" },
+  { slug: "kanagawa-kaigo-deaycare-sns-nyuusyo-2026", title: "神奈川のデイサービス・特養がSNSで入所・利用相談を増やす方法｜介護施設タイプ別戦略", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
