@@ -226,6 +226,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-success-case-2026", title: "建設・介護会社のSNS成功事例10選｜何が違うのか・失敗例との比較で徹底解説", category: "sns" },
   { slug: "chiba-funabashi-ichikawa-kensetsu-kaigo-sns-2026", title: "千葉県船橋市・市川市の建設・介護会社がSNSで人材と顧客を同時に獲得する方法", category: "sns" },
   { slug: "kensetsu-kaigo-sns-300page-milestone-2026", title: "建設・介護会社のSNS運用で300記事を超えたセゾンのSEO戦略全公開｜どのキーワードで勝つか", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-winter-strategy-2026", title: "建設・介護会社の冬季SNS戦略｜繁忙期と求人ラッシュに向けた11月〜2月の発信計画", category: "sns" },
+  { slug: "saitama-ageo-okegawa-kitamoto-kensetsu-kaigo-sns-2026", title: "埼玉県上尾市・桶川市・北本市の建設・介護業がSNSで採用を強化する方法", category: "sns" },
+  { slug: "chiba-chiba-shi-sns-kensetsu-kaigo-2026", title: "千葉市（中央区・稲毛区・若葉区・緑区）の建設・介護会社がSNSで地域ナンバー1を目指す方法", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-2027-prediction-2026", title: "2027年の建設・介護業SNS採用の未来予測｜AI・動画・自動化が変える採用マーケティング", category: "ai" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
