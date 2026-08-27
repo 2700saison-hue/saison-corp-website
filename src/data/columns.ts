@@ -9726,6 +9726,173 @@ CTA: 30分のオンライン相談の依頼
 <p>横浜市の中小企業がSNS運用代行を活用することで、東京の大企業に対抗できるブランド認知を構築できます。「横浜の会社で働きたい」「横浜の施設を利用したい」という人を確実に取り込むSNS戦略を始めましょう。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
     `.trim(),
   },
+  {
+    slug: "sns-unyo-daikou-kawasaki-2026",
+    title: "川崎市のSNS運用代行｜建設・介護・製造業向けSNS採用・集客の費用と事例",
+    description: "川崎市の中小企業向けSNS運用代行の費用・選び方・事例を解説。建設・介護・製造業でSNS採用・集客を成功させる方法を紹介。",
+    category: "sns",
+    publishedAt: "2026-06-18",
+    readMinutes: 8,
+    tags: ["川崎市", "SNS運用代行", "建設", "介護", "製造業", "採用", "集客"],
+    faqs: [
+      { q: "川崎市でSNS運用代行を依頼できる会社はありますか？", a: "川崎市内のSNS代行会社だけでなく、東京（足立区拠点の株式会社セゾンなど）の会社でも川崎市への出張対応が可能です。川崎市の建設・介護・製造業の実績がある会社を選ぶことをおすすめします。" },
+      { q: "川崎市の製造業でもSNS採用は効果がありますか？", a: "はい、効果があります。川崎臨海部の工場・製造施設での「ものづくりの現場映像」はTikTokで視聴数が高く、技術職希望の若者へのリーチに効果的です。" },
+    ],
+    content: `
+<h2>川崎市の産業構造とSNS採用の機会</h2>
+<p>川崎市は東京と横浜の間に位置し、人口約155万人、全国有数の工業都市です。臨海部には大手メーカー・化学プラント・物流施設が集積し、内陸部（宮前区・多摩区・麻生区）はベッドタウンとして住宅・介護施設の需要が高い地域です。</p>
+<p>川崎市の建設業・介護業・製造業は東京都との競合が激しいため、「川崎で働く・住む・生活する」ことの魅力をSNSで発信することが採用・集客の差別化に直結します。</p>
+
+<h2>川崎市の業種別SNS採用・集客戦略</h2>
+<h3>建設業（川崎市）：「大型プロジェクトに携わる誇り」を発信</h3>
+<ul>
+  <li>川崎臨海部の大型工場・物流倉庫の建設現場密着動画（TikTok）</li>
+  <li>「川崎市の再開発プロジェクトを支える職人」ブランドストーリー</li>
+  <li>「川崎の街をこの手で作った」完成物件の紹介（Instagram）</li>
+</ul>
+<h3>介護業（川崎市）：「川崎の地域に根ざした施設」を見せる</h3>
+<ul>
+  <li>「宮前区・多摩区・麻生区の介護施設スタッフの1日」動画（TikTok）</li>
+  <li>「川崎市の地域包括ケアシステムを支える施設」のブランディング（Instagram）</li>
+  <li>「川崎で介護職員として働くメリット」インタビュー動画</li>
+</ul>
+<h3>製造業（川崎市）：「ものづくりのかっこよさ」を映像で伝える</h3>
+<ul>
+  <li>川崎の工場・製造ラインの映像（安全に配慮した範囲で）</li>
+  <li>「川崎の精密技術・最先端製造」をTikTokで発信</li>
+  <li>「工場勤務の給与・年収公開」情報系コンテンツ</li>
+</ul>
+
+<h2>川崎市のSNS運用代行の費用相場</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">サービス内容</th><th style="padding:8px;border:1px solid #ddd">月額費用目安</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">テキスト・写真投稿のみ</td><td style="padding:8px;border:1px solid #ddd">3〜8万円</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">動画制作＋投稿（TikTok/Instagram）</td><td style="padding:8px;border:1px solid #ddd">10〜20万円</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">動画＋SNS＋LINE公式＋採用フロー設計</td><td style="padding:8px;border:1px solid #ddd">15〜30万円</td></tr>
+</tbody>
+</table>
+
+<h2>株式会社セゾンの川崎市対応</h2>
+<p>株式会社セゾン（東京都足立区拠点）は川崎市全域のSNS運用代行を承っています。川崎区・幸区・中原区・高津区・宮前区・多摩区・麻生区への出張撮影対応も可能です。建設・介護・製造業の採用コンテンツ制作実績をもとに、川崎市での採用・集客を一貫してサポートします。</p>
+
+<h2>まとめ</h2>
+<p>川崎市の建設・介護・製造業がSNS採用・集客に本格参入する企業はまだ少数派です。今から継続的な発信を始めることで「川崎の採用といえばこの会社」という認知を確立できます。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
+  {
+    slug: "sns-unyo-daikou-saitama-city-2026",
+    title: "さいたま市のSNS運用代行｜大宮・浦和・川口の介護・建設業SNS採用ガイド",
+    description: "さいたま市（大宮・浦和・川口エリア）のSNS運用代行の費用・選び方を解説。介護施設・建設会社がSNS採用・集客で成功するための方法を紹介。",
+    category: "sns",
+    publishedAt: "2026-06-20",
+    readMinutes: 8,
+    tags: ["さいたま市", "大宮", "浦和", "SNS運用代行", "介護", "建設", "採用"],
+    faqs: [
+      { q: "さいたま市でSNS採用代行を依頼する場合、大宮エリアと浦和エリアで差はありますか？", a: "エリアによる差はほとんどありません。重要なのは「さいたま市の建設・介護業に特化したコンテンツ制作実績があるか」です。株式会社セゾンはさいたま市全域への出張撮影に対応しています。" },
+      { q: "さいたま市の介護施設がSNS採用で最も成果が出やすいのはどのエリアですか？", a: "大宮区・見沼区・北区など人口が多く施設が集中するエリアで特に効果的です。ただし、郊外エリア（岩槻区・桜区）はSNS採用の競合が少ないため先行者優位が高い傾向があります。" },
+    ],
+    content: `
+<h2>さいたま市の産業特性とSNS採用の現状</h2>
+<p>さいたま市は埼玉県の県庁所在地であり、人口約135万人を擁する政令市です。大宮区・浦和区・中央区などの商業地区と、岩槻区・緑区・桜区・西区などの住宅・農業地区が共存する多様な都市です。</p>
+<p>さいたま市の介護業・建設業は「東京から通える距離にある良質な就労環境」という強みがありますが、この強みをSNSで発信できている企業はまだ少数です。今から始めることで、「さいたま市で働く・生活する」ことの魅力を先行して発信できます。</p>
+
+<h2>さいたま市の介護施設向けSNS採用戦略</h2>
+<ul>
+  <li>「大宮駅徒歩○分の介護施設」など交通アクセスの良さを強調</li>
+  <li>「浦和の老人ホームスタッフ日常動画」（TikTok・Instagram）</li>
+  <li>「さいたまアリーナ近くの施設でのイベント」地域連携コンテンツ</li>
+  <li>「大宮・浦和・川越線沿線の介護職員募集」駅名ハッシュタグ活用</li>
+</ul>
+
+<h2>さいたま市の建設会社向けSNS採用戦略</h2>
+<ul>
+  <li>「さいたま新都心の建設現場密着」動画（TikTok）</li>
+  <li>「大宮副都心の高層ビル施工」プロジェクト紹介</li>
+  <li>「埼玉の住宅を作る職人たち」シリーズ（地域密着型）</li>
+  <li>「大宮・浦和エリアの建設求人情報」（Instagram採用特化投稿）</li>
+</ul>
+
+<h2>さいたま市周辺エリアのSNS採用ポイント</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">エリア</th><th style="padding:8px;border:1px solid #ddd">特徴</th><th style="padding:8px;border:1px solid #ddd">SNSポイント</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">大宮区・北区</td><td style="padding:8px;border:1px solid #ddd">商業・交通の中心</td><td style="padding:8px;border:1px solid #ddd">「大宮勤務」の利便性を強調</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">浦和区・中央区</td><td style="padding:8px;border:1px solid #ddd">行政・文化の中心</td><td style="padding:8px;border:1px solid #ddd">「落ち着いた環境で働ける」安心感</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">緑区・桜区</td><td style="padding:8px;border:1px solid #ddd">住宅地・自然豊か</td><td style="padding:8px;border:1px solid #ddd">「のびのびした環境・地元密着」</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">岩槻区</td><td style="padding:8px;border:1px solid #ddd">人形・工業地区</td><td style="padding:8px;border:1px solid #ddd">競合少なく先行優位が最も高いエリア</td></tr>
+</tbody>
+</table>
+
+<h2>株式会社セゾンのさいたま市対応サービス</h2>
+<p>株式会社セゾン（東京都足立区拠点）はさいたま市全域（大宮区・浦和区・緑区・岩槻区など10区）への出張撮影に対応します。介護施設・建設会社のSNS採用代行を月額10万円〜で承っています。</p>
+<ul>
+  <li>月1〜2回のさいたま市内出張撮影</li>
+  <li>TikTok・Instagram・LINE公式の一括運用</li>
+  <li>「さいたま市 介護 採用」「大宮 建設 求人」のSEO対策</li>
+  <li>IT導入補助金・持続化補助金の申請サポート</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>さいたま市の介護・建設業のSNS採用は今が始め時です。大宮・浦和・岩槻など各エリアで「SNS採用の先進企業」としての認知を確立しましょう。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
+  {
+    slug: "sns-unyo-daikou-chiba-city-2026",
+    title: "千葉市のSNS運用代行｜幕張・稲毛・緑区の介護・建設業SNS採用ガイド",
+    description: "千葉市（幕張・稲毛・緑区など）のSNS運用代行の費用・事例を解説。介護施設・建設会社がSNS採用・集客を成功させる方法を千葉市特有のエリア情報と合わせて紹介。",
+    category: "sns",
+    publishedAt: "2026-06-22",
+    readMinutes: 8,
+    tags: ["千葉市", "幕張", "SNS運用代行", "介護", "建設", "採用", "集客"],
+    faqs: [
+      { q: "千葉市のSNS運用代行を依頼する際の費用はいくらですか？", a: "千葉市向けのSNS運用代行費用は月額5万〜20万円が一般的です。動画制作込みの採用特化プランは月10万〜が相場です。株式会社セゾンは千葉市への出張撮影込みで月10万円〜で承っています。" },
+      { q: "千葉市内の介護施設がInstagramを始める場合、最初に何をすべきですか？", a: "まずビジネスアカウントを開設し、施設名・住所・「千葉市○区の介護施設」という説明文を設定します。次に施設の外観・内装・食事・スタッフ写真を10枚以上投稿してプロフィールを充実させることが重要です。" },
+    ],
+    content: `
+<h2>千葉市の産業環境とSNS採用の機会</h2>
+<p>千葉市は人口約98万人、千葉県の県庁所在地です。幕張新都心（IT・ビジネス集積）・千葉港（物流拠点）・稲毛区・花見川区などのベッドタウンが共存する都市です。介護施設の整備が進む一方、職員不足が深刻化しており、建設業も再開発プロジェクト（幕張メッセ周辺・千葉駅再開発）で人手が不足しています。</p>
+
+<h2>千葉市の介護施設向けSNS採用コンテンツ</h2>
+<ul>
+  <li>「幕張の介護施設スタッフの1日」TikTok動画</li>
+  <li>「稲毛海岸沿いの施設に勤める介護職員」ロケーション動画</li>
+  <li>「千葉市緑区・若葉区の地域密着介護施設」の安心感を発信</li>
+  <li>「千葉市で介護職員として働く理由」（資格取得支援・処遇改善も含めて）</li>
+</ul>
+
+<h2>千葉市の建設会社向けSNS採用コンテンツ</h2>
+<ul>
+  <li>「幕張メッセ周辺の再開発工事現場密着」（TikTok）</li>
+  <li>「千葉港の大型物流施設建設プロジェクト」映像</li>
+  <li>「千葉市の住宅を作る大工・職人の仕事」（Instagram）</li>
+  <li>「千葉駅再開発工事の現場スタッフ」インタビュー</li>
+</ul>
+
+<h2>千葉市各区のSNS採用ポイント</h2>
+<table style="width:100%;border-collapse:collapse">
+<thead><tr style="background:#f0f4ff"><th style="padding:8px;border:1px solid #ddd">区</th><th style="padding:8px;border:1px solid #ddd">特徴</th><th style="padding:8px;border:1px solid #ddd">SNS採用のポイント</th></tr></thead>
+<tbody>
+<tr><td style="padding:8px;border:1px solid #ddd">美浜区（幕張）</td><td style="padding:8px;border:1px solid #ddd">ビジネス・観光・住宅</td><td style="padding:8px;border:1px solid #ddd">「幕張勤務」の都市感・利便性訴求</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">稲毛区</td><td style="padding:8px;border:1px solid #ddd">住宅地・大学周辺</td><td style="padding:8px;border:1px solid #ddd">若い人が多いエリア・未経験者歓迎訴求</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">緑区・若葉区</td><td style="padding:8px;border:1px solid #ddd">自然豊か・静かな住宅地</td><td style="padding:8px;border:1px solid #ddd">「ゆったり働ける環境」「地元密着」</td></tr>
+<tr><td style="padding:8px;border:1px solid #ddd">中央区</td><td style="padding:8px;border:1px solid #ddd">県庁・商業施設</td><td style="padding:8px;border:1px solid #ddd">「千葉駅近くの好立地」アクセス訴求</td></tr>
+</tbody>
+</table>
+
+<h2>株式会社セゾンの千葉市対応サービス</h2>
+<p>株式会社セゾン（東京都足立区拠点）は千葉市全域（中央区・花見川区・稲毛区・若葉区・緑区・美浜区）への出張撮影に対応します。介護施設・建設会社のSNS採用代行を月額10万円〜で承っています。</p>
+<ul>
+  <li>月1〜2回の千葉市内出張撮影</li>
+  <li>TikTok・Instagram・LINE公式の一括管理</li>
+  <li>「千葉市 介護 求人」「幕張 建設 採用」のSEO最適化</li>
+  <li>採用応募数の月次レポート提供</li>
+</ul>
+
+<h2>まとめ</h2>
+<p>千葉市の介護・建設業界でSNS採用に取り組む企業はまだ少数です。今から始めれば「千葉市のSNS採用先進企業」として認知されます。株式会社セゾンへの無料相談はお問い合わせフォームからどうぞ。</p>
+    `.trim(),
+  },
 ];
 
 export const COLUMN_CATEGORY_LABELS: Record<ColumnData["category"], string> = {

@@ -151,6 +151,9 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-tiktok-recruit-saitama-chiba-kanagawa-2026", title: "建設会社TikTok採用｜埼玉・千葉・神奈川で若手職人が集まるアカウント運用法", category: "sns" },
   { slug: "line-official-kaigo-kensetsu-saitama-chiba-kanagawa-2026", title: "LINE公式アカウントで介護・建設の採用を自動化｜埼玉・千葉・神奈川の中小企業向けガイド", category: "sns" },
   { slug: "sns-unyo-daikou-yokohama-2026", title: "横浜市のSNS運用代行｜中小企業・介護・建設向けの費用と選び方", category: "sns" },
+  { slug: "sns-unyo-daikou-kawasaki-2026", title: "川崎市のSNS運用代行｜建設・介護・製造業向けSNS採用・集客の費用と事例", category: "sns" },
+  { slug: "sns-unyo-daikou-saitama-city-2026", title: "さいたま市のSNS運用代行｜大宮・浦和・川口の介護・建設業SNS採用ガイド", category: "sns" },
+  { slug: "sns-unyo-daikou-chiba-city-2026", title: "千葉市のSNS運用代行｜幕張・稲毛・緑区の介護・建設業SNS採用ガイド", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
