@@ -138,6 +138,9 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "ai-recruitment-screening-2026", title: "AI採用ツール活用術｜書類選考・面接準備・採用管理をAIで効率化する方法", category: "ai" },
   { slug: "local-seo-adachi-guide-2026", title: "足立区・東京北東部エリアのSEO・MEO対策｜地域密着ビジネスの集客戦略", category: "marketing" },
   { slug: "content-marketing-roi-2026", title: "コンテンツマーケティングのROI計測方法｜費用対効果を数値で証明するKPI設計", category: "marketing" },
+  { slug: "saitama-kensetsu-sns-saiyo-2026", title: "埼玉県の建設会社がSNS採用で成功する方法｜TikTok・Instagramで若手職人を集める", category: "sns" },
+  { slug: "kanagawa-kaigo-sns-saiyo-2026", title: "神奈川県の介護施設SNS採用ガイド｜TikTok・Instagramで介護職員の応募を増やす", category: "sns" },
+  { slug: "chiba-kaigo-kensetsu-sns-2026", title: "千葉県の介護・建設会社SNS運用ガイド｜採用・集客をInstagram・TikTokで解決する方法", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {

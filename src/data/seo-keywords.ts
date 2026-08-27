@@ -364,6 +364,9 @@ export const EXISTING_SLUGS: string[] = [
   "ai-recruitment-screening-2026",
   "local-seo-adachi-guide-2026",
   "content-marketing-roi-2026",
+  "saitama-kensetsu-sns-saiyo-2026",
+  "kanagawa-kaigo-sns-saiyo-2026",
+  "chiba-kaigo-kensetsu-sns-2026",
 ];
 
 /**

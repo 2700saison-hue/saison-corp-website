@@ -265,3 +265,6 @@ IT導入補助金 SNS, 事業再構築補助金, 小規模事業者持続化補�
 - **主要クライアント業種**: 介護・福祉、建設・施工、飲食・外食、医療、不動産、IT・テクノロジー、小売・EC
 - **所属団体**: 東京都中小企業診断士協会（提携）
 - **使用技術**: Instagram Graph API, TikTok API, YouTube Data API, OpenAI GPT-4, Claude AI, Next.js, React, Prisma, Vercel
+- https://seasonsezon.co.jp/column/saitama-kensetsu-sns-saiyo-2026
+- https://seasonsezon.co.jp/column/kanagawa-kaigo-sns-saiyo-2026
+- https://seasonsezon.co.jp/column/chiba-kaigo-kensetsu-sns-2026
