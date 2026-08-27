@@ -123,6 +123,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "outsourcing-marketing-guide-2026", title: "マーケティング業務の外注化ガイド｜何をどこまで任せるべきかを徹底解説", category: "marketing" },
   { slug: "freelance-sns-manager-guide-2026", title: "SNS運用担当者の採用・育成ガイド｜社内内製化を成功させるためのロードマップ", category: "sns" },
   { slug: "subsidy-application-guide-2026", title: "2026年版 中小企業が使える補助金・助成金完全ガイド｜申請のコツと注意点", category: "subsidy" },
+  { slug: "instagram-dm-sales-strategy-2026", title: "InstagramのDM営業を成功させる方法｜見込み顧客へのアプローチ文と注意点", category: "sns" },
+  { slug: "saas-marketing-strategy-2026", title: "SaaSビジネスのマーケティング戦略｜無料トライアル・LTV・チャーン率改善の方法", category: "marketing" },
+  { slug: "sns-account-growth-hack-2026", title: "SNSアカウントを最速で成長させる方法｜フォロワー0から1,000人までの最短戦略", category: "sns" },
+  { slug: "ai-customer-support-automation-2026", title: "AI顧客対応の自動化｜チャットボット・問い合わせ対応を効率化する導入ガイド", category: "ai" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {

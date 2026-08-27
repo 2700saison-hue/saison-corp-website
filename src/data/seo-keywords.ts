@@ -349,6 +349,10 @@ export const EXISTING_SLUGS: string[] = [
   "outsourcing-marketing-guide-2026",
   "freelance-sns-manager-guide-2026",
   "subsidy-application-guide-2026",
+  "instagram-dm-sales-strategy-2026",
+  "saas-marketing-strategy-2026",
+  "sns-account-growth-hack-2026",
+  "ai-customer-support-automation-2026",
 ];
 
 /**
