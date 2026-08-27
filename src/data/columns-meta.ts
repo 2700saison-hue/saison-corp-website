@@ -479,6 +479,21 @@ export const columnsMeta: ColumnMeta[] = [
     "slug": "sns-personal-branding-ceo-2025",
     "title": "経営者のSNS個人ブランディング｜代表がSNSを発信することで会社が成長する理由",
     "category": "sns"
+  },
+  {
+    "slug": "medical-clinic-sns-guide-2025",
+    "title": "クリニック・医療機関のSNS活用ガイド｜患者獲得・認知拡大・採用に使う方法",
+    "category": "sns"
+  },
+  {
+    "slug": "ai-sales-automation-2025",
+    "title": "AI営業自動化の最前線｜見込み客発掘・メール送信・商談準備をAIで効率化する方法",
+    "category": "ai"
+  },
+  {
+    "slug": "social-media-policy-company-2025",
+    "title": "企業のソーシャルメディアポリシー作成ガイド｜社員SNSの適切な管理と炎上防止",
+    "category": "sns"
   }
 ];
 
