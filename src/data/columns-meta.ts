@@ -315,6 +315,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-paid-ad-strategy-2027", title: "建設・介護業界SNS採用広告の完全ガイド2027｜月3万円から始める有料広告戦略", category: "marketing" },
   { slug: "chiba-ichikawa-urayasu-ichihara-kaigo-kensetsu-sns-2027", title: "市川市・浦安市・市原市の建設・介護SNS採用2027｜千葉湾岸エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-content-calendar-planning-2027", title: "建設・介護業界SNS採用コンテンツカレンダー作成ガイド2027｜年間投稿計画の立て方", category: "marketing" },
+  { slug: "saitama-hanno-niiza-tokorozawa-kensetsu-kaigo-sns-2027", title: "飯能市・新座市・所沢市の建設・介護SNS採用2027｜埼玉西部エリア採用戦略", category: "sns" },
+  { slug: "kanagawa-yamato-sagamihara-midori-kensetsu-kaigo-sns-2027", title: "大和市・相模原市緑区の建設・介護SNS採用2027｜神奈川北部エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-foreign-worker-recruitment-2027", title: "建設・介護業界の外国人材SNS採用戦略2027｜多言語対応と特定技能ビザ採用の実践ガイド", category: "sns" },
+  { slug: "chiba-sodegaura-kimitsu-futtsu-kaigo-kensetsu-sns-2027", title: "袖ケ浦市・君津市・富津市の建設・介護SNS採用2027｜千葉南部エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-hashitag-strategy-2027", title: "建設・介護業界SNS採用ハッシュタグ戦略2027｜フォロワー外にリーチする完全ガイド", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
