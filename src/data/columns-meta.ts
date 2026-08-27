@@ -444,6 +444,16 @@ export const columnsMeta: ColumnMeta[] = [
     "slug": "sns-advertising-guide-2025",
     "title": "SNS広告の基礎知識と始め方｜Instagram・TikTok・X広告を比較して選ぶ方法",
     "category": "marketing"
+  },
+  {
+    "slug": "influencer-marketing-guide-2025",
+    "title": "インフルエンサーマーケティング完全ガイド｜中小企業が低コストで効果を出す方法",
+    "category": "sns"
+  },
+  {
+    "slug": "subsidy-jizokukahojokin-2025",
+    "title": "小規模事業者持続化補助金2025年の申請方法｜採択率を上げる事業計画書の書き方",
+    "category": "subsidy"
   }
 ];
 
