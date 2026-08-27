@@ -181,6 +181,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "saitama-kaigo-jigyo-sns-brand-2026", title: "埼玉の介護事業者がSNSでブランディングする方法｜地域密着型の信頼を築く発信戦略", category: "sns" },
   { slug: "chiba-kensetsu-google-biz-profile-2026", title: "千葉の建設会社がGoogleビジネスプロフィールとSNSを連携させてMEO対策を強化する方法", category: "sns" },
   { slug: "saitama-kensetsu-saiyo-cost-down-sns-2026", title: "埼玉の建設会社が採用コストを半減させたSNS活用法｜求人媒体に頼らない人材確保の仕組み", category: "sns" },
+  { slug: "kanagawa-kaigo-tiktok-saiyo-2026", title: "神奈川の介護施設がTikTokで採用を成功させる方法｜若い世代の介護職希望者にリーチする動画戦略", category: "sns" },
+  { slug: "chiba-kaigo-worker-sns-daily-2026", title: "千葉の介護施設がSNSで「働く人の日常」を発信して採用に成功する方法", category: "sns" },
+  { slug: "saitama-kensetsu-instagram-jirei-2026", title: "埼玉の建設会社Instagram活用事例｜フォロワー1,000人突破で問い合わせが月10件増えた施策", category: "sns" },
+  { slug: "kanagawa-kaigo-kensetsu-subsidy-sns-2026", title: "神奈川の介護・建設会社がSNS運用費に使える補助金・助成金2026年版", category: "subsidy" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
