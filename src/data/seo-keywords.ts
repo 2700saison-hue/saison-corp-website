@@ -309,6 +309,9 @@ export const EXISTING_SLUGS: string[] = [
   "it-hojyokin-dx-kakusin-2026",
   "ai-chatbot-eigyo-jidouka-2025",
   "sns-unyo-kpi-report-template-2025",
+  "kensetsu-sns-recruit-dx-2025",
+  "saiyo-branding-sns-2025",
+  "google-analytics-sns-renkei-2025",
 ];
 
 /**

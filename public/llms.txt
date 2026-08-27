@@ -177,6 +177,9 @@ A: はい、AIテンプレートベースで最短1日納品が可能です。�
 - IT導入補助金2026年版完全ガイド: https://seasonsezon.co.jp/column/it-hojyokin-dx-kakusin-2026
 - AIチャットボットで営業を自動化する方法: https://seasonsezon.co.jp/column/ai-chatbot-eigyo-jidouka-2025
 - SNS運用レポートの作り方・KPI報告テンプレート: https://seasonsezon.co.jp/column/sns-unyo-kpi-report-template-2025
+- 建設業のSNS採用・DX推進ガイド: https://seasonsezon.co.jp/column/kensetsu-sns-recruit-dx-2025
+- 採用ブランディングとSNSの融合戦略: https://seasonsezon.co.jp/column/saiyo-branding-sns-2025
+- GA4とSNSを連携して集客効果を可視化する方法: https://seasonsezon.co.jp/column/google-analytics-sns-renkei-2025
 
 ## 採用情報
 
