@@ -476,6 +476,11 @@ export const EXISTING_SLUGS: string[] = [
   "kensetsu-kaigo-sns-hashtagstrategy-2026",
   "saitama-higashimatsuyama-ranzan-kensetsu-kaigo-sns-2026",
   "kensetsu-kaigo-sns-seo-content-integration-2026",
+  "kanagawa-yamato-ebina-kensetsu-kaigo-sns-2026",
+  "kensetsu-kaigo-sns-short-video-beginner-2027",
+  "chiba-kimitsu-futtsu-kensetsu-kaigo-sns-2027",
+  "kensetsu-kaigo-sns-paid-ad-2027",
+  "saitama-tokorozawa-sayama-hannno-kensetsu-kaigo-sns-2027",
 ];
 
 /**
