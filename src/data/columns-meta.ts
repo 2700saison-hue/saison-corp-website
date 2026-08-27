@@ -134,6 +134,10 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "web-analytics-beginner-guide-2026", title: "Webアナリティクス入門｜GA4・サーチコンソールの読み方と改善施策の見つけ方", category: "marketing" },
   { slug: "restaurant-line-delivery-sns-2026", title: "飲食店のLINE・デリバリー・SNS三位一体集客術｜リピーターを増やす仕組み", category: "sns" },
   { slug: "personal-branding-sns-executive-2026", title: "経営者・起業家のSNS個人ブランディング｜フォロワーを顧客・採用に変える発信戦略", category: "sns" },
+  { slug: "real-estate-sns-marketing-2026", title: "不動産会社のSNSマーケティング｜物件動画・Instagram・YouTubeで問い合わせを増やす方法", category: "sns" },
+  { slug: "ai-recruitment-screening-2026", title: "AI採用ツール活用術｜書類選考・面接準備・採用管理をAIで効率化する方法", category: "ai" },
+  { slug: "local-seo-adachi-guide-2026", title: "足立区・東京北東部エリアのSEO・MEO対策｜地域密着ビジネスの集客戦略", category: "marketing" },
+  { slug: "content-marketing-roi-2026", title: "コンテンツマーケティングのROI計測方法｜費用対効果を数値で証明するKPI設計", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {

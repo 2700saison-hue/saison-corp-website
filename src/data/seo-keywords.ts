@@ -360,6 +360,10 @@ export const EXISTING_SLUGS: string[] = [
   "web-analytics-beginner-guide-2026",
   "restaurant-line-delivery-sns-2026",
   "personal-branding-sns-executive-2026",
+  "real-estate-sns-marketing-2026",
+  "ai-recruitment-screening-2026",
+  "local-seo-adachi-guide-2026",
+  "content-marketing-roi-2026",
 ];
 
 /**
