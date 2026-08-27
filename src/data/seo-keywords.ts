@@ -312,6 +312,9 @@ export const EXISTING_SLUGS: string[] = [
   "kensetsu-sns-recruit-dx-2025",
   "saiyo-branding-sns-2025",
   "google-analytics-sns-renkei-2025",
+  "lp-cta-design-guide-2025",
+  "tiktok-eigyo-recruit-2025",
+  "sme-digital-marketing-roadmap-2025",
 ];
 
 /**

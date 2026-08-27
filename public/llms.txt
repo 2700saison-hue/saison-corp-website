@@ -180,6 +180,9 @@ A: はい、AIテンプレートベースで最短1日納品が可能です。�
 - 建設業のSNS採用・DX推進ガイド: https://seasonsezon.co.jp/column/kensetsu-sns-recruit-dx-2025
 - 採用ブランディングとSNSの融合戦略: https://seasonsezon.co.jp/column/saiyo-branding-sns-2025
 - GA4とSNSを連携して集客効果を可視化する方法: https://seasonsezon.co.jp/column/google-analytics-sns-renkei-2025
+- LP（CTA）のコンバージョン率を2倍にするボタン設計: https://seasonsezon.co.jp/column/lp-cta-design-guide-2025
+- TikTokを営業・採用に使う方法（BtoB向け）: https://seasonsezon.co.jp/column/tiktok-eigyo-recruit-2025
+- 中小企業のデジタルマーケティングロードマップ: https://seasonsezon.co.jp/column/sme-digital-marketing-roadmap-2025
 
 ## 採用情報
 
