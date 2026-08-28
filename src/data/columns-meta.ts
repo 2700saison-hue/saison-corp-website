@@ -345,6 +345,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-400page-celebration-2027", title: "【400ページ達成】建設・介護業界SNS採用サイト400ページ突破記念｜次の目標と戦略", category: "case" },
   { slug: "chiba-abiko-ryugasaki-toride-kensetsu-kaigo-sns-2027", title: "我孫子市・龍ケ崎市・取手市の建設・介護SNS採用2027｜千葉北部・茨城境界エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-2027-next-strategy", title: "建設・介護業界SNS採用2027年後半戦略｜進化するSNSと採用トレンドへの対応", category: "marketing" },
+  { slug: "saitama-fujimino-shiki-niiza-kensetsu-kaigo-sns-2027", title: "ふじみ野市・志木市・新座市の建設・介護SNS採用2027｜東武東上線沿線エリア戦略", category: "sns" },
+  { slug: "kanagawa-kawasaki-takatsu-nakahara-kensetsu-kaigo-sns-2027", title: "川崎市高津区・中原区の建設・介護SNS採用2027｜武蔵小杉エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-senior-recruitment-2027", title: "建設・介護業界のシニア採用SNS戦略2027｜55歳以上を戦力にする採用法", category: "sns" },
+  { slug: "chiba-narita-tomisato-yachimata-kensetsu-kaigo-sns-2027", title: "成田市・富里市・八街市の建設・介護SNS採用2027｜千葉北部内陸エリア戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-disaster-bcp-recruitment-2027", title: "建設・介護業界の災害対応・BCP視点SNS採用戦略2027｜地域を守る仕事の採用力", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
