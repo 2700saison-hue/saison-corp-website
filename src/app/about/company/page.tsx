@@ -255,17 +255,25 @@ export default function CompanyPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Google Maps */}
             <FadeInSection direction="left" delay={100}>
-              <div className="bg-[#141414] border border-white/[0.06] rounded-2xl overflow-hidden h-64 md:h-80 relative">
-                <iframe
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=139.7582%2C35.7715%2C139.7682%2C35.7795&layer=mapnik&marker=35.7755%2C139.7632"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  title="株式会社セゾン 本社所在地"
-                />
-              </div>
+              <a
+                href="https://maps.google.com/maps?q=東京都足立区新田3-37-12-708"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-[#141414] border border-white/[0.06] rounded-2xl overflow-hidden h-64 md:h-80 relative group"
+                aria-label="Google マップで見る"
+              >
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-[#141414]">
+                  <MapPin className="w-12 h-12 text-[#CC2222]" />
+                  <div className="text-center">
+                    <p className="text-white font-medium text-sm">東京都足立区新田3-37-12-708</p>
+                    <p className="text-white/40 text-xs mt-1">クリックして Google マップで開く</p>
+                  </div>
+                  <span className="inline-flex items-center gap-2 bg-[#CC2222] text-white text-xs font-bold px-5 py-2 rounded-full group-hover:bg-[#aa1a1a] transition-colors">
+                    <ArrowRight className="w-3 h-3" />
+                    Google マップで見る
+                  </span>
+                </div>
+              </a>
             </FadeInSection>
 
             {/* 住所・連絡先 */}
