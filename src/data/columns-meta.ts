@@ -375,6 +375,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-story-content-2027", title: "建設・介護業界SNS採用のストーリーコンテンツ戦略｜24時間で消えるが採用力は残る", category: "sns" },
   { slug: "chiba-mobara-isumi-ohara-kensetsu-kaigo-sns-2027", title: "茂原市・いすみ市・大多喜町の建設・介護業界SNS採用ガイド｜千葉南部内陸攻略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-female-recruitment-2027", title: "建設・介護業界の女性採用SNS戦略完全ガイド｜女性が活躍できる職場を発信する方法", category: "sns" },
+  { slug: "saitama-kumagaya-honjo-fukaya-sns-kaigo-2027", title: "熊谷市・本庄市・深谷市の介護・建設SNS採用戦略｜埼玉最北部エリア完全攻略", category: "sns" },
+  { slug: "kanagawa-isehara-hadano-kensetsu-kaigo-sns-2027", title: "伊勢原市・秦野市の建設・介護業界SNS採用完全ガイド｜神奈川西部山麓エリア攻略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-midcareer-recruitment-2027", title: "建設・介護業界の中途採用SNS戦略完全ガイド｜転職者に刺さるコンテンツ設計術", category: "sns" },
+  { slug: "chiba-ichihara-sodegaura-kensetsu-kaigo-sns-2027", title: "市原市・袖ケ浦市の建設・介護業界SNS採用完全ガイド｜千葉工業地帯エリア攻略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-seasonal-campaign-2027", title: "建設・介護業界SNS採用の季節キャンペーン戦略｜4月・9月・1月に採用を最大化する方法", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
