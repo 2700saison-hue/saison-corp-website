@@ -370,6 +370,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-hashtagstrategy-2027", title: "建設・介護業界SNS採用のハッシュタグ戦略完全版｜フォロワーを10倍に増やす選び方", category: "sns" },
   { slug: "chiba-togane-yachiyo-shisui-kensetsu-kaigo-sns-2027", title: "東金市・八千代市・酒々井町の建設・介護業界SNS採用ガイド｜千葉中央部攻略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-dm-recruitment-2027", title: "建設・介護業界SNS採用のDM戦略完全ガイド｜メッセージで応募率を3倍にする方法", category: "sns" },
+  { slug: "saitama-higashimatsuyama-ranzan-yoshimi-kensetsu-kaigo-sns-2027", title: "東松山市・嵐山町・吉見町の建設・介護業界SNS採用ガイド｜埼玉中央エリア攻略", category: "sns" },
+  { slug: "kanagawa-atsugi-ebina-kensetsu-kaigo-sns-2027", title: "厚木市・海老名市の建設・介護業界SNS採用完全ガイド｜神奈川内陸中央エリア攻略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-story-content-2027", title: "建設・介護業界SNS採用のストーリーコンテンツ戦略｜24時間で消えるが採用力は残る", category: "sns" },
+  { slug: "chiba-mobara-isumi-ohara-kensetsu-kaigo-sns-2027", title: "茂原市・いすみ市・大多喜町の建設・介護業界SNS採用ガイド｜千葉南部内陸攻略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-female-recruitment-2027", title: "建設・介護業界の女性採用SNS戦略完全ガイド｜女性が活躍できる職場を発信する方法", category: "sns" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
