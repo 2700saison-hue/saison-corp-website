@@ -350,6 +350,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-senior-recruitment-2027", title: "建設・介護業界のシニア採用SNS戦略2027｜55歳以上を戦力にする採用法", category: "sns" },
   { slug: "chiba-narita-tomisato-yachimata-kensetsu-kaigo-sns-2027", title: "成田市・富里市・八街市の建設・介護SNS採用2027｜千葉北部内陸エリア戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-disaster-bcp-recruitment-2027", title: "建設・介護業界の災害対応・BCP視点SNS採用戦略2027｜地域を守る仕事の採用力", category: "marketing" },
+  { slug: "saitama-kasukabe-yoshikawa-misato-deep-kensetsu-kaigo-sns-2027", title: "春日部市・吉川市の建設・介護SNS採用2027｜埼玉東部水郷エリア採用戦略", category: "sns" },
+  { slug: "kanagawa-yokohama-tsurumi-kanagawa-nishi-kensetsu-kaigo-sns-2027", title: "横浜市鶴見区・神奈川区・西区の建設・介護SNS採用2027｜横浜臨海エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-open-company-culture-2027", title: "建設・介護業界のオープンな職場文化SNSアピール戦略2027｜透明性で採用力を高める", category: "marketing" },
+  { slug: "chiba-katori-sosa-matched-kensetsu-kaigo-sns-2027", title: "香取市・匝瑳市の建設・介護SNS採用2027｜千葉北東部エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-job-fair-event-strategy-2027", title: "建設・介護業界SNS採用×合同説明会・採用イベント活用戦略2027｜オン・オフ統合採用", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
