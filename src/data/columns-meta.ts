@@ -380,6 +380,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-midcareer-recruitment-2027", title: "建設・介護業界の中途採用SNS戦略完全ガイド｜転職者に刺さるコンテンツ設計術", category: "sns" },
   { slug: "chiba-ichihara-sodegaura-kensetsu-kaigo-sns-2027", title: "市原市・袖ケ浦市の建設・介護業界SNS採用完全ガイド｜千葉工業地帯エリア攻略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-seasonal-campaign-2027", title: "建設・介護業界SNS採用の季節キャンペーン戦略｜4月・9月・1月に採用を最大化する方法", category: "sns" },
+  { slug: "saitama-tokorozawa-iruma-sayama-kensetsu-kaigo-sns-deep-2027", title: "所沢市・入間市・狭山市の建設・介護SNS採用深掘りガイド｜西武沿線エリア完全攻略", category: "sns" },
+  { slug: "kanagawa-zushi-hayama-miura-kensetsu-kaigo-sns-2027", title: "逗子市・葉山町・三浦市の建設・介護業界SNS採用ガイド｜湘南・三浦半島エリア攻略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-retention-improvement-2027", title: "建設・介護業界SNSで採用後の定着率を上げる戦略｜入社後フォローSNS活用術", category: "sns" },
+  { slug: "chiba-kisarazu-kimitsu-kensetsu-kaigo-sns-2027", title: "木更津市・君津市の建設・介護業界SNS採用完全ガイド｜千葉内房エリア攻略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-cost-vs-recruitingsite-2027", title: "建設・介護業界SNS採用vs求人広告の費用対効果比較｜SNS採用が圧倒的に有利な理由", category: "marketing" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
