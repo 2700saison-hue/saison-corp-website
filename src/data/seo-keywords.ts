@@ -585,6 +585,11 @@ export const EXISTING_SLUGS: string[] = [
   "kanagawa-yokohama-isogo-kanazawa-kensetsu-kaigo-sns-2027",
   "kensetsu-kaigo-sns-instagram-profile-optimization-2027",
   "chiba-kamogawa-minamiboso-kensetsu-kaigo-sns-2027",
+  "saitama-ageo-okegawa-kita-kensetsu-kaigo-sns-2027",
+  "kanagawa-odawara-minami-ashigara-kensetsu-kaigo-sns-2027",
+  "kensetsu-kaigo-sns-video-recruiting-strategy-2027",
+  "chiba-choshi-asahi-kensetsu-kaigo-sns-2027",
+  "kensetsu-kaigo-sns-employer-branding-2027",
 ];
 
 /**
