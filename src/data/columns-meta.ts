@@ -355,6 +355,11 @@ export const columnsMeta: ColumnMeta[] = [
   { slug: "kensetsu-kaigo-sns-open-company-culture-2027", title: "建設・介護業界のオープンな職場文化SNSアピール戦略2027｜透明性で採用力を高める", category: "marketing" },
   { slug: "chiba-katori-sosa-matched-kensetsu-kaigo-sns-2027", title: "香取市・匝瑳市の建設・介護SNS採用2027｜千葉北東部エリア採用戦略", category: "sns" },
   { slug: "kensetsu-kaigo-sns-job-fair-event-strategy-2027", title: "建設・介護業界SNS採用×合同説明会・採用イベント活用戦略2027｜オン・オフ統合採用", category: "marketing" },
+  { slug: "saitama-toda-warabi-kawaguchi-kensetsu-kaigo-sns-2027", title: "戸田市・蕨市・川口市の建設・介護SNS採用2027｜埼玉最南部エリア採用戦略", category: "sns" },
+  { slug: "kanagawa-yokohama-isogo-kanazawa-kensetsu-kaigo-sns-2027", title: "横浜市磯子区・金沢区の建設・介護SNS採用2027｜横浜南部エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-instagram-profile-optimization-2027", title: "建設・介護業界Instagram採用アカウント最適化ガイド2027｜プロフィール設計から投稿まで", category: "sns" },
+  { slug: "chiba-kamogawa-minamiboso-kensetsu-kaigo-sns-2027", title: "鴨川市・南房総市の建設・介護SNS採用2027｜千葉最南部エリア採用戦略", category: "sns" },
+  { slug: "kensetsu-kaigo-sns-case-study-2027", title: "建設・介護業界SNS採用成功事例集2027｜実際に採用できた企業10社の戦略", category: "case" },
 ];
 
 export function getColumnMeta(slug: string): ColumnMeta | undefined {
