@@ -232,6 +232,22 @@ export default async function ColumnDetailPage({ params }: Props) {
             />
           </FadeInSection>
 
+          {/* 記事内CTA */}
+          <FadeInSection delay={120}>
+            <div className="mt-12 bg-gradient-to-br from-[#CC2222]/20 to-[#1a0000] border border-[#CC2222]/30 rounded-2xl p-8 text-center">
+              <p className="text-white/60 text-xs mb-2 uppercase tracking-widest">無料相談受付中</p>
+              <h3 className="text-xl font-bold text-white mb-3">SNS運用・採用強化のご相談はセゾンへ</h3>
+              <p className="text-white/50 text-sm mb-6">相談・見積もり・資料請求すべて無料。お気軽にお問い合わせください。</p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-[#CC2222] text-white font-bold px-8 py-3 rounded-full hover:bg-[#aa1a1a] transition-colors duration-300 text-sm"
+              >
+                今すぐ無料で相談する
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </FadeInSection>
+
           {/* タグ */}
           <FadeInSection delay={150}>
             <div className="mt-12 pt-8 border-t border-white/[0.06]">

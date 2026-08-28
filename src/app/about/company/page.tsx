@@ -257,13 +257,12 @@ export default function CompanyPage() {
             <FadeInSection direction="left" delay={100}>
               <div className="bg-[#141414] border border-white/[0.06] rounded-2xl overflow-hidden h-64 md:h-80 relative">
                 <iframe
-                  src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B6%B3%E7%AB%8B%E5%8C%BA%E6%96%B0%E7%94%B33-37-12&output=embed&hl=ja&z=16"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=139.7582%2C35.7715%2C139.7682%2C35.7795&layer=mapnik&marker=35.7755%2C139.7632"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
                   title="株式会社セゾン 本社所在地"
                 />
               </div>
