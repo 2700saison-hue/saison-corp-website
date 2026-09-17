@@ -9,7 +9,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/", "/static/"],
+        // /note-download/thanks は資料のダウンロード先。
+        // フォームを通らずに直接来られると誰が受け取ったか分からなくなるため除外する
+        disallow: ["/api/", "/_next/", "/static/", "/note-download/thanks"],
       },
       // AI検索エンジン・LLMクローラーを明示的に許可
       {
