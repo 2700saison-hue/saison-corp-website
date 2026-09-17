@@ -6,7 +6,13 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 const FROM_NOTIFY = "株式会社セゾン 資料請求通知 <noreply@seasonsezon.co.jp>";
 const FROM_REPLY = "株式会社セゾン <noreply@seasonsezon.co.jp>";
-const NOTIFY_TO = process.env.NOTIFY_EMAIL ?? "info@seasonsezon.co.jp";
+// info@ 宛が受信側で止まる事象を実測したため、控えとして Gmail にも同報する
+const NOTIFY_TO = (process.env.NOTIFY_EMAIL ?? "info@seasonsezon.co.jp,2700saison@gmail.com")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean)
+  .concat("2700saison@gmail.com")
+  .filter((v, i, a) => a.indexOf(v) === i);
 const BASE_URL = "https://seasonsezon.co.jp";
 
 // note記事のシリーズ（どの系統の記事から来たかを記録する）

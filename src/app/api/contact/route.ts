@@ -8,7 +8,13 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 // seasonsezon.co.jp ドメインは Resend で認証済み → 任意アドレスへ送信可能
 const FROM_NOTIFY  = "株式会社セゾン お問い合わせ通知 <noreply@seasonsezon.co.jp>";
 const FROM_REPLY   = "株式会社セゾン <noreply@seasonsezon.co.jp>";
-const NOTIFY_TO    = process.env.NOTIFY_EMAIL ?? "info@seasonsezon.co.jp";
+// info@ 宛が受信側で止まる事象を実測したため、控えとして Gmail にも同報する
+const NOTIFY_TO    = (process.env.NOTIFY_EMAIL ?? "info@seasonsezon.co.jp,2700saison@gmail.com")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean)
+  .concat("2700saison@gmail.com")
+  .filter((v, i, a) => a.indexOf(v) === i);
 
 // ── レート制限（IPごとに1時間5回まで） ──────────────────────
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
