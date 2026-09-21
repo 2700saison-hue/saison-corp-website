@@ -32,7 +32,7 @@ export default function NoteDownloadForm() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const utm = params.get("utm_content");
-    const allowed = ["data", "fail", "industry", "other"];
+    const allowed = ["data", "fail", "industry", "other", "hp_column"];
     setSource(utm && allowed.includes(utm) ? utm : "direct");
   }, []);
 

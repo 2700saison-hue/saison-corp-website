@@ -248,6 +248,38 @@ export default async function ColumnDetailPage({ params }: Props) {
             </div>
           </FadeInSection>
 
+          {/* note誘導 */}
+          <FadeInSection delay={130}>
+            <div className="mt-6 bg-[#141414] border border-white/[0.08] rounded-2xl p-7">
+              <p className="text-white/40 text-xs mb-2 uppercase tracking-widest">note</p>
+              <h3 className="text-lg font-bold text-white mb-3">
+                実際の運用数字を、そのまま公開しています
+              </h3>
+              <p className="text-white/50 text-sm leading-relaxed mb-5">
+                建設・介護を中心とした運用案件のフォロワー推移・採用単価・ROIを、
+                うまくいかなかった案件も含めてnoteに書いています。一般論ではなく、実際に動かした記録です。
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://note.com/taiyo_saison"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-white/20 hover:border-[#CC2222] text-white/70 hover:text-white text-sm font-bold px-5 py-3 rounded-full transition-all duration-300"
+                >
+                  noteを読む
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <Link
+                  href="/note-download?utm_source=hp&utm_medium=column&utm_content=hp_column"
+                  className="inline-flex items-center gap-2 border border-white/20 hover:border-[#CC2222] text-white/70 hover:text-white text-sm font-bold px-5 py-3 rounded-full transition-all duration-300"
+                >
+                  資料3点を無料で受け取る
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </FadeInSection>
+
           {/* タグ */}
           <FadeInSection delay={150}>
             <div className="mt-12 pt-8 border-t border-white/[0.06]">
@@ -279,7 +311,7 @@ export default async function ColumnDetailPage({ params }: Props) {
                 <p className="text-white/80 font-bold text-sm mb-1">株式会社セゾン 編集部</p>
                 <p className="text-white/40 text-xs leading-relaxed">
                   SNS運用代行・AI導入支援・ホームページ制作を提供するデジタルマーケティング会社。
-                  累計100社以上の支援実績から得たノウハウを発信しています。
+                  累計149社の支援実績から得たノウハウを発信しています。
                 </p>
                 <Link
                   href="/about/company"
