@@ -24,9 +24,12 @@ interface ContactRow {
   companyName: string;
   name: string;
   email: string;
+  phone: string | null;
   service: string | null;
+  message: string;
   createdAt: string;
   isRead: boolean;
+  isSales: boolean;
 }
 
 // ---- ログイン画面 ----
@@ -636,6 +639,8 @@ function NewsTab() {
 function ContactsTab() {
   const [contacts, setContacts] = useState<ContactRow[]>([]);
   const [loading, setLoading] = useState(true);
+  const [filter, setFilter] = useState<"all" | "genuine" | "sales">("all");
+  const [selected, setSelected] = useState<ContactRow | null>(null);
 
   const fetchContacts = useCallback(async () => {
     setLoading(true);
@@ -658,6 +663,16 @@ function ContactsTab() {
     await fetchContacts();
   };
 
+  const genuineCount = contacts.filter((c) => !c.isSales).length;
+  const salesCount = contacts.filter((c) => c.isSales).length;
+  const unreadCount = contacts.filter((c) => !c.isSales && !c.isRead).length;
+
+  const filtered = contacts.filter((c) => {
+    if (filter === "genuine") return !c.isSales;
+    if (filter === "sales") return c.isSales;
+    return true;
+  });
+
   const tableHeaderStyle = {
     background: "#141414",
     color: "#CC2222",
@@ -667,9 +682,47 @@ function ContactsTab() {
 
   return (
     <div>
-      <h2 className="text-lg font-bold mb-4" style={{ color: "#F8F8F8" }}>
-        お問い合わせ
-      </h2>
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-lg font-bold" style={{ color: "#F8F8F8" }}>
+          お問い合わせ
+        </h2>
+        <button
+          onClick={fetchContacts}
+          className="px-3 py-1 text-xs border hover:opacity-70"
+          style={{ borderColor: "#CC2222", color: "#F8F8F8" }}
+        >
+          更新
+        </button>
+      </div>
+
+      {/* サマリーカード */}
+      <div className="grid grid-cols-3 gap-3 mb-5">
+        {[
+          { label: "本物のお問い合わせ", value: genuineCount, sub: `未読 ${unreadCount}件`, active: filter === "genuine", key: "genuine" as const },
+          { label: "営業メール（自動仕分け）", value: salesCount, sub: "通知なしで保存", active: filter === "sales", key: "sales" as const },
+          { label: "合計", value: contacts.length, sub: "全件", active: filter === "all", key: "all" as const },
+        ].map((card) => (
+          <button
+            key={card.key}
+            onClick={() => setFilter(card.key)}
+            className="p-4 border text-left transition-opacity hover:opacity-80"
+            style={{
+              background: card.active ? "#CC2222" : "#141414",
+              borderColor: "#CC2222",
+            }}
+          >
+            <p className="text-xs mb-1" style={{ color: card.active ? "#fff" : "rgba(248,248,248,0.6)" }}>
+              {card.label}
+            </p>
+            <p className="text-2xl font-bold" style={{ color: "#F8F8F8" }}>
+              {card.value}
+            </p>
+            <p className="text-xs mt-1" style={{ color: card.active ? "rgba(255,255,255,0.7)" : "rgba(248,248,248,0.4)" }}>
+              {card.sub}
+            </p>
+          </button>
+        ))}
+      </div>
 
       {loading ? (
         <p style={{ color: "#F8F8F8" }}>読み込み中...</p>
@@ -681,7 +734,7 @@ function ContactsTab() {
           >
             <thead>
               <tr>
-                {["会社名", "名前", "メール", "サービス", "受信日", "既読"].map(
+                {["種別", "会社名", "名前", "メール", "サービス", "受信日", "既読"].map(
                   (h) => (
                     <th
                       key={h}
@@ -695,12 +748,33 @@ function ContactsTab() {
               </tr>
             </thead>
             <tbody>
-              {contacts.map((c) => (
-                <tr key={c.id} className="hover:bg-white/5">
+              {filtered.map((c) => (
+                <tr
+                  key={c.id}
+                  className="hover:bg-white/5 cursor-pointer"
+                  onClick={() => setSelected(c)}
+                >
                   <td className="px-4 py-3 border" style={tableCellStyle}>
-                    {c.companyName}
+                    {c.isSales ? (
+                      <span
+                        className="px-2 py-1 text-xs font-bold"
+                        style={{ background: "#333", color: "#aaa" }}
+                      >
+                        営業
+                      </span>
+                    ) : (
+                      <span
+                        className="px-2 py-1 text-xs font-bold"
+                        style={{ background: "#CC2222", color: "#fff" }}
+                      >
+                        お問い合わせ
+                      </span>
+                    )}
                   </td>
                   <td className="px-4 py-3 border" style={tableCellStyle}>
+                    {c.companyName || "-"}
+                  </td>
+                  <td className="px-4 py-3 border" style={{ ...tableCellStyle, fontWeight: !c.isRead && !c.isSales ? "bold" : "normal" }}>
                     {c.name}
                   </td>
                   <td className="px-4 py-3 border" style={tableCellStyle}>
@@ -712,7 +786,11 @@ function ContactsTab() {
                   <td className="px-4 py-3 border" style={tableCellStyle}>
                     {new Date(c.createdAt).toLocaleDateString("ja-JP")}
                   </td>
-                  <td className="px-4 py-3 border text-center" style={tableCellStyle}>
+                  <td
+                    className="px-4 py-3 border text-center"
+                    style={tableCellStyle}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <input
                       type="checkbox"
                       checked={c.isRead}
@@ -724,11 +802,105 @@ function ContactsTab() {
               ))}
             </tbody>
           </table>
-          {contacts.length === 0 && (
+          {filtered.length === 0 && (
             <p className="text-center py-6" style={{ color: "#F8F8F8" }}>
-              お問い合わせはありません
+              {filter === "sales" ? "営業メールはありません" : filter === "genuine" ? "お問い合わせはありません" : "データがありません"}
             </p>
           )}
+        </div>
+      )}
+
+      {/* 詳細モーダル */}
+      {selected && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70" onClick={() => setSelected(null)}>
+          <div
+            className="w-full max-w-xl p-6 border overflow-y-auto max-h-[90vh]"
+            style={{ background: "#141414", borderColor: "#CC2222" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between mb-5">
+              <h2 className="text-lg font-bold" style={{ color: "#F8F8F8" }}>
+                お問い合わせ詳細
+              </h2>
+              <button
+                onClick={() => setSelected(null)}
+                className="text-xl hover:opacity-70"
+                style={{ color: "#F8F8F8" }}
+              >
+                ✕
+              </button>
+            </div>
+
+            {selected.isSales && (
+              <div
+                className="px-3 py-2 mb-4 text-sm"
+                style={{ background: "#333", color: "#aaa", border: "1px solid #555" }}
+              >
+                ⚠ この問い合わせは営業メールと判定されました（通知は送信していません）
+              </div>
+            )}
+
+            <table className="w-full text-sm border-collapse mb-4" style={{ borderColor: "#CC2222" }}>
+              {[
+                ["会社名", selected.companyName || "-"],
+                ["名前", selected.name],
+                ["メールアドレス", selected.email],
+                ["電話番号", selected.phone || "-"],
+                ["サービス", selected.service || "-"],
+                ["受信日時", new Date(selected.createdAt).toLocaleString("ja-JP")],
+              ].map(([label, value]) => (
+                <tr key={label}>
+                  <td
+                    className="px-3 py-2 border font-bold w-32"
+                    style={{ borderColor: "#CC2222", color: "#CC2222", background: "#0a0a0a" }}
+                  >
+                    {label}
+                  </td>
+                  <td
+                    className="px-3 py-2 border"
+                    style={{ borderColor: "#CC2222", color: "#F8F8F8" }}
+                  >
+                    {value}
+                  </td>
+                </tr>
+              ))}
+            </table>
+
+            <div>
+              <p className="text-sm font-bold mb-2" style={{ color: "#CC2222" }}>
+                メッセージ
+              </p>
+              <div
+                className="p-4 text-sm whitespace-pre-wrap"
+                style={{ background: "#0a0a0a", color: "#F8F8F8", border: "1px solid #CC2222", lineHeight: 1.8 }}
+              >
+                {selected.message}
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between mt-5">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={selected.isRead}
+                  onChange={() => {
+                    toggleRead(selected.id, selected.isRead);
+                    setSelected({ ...selected, isRead: !selected.isRead });
+                  }}
+                />
+                <span className="text-sm" style={{ color: "#F8F8F8" }}>
+                  既読にする
+                </span>
+              </label>
+              <a
+                href={`mailto:${selected.email}`}
+                className="px-4 py-2 text-sm font-bold transition-opacity hover:opacity-80"
+                style={{ background: "#CC2222", color: "#F8F8F8" }}
+              >
+                このアドレスに返信する
+              </a>
+            </div>
+          </div>
         </div>
       )}
     </div>
