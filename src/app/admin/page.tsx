@@ -58,12 +58,12 @@ function LoginScreen({ onLogin }: { onLogin: () => void }) {
 
   return (
     <div
-      style={{ background: "#0a0a0a" }}
+      style={{ background: "#0f172a" }}
       className="min-h-screen flex items-center justify-center"
     >
       <div
         className="w-full max-w-md p-8 border"
-        style={{ borderColor: "#CC2222", background: "#141414" }}
+        style={{ borderColor: "#334155", background: "#1e293b" }}
       >
         <h1
           className="text-2xl font-bold text-center mb-8"
@@ -85,8 +85,8 @@ function LoginScreen({ onLogin }: { onLogin: () => void }) {
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-4 py-3 border outline-none focus:border-red-600"
               style={{
-                background: "#080808",
-                borderColor: "#CC2222",
+                background: "#111827",
+                borderColor: "#334155",
                 color: "#F8F8F8",
               }}
               placeholder="パスワードを入力"
@@ -125,7 +125,7 @@ function Modal({
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
       <div
         className="w-full max-w-lg p-6 border"
-        style={{ background: "#141414", borderColor: "#CC2222" }}
+        style={{ background: "#1e293b", borderColor: "#334155" }}
       >
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-lg font-bold" style={{ color: "#F8F8F8" }}>
@@ -162,8 +162,8 @@ function FormField({
   onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }) {
   const inputStyle = {
-    background: "#080808",
-    borderColor: "#CC2222",
+    background: "#111827",
+    borderColor: "#334155",
     color: "#F8F8F8",
   };
   return (
@@ -276,11 +276,11 @@ function CasesTab() {
   };
 
   const tableHeaderStyle = {
-    background: "#141414",
-    color: "#CC2222",
-    borderColor: "#CC2222",
+    background: "#1e293b",
+    color: "#94a3b8",
+    borderColor: "#334155",
   };
-  const tableCellStyle = { borderColor: "#CC2222", color: "#F8F8F8" };
+  const tableCellStyle = { borderColor: "#334155", color: "#F8F8F8" };
 
   return (
     <div>
@@ -303,7 +303,7 @@ function CasesTab() {
         <div className="overflow-x-auto">
           <table
             className="w-full text-sm border-collapse border"
-            style={{ borderColor: "#CC2222" }}
+            style={{ borderColor: "#334155" }}
           >
             <thead>
               <tr>
@@ -425,7 +425,7 @@ function CasesTab() {
                 type="button"
                 onClick={() => setShowModal(false)}
                 className="px-4 py-2 text-sm border"
-                style={{ borderColor: "#CC2222", color: "#F8F8F8" }}
+                style={{ borderColor: "#334155", color: "#F8F8F8" }}
               >
                 キャンセル
               </button>
@@ -504,11 +504,11 @@ function NewsTab() {
   };
 
   const tableHeaderStyle = {
-    background: "#141414",
-    color: "#CC2222",
-    borderColor: "#CC2222",
+    background: "#1e293b",
+    color: "#94a3b8",
+    borderColor: "#334155",
   };
-  const tableCellStyle = { borderColor: "#CC2222", color: "#F8F8F8" };
+  const tableCellStyle = { borderColor: "#334155", color: "#F8F8F8" };
 
   return (
     <div>
@@ -531,7 +531,7 @@ function NewsTab() {
         <div className="overflow-x-auto">
           <table
             className="w-full text-sm border-collapse border"
-            style={{ borderColor: "#CC2222" }}
+            style={{ borderColor: "#334155" }}
           >
             <thead>
               <tr>
@@ -615,7 +615,7 @@ function NewsTab() {
                 type="button"
                 onClick={() => setShowModal(false)}
                 className="px-4 py-2 text-sm border"
-                style={{ borderColor: "#CC2222", color: "#F8F8F8" }}
+                style={{ borderColor: "#334155", color: "#F8F8F8" }}
               >
                 キャンセル
               </button>
@@ -674,11 +674,11 @@ function ContactsTab() {
   });
 
   const tableHeaderStyle = {
-    background: "#141414",
-    color: "#CC2222",
-    borderColor: "#CC2222",
+    background: "#1e293b",
+    color: "#94a3b8",
+    borderColor: "#334155",
   };
-  const tableCellStyle = { borderColor: "#CC2222", color: "#F8F8F8" };
+  const tableCellStyle = { borderColor: "#334155", color: "#F8F8F8" };
 
   return (
     <div>
@@ -689,7 +689,7 @@ function ContactsTab() {
         <button
           onClick={fetchContacts}
           className="px-3 py-1 text-xs border hover:opacity-70"
-          style={{ borderColor: "#CC2222", color: "#F8F8F8" }}
+          style={{ borderColor: "#334155", color: "#F8F8F8" }}
         >
           更新
         </button>
@@ -707,11 +707,12 @@ function ContactsTab() {
             onClick={() => setFilter(card.key)}
             className="p-4 border text-left transition-opacity hover:opacity-80"
             style={{
-              background: card.active ? "#CC2222" : "#141414",
-              borderColor: "#CC2222",
+              background: card.active ? "#1e2d45" : "#1e293b",
+              borderColor: card.active ? "#CC2222" : "#334155",
+              borderLeftWidth: card.active ? "3px" : "1px",
             }}
           >
-            <p className="text-xs mb-1" style={{ color: card.active ? "#fff" : "rgba(248,248,248,0.6)" }}>
+            <p className="text-xs mb-1" style={{ color: card.active ? "#f8fafc" : "rgba(248,248,248,0.55)" }}>
               {card.label}
             </p>
             <p className="text-2xl font-bold" style={{ color: "#F8F8F8" }}>
@@ -730,7 +731,7 @@ function ContactsTab() {
         <div className="overflow-x-auto">
           <table
             className="w-full text-sm border-collapse border"
-            style={{ borderColor: "#CC2222" }}
+            style={{ borderColor: "#334155" }}
           >
             <thead>
               <tr>
@@ -751,7 +752,7 @@ function ContactsTab() {
               {filtered.map((c) => (
                 <tr
                   key={c.id}
-                  className="hover:bg-white/5 cursor-pointer"
+                  className="hover:bg-white/10 cursor-pointer transition-colors"
                   onClick={() => setSelected(c)}
                 >
                   <td className="px-4 py-3 border" style={tableCellStyle}>
@@ -815,7 +816,7 @@ function ContactsTab() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70" onClick={() => setSelected(null)}>
           <div
             className="w-full max-w-xl p-6 border overflow-y-auto max-h-[90vh]"
-            style={{ background: "#141414", borderColor: "#CC2222" }}
+            style={{ background: "#1e293b", borderColor: "#334155" }}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-5">
@@ -840,7 +841,7 @@ function ContactsTab() {
               </div>
             )}
 
-            <table className="w-full text-sm border-collapse mb-4" style={{ borderColor: "#CC2222" }}>
+            <table className="w-full text-sm border-collapse mb-4" style={{ borderColor: "#334155" }}>
               {[
                 ["会社名", selected.companyName || "-"],
                 ["名前", selected.name],
@@ -852,13 +853,13 @@ function ContactsTab() {
                 <tr key={label}>
                   <td
                     className="px-3 py-2 border font-bold w-32"
-                    style={{ borderColor: "#CC2222", color: "#CC2222", background: "#0a0a0a" }}
+                    style={{ borderColor: "#334155", color: "#94a3b8", background: "#0f172a" }}
                   >
                     {label}
                   </td>
                   <td
                     className="px-3 py-2 border"
-                    style={{ borderColor: "#CC2222", color: "#F8F8F8" }}
+                    style={{ borderColor: "#334155", color: "#F8F8F8" }}
                   >
                     {value}
                   </td>
@@ -867,12 +868,12 @@ function ContactsTab() {
             </table>
 
             <div>
-              <p className="text-sm font-bold mb-2" style={{ color: "#CC2222" }}>
+              <p className="text-sm font-bold mb-2" style={{ color: "#94a3b8" }}>
                 メッセージ
               </p>
               <div
                 className="p-4 text-sm whitespace-pre-wrap"
-                style={{ background: "#0a0a0a", color: "#F8F8F8", border: "1px solid #CC2222", lineHeight: 1.8 }}
+                style={{ background: "#0f172a", color: "#F8F8F8", border: "1px solid #334155", lineHeight: 1.8 }}
               >
                 {selected.message}
               </div>
@@ -949,7 +950,7 @@ function SettingsTab() {
     }
   };
 
-  const inputStyle = { background: "#080808", borderColor: "#CC2222", color: "#F8F8F8" };
+  const inputStyle = { background: "#111827", borderColor: "#334155", color: "#F8F8F8" };
 
   return (
     <div className="max-w-lg">
@@ -957,7 +958,7 @@ function SettingsTab() {
 
       <div
         className="p-6 border"
-        style={{ background: "#141414", borderColor: "#CC2222" }}
+        style={{ background: "#1e293b", borderColor: "#334155" }}
       >
         <h3 className="text-base font-bold mb-4" style={{ color: "#CC2222" }}>
           パスワード変更
@@ -1095,7 +1096,7 @@ function SeoTab() {
   };
 
   const cardStyle = {
-    background: "#141414",
+    background: "#1e293b",
     border: "1px solid rgba(204,34,34,0.2)",
     borderRadius: "8px",
   };
@@ -1107,7 +1108,7 @@ function SeoTab() {
         <button
           onClick={fetchStatus}
           className="px-3 py-1.5 text-xs border transition-opacity hover:opacity-70"
-          style={{ borderColor: "#CC2222", color: "#CC2222" }}
+          style={{ borderColor: "#334155", color: "#94a3b8" }}
         >
           更新
         </button>
@@ -1312,11 +1313,11 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
   ];
 
   return (
-    <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
+    <div style={{ background: "#0f172a", minHeight: "100vh" }}>
       {/* ヘッダー */}
       <header
         className="sticky top-0 z-40 flex items-center justify-between px-6 py-4 border-b"
-        style={{ background: "#141414", borderColor: "#CC2222" }}
+        style={{ background: "#1e293b", borderColor: "#334155" }}
       >
         <h1 className="text-xl font-bold tracking-widest" style={{ color: "#F8F8F8" }}>
           SAISON 管理画面
@@ -1324,7 +1325,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
         <button
           onClick={onLogout}
           className="px-4 py-2 text-sm border transition-opacity hover:opacity-70"
-          style={{ borderColor: "#CC2222", color: "#CC2222" }}
+          style={{ borderColor: "#334155", color: "#94a3b8" }}
         >
           ログアウト
         </button>
@@ -1334,7 +1335,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
         {/* タブ */}
         <div
           className="flex gap-0 mb-8 border-b"
-          style={{ borderColor: "#CC2222" }}
+          style={{ borderColor: "#334155" }}
         >
           {tabs.map((tab) => (
             <button
@@ -1343,7 +1344,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
               className="px-6 py-3 text-sm font-bold transition-colors"
               style={{
                 background:
-                  activeTab === tab.key ? "#CC2222" : "transparent",
+                  activeTab === tab.key ? "#1e293b" : "transparent",
                 color: "#F8F8F8",
                 borderBottom:
                   activeTab === tab.key
@@ -1389,7 +1390,7 @@ export default function AdminPage() {
   if (isAuthenticated === null) {
     return (
       <div
-        style={{ background: "#0a0a0a" }}
+        style={{ background: "#0f172a" }}
         className="min-h-screen flex items-center justify-center"
       >
         <p style={{ color: "#F8F8F8" }}>読み込み中...</p>
