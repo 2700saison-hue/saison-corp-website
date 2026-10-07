@@ -12,7 +12,8 @@
     "generate:seo": "tsx scripts/seo-automation.ts",
     "generate:article": "tsx scripts/generate-seo-content.ts",
     "generate:faq": "tsx scripts/generate-faq.ts",
-    "generate:sns": "tsx scripts/generate-sns-post.ts"
+    "generate:sns": "tsx scripts/generate-sns-post.ts",
+    "audit": "npm audit --audit-level=high"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.54.0",

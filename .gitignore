@@ -45,3 +45,6 @@ next-env.d.ts
 # SEO automation: ログファイルは除外、JSONはコミット対象
 generated/*.txt
 generated/automation-log.txt
+
+# PFP-111: バックアップ実体は git 管理外 (業務データ保護)
+backups/

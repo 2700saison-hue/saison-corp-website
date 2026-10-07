@@ -696,33 +696,50 @@ function ContactsTab() {
       </div>
 
       {/* サマリーカード */}
-      <div className="grid grid-cols-3 gap-3 mb-5">
-        {[
-          { label: "本物のお問い合わせ", value: genuineCount, sub: `未読 ${unreadCount}件`, active: filter === "genuine", key: "genuine" as const },
-          { label: "営業メール（自動仕分け）", value: salesCount, sub: "通知なしで保存", active: filter === "sales", key: "sales" as const },
-          { label: "合計", value: contacts.length, sub: "全件", active: filter === "all", key: "all" as const },
-        ].map((card) => (
-          <button
-            key={card.key}
-            onClick={() => setFilter(card.key)}
-            className="p-4 border text-left transition-opacity hover:opacity-80"
-            style={{
-              background: card.active ? "#1e2d45" : "#1e293b",
-              borderColor: card.active ? "#CC2222" : "#334155",
-              borderLeftWidth: card.active ? "3px" : "1px",
-            }}
-          >
-            <p className="text-xs mb-1" style={{ color: card.active ? "#f8fafc" : "rgba(248,248,248,0.55)" }}>
-              {card.label}
-            </p>
-            <p className="text-2xl font-bold" style={{ color: "#F8F8F8" }}>
-              {card.value}
-            </p>
-            <p className="text-xs mt-1" style={{ color: card.active ? "rgba(255,255,255,0.7)" : "rgba(248,248,248,0.4)" }}>
-              {card.sub}
-            </p>
-          </button>
-        ))}
+      <div className="grid grid-cols-3 gap-4 mb-6">
+        <button
+          onClick={() => setFilter("genuine")}
+          className="p-5 rounded-lg border text-left transition-all hover:opacity-90"
+          style={{
+            background: filter === "genuine" ? "#1e2d45" : "#1e293b",
+            borderColor: filter === "genuine" ? "#CC2222" : "#334155",
+            borderLeftWidth: filter === "genuine" ? "4px" : "1px",
+          }}
+        >
+          <p className="text-xs font-medium mb-2" style={{ color: "#94a3b8" }}>本物のお問い合わせ</p>
+          <p className="text-3xl font-bold mb-1" style={{ color: "#f8fafc" }}>{genuineCount}</p>
+          {unreadCount > 0 ? (
+            <p className="text-xs font-bold" style={{ color: "#f87171" }}>未読 {unreadCount}件 ⚡</p>
+          ) : (
+            <p className="text-xs" style={{ color: "#64748b" }}>未読なし</p>
+          )}
+        </button>
+        <button
+          onClick={() => setFilter("sales")}
+          className="p-5 rounded-lg border text-left transition-all hover:opacity-90"
+          style={{
+            background: filter === "sales" ? "#1e2d45" : "#1e293b",
+            borderColor: filter === "sales" ? "#334155" : "#334155",
+            borderLeftWidth: filter === "sales" ? "4px" : "1px",
+          }}
+        >
+          <p className="text-xs font-medium mb-2" style={{ color: "#94a3b8" }}>営業メール（自動仕分け）</p>
+          <p className="text-3xl font-bold mb-1" style={{ color: "#64748b" }}>{salesCount}</p>
+          <p className="text-xs" style={{ color: "#64748b" }}>通知なしで保存</p>
+        </button>
+        <button
+          onClick={() => setFilter("all")}
+          className="p-5 rounded-lg border text-left transition-all hover:opacity-90"
+          style={{
+            background: filter === "all" ? "#1e2d45" : "#1e293b",
+            borderColor: filter === "all" ? "#CC2222" : "#334155",
+            borderLeftWidth: filter === "all" ? "4px" : "1px",
+          }}
+        >
+          <p className="text-xs font-medium mb-2" style={{ color: "#94a3b8" }}>合計</p>
+          <p className="text-3xl font-bold mb-1" style={{ color: "#f8fafc" }}>{contacts.length}</p>
+          <p className="text-xs" style={{ color: "#64748b" }}>全件表示</p>
+        </button>
       </div>
 
       {loading ? (
@@ -753,42 +770,43 @@ function ContactsTab() {
                 <tr
                   key={c.id}
                   className="hover:bg-white/10 cursor-pointer transition-colors"
+                  style={{ opacity: c.isSales ? 0.6 : 1 }}
                   onClick={() => setSelected(c)}
                 >
-                  <td className="px-4 py-3 border" style={tableCellStyle}>
+                  <td className="px-3 py-2 border" style={tableCellStyle}>
                     {c.isSales ? (
                       <span
-                        className="px-2 py-1 text-xs font-bold"
-                        style={{ background: "#333", color: "#aaa" }}
+                        className="px-1.5 py-0.5 text-xs rounded"
+                        style={{ background: "#374151", color: "#9ca3af" }}
                       >
                         営業
                       </span>
                     ) : (
                       <span
-                        className="px-2 py-1 text-xs font-bold"
-                        style={{ background: "#CC2222", color: "#fff" }}
+                        className="px-1.5 py-0.5 text-xs rounded font-bold"
+                        style={{ background: "rgba(204,34,34,0.15)", color: "#f87171", border: "1px solid rgba(204,34,34,0.3)" }}
                       >
-                        お問い合わせ
+                        問合
                       </span>
                     )}
                   </td>
-                  <td className="px-4 py-3 border" style={tableCellStyle}>
+                  <td className="px-3 py-2 border text-sm" style={tableCellStyle}>
                     {c.companyName || "-"}
                   </td>
-                  <td className="px-4 py-3 border" style={{ ...tableCellStyle, fontWeight: !c.isRead && !c.isSales ? "bold" : "normal" }}>
+                  <td className="px-3 py-2 border text-sm" style={{ ...tableCellStyle, fontWeight: !c.isRead && !c.isSales ? "bold" : "normal" }}>
                     {c.name}
                   </td>
-                  <td className="px-4 py-3 border" style={tableCellStyle}>
-                    {c.email}
+                  <td className="px-3 py-2 border text-sm" style={{ ...tableCellStyle, maxWidth: "180px" }}>
+                    <span className="block truncate" title={c.email}>{c.email}</span>
                   </td>
-                  <td className="px-4 py-3 border" style={tableCellStyle}>
+                  <td className="px-3 py-2 border text-sm" style={tableCellStyle}>
                     {c.service ?? "-"}
                   </td>
-                  <td className="px-4 py-3 border" style={tableCellStyle}>
+                  <td className="px-3 py-2 border text-sm" style={{ ...tableCellStyle, whiteSpace: "nowrap" }}>
                     {new Date(c.createdAt).toLocaleDateString("ja-JP")}
                   </td>
                   <td
-                    className="px-4 py-3 border text-center"
+                    className="px-3 py-2 border text-center"
                     style={tableCellStyle}
                     onClick={(e) => e.stopPropagation()}
                   >

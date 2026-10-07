@@ -1,3 +1,6 @@
+import StatusBeacon from "../components/soloptilink/StatusBeacon";
+import ChunkRecovery from "../lib/self-recovery/ChunkRecovery";
+import ConnectionGuard from "../lib/self-recovery/ConnectionGuard";
 import type { Metadata, Viewport } from "next";
 import { Noto_Serif_JP, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
@@ -222,6 +225,13 @@ export default function RootLayout({
         <JsonLd data={websiteSchema} />
       </head>
       <body className="min-h-full flex flex-col bg-[#080808] text-[#F8F8F8]">
+        {/* SOLOPTILINK-STATUS-BEACON:BEGIN 生成物の状態表示(自動注入・この区間は削除しないでください) */}
+        <StatusBeacon />
+        {/* SOLOPTILINK-STATUS-BEACON:END */}
+        {/* SOLOPTILINK-SELF-RECOVERY:BEGIN 自己回復部品(自動注入・この区間は削除しないでください) */}
+        <ChunkRecovery />
+        <ConnectionGuard />
+        {/* SOLOPTILINK-SELF-RECOVERY:END */}
         <GoogleAnalytics />
         <Header />
         <main className="flex-1">{children}</main>

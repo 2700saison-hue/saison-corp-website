@@ -53,6 +53,7 @@ model ContactMessage {
   isRead       Boolean  @default(false)
   isSales      Boolean  @default(false)
   createdAt    DateTime @default(now())
+  updatedAt DateTime @updatedAt // 同時編集の突合材料 (楽観ロック)
 }
 
 model AdminUser {
@@ -60,6 +61,7 @@ model AdminUser {
   email     String   @unique
   password  String
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt // 同時編集の突合材料 (楽観ロック)
 }
 
 model AdminSettings {
