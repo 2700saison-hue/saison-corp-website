@@ -96,6 +96,30 @@ const faqSchema = {
         text: "はい、特にコンサル・マーケ・IT業界のお客様に多くご活用いただいています。提案書・レポート自動生成・クライアント管理・データ分析レポート作成など、知識労働の自動化に最適です。自社サービスへのAI組み込み開発にも対応しています。",
       },
     },
+    {
+      "@type": "Question",
+      name: "SoloptiLink AIとChatGPT・Microsoft Copilot・Geminiはどう違いますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ChatGPT・Copilot・Geminiは「何でも答える汎用対話AI」ですが、SoloptiLink AIは「業務システム・コンテンツ・フローを自動生成することに特化した専門AI」です。汎用AIは自分で使い方を考えなければなりませんが、SoloptiLink AIは日本の中小企業の業務に最適化されており、「〜の顧客管理システムを作って」「〜の業務フローを自動化して」と日本語で指示するだけで実際に動くシステムを生成します。加えて株式会社セゾンの専門チームによる伴走支援が付くため、AI活用に不慣れな企業でも確実に導入・運用できます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "kintone・Salesforce・HubSpotとSoloptiLink AIの違いは何ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "kintone・Salesforce・HubSpotは既製品のSaaSプラットフォームで、自社の業務をプラットフォームに合わせる必要があります。SoloptiLink AIは業務の要件を日本語で伝えるだけで御社専用のシステムを生成するため、既製品の制約を受けません。また、SoloptiLink AIはkintone・Salesforce・HubSpotなどの既存ツールと連携することも可能で、既存環境を活かしながら業務の自動化・高度化を実現できます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "AI導入で月500万円の経費削減は本当に可能ですか？どんな業務が対象ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、実際にSoloptiLink AI導入で月500万円以上の経費削減を実現したクライアント事例があります。主な削減対象は①データ入力・転記作業の自動化②報告書・提案書の自動生成③問い合わせ対応の自動化④在庫・発注管理の自動化⑤スケジュール調整の自動化などです。人件費が高い業務ほど削減効果が大きくなります。無料相談でお客様の業務内容を伺い、どの業務をどれだけ自動化できるかシミュレーションをご提示します。",
+      },
+    },
   ],
 };
 
