@@ -19,16 +19,33 @@ const NOTIFY_TO    = (process.env.NOTIFY_EMAIL ?? "info@seasonsezon.co.jp,2700sa
 // ── 営業メール自動判定 ────────────────────────────────────────
 // スコア≥2 で営業メール扱い（DBには保存するがメール通知はしない）
 const SALES_KEYWORDS: { pattern: RegExp; score: number }[] = [
+  // スコア3: 確実な営業（自社のフォームで営業ツール紹介）
+  { pattern: /問い合わせフォーム.*送信|フォーム.*営業|フォーム.*ご提案|弊社.*フォーム.*送信/u, score: 3 },
+
+  // スコア2: 強い営業シグナル
   { pattern: /弊社.*サービス|サービス.*ご案内|サービス.*ご提案/u, score: 2 },
   { pattern: /ご提案させていただ|ご紹介させていただ/u, score: 2 },
   { pattern: /業務提携|パートナーシップ|代理店/u, score: 2 },
-  { pattern: /外注|業務委託.*のご相談/u, score: 2 },
+  { pattern: /業務委託.*募集|業務委託.*お仕事|外注.*ご相談|業務委託.*ご相談/u, score: 2 },
+  { pattern: /リスティング広告|MEO対策|SEO対策.*ご案内/u, score: 2 },
+  { pattern: /採用支援|人材紹介|採用.*ご担当者|インターン.*求人|長期インターン/u, score: 2 },
+  { pattern: /お取引のご相談|取引のご提案/u, score: 2 },
+  { pattern: /完全成果報酬|月額.*万円.*ご案内|営業代行.*ご案内/u, score: 2 },
+  { pattern: /弊社が開発|弊社.*ツールを|弊社.*システムを/u, score: 2 },
+  { pattern: /弊社では.*運営|弊社.*を運営|弊社.*メディア/u, score: 2 },
+  { pattern: /掲載のご案内|掲載のご提案|メディア.*掲載.*ご案内/u, score: 2 },
+  { pattern: /無料取材|取材.*ご依頼|取材.*させていただ/u, score: 2 },
+  { pattern: /IT導入補助金|補助金.*活用.*ご案内|補助金.*導入支援/u, score: 2 },
+  { pattern: /不動産投資|海外不動産|土地活用.*ご提案/u, score: 2 },
+  { pattern: /EC.*商品登録|商品登録代行|楽天.*出品/u, score: 2 },
+  { pattern: /展示会.*ご案内|セミナー.*ご案内.*弊社|展示会.*出展/u, score: 2 },
+  { pattern: /外部パートナー.*募集|パートナー企業.*募集|協力会社.*募集/u, score: 2 },
+
+  // スコア1: 弱いシグナル（組み合わせでスコア2超え）
+  { pattern: /突然のご連絡失礼/u, score: 1 },
   { pattern: /弊社/u, score: 1 },
   { pattern: /ご提案|ご案内/u, score: 1 },
-  { pattern: /リスティング広告|MEO対策.*弊社|SEO対策.*弊社/u, score: 2 },
-  { pattern: /採用支援.*弊社|人材紹介.*弊社/u, score: 2 },
-  { pattern: /お取引のご相談|取引のご提案/u, score: 2 },
-  { pattern: /セールス|営業.*ご連絡/u, score: 2 },
+  { pattern: /セールス|営業.*ご連絡/u, score: 1 },
 ];
 
 function detectSalesEmail(text: string): boolean {
