@@ -1235,7 +1235,7 @@ function SeoTab() {
           <div className="space-y-4">
             {status.recentSnsPosts.slice(0, 3).map((post, i) => (
               <div key={i} className="border-b border-white/5 pb-4 last:border-0">
-                {post.instagram && (
+                {post.instagram && typeof post.instagram === "string" && (
                   <div className="mb-2">
                     <p className="text-xs font-bold mb-1" style={{ color: "#CC2222" }}>Instagram</p>
                     <p className="text-xs whitespace-pre-wrap" style={{ color: "rgba(248,248,248,0.6)" }}>
@@ -1243,7 +1243,7 @@ function SeoTab() {
                     </p>
                   </div>
                 )}
-                {post.twitter && (
+                {post.twitter && typeof post.twitter === "string" && (
                   <div>
                     <p className="text-xs font-bold mb-1" style={{ color: "#CC2222" }}>X (Twitter)</p>
                     <p className="text-xs whitespace-pre-wrap" style={{ color: "rgba(248,248,248,0.6)" }}>
