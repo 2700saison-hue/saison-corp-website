@@ -265,7 +265,7 @@ export async function POST(req: NextRequest) {
       <p style="color: rgba(255,255,255,0.6); font-size: 12px; margin: 0; line-height: 1.6;">
         📧 info@seasonsezon.co.jp<br>
         📞 090-1251-6837<br>
-        🌐 <a href="https://saison-corp-website.vercel.app" style="color: rgba(255,255,255,0.6);">saison-corp-website.vercel.app</a>
+        🌐 <a href="https://seasonsezon.co.jp" style="color: rgba(255,255,255,0.6);">seasonsezon.co.jp</a>
       </p>
     </div>
   </div>
