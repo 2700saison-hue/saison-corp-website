@@ -170,7 +170,7 @@ const organizationSchema = {
   ],
   numberOfEmployees: {
     "@type": "QuantitativeValue",
-    value: 3,
+    value: 11,
   },
   sameAs: [
     "https://seasonsezon.com",

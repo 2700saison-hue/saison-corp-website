@@ -135,7 +135,7 @@ const localBusinessSchema = {
     url: `${BASE_URL}/about/ceo`,
   },
   foundingDate: "2023-09-01",
-  numberOfEmployees: { "@type": "QuantitativeValue", value: 3 },
+  numberOfEmployees: { "@type": "QuantitativeValue", value: 11 },
   sameAs: [
     "https://www.instagram.com/saison_taiyo/",
   ],

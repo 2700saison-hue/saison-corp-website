@@ -16,6 +16,31 @@ const NOTIFY_TO    = (process.env.NOTIFY_EMAIL ?? "info@seasonsezon.co.jp,2700sa
   .concat("2700saison@gmail.com")
   .filter((v, i, a) => a.indexOf(v) === i);
 
+// ── 営業メール自動判定 ────────────────────────────────────────
+// スコア≥2 で営業メール扱い（DBには保存するがメール通知はしない）
+const SALES_KEYWORDS: { pattern: RegExp; score: number }[] = [
+  { pattern: /弊社.*サービス|サービス.*ご案内|サービス.*ご提案/u, score: 2 },
+  { pattern: /ご提案させていただ|ご紹介させていただ/u, score: 2 },
+  { pattern: /業務提携|パートナーシップ|代理店/u, score: 2 },
+  { pattern: /外注|業務委託.*のご相談/u, score: 2 },
+  { pattern: /弊社/u, score: 1 },
+  { pattern: /ご提案|ご案内/u, score: 1 },
+  { pattern: /リスティング広告|MEO対策.*弊社|SEO対策.*弊社/u, score: 2 },
+  { pattern: /採用支援.*弊社|人材紹介.*弊社/u, score: 2 },
+  { pattern: /お取引のご相談|取引のご提案/u, score: 2 },
+  { pattern: /セールス|営業.*ご連絡/u, score: 2 },
+];
+
+function detectSalesEmail(text: string): boolean {
+  const combined = text.toLowerCase();
+  let score = 0;
+  for (const { pattern, score: s } of SALES_KEYWORDS) {
+    if (pattern.test(combined)) score += s;
+    if (score >= 2) return true;
+  }
+  return false;
+}
+
 // ── レート制限（IPごとに1時間5回まで） ──────────────────────
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT_MAX = 5;
@@ -114,6 +139,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false, error: "電話番号の形式が正しくありません" }, { status: 400 });
     }
 
+    // ── 営業メール判定 ────────────────────────────────────────
+    const searchText = [body.message, body.companyName, body.name].filter(Boolean).join(" ");
+    const isSales = detectSalesEmail(searchText);
+
     // ── DB保存（失敗してもメール通知は継続） ──────────────────
     try {
       await prisma.contactMessage.create({
@@ -129,10 +158,16 @@ export async function POST(req: NextRequest) {
           budget: body.budget,
           contactPref: body.contactPref,
           isRead: false,
+          isSales,
         },
       });
     } catch (dbErr) {
       console.error("[contact] DB save failed (non-fatal):", dbErr);
+    }
+
+    // 営業メールはここで終了（メール通知せず、送信者には成功を返す）
+    if (isSales) {
+      return NextResponse.json({ ok: true });
     }
 
     // ── メール送信（RESEND_API_KEY が設定されている場合のみ） ─
