@@ -27,6 +27,34 @@ const breadcrumbSchema = {
   ],
 };
 
+const founderSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "古田太陽",
+  alternateName: "Taiyo Furuta",
+  givenName: "太陽",
+  familyName: "古田",
+  birthDate: "2002-06-13",
+  jobTitle: "代表取締役",
+  description: "株式会社セゾン代表取締役。2002年6月生まれ、東京都足立区出身。早稲田大学スポーツ科学部在学中に起業。SNS運用代行とAIシステム「SoloptiLink AI」導入支援を手がけ、累計100社以上の企業変革を牽引。座右の銘は「行動が、最強の戦略だ。」",
+  url: "https://seasonsezon.co.jp/about/ceo",
+  image: "https://seasonsezon.co.jp/images/team/CEO2.jpeg",
+  worksFor: {
+    "@type": "Organization",
+    name: "株式会社セゾン",
+    url: "https://seasonsezon.co.jp",
+  },
+  alumniOf: {
+    "@type": "EducationalOrganization",
+    name: "早稲田大学",
+    department: "スポーツ科学部",
+  },
+  sameAs: [
+    "https://www.instagram.com/saison_taiyo/",
+    "https://seasonsezon.co.jp/about/ceo",
+  ],
+};
+
 const cards = [
   {
     image: "/images/about/philosophy.png",
@@ -66,6 +94,7 @@ export default function AboutPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8]">
       <JsonLd data={breadcrumbSchema} />
+      <JsonLd data={founderSchema} />
       {/* ヒーローバナー */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div
