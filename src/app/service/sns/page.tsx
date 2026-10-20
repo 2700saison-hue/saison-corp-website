@@ -199,7 +199,15 @@ const snsServiceSchema = {
   provider: {
     "@type": "Organization",
     name: "株式会社セゾン",
+    alternateName: "SAISON Co., Ltd.",
     url: "https://seasonsezon.co.jp",
+    founder: {
+      "@type": "Person",
+      name: "古田太陽",
+      alternateName: "Taiyo Furuta",
+      jobTitle: "代表取締役",
+      url: "https://seasonsezon.co.jp/about/ceo",
+    },
   },
   description:
     "プロ舞台役者出演のドラマ型ショート動画を活用したSNS運用代行サービス。採用・集客・ブランディングを強化し、平均ROI195%を実現。累計100社以上の実績。",

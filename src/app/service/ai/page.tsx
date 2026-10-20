@@ -22,7 +22,15 @@ const softwareAppSchema = {
   provider: {
     "@type": "Organization",
     name: "株式会社セゾン",
+    alternateName: "SAISON Co., Ltd.",
     url: "https://seasonsezon.co.jp",
+    founder: {
+      "@type": "Person",
+      name: "古田太陽",
+      alternateName: "Taiyo Furuta",
+      jobTitle: "代表取締役",
+      url: "https://seasonsezon.co.jp/about/ceo",
+    },
   },
   offers: {
     "@type": "Offer",
