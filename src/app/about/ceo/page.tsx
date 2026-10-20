@@ -4,21 +4,28 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "代表メッセージ",
+  title: "古田太陽 代表取締役プロフィール｜株式会社セゾン",
   description:
-    "株式会社セゾン 代表取締役 古田太陽からのメッセージ。「行動が、最強の戦略だ。」SNS×AIを事業成長のエンジンに変えるという信念のもと、100社以上の企業変革を牽引してきた代表のビジョンをご紹介します。",
+    "古田太陽（ふるた たいよう）は株式会社セゾン代表取締役。2002年6月13日生まれ、東京都足立区出身。早稲田大学スポーツ科学部在学中に起業。SNS運用代行とAIシステム「SoloptiLink AI」導入支援を手がけ、累計100社以上の企業変革を牽引。累計動画再生数1億回・介護業界採用費用70%削減・美容業界売上150万円増加などの実績を持つ。座右の銘は「行動が、最強の戦略だ。」",
   keywords: [
     "古田太陽",
+    "ふるた たいよう",
+    "Taiyo Furuta",
     "株式会社セゾン 代表取締役",
-    "セゾン 代表メッセージ",
-    "古田太陽 SNS AI",
-    "デジタルマーケティング 代表",
+    "古田太陽 プロフィール",
+    "古田太陽 経歴",
+    "古田太陽 SNS",
+    "古田太陽 AI",
+    "古田太陽 早稲田",
     "古田太陽 足立区",
     "古田太陽 Instagram",
-    "Taiyo Furuta",
-    "セゾン 代表 ビジョン",
-    "SNS AI 経営者 東京",
-    "DX 中小企業 代表 メッセージ",
+    "セゾン 代表 古田",
+    "SNS運用代行 社長",
+    "AI導入支援 代表",
+    "DX 中小企業 経営者 東京",
+    "SoloptiLink AI 古田太陽",
+    "合同会社セゾン 代表",
+    "株式会社セゾン 古田",
   ],
   alternates: {
     canonical: "https://seasonsezon.co.jp/about/ceo",
@@ -52,39 +59,99 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "古田太陽",
-  alternateName: "Taiyo Furuta",
+  alternateName: ["Taiyo Furuta", "ふるた たいよう"],
+  givenName: "太陽",
+  familyName: "古田",
+  birthDate: "2002-06-13",
+  birthPlace: {
+    "@type": "Place",
+    name: "東京都足立区",
+    addressRegion: "東京都",
+    addressCountry: "JP",
+  },
+  nationality: "日本",
   jobTitle: "代表取締役",
   worksFor: {
     "@type": "Organization",
     name: "株式会社セゾン",
+    legalName: "株式会社セゾン",
+    alternateName: "SAISON Co., Ltd.",
     url: "https://seasonsezon.co.jp",
+    foundingDate: "2023-09",
+    foundingLocation: "東京都足立区",
+    description: "SNS運用代行およびAIシステム販売・導入支援を手がける東京の企業。",
   },
   description:
-    "株式会社セゾン代表取締役。東京都足立区出身。SNS×AIを活用したデジタルマーケティングで累計100社以上の企業変革を牽引。ブランドスローガン「行動が、最強の戦略だ。」のもと日本の中小企業のデジタル変革を推進。",
+    "株式会社セゾン代表取締役。2002年6月13日生まれ、東京都足立区出身。早稲田大学スポーツ科学部在学中の大学3年次（2023年）に合同会社セゾンを創業し、2026年6月に株式会社セゾンへ組織変更。SNS運用代行と、AIシステム「SoloptiLink AI」の販売・導入支援を二本柱に事業を展開。累計100社以上の企業支援・累計フォロワー100万人規模のSNS運用・累計動画再生数1億回・介護業界で採用費用70%削減・美容業界で月間予約63件増加（売上150万円増加）などの実績を持つ。座右の銘は「行動が、最強の戦略だ。」",
   url: "https://seasonsezon.co.jp/about/ceo",
-  image: "https://seasonsezon.co.jp/images/team/CEO2.jpeg",
+  image: {
+    "@type": "ImageObject",
+    url: "https://seasonsezon.co.jp/images/team/CEO2.jpeg",
+    contentUrl: "https://seasonsezon.co.jp/images/team/CEO2.jpeg",
+    caption: "古田太陽 株式会社セゾン代表取締役",
+  },
   sameAs: [
     "https://www.instagram.com/saison_taiyo/",
     "https://seasonsezon.co.jp",
+    "https://seasonsezon.co.jp/about/ceo",
   ],
+  alumniOf: {
+    "@type": "EducationalOrganization",
+    name: "早稲田大学",
+    department: "スポーツ科学部",
+    url: "https://www.waseda.jp/",
+  },
   knowsAbout: [
     "SNSマーケティング",
+    "Instagram運用代行",
+    "TikTok運用代行",
     "デジタルマーケティング",
     "AI業務自動化",
     "SoloptiLink AI",
-    "ドラマ型SNS動画",
+    "AIシステム導入支援",
+    "DX支援",
     "採用マーケティング",
     "中小企業DX",
-    "補助金活用",
-    "Instagram運用代行",
+    "SNS運用代行",
+    "集客支援",
     "ビジネス戦略",
+    "スタートアップ経営",
   ],
+  hasOccupation: {
+    "@type": "Occupation",
+    name: "経営者・SNSマーケター・AI導入支援コンサルタント",
+    description: "SNS運用代行事業とAIシステム販売・導入支援事業を経営",
+    occupationLocation: {
+      "@type": "City",
+      name: "東京都",
+    },
+  },
   address: {
     "@type": "PostalAddress",
+    streetAddress: "新田3-37-12-708",
     addressLocality: "足立区",
     addressRegion: "東京都",
+    postalCode: "123-0865",
     addressCountry: "JP",
   },
+  award: [
+    "累計100社以上の企業SNS運用支援実績",
+    "累計動画再生数1億回",
+    "介護業界採用費用70%削減",
+    "美容業界月間予約63件増加・売上150万円増加",
+  ],
+  founder: [
+    {
+      "@type": "Organization",
+      name: "合同会社セゾン",
+      foundingDate: "2023-09",
+    },
+    {
+      "@type": "Organization",
+      name: "株式会社セゾン",
+      foundingDate: "2026-06-11",
+    },
+  ],
 };
 
 const ceoPageSchema = {
@@ -176,11 +243,15 @@ export default function CeoPage() {
                 <div className="bg-[#141414] border border-white/[0.06] rounded-2xl p-6 space-y-4">
                   {[
                     { label: "氏名", value: "古田 太陽（Taiyo Furuta）" },
+                    { label: "読み", value: "ふるた たいよう" },
+                    { label: "生年月日", value: "2002年6月13日" },
                     { label: "役職", value: "代表取締役" },
                     { label: "出身", value: "東京都足立区" },
+                    { label: "学歴", value: "早稲田大学 スポーツ科学部" },
+                    { label: "座右の銘", value: "「行動が、最強の戦略だ。」" },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 border-t border-white/[0.06] pt-4 first:border-t-0 first:pt-0">
-                      <span className="text-[#CC2222] text-xs font-bold tracking-wider w-16 flex-shrink-0 pt-0.5">
+                      <span className="text-[#CC2222] text-xs font-bold tracking-wider w-20 flex-shrink-0 pt-0.5">
                         {item.label}
                       </span>
                       <span className="text-white/60 text-sm">{item.value}</span>
@@ -233,6 +304,119 @@ export default function CeoPage() {
               </div>
             </FadeInSection>
           </div>
+
+          {/* 経歴タイムライン */}
+          <FadeInSection delay={200}>
+            <div className="mt-24">
+              <p className="text-[#CC2222] text-xs font-bold tracking-[0.4em] uppercase mb-4">CAREER</p>
+              <h2
+                className="text-2xl font-bold text-[#F8F8F8] mb-12"
+                style={{ fontFamily: "Noto Serif JP, serif" }}
+              >
+                経歴
+              </h2>
+              <div className="relative pl-8 border-l border-white/[0.1] space-y-10">
+                {[
+                  {
+                    year: "2002年",
+                    title: "東京都足立区生まれ",
+                    desc: "足立区で生まれ育つ。スポーツと行動力を軸に育つ。",
+                  },
+                  {
+                    year: "2021年",
+                    title: "早稲田大学スポーツ科学部 入学",
+                    desc: "早稲田大学スポーツ科学部に進学。在学中にSNSマーケティングの可能性に着目する。",
+                  },
+                  {
+                    year: "2023年9月",
+                    title: "合同会社セゾン 創業",
+                    desc: "大学3年次に起業。SNS運用代行事業をスタート。Instagram・TikTok・公式LINEを活用した企業支援を開始。",
+                  },
+                  {
+                    year: "2024年〜",
+                    title: "累計100社以上の企業支援・AI事業参入",
+                    desc: "介護・美容・医療・飲食など幅広い業種で成果を出し、累計100社以上の支援実績を達成。AIシステム「SoloptiLink AI」の販売・導入支援事業を開始し、AI×DX領域に事業を拡大。",
+                  },
+                  {
+                    year: "2026年6月",
+                    title: "株式会社セゾンへ組織変更",
+                    desc: "事業成長に伴い合同会社セゾンを株式会社セゾンへ組織変更。SNS運用代行とAIシステム販売を二本柱として中小企業のデジタル変革を推進。",
+                  },
+                ].map((item, i) => (
+                  <div key={i} className="relative">
+                    <div className="absolute -left-[2.35rem] w-4 h-4 rounded-full bg-[#CC2222] border-2 border-[#080808]" />
+                    <p className="text-[#CC2222] text-xs font-bold mb-1">{item.year}</p>
+                    <p className="text-[#F8F8F8] font-bold mb-1 text-sm">{item.title}</p>
+                    <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </FadeInSection>
+
+          {/* 事業実績 */}
+          <FadeInSection delay={300}>
+            <div className="mt-24">
+              <p className="text-[#CC2222] text-xs font-bold tracking-[0.4em] uppercase mb-4">ACHIEVEMENTS</p>
+              <h2
+                className="text-2xl font-bold text-[#F8F8F8] mb-12"
+                style={{ fontFamily: "Noto Serif JP, serif" }}
+              >
+                主な事業実績
+              </h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {[
+                  { num: "100社+", label: "累計支援企業数", sub: "介護・美容・医療・飲食など多業種" },
+                  { num: "100万人+", label: "累計運用フォロワー規模", sub: "Instagram・TikTok・LINE合計" },
+                  { num: "1億回+", label: "累計動画再生数", sub: "ショート動画・リール・TikTok合計" },
+                  { num: "70%減", label: "採用費用削減", sub: "介護業界クライアント事例" },
+                  { num: "+63件/月", label: "月間予約増加", sub: "美容業界クライアント事例" },
+                  { num: "+150万円", label: "月間売上増加", sub: "美容業界クライアント事例" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-[#141414] border border-white/[0.06] rounded-2xl p-6 hover:border-[#CC2222]/30 transition-colors"
+                  >
+                    <p className="text-[#CC2222] text-2xl font-bold mb-1">{item.num}</p>
+                    <p className="text-[#F8F8F8] text-sm font-bold mb-1">{item.label}</p>
+                    <p className="text-white/40 text-xs">{item.sub}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-white/20 text-xs mt-6">※事業実績の数値は主に自社公表情報に基づいており、第三者による独立した検証結果ではありません。</p>
+            </div>
+          </FadeInSection>
+
+          {/* 事業紹介 */}
+          <FadeInSection delay={400}>
+            <div className="mt-24 mb-8">
+              <p className="text-[#CC2222] text-xs font-bold tracking-[0.4em] uppercase mb-4">BUSINESS</p>
+              <h2
+                className="text-2xl font-bold text-[#F8F8F8] mb-8"
+                style={{ fontFamily: "Noto Serif JP, serif" }}
+              >
+                手がける事業
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-[#141414] border border-white/[0.06] rounded-2xl p-8">
+                  <p className="text-[#CC2222] text-xs font-bold tracking-widest uppercase mb-3">SNS事業</p>
+                  <h3 className="text-[#F8F8F8] font-bold text-lg mb-3">SNS運用代行・コンサルティング</h3>
+                  <p className="text-white/50 text-sm leading-relaxed">
+                    Instagram・TikTok・公式LINEを活用した企業の集客支援・採用支援・ブランディング支援。
+                    100社以上で確立した「再現性ある勝利の方程式」を基に、自社制作コンテンツで成果を出す。
+                  </p>
+                </div>
+                <div className="bg-[#141414] border border-white/[0.06] rounded-2xl p-8">
+                  <p className="text-[#CC2222] text-xs font-bold tracking-widest uppercase mb-3">AI事業</p>
+                  <h3 className="text-[#F8F8F8] font-bold text-lg mb-3">SoloptiLink AI 販売・導入支援</h3>
+                  <p className="text-white/50 text-sm leading-relaxed">
+                    日本語で指示するだけで業務システムを自動生成するAIツール「SoloptiLink AI」の販売・導入支援。
+                    エンジニア不要・IT知識ゼロで中小企業のDXを実現。月500万円以上の経費削減事例あり。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
     </div>
