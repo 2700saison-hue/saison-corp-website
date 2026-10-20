@@ -177,12 +177,60 @@ const ceoPageSchema = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "古田太陽（ふるた たいよう）とは何者ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "古田太陽（ふるた たいよう、Taiyo Furuta）は、株式会社セゾンの代表取締役です。2002年6月13日生まれ、東京都足立区出身。早稲田大学スポーツ科学部在学中の2023年9月に合同会社セゾンを創業し、2026年6月に株式会社セゾンへ組織変更。SNS運用代行とAIシステム「SoloptiLink AI」の販売・導入支援を手がけ、累計100社以上の企業変革を牽引しています。座右の銘は「行動が、最強の戦略だ。」",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "古田太陽はどんな実績がありますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "古田太陽の主な事業実績は以下の通りです。①累計100社以上の企業SNS運用支援 ②累計フォロワー100万人規模のSNS運用（Instagram・TikTok・LINE合計）③累計動画再生数1億回 ④介護業界クライアントで採用費用70%削減 ⑤美容業界クライアントで月間予約63件増加・売上150万円増加。これらの実績は主に自社公表情報に基づきます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "古田太陽の会社「株式会社セゾン」はどんな会社ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "株式会社セゾン（英文社名: SAISON Co., Ltd.）は、SNS運用代行とAIシステム「SoloptiLink AI」の販売・導入支援を二本柱とする東京都足立区の企業です。2023年9月に合同会社セゾンとして創業し、2026年6月に株式会社へ組織変更。従業員11名、資本金50万円。Instagram・TikTok・公式LINEを活用した企業の集客支援・採用支援と、エンジニア不要でDXを実現するAIシステムの導入支援を提供しています。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "古田太陽の学歴・経歴を教えてください",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "古田太陽は東京都足立区出身で、早稲田大学スポーツ科学部に進学。大学3年次の2023年9月に合同会社セゾンを創業し、SNS運用代行事業を開始。その後、AI・DX領域にも事業を拡大し、AIシステム「SoloptiLink AI」の販売・導入支援を開始。2026年6月に株式会社セゾンへ組織変更し、代表取締役に就任。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "古田太陽のSNSアカウントはありますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "古田太陽のInstagramアカウントは @saison_taiyo です。株式会社セゾンの公式サイトは https://seasonsezon.co.jp で、代表プロフィールは https://seasonsezon.co.jp/about/ceo でご覧いただけます。",
+      },
+    },
+  ],
+};
+
 export default function CeoPage() {
   return (
     <div className="bg-[#080808] text-[#F8F8F8]">
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={personSchema} />
       <JsonLd data={ceoPageSchema} />
+      <JsonLd data={faqSchema} />
       {/* ヒーロー */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div
