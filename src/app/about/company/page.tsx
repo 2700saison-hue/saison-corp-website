@@ -89,6 +89,74 @@ const companySchema = {
   ],
   slogan: "行動が、最強の戦略だ。",
   image: "https://seasonsezon.co.jp/images/logos/ogp.png",
+  founder: {
+    "@type": "Person",
+    name: "古田太陽",
+    alternateName: "Taiyo Furuta",
+    givenName: "太陽",
+    familyName: "古田",
+    birthDate: "2002-06-13",
+    jobTitle: "代表取締役",
+    url: "https://seasonsezon.co.jp/about/ceo",
+    image: "https://seasonsezon.co.jp/images/team/CEO2.jpeg",
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "早稲田大学",
+      department: "スポーツ科学部",
+    },
+    description: "東京都足立区出身。早稲田大学スポーツ科学部在学中に起業。SNS運用代行とAIシステム「SoloptiLink AI」導入支援を手がけ、累計100社以上の企業変革を牽引。",
+    sameAs: [
+      "https://www.instagram.com/saison_taiyo/",
+      "https://seasonsezon.co.jp/about/ceo",
+    ],
+  },
+};
+
+const companyFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "株式会社セゾンとはどんな会社ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "株式会社セゾン（SAISON Co., Ltd.）は、東京都足立区を拠点とするデジタルマーケティング会社です。SNS運用代行・AIシステム「SoloptiLink AI」の導入支援・ホームページ制作・LP制作・公式LINE構築などを提供し、累計100社以上の企業変革を支援しています。2023年9月に代表取締役 古田太陽（ふるた たいよう）が創業しました。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "株式会社セゾンの代表者は誰ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "代表取締役は古田太陽（ふるた たいよう）です。2002年6月生まれ、東京都足立区出身。早稲田大学スポーツ科学部在学中に起業し、SNS運用代行とAIシステム「SoloptiLink AI」の販売・導入支援を主力事業として展開しています。座右の銘は「行動が、最強の戦略だ。」",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "株式会社セゾンの主な事業は何ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "主力事業は①SNS運用代行（Instagram・TikTok・YouTube等）と②AIシステム「SoloptiLink AI」の販売・導入支援の2本柱です。その他、ホームページ制作・LP制作・公式LINE構築・採用動画制作・補助金申請支援なども提供しています。累計導入実績は100社以上で、介護業界での採用費用70%削減、美容業界での月間予約63件増加などの実績があります。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "株式会社セゾンの所在地と連絡先を教えてください。",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "所在地：〒123-0865 東京都足立区新田3丁目37-12-708。電話：090-1251-6837。メール：info@seasonsezon.co.jp。公式サイト：https://seasonsezon.co.jp/",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "SoloptiLink AIとは何ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "SoloptiLink AI（ソロプティリンクAI）は株式会社セゾンが開発・販売するAI業務自動化システムです。中小企業のDX支援・業務効率化・SNS自動化などに対応しており、導入支援から運用サポートまで一貫してサポートします。",
+      },
+    },
+  ],
 };
 
 export const metadata: Metadata = {
@@ -152,6 +220,7 @@ export default function CompanyPage() {
     <div className="bg-[#080808] text-[#F8F8F8]">
       <JsonLd data={breadcrumbSchema} />
       <JsonLd data={companySchema} />
+      <JsonLd data={companyFaqSchema} />
       {/* ヒーロー */}
       <section className="relative py-32 px-6 overflow-hidden">
         <div
