@@ -35,6 +35,16 @@ const DOCUMENTS = [
     file: "/documents/case-studies-87.pdf",
     accent: "#C9A84C",
   },
+  {
+    id: "training",
+    icon: BookOpen,
+    label: "SNS×AI研修",
+    title: "AI時代のSNS活用 DX化対応人材育成講座 カリキュラム資料",
+    desc: "Instagram・TikTok・公式LINE・X・YouTube・検索最適化の6プログラムを収録。1名291,000円+税/年間見放題。人材開発助成金対象。",
+    pages: "カリキュラム資料（26ページ）",
+    file: "/documents/training-dx-sns-ai.pdf",
+    accent: "#C9A84C",
+  },
 ];
 
 interface RequestState {
@@ -50,11 +60,13 @@ export default function DocumentRequestSection() {
     soloptilink: "idle",
     sns: "idle",
     cases: "idle",
+    training: "idle",
   });
   const [forms, setForms] = useState<FormState>({
     soloptilink: { name: "", email: "", company: "" },
     sns: { name: "", email: "", company: "" },
     cases: { name: "", email: "", company: "" },
+    training: { name: "", email: "", company: "" },
   });
 
   const openForm = (id: string) => {
@@ -113,7 +125,7 @@ export default function DocumentRequestSection() {
           </div>
         </FadeInSection>
 
-        <div className="grid sm:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {DOCUMENTS.map((doc, i) => {
             const Icon = doc.icon;
             const state = states[doc.id];

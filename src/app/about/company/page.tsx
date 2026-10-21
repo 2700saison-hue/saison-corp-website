@@ -24,12 +24,6 @@ const companySchema = {
   url: "https://seasonsezon.co.jp",
   description: "SNS運用代行・AI導入支援・ホームページ制作・DX支援を提供するデジタルマーケティング会社。累計100社以上の導入実績。東京都足立区を拠点に全国対応。",
   foundingDate: "2023-09-01",
-  founder: {
-    "@type": "Person",
-    name: "古田太陽",
-    jobTitle: "代表取締役",
-    url: "https://seasonsezon.co.jp/about/ceo",
-  },
   telephone: "+81-90-1251-6837",
   email: "info@seasonsezon.co.jp",
   address: {
