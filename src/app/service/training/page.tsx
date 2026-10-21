@@ -9,6 +9,9 @@ import {
   Zap,
   TrendingUp,
   Award,
+  Download,
+  Monitor,
+  Clock,
 } from "lucide-react";
 import FadeInSection from "@/components/ui/FadeInSection";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -366,6 +369,114 @@ export default function TrainingServicePage() {
               </FadeInSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* LMS Online Training Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0a0a0a]">
+        <div className="max-w-5xl mx-auto">
+          <FadeInSection>
+            <SectionHeader
+              eyebrow="ONLINE LMS"
+              title="AI時代のSNS活用 DX化対応人材育成講座"
+              subtitle="オンラインで学べるLMS（学習管理システム）型の研修プログラム。好きな時間に、自分のペースで学べます。"
+            />
+          </FadeInSection>
+
+          <FadeInSection>
+            <div className="bg-[#0f0f0f] border border-white/5 rounded-3xl overflow-hidden mb-8">
+              {/* ヘッダー */}
+              <div className="bg-gradient-to-r from-[#CC2222]/20 to-[#C9A84C]/10 border-b border-white/5 p-8">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                  <div>
+                    <p className="text-[#CC2222] text-xs font-bold tracking-widest mb-2">LMS PROGRAM</p>
+                    <h3 className="text-white text-2xl font-black" style={{ fontFamily: "Noto Serif JP, serif" }}>
+                      AI時代のSNS活用における<br />DX化対応人材育成講座
+                    </h3>
+                  </div>
+                  <div className="text-right flex-shrink-0">
+                    <p className="text-white/40 text-xs mb-1">1名あたり</p>
+                    <p className="text-white text-3xl font-black">291,000<span className="text-lg">円</span></p>
+                    <p className="text-white/40 text-xs">＋税 / 1年間見放題</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 特徴 */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-white/5">
+                <div className="p-6 flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#CC2222]/10 border border-[#CC2222]/20 flex items-center justify-center flex-shrink-0">
+                    <Monitor className="w-4 h-4 text-[#CC2222]" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm mb-1">6つのプログラム</p>
+                    <p className="text-white/50 text-xs leading-relaxed">Instagram・TikTok・公式LINE・X・YouTube・検索最適化をAIと組み合わせて学習</p>
+                  </div>
+                </div>
+                <div className="p-6 flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#C9A84C]/10 border border-[#C9A84C]/20 flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-4 h-4 text-[#C9A84C]" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm mb-1">1年間いつでも視聴</p>
+                    <p className="text-white/50 text-xs leading-relaxed">業務の合間に少しずつ学習可能。動画教材なので何度でも繰り返し視聴できます</p>
+                  </div>
+                </div>
+                <div className="p-6 flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-[#CC2222]/10 border border-[#CC2222]/20 flex items-center justify-center flex-shrink-0">
+                    <Award className="w-4 h-4 text-[#CC2222]" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm mb-1">人材開発助成金対象</p>
+                    <p className="text-white/50 text-xs leading-relaxed">人材開発支援助成金の活用で受講費用の最大75%をカバー可能（要申請）</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* プログラム一覧 */}
+              <div className="p-8 border-t border-white/5">
+                <p className="text-white/40 text-xs font-bold tracking-widest mb-5">収録プログラム</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {[
+                    { color: "#ec4899", label: "AI×Instagram研修" },
+                    { color: "#000000", label: "AI×X研修" },
+                    { color: "#3b82f6", label: "AI×TikTok研修" },
+                    { color: "#CC2222", label: "AI×YouTube研修" },
+                    { color: "#22c55e", label: "AI×公式LINE研修" },
+                    { color: "#C9A84C", label: "AI×検索最適化研修" },
+                  ].map((prog) => (
+                    <div key={prog.label} className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-sm flex-shrink-0" style={{ backgroundColor: prog.color === "#000000" ? "#888" : prog.color }} />
+                      <span className="text-white/70 text-xs">{prog.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </FadeInSection>
+
+          {/* 資料請求CTA */}
+          <FadeInSection>
+            <div className="bg-gradient-to-r from-[#CC2222]/10 to-[#C9A84C]/10 border border-[#CC2222]/20 rounded-2xl p-8 text-center">
+              <p className="text-[#CC2222] text-xs font-bold tracking-widest mb-3">DOCUMENT</p>
+              <h4 className="text-white text-xl font-black mb-3" style={{ fontFamily: "Noto Serif JP, serif" }}>
+                カリキュラム詳細資料（PDF）を無料ダウンロード
+              </h4>
+              <p className="text-white/50 text-sm mb-7 max-w-lg mx-auto leading-relaxed">
+                6つの研修プログラムすべてのカリキュラム・学習時間・収録コンテンツ一覧を記載した資料を無料でご覧いただけます。助成金申請の際の「訓練計画書」作成にもご活用ください。
+              </p>
+              <a
+                href="/documents/training-dx-sns-ai.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#CC2222] text-white font-black text-sm tracking-widest rounded hover:bg-[#E53333] transition-all duration-200 hover:shadow-2xl hover:shadow-[#CC2222]/30"
+              >
+                <Download className="w-4 h-4" />
+                カリキュラム資料をダウンロード（PDF）
+              </a>
+              <p className="text-white/30 text-xs mt-4">登録不要・無料・26ページ</p>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
