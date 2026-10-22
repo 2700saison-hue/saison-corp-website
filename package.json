@@ -7,13 +7,16 @@
     "build": "prisma generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "postinstall": "prisma generate",
+    "postinstall": "node scripts/soloptilink-icon-registry.mjs --quiet && prisma generate",
     "seed": "ts-node --project tsconfig.seed.json --transpile-only -r tsconfig-paths/register prisma/seed.ts",
     "generate:seo": "tsx scripts/seo-automation.ts",
     "generate:article": "tsx scripts/generate-seo-content.ts",
     "generate:faq": "tsx scripts/generate-faq.ts",
     "generate:sns": "tsx scripts/generate-sns-post.ts",
-    "audit": "npm audit --audit-level=high"
+    "audit": "npm audit --audit-level=high",
+    "serve": "node scripts/soloptilink-serve.mjs",
+    "predev": "node scripts/soloptilink-icon-registry.mjs --quiet",
+    "prebuild": "node scripts/soloptilink-icon-registry.mjs --quiet"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.54.0",
@@ -34,6 +37,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-intersection-observer": "^10.0.3",
+    "recharts": "^3.10.1",
     "resend": "^6.12.4"
   },
   "devDependencies": {
