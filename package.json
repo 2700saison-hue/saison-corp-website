@@ -15,8 +15,7 @@
     "generate:sns": "tsx scripts/generate-sns-post.ts",
     "audit": "npm audit --audit-level=high",
     "serve": "node scripts/soloptilink-serve.mjs",
-    "predev": "node scripts/soloptilink-icon-registry.mjs --quiet",
-    "prebuild": "node scripts/soloptilink-icon-registry.mjs --quiet"
+    "predev": "node scripts/soloptilink-icon-registry.mjs --quiet"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.54.0",
